@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+<nav class="navbar navbar-expand-lg pt-2 navbar-dark ">
 
     <!--Logo-->
     <a class="navbar-brand" href="index.php"><span class="fas fa-home"/></a>
@@ -9,15 +9,18 @@
     </button>
 
     <!--Elementos del menu que se van a colapsar-->
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="menuColapsable">
-        <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-center " id="menuColapsable">
+
+        <ul class="navbar-nav ">
+
+            <!--Home-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">HOME</a>
             </li>
             
             <!--Comics-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuComics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cómics</a>
+                <a class="nav-link dropdown-toggle" href="#" id="menuComics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CÓMICS</a>
                 <div class="dropdown-menu" aria-labelledby="menuComics">
                     <a class="dropdown-item" href="#">Marvel</a>
                     <a class="dropdown-item" href="#">DC Comics</a>
@@ -28,7 +31,7 @@
 
             <!--Peliculas-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuPeliculas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Películas</a>
+                <a class="nav-link dropdown-toggle" href="#" id="menuPeliculas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PELÍCULAS</a>
                 <div class="dropdown-menu" aria-labelledby="menuPeliculas">
                     <a class="dropdown-item" href="#">MCU</a>
                     <a class="dropdown-item" href="#">DCEU</a>
@@ -37,7 +40,7 @@
             
             <!--Videojuegos-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuVideojuegos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Videojuegos</a>
+                <a class="nav-link dropdown-toggle" href="#" id="menuVideojuegos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIDEOJUEGOS</a>
                 <div class="dropdown-menu" aria-labelledby="menuVideojuegos">
                     <a class="dropdown-item" href="#">Arkham</a>
                     <a class="dropdown-item" href="#">Injustice</a>
@@ -49,7 +52,7 @@
             
             <!--Personajes-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuPersonajes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personajes</a>
+                <a class="nav-link dropdown-toggle" href="#" id="menuPersonajes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PERSONAJES</a>
                 <div class="dropdown-menu" aria-labelledby="menuPersonajes">
                     <a class="dropdown-item" href="#">Spiderman</a>
                     <a class="dropdown-item" href="#">Iron Man</a>

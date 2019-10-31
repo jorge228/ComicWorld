@@ -1,13 +1,20 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 31-oct-2019, 12:06:18
-    Author     : danir
-*/
+/*ARCHIVO CSS*/
 
 body{
     font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
+nav{
+    background-color:#323842;
+}
+
+nav a{
+    font-family: 'Roboto Condensed', sans-serif ;
+    color:white !important;
+    font-size:22px !important;
+}
+
+.dropdown-item{
+    color:black !important;
 }

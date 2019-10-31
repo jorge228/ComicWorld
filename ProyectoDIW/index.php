@@ -6,9 +6,10 @@
     </head>
     <body>
 
+        <!--MENU DE NAVEGACION-->
         <?php include("includes/menuNav.php"); ?>
 
-
+        <!--CARRUSEL-->
         <div class="container-fluid mt-3 mb-5 p-0">
             <div class="row">
                 <div id="carrusel" class="carousel slide col-12" data-ride="carousel">
@@ -38,53 +39,54 @@
             </div>
         </div>
                
-        
-        <div class="container-fluid mt-3">
+        <!--TARJETAS-->
+        <div class="container mt-3">
             <!--Tarjetas-->
             <div class="row">
 
                 <!--Primera columna-->
 
-                <div class="card col-sm-3 ">
-                    <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
+                        <div class="card-body text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
                 </div>
-
 
                 <!--Segunda columna-->
-                
-                <div class="card col-sm-3">
-                    <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
+                        <div class="card-body text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!--Tercera columna-->
-                
-                <div class="card col-sm-3">
-                    <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
+                        <div class="card-body text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
                 </div>
-                
                 
                 <!--Cuarta columna-->
-                
-                <div class="card col-sm-3">
-                    <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
+                        <div class="card-body text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
                 </div>
-                
             </div>
             
         </div>
