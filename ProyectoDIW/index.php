@@ -5,7 +5,7 @@
         <?php include("includes/contenidoHead.php"); ?>
     </head>
     <body>
-
+        <!--Prueba jorge-->
         <!--MENU DE NAVEGACION-->
         <?php include("includes/menuNav.php"); ?>
 
