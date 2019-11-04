@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg pt-2 navbar-dark ">
+
+
+<nav class="navbar navbar-expand-lg p-0 pl-3 navbar-dark " id="menu">
 
     <!--Logo-->
     <a class="navbar-brand" href="index.php"><span class="fas fa-home"/></a>
