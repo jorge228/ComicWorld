@@ -7,6 +7,18 @@ body{
     overflow-x:hidden;
 }
 
+.bg-primary{
+    background-color:#006c75 !important;
+}
+
+.text-primary{
+    color:#006c75 !important;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 nav{
     background-color:#323842;
 }
