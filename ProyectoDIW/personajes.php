@@ -5,7 +5,7 @@
     <?php include("includes/contenidoHead.php"); ?>
 
     <style>
-
+    
     </style>
 </head>
 
@@ -14,7 +14,7 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Contenido-->
-    <div class="container-fluid p-0 mt-2">
+    <div class="container-fluid p-0">
 
         <div class="row ">
             <div class="col-12">
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="row mt-5 mx-4">
+        <div class="row mt-4 mx-4">
             <div class="col-md-3 border-md-top">
                 <h1 class="text-center font-weight-bold text-primary">BIOGRAFÍA</h1>
             </div>
@@ -88,7 +88,7 @@
                         <td>$NombrePers</th>
                     </tr>
                     <tr>
-                        <th>Apodos/aliases</th>
+                        <th>Poderes</th>
                         <td>$NombrePers</th>
                     </tr>
 
