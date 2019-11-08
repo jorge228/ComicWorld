@@ -17,9 +17,9 @@
     <?php include "includes/menuNav.php"; ?>
 
     <!--CARRUSEL-->
-    <div class="container">
+    <div class="container-fluid p-0">
         <!-- intervalo 2000 y que no se pare si entra el ratón sobre la imagen-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="false">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
