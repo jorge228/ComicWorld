@@ -64,6 +64,12 @@
             <div class="col-8 prueba"> título sinopsis valoraciones críticas...
             </div>
         </div>
+        <div class="row">
+            <div class="col-4 prueba card-body"> <img src="assets/img/pCapitanaMarvelCartel.jpg">
+            </div>
+            <div class="col-8 prueba"> título sinopsis valoraciones críticas...
+            </div>
+        </div>
     </div>
 
 
