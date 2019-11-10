@@ -4,9 +4,7 @@
 <head>
     <?php include("includes/contenidoHead.php"); ?>
 
-    <style>
-    
-    </style>
+    <?php include("includes/banners.php");?>
 </head>
 
 <body>
@@ -14,13 +12,9 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Contenido-->
+    <?php banner("assets/img/carrusel1.jpg");?>
+    
     <div class="container-fluid p-0">
-
-        <div class="row ">
-            <div class="col-12">
-                <img class="img-fluid w-100" src="assets/img/carrusel1.jpg"/>
-            </div>
-        </div>
 
         <div class="row mt-4 mx-4">
             <div class="col-md-3 border-md-top">
@@ -28,14 +22,13 @@
             </div>
 
             <div class="col-md-6 text-justify">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy # 15 (10 de agosto de 1962), en la Edad de Plata de los cómics. Aparece en los cómics estadounidenses publicados por Marvel Comics, así como en varias películas, programas de televisión y adaptaciones de videojuegos ambientadas en el Universo Marvel. En las historias, Spider-Man es el alias de Peter Parker, un huérfano criado por su tía May y su tío Ben en la Ciudad de Nueva York después de que sus padres Richard y Mary Parker murieron en un accidente aéreo. Lee y Ditko tuvieron que lidiar con los problemas de la adolescencia y los problemas financieros, y lo acompañaron con muchos personajes de apoyo, como J. Jonah Jameson, Flash Thompson, Harry Osborn, los intereses románticos, Gwen Stacy y Mary Jane Watson, y enemigos como el Doctor Octopus, Kingpin, Duende Verde y Venom. Su historia de origen lo tiene adquiriendo habilidades relacionadas con la araña después de un mordisco de una araña radioactiva; estos incluyen aferrarse a las superficies, 
+                disparar telarañas desde dispositivos montados en la muñeca y detectar el peligro con su "sentido arácnido".</p>
 
             </div>
 
-            <div class="col-md-3 border p-0">
-                <table class="table table-sm">
+            <div class="col-md-3 p-0">
+                <table class="table table-sm border">
                     <thead class="bg-primary">
                         <tr class="text-center">
                             <th colspan="2"><h1 class="font-weight-bold">Datos</h1></th>
