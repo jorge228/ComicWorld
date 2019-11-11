@@ -2,9 +2,13 @@
 <?php include("includes/a_config.php"); ?>
 <html lang="en">
 <head>
-    <?php include("includes/contenidoHead.php"); ?>
+    <?php
+    include("includes/contenidoHead.php");
 
-    <?php include("includes/banners.php");?>
+    include("includes/banners.php");
+    ?>
+
+    <script src='js/pers.js'></script>
 </head>
 
 <body>
@@ -16,7 +20,43 @@
     
     <div class="container-fluid p-0">
 
+        <div class="row m-4 text-center">
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="70"><span class="percent">7</span></div>
+                <p class="tituloPuntuacionPer">FUERZA</p>
+
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="80"><span class="percent">8</span></div>
+                <p class="tituloPuntuacionPer">RESISTENCIA</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="60"><span class="percent">6</span></div>
+                <p class="tituloPuntuacionPer">INTELECTO</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="100"><span class="percent">10</span></div>
+                <p class="tituloPuntuacionPer">AGILIDAD</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="100"><span class="percent">10</span></div>
+                <p class="tituloPuntuacionPer">COMBATE</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 p-0">
+                <div class="chart" id="intel" data-percent="100"><span class="percent">10</span></div>
+                <p class="tituloPuntuacionPer">VELOCIDAD</p>
+            </div>
+
+        
+        </div>
+
         <div class="row mt-4 mx-4">
+
             <div class="col-md-3 border-md-top">
                 <h1 class="text-center font-weight-bold text-primary">BIOGRAFÍA</h1>
             </div>
