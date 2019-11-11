@@ -5,9 +5,34 @@
 <head>
     <?php include "includes/contenidoHead.php"; ?>
 </head>
+<title>MCU</title>
 <style>
     .prueba {
-        border: 1px solid !important;
+        bor der: 1px solid !important;
+    }
+
+    .valoracion {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .valoracion input {
+        position: absolute;
+        top: -100px;
+    }
+
+
+    .valoracion label {
+        float: right;
+        color: #c1b8b8;
+        font-size: 30px;
+    }
+
+    .valoracion label:hover,
+    .valoracion label:hover~label,
+    .valoracion input:checked~label {
+        color: #ffff00;
     }
 </style>
 
@@ -30,10 +55,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a title="imagen1" href="index.php"><img src="assets/img/pCapitanAmerica.jpeg" class="d-block w-100" alt="imagen1"/></a>
+                    <a title="imagen1" href="#capitanAmerica"><img src="assets/img/pCapitanAmerica.jpeg" class="d-block w-100" alt="imagen1" /></a>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/pCapitanaMarvel.jpg" class="d-block w-100" alt="imagen2">
+                    <a title="imagen1" href="#capitanaMarvel"><img src="assets/img/pCapitanaMarvel.jpg" class="d-block w-100" alt="imagen2"></a>
                 </div>
                 <!--
                 <div class="carousel-item">
@@ -61,13 +86,42 @@
         <div class="row">
             <div class="col-4 prueba card-body"> <img src="assets/img/pCapitanaMarvelCartel.jpg">
             </div>
-            <div class="col-8 prueba"> título sinopsis valoraciones críticas...
+            <div class="col-8 prueba">
+                <A name="capitanAmerica">
+                    <h2>Capitán América: El primer Vengador</h2>
+                </A>
+                título sinopsis valoraciones críticas...
+                <div class="valoracion">
+                    <input id="radio1" type="radio" name="estrellas" value="5">
+                    <!--
+    --><label for="radio1">★</label>
+                    <!--
+    --><input id="radio2" type="radio" name="estrellas" value="4">
+                    <!--
+    --><label for="radio2">★</label>
+                    <!--
+    --><input id="radio3" type="radio" name="estrellas" value="3">
+                    <!--
+    --><label for="radio3">★</label>
+                    <!--
+    --><input id="radio4" type="radio" name="estrellas" value="2">
+                    <!--
+    --><label for="radio4">★</label>
+                    <!--
+    --><input id="radio5" type="radio" name="estrellas" value="1">
+                    <!--
+    --><label for="radio5">★</label>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-4 prueba card-body"> <img src="assets/img/pCapitanaMarvelCartel.jpg">
             </div>
-            <div class="col-8 prueba"> título sinopsis valoraciones críticas...
+            <div class="col-8 prueba">
+                <A name="capitanaMarvel">
+                    <h2>Capitana Marvel</h2>
+                </A>
+                título sinopsis valoraciones críticas...
             </div>
         </div>
     </div>
