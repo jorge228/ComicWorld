@@ -10,30 +10,10 @@
     .prueba {
         bor der: 1px solid !important;
     }
-
-    .valoracion {
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
+    p{
+        text-align: justify;
     }
 
-    .valoracion input {
-        position: absolute;
-        top: -100px;
-    }
-
-
-    .valoracion label {
-        float: right;
-        color: #c1b8b8;
-        font-size: 30px;
-    }
-
-    .valoracion label:hover,
-    .valoracion label:hover~label,
-    .valoracion input:checked~label {
-        color: #ffff00;
-    }
 </style>
 
 <body>
@@ -82,48 +62,44 @@
 
     <!--CUERPO-->
 
-    <div class="container">
+    <div class="container-fluid mt-3">
+
         <div class="row">
-            <div class="col-4 prueba card-body"> <img src="assets/img/pCapitanaMarvelCartel.jpg">
+            <div class="col-sm-4 prueba d-none d-sm-block"> <img src="assets/img/fCapAmeCar.jpg" class="rounded card-img-top img-thumbnail border-0">
             </div>
-            <div class="col-8 prueba">
+            <div class="col-sm-8 prueba">
                 <A name="capitanAmerica">
                     <h2>Capitán América: El primer Vengador</h2>
                 </A>
-                título sinopsis valoraciones críticas...
-                <div class="valoracion">
-                    <input id="radio1" type="radio" name="estrellas" value="5">
-                    <!--
-    --><label for="radio1">★</label>
-                    <!--
-    --><input id="radio2" type="radio" name="estrellas" value="4">
-                    <!--
-    --><label for="radio2">★</label>
-                    <!--
-    --><input id="radio3" type="radio" name="estrellas" value="3">
-                    <!--
-    --><label for="radio3">★</label>
-                    <!--
-    --><input id="radio4" type="radio" name="estrellas" value="2">
-                    <!--
-    --><label for="radio4">★</label>
-                    <!--
-    --><input id="radio5" type="radio" name="estrellas" value="1">
-                    <!--
-    --><label for="radio5">★</label>
-                </div>
+                <h3>Fecha de estreno</h3> 
+                <p>5 de agosto de 2011</p>
+                <h3>Director</h3> 
+                <p>Joe Johnston</p>
+                <h3>Sinopsis</h3> 
+                <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                <h3>Críticas</h3>
+                 <?php include "includes/valoracion.php"; ?>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-4 prueba card-body"> <img src="assets/img/pCapitanaMarvelCartel.jpg">
+            <div class="col-sm-4 prueba card-body d-none d-sm-block"> <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
             </div>
-            <div class="col-8 prueba">
+            <div class="col-sm-8 prueba">
                 <A name="capitanaMarvel">
                     <h2>Capitana Marvel</h2>
                 </A>
-                título sinopsis valoraciones críticas...
+                <h3>Fecha de estreno</h3> 
+                <p>8 de marzo de 2019</p>
+                <h3>Director</h3> 
+                <p>Anna Boden, Ryan Fleck</p>
+                <h3>Sinopsis</h3> 
+                <p>La historia sigue a Carol Danvers mientras se convierte en uno de los héroes más poderosos del universo, cuando la Tierra se encuentra atrapada en medio de una guerra galáctica entre dos razas alienígenas. Situada en los años 90, 'Capitana Marvel' es una historia nueva de un período de tiempo nunca antes visto en la historia del Universo Cinematográfico de Marvel.</p>
+                <h3>Críticas</h3>
+                 <?php include "includes/valoracion.php"; ?>
             </div>
         </div>
+
     </div>
 
 

@@ -29,3 +29,31 @@ nav a{
 .dropdown-item{
     color:black !important;
 }
+
+/* JORGE VALORACION */
+.valoracion {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.valoracion input {
+    position: absolute;
+    top: -100px;
+}
+
+
+.valoracion label {
+    float: right;
+    /* color estrella vacía */ 
+    color: #c1b8b8;
+    font-size: 30px;
+}
+
+.valoracion label:hover,
+.valoracion label:hover~label,
+.valoracion input:checked~label {
+    /* color estrella llena */ 
+    color: #ffff00;
+}
+
