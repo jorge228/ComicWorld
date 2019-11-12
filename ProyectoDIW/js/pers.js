@@ -2,9 +2,10 @@ $(function() {
     $('.chart').easyPieChart({
         //Configuration goes here
         size: "150",
-        barColor: 'false',
+        barColor: 'red',
         lineWidth: "20",
         lineCap:'square',
+        scaleLength:'1',
         trackColor:'#949494',
         animate:({
             duration:"1000",
@@ -12,12 +13,12 @@ $(function() {
         })
     });
 
-    $(window).scroll(function(){
+    /*
+    if (window.matchMedia('(max-width: 768px').matches){
         $('.chart').easyPieChart({
-            barColor:'red'
+            scaleLength:'1'
         });
-
-        $('.chart').data('easyPieChart').update(40);
-    });
+    }*/
+   
 });
 
