@@ -1,70 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark main-nav">
+  
+    <div class="container-fluid">
 
+        <!-- Elementos del menu -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-<nav class="navbar navbar-expand-lg p-0 pl-3 navbar-dark " id="menu">
+            <!-- Logo -->
+            <div class="navbar-header">
+                <img class="navbar-brand" src="assets/img/logo.png" onclick="location.reload()" alt="logo" height="18%" width="18%">
+            </div>
 
-    <!--Logo-->
-    <a class="navbar-brand" href="index.php"><span class="fas fa-home"/></a>
+            <ul class="nav navbar-nav mx-auto">
 
-    <!--Icono para cuando se colapsa el menu de navegacion-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!--Elementos del menu que se van a colapsar-->
-    <div class="collapse navbar-collapse justify-content-center " id="menuColapsable">
-
-        <ul class="navbar-nav ">
-
-            <!--Home-->
-            <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
-            </li>
-            
-            <!--Comics-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuComics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CÓMICS</a>
-                <div class="dropdown-menu" aria-labelledby="menuComics">
-                    <a class="dropdown-item" href="#">Marvel</a>
-                    <a class="dropdown-item" href="#">DC Comics</a>
-                    <a class="dropdown-item" href="#">Dark Horse</a>
-                    <a class="dropdown-item" href="#">Otros</a>
+                <!-- Comics -->
+                <div class="nav-item dropdown">
+                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comics
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Marvel</a>
+                        <a class="dropdown-item" href="#">DC Comics</a>
+                        <a class="dropdown-item" href="#">Dark Horse</a>
+                        <a class="dropdown-item" href="#">Otros</a>
+                    </div>
                 </div>
-            </li>
 
-            <!--Peliculas-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuPeliculas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PELÍCULAS</a>
-                <div class="dropdown-menu" aria-labelledby="menuPeliculas">
-                    <a class="dropdown-item" href="#">MCU</a>
-                    <a class="dropdown-item" href="#">DCEU</a>
+                <!-- Peliculas -->
+                <div class="nav-item dropdown">
+                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Peliculas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Marvel</a>
+                        <a class="dropdown-item" href="#">DC Comics</a>
+                    </div>
                 </div>
-            </li>
-            
-            <!--Videojuegos-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuVideojuegos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIDEOJUEGOS</a>
-                <div class="dropdown-menu" aria-labelledby="menuVideojuegos">
-                    <a class="dropdown-item" href="#">Arkham</a>
-                    <a class="dropdown-item" href="#">Injustice</a>
-                    <a class="dropdown-item" href="#">Marvel vs Capcom</a>
-                    <a class="dropdown-item" href="#">Marvel Ultimate Alliance</a>
-                    <a class="dropdown-item" href="#">Lego Marvel Superheroes</a>
+
+                <!-- Videojuegos -->
+                <div class="nav-item dropdown">
+                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Videojuegos
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="videojuegos/SagaArkham.php">Saga Arkham</a>
+                        <a class="dropdown-item" href="videojuegos/SagaMarvelvsCapcom.php">Saga Marvel vs Capcom</a>
+                        <a class="dropdown-item" href="videojuegos/SagaMarvelUltimateAlliance.php">Saga Marvel Ultimate Alliance</a>
+                        <a class="dropdown-item" href="videojuegos/SagaInjustice.php">Saga Injustice</a>
+                        <a class="dropdown-item" href="videojuegos/LegoMarvelSuperheroes.php">Lego Marvel Superheroes</a>
+                    </div>
                 </div>
-            </li>
-            
-            <!--Personajes-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="menuPersonajes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PERSONAJES</a>
-                <div class="dropdown-menu" aria-labelledby="menuPersonajes">
-                    <a class="dropdown-item" href="#">Spiderman</a>
-                    <a class="dropdown-item" href="#">Iron Man</a>
-                    <a class="dropdown-item" href="#">Superman</a>
-                    <a class="dropdown-item" href="#">Flash</a>
-                    <a class="dropdown-item" href="#">Wonder Woman</a>
+
+                <!-- Personajes -->
+                <div class="nav-item dropdown">
+                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Personajes
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Spiderman</a>
+                        <a class="dropdown-item" href="#">Superman</a>
+                        <a class="dropdown-item" href="#">Iron Man</a>
+                        <a class="dropdown-item" href="#">Flash</a>
+                        <a class="dropdown-item" href="#">Wonder Woman</a>
+                    </div>
                 </div>
-            </li>
-            
-        </ul>
+
+            </ul>
+        </div>
+
+        <!-- Login button -->
+        <button class="btn fas fa-user text-white float-right"/>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler ml-auto nav-flex-icons" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
     </div>
 </nav>
