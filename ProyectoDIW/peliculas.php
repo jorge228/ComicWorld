@@ -12,6 +12,15 @@
         bor der: 1px solid !important;
     }
 
+    .colocac{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    }
+
     p {
         text-align: justify;
     }
@@ -67,7 +76,9 @@
 
         <div class="row">
             <div class="col-sm-4 prueba d-none d-sm-block">
-                <img src="assets/img/fCapAmeCar.jpg" class="rounded card-img-top img-thumbnail border-0">
+                <div class="card">
+                    <img src="assets/img/fCapAmeCar.jpg" class="img-thumbnail">
+                </div>
             </div>
             <div class="col-sm-8 prueba">
                 <A name="capitanAmerica">
@@ -79,11 +90,8 @@
                 <p>Joe Johnston</p>
                 <h3>Sinopsis</h3>
                 <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
-                
-                
-                <!--<?php include "includes/valoracion.php"; ?>-->
-                
-                <!-- INICIO SPOILIER-->
+              
+                <!-- INICIO BOTÓN-->
                 <p>
                     
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -100,7 +108,9 @@
                         anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
                 </div>
-                <!-- FIN SPOILER-->
+                <!-- FIN BOTÓN-->
+
+                <?php include "includes/valoracion.php"; ?>
 
             </div>
         </div>
