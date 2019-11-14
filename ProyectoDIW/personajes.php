@@ -26,7 +26,7 @@
         <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
 
         <!--Biografia y datos-->
-        <div class="row mt-4 mx-2 pt-2">
+        <div class="row mt-4 mx-2 pt-4">
 
             <div class="col-lg-2 border-top pr-3">
                 <h1 class="text-center font-weight-bold text-primary">BIOGRAFÍA</h1>
