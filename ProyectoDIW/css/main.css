@@ -8,7 +8,6 @@ body{
     overflow-x:hidden;
 }
 
-
 .bg-primary{
     background-color:#006c75 !important;
 }
@@ -20,27 +19,6 @@ body{
 h1,h2,h3,h4,h5{
     font-family: 'Roboto Condensed', sans-serif;
 }
-
-nav{
-    background-color:#323842;
-}
-
-nav a{
-    font-family: 'Roboto Condensed', sans-serif !important;
-    font-size:26px;
-    color:white !important;
-}
-
-.navbar-nav li:hover{
-    background-color:#006c75 !important;
-
-}
-
-.nav-item{
-    padding:5px 10px 0px 10px;
-}
-
-
 
 .dropdown-item{
     color:black !important;
@@ -82,9 +60,10 @@ nav a{
     font-weight:bold;
     font-size:1.5em;
 }
-/*////////////////////////////////////////////////////////////////////////////////////*/
-
 
 .c1, .c2, .c3, .c4, .c5, .c6{
     visibility:hidden;
 }
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+

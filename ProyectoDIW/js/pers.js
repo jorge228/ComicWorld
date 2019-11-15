@@ -6,7 +6,7 @@ $(function() {
     //Evento que se activara cuando el usuario haga scroll
     $(window).scroll(function () { 
 
-        //Si el usuario ha hecho por primera vez
+        //Si el usuario ha hecho scroll por primera vez
         if (!scroll){
 
             //Tiempo que tardara en cargarse el grafico
