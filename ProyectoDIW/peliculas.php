@@ -4,16 +4,17 @@
 
 <head>
     <?php include "includes/contenidoHead.php"; ?>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <?php include "includes/valoracion.php"; ?>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </head>
 <title>MCU</title>
 <style>
     .prueba {
-        bor der: 1px solid !important;
+        border: 1px solid !important;
     }
 
-    .colocac{
-    position: relative;
+    .colocacar{
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -21,9 +22,7 @@
     margin: auto;
     }
 
-    p {
-        text-align: justify;
-    }
+   
 </style>
 
 <body>
@@ -75,8 +74,8 @@
     <div class="container-fluid mt-3">
 
         <div class="row">
-            <div class="col-sm-4 prueba d-none d-sm-block">
-                <div class="card">
+            <div class="col-sm-4  prueba d-none d-sm-block ">
+                <div class="card d-flex flex-column align-items-center">
                     <img src="assets/img/fCapAmeCar.jpg" class="img-thumbnail">
                 </div>
             </div>
@@ -110,7 +109,10 @@
                 </div>
                 <!-- FIN BOTÓN-->
 
-                <?php include "includes/valoracion.php"; ?>
+                <?php 
+                $nombre = "capitan";
+                crear($nombre);
+                ?>
 
             </div>
         </div>
@@ -129,7 +131,11 @@
                 <h3>Sinopsis</h3>
                 <p>La historia sigue a Carol Danvers mientras se convierte en uno de los héroes más poderosos del universo, cuando la Tierra se encuentra atrapada en medio de una guerra galáctica entre dos razas alienígenas. Situada en los años 90, 'Capitana Marvel' es una historia nueva de un período de tiempo nunca antes visto en la historia del Universo Cinematográfico de Marvel.</p>
                 <h3>Críticas</h3>
-                <?php include "includes/valoracion.php"; ?>
+                
+                    <?php 
+                    $nombre = "capitana";
+                    crear($nombre)?>
+                
             </div>
         </div>
 
