@@ -8,6 +8,7 @@ body{
     overflow-x:hidden;
 }
 
+
 .bg-primary{
     background-color:#006c75 !important;
 }
@@ -38,6 +39,8 @@ nav a{
 .nav-item{
     padding:5px 10px 0px 10px;
 }
+
+
 
 .dropdown-item{
     color:black !important;
