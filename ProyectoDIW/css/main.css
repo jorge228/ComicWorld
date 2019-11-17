@@ -29,8 +29,8 @@ h1,h2,h3,h4,h5{
 .chart {
     position: relative;
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
@@ -44,8 +44,8 @@ h1,h2,h3,h4,h5{
 
 .percent {
     display: inline-block;
-    line-height: 150px;
-    font-size:3em;
+    line-height: 140px;
+    font-size:2.5em;
     font-weight:bold;
     z-index: 2;
 }
@@ -56,9 +56,8 @@ h1,h2,h3,h4,h5{
 }
 
 .tituloPuntuacionPer{
-    font-family:'Roboto Condensed';
     font-weight:bold;
-    font-size:1.5em;
+    font-size:1.3em;
 }
 
 .c1, .c2, .c3, .c4, .c5, .c6{

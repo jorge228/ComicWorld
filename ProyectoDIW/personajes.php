@@ -20,11 +20,10 @@
     <!--Contenido-->
     <?php banner("assets/img/carrusel1.jpg");?>
     
+    <!--Estadisticas personaje-->
+    <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
+
     <div class="container-fluid p-0" id="contenidoPers">
-
-        <!--Estadisticas personaje-->
-        <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
-
         <!--Biografia y datos-->
         <div class="row mt-4 mx-2 pt-4 border-top">
 
