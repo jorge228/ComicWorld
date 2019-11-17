@@ -5,15 +5,15 @@
         <?php include("includes/contenidoHead.php"); ?>
     </head>
     <body>
-        <!--Prueba jorge-->
+
         <!--MENU DE NAVEGACION-->
         <?php include("includes/menuNav.php"); ?>
 
         <!--CARRUSEL-->
-        <div class="container-fluid mt-3 mb-5 p-0">
+        <div class="container-fluid mt-3 mb-5">
             <div class="row">
-                <div class="col-12 p-0">
-                    <div id="carrusel" class="carousel slide p-0" data-ride="carousel">
+                <div class="col-12">
+                    <div id="carrusel" class="carousel slide " data-ride="carousel">
                         <!--Imágenes del carrusel-->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
