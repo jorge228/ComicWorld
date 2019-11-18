@@ -21,4 +21,6 @@
 <!--Link CSS-->
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
+<!--Estilos personalizados  Bootstrap SASS -->
+<link rel="stylesheet" type="text/css" href="css/resume.css">
   
