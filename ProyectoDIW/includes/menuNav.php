@@ -1,70 +1,73 @@
 <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark main-nav">
-  
+    
     <div class="container-fluid">
-
+            
+        <!-- Navbar header Logo -->
+        <div class="navbar-header">
+            <a href="index.php"">
+                <img src="assets/img/logo.png" alt="logo" height="40px" width="40px">
+            </a>
+        </div>
+            
+            
         <!-- Elementos del menu -->
         <div class="collapse navbar-collapse" id="basicExampleNav">
-
-            <!-- Logo -->
-            <div class="navbar-header">
-                <img class="navbar-brand" src="assets/img/logo.png" onclick="location.reload()" alt="logo" height="18%" width="18%">
-            </div>
 
             <ul class="nav navbar-nav mx-auto">
 
                 <!-- Comics -->
                 <div class="nav-item dropdown">
-                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Comics
+                        COMICS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Marvel</a>
-                        <a class="dropdown-item" href="#">DC Comics</a>
-                        <a class="dropdown-item" href="#">Dark Horse</a>
-                        <a class="dropdown-item" href="#">Otros</a>
+                        <a class="dropdown-item" href="#">MARVEL</a>
+                        <a class="dropdown-item" href="#">DC COMICS</a>
+                        <a class="dropdown-item" href="#">DARK HORSE</a>
+                        <a class="dropdown-item" href="#">OTROS</a>
                     </div>
                 </div>
 
                 <!-- Peliculas -->
                 <div class="nav-item dropdown">
-                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Peliculas
+                        PELICULAS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Marvel</a>
-                        <a class="dropdown-item" href="#">DC Comics</a>
+                        <a class="dropdown-item" href="#">MARVEL</a>
+                        <a class="dropdown-item" href="#">DC COMICS</a>
                     </div>
                 </div>
 
                 <!-- Videojuegos -->
                 <div class="nav-item dropdown">
-                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Videojuegos
+                        VIDEOJUEGOS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="videojuegos/SagaArkham.php">Saga Arkham</a>
-                        <a class="dropdown-item" href="videojuegos/SagaMarvelvsCapcom.php">Saga Marvel vs Capcom</a>
-                        <a class="dropdown-item" href="videojuegos/SagaMarvelUltimateAlliance.php">Saga Marvel Ultimate Alliance</a>
-                        <a class="dropdown-item" href="videojuegos/SagaInjustice.php">Saga Injustice</a>
-                        <a class="dropdown-item" href="videojuegos/LegoMarvelSuperheroes.php">Lego Marvel Superheroes</a>
+                        <a class="dropdown-item" href="videojuegos/SagaArkham.php">SAGA ARKHAM</a>
+                        <a class="dropdown-item" href="videojuegos/SagaMarvelvsCapcom.php">SAGA MARVEL VS CAPCOM</a>
+                        <a class="dropdown-item" href="videojuegos/SagaMarvelUltimateAlliance.php">SAGA MARVEL ULTIMATE ALLIANCE</a>
+                        <a class="dropdown-item" href="videojuegos/SagaInjustice.php">SAGA INJUSTICE</a>
+                        <a class="dropdown-item" href="videojuegos/LegoMarvelSuperheroes.php">LEGO MARVEL SUPERHEROES</a>
                     </div>
                 </div>
 
                 <!-- Personajes -->
                 <div class="nav-item dropdown">
-                    <button style="margin-right:10px; border: 0px;" class="btn btn-secondary btn-sm bg-dark dropdown-toggle" type="button"
+                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Personajes
+                        PERSONAJES
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Spiderman</a>
-                        <a class="dropdown-item" href="#">Superman</a>
-                        <a class="dropdown-item" href="#">Iron Man</a>
-                        <a class="dropdown-item" href="#">Flash</a>
-                        <a class="dropdown-item" href="#">Wonder Woman</a>
+                        <a class="dropdown-item" href="#">SPIDERMAN</a>
+                        <a class="dropdown-item" href="#">SUPERMAN</a>
+                        <a class="dropdown-item" href="#">IRON MAN</a>
+                        <a class="dropdown-item" href="#">FLASH</a>
+                        <a class="dropdown-item" href="#">WONDER WOMAN</a>
                     </div>
                 </div>
 
@@ -81,4 +84,5 @@
         </button>
 
     </div>
+
 </nav>
