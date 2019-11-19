@@ -92,6 +92,10 @@ function getTamanios(){
         tamanios[0]=110;
         tamanios[1]=1.4;
     }
+    else if(window.matchMedia("(max-width: 992px)").matches){
+        tamanios[0]=120;
+        tamanios[1]=1.6;
+    }
 
     return tamanios;
 }
