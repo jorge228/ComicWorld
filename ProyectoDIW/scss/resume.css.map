@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECkBV,OAAO;CDjBhB",
+    "sources": [
+        "resume.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "resume.css"
+}
