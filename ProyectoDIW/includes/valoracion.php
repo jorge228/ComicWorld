@@ -14,4 +14,16 @@ function crear($pelicula)
 
 <?php
 }
+
+function nota($valor){?>
+    <div class="container p-0">
+        <div class="row m-0 text-center">
+            <div class="col-6 col-sm-4 col-lg-2 p-0">
+                <div class="chart" id="fuerza" data-percent="<?php echo ($valor*10) ?>"><span class="percent"><?php echo $valor ?></span></div>
+                <h2 class="tituloPuntuacionPer">NOTA</h2>
+            </div>
+        </div>
+    </div>
+<?php
+};
 ?>
