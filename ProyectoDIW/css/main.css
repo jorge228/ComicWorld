@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5{
 }
 
 
+
 /*/////////////////////CSS GRAFICOS CIRCULARES PARA PUNTUACIONES PERSONAJES/////////////////////////////*/
 .chart {
     position: relative;
@@ -55,6 +56,16 @@ h1,h2,h3,h4,h5{
     font-weight:bold;
 }
 
+.tablaDatos{
+    border-top:0px red;
+}
+
+@media (max-width:991px){
+    .tablaDatos{
+        border-top:1px solid lightgray !important;
+    }
+
+}
 
 /*////////////////////////////////////////////////////////////////////////////////////*/
 

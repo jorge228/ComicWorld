@@ -37,13 +37,8 @@
 
             </div>
 
-            <div class="col-lg-3 p-0">
+            <div class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
                 <table class="table table-sm border p-4">
-                    <thead class="bg-primary">
-                        <tr class="text-center">
-                            <th colspan="2"><h1 class="font-weight-bold">Datos</h1></th>
-                        </tr>
-                    </thead>
                     <thead class="thead-light">
                         <tr class="text-center">
                             <th colspan="2">Datos personales</th>

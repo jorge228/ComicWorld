@@ -4,7 +4,7 @@
             
         <!-- Navbar header Logo -->
         <div class="navbar-header">
-            <a href="index.php"">
+            <a href="index.php">
                 <img src="assets/img/logo.png" alt="logo" height="40px" width="40px">
             </a>
         </div>
@@ -17,7 +17,7 @@
 
                 <!-- Comics -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
+                    <button class="btn btn-secondary btn-sm bg-primary dropdown-toggle m-1" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         COMICS
                     </button>

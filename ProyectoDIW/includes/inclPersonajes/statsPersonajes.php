@@ -1,12 +1,11 @@
 <?php
 
 function estadisticas($fuerza, $resistencia, $intelecto, $agilidad, $combate, $velocidad){?>
-    <div class="container p-0">
-        <div class="row m-0 text-center">
+    <div class="container p-0 mt-2">
+        <div class="row m-0 text-center border">
             <div class="col-6 col-sm-4 col-lg-2 p-0">
                 <div class="chart" id="fuerza" data-percent="<?php echo ($fuerza*10) ?>"><span class="percent"><?php echo $fuerza ?></span></div>
                 <h2 class="tituloPuntuacionPer">FUERZA</h2>
-
             </div>
 
             <div class="col-6 col-sm-4 col-lg-2 p-0">
