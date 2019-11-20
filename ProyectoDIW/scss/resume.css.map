@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECkBV,OAAO;CDjBhB",
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECoBV,OAAO;CDnBhB",
     "sources": [
         "resume.scss",
         "_variables.scss"
