@@ -44,10 +44,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a title="imagen1" href="#capitanAmerica"><img src="assets/img/pCapitanAmerica.jpeg" class="d-block w-100" alt="imagen1" /></a>
+                    <a title="CapitanAmerica" href="#capitanAmerica"><img src="assets/img/pCapitanAmerica.jpeg" class="d-block w-100" alt="imagen1" /></a>
                 </div>
                 <div class="carousel-item">
-                    <a title="imagen1" href="#capitanaMarvel"><img src="assets/img/pCapitanaMarvel.jpg" class="d-block w-100" alt="imagen2"></a>
+                    <a title="CapitanaMarvel" href="#capitanaMarvel"><img src="assets/img/pCapitanaMarvel.jpg" class="d-block w-100" alt="imagen2"></a>
                 </div>
                 <!--
                 <div class="carousel-item">
@@ -74,14 +74,14 @@
     <div class="container-fluid mt-3">
 
         <div class="row">
-            <div class="col-sm-4  prueba d-none d-sm-block ">
+            <div class="col-sm-4 d-none d-sm-block ">
                 <div class="card d-flex flex-column align-items-center">
                     <img src="assets/img/fCapAmeCar.jpg" class="img-thumbnail">
                 </div>
             </div>
-            <div class="col-sm-8 prueba">
+            <div class="col-sm-8">
                 <A name="capitanAmerica">
-                    <h2 class="text-center font-weight-bold">Capitán América: El primer Vengador</h2>
+                    <h2 class="text-center font-weight-bold text-primary">Capitán América: El primer Vengador</h2>
                 </A>
                 <h3>Fecha de estreno</h3>
                 <p>5 de agosto de 2011</p>
@@ -92,7 +92,7 @@
               
 
                 <!-- INICIO BOTÓN-->
-                <p>                  
+                <p class="text-center">                  
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
@@ -109,18 +109,17 @@
                 </div>
                 <!-- FIN BOTÓN-->
 
-                <?php 
-                $nombre = "capitan";
-                crear($nombre);
-                ?>
-
+                <div class="text-center">
+                    <p>Envíanos tu valoración:</p>
+                    <?php $nombre = "capitan"; crear($nombre); ?>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4 prueba card-body d-none d-sm-block"> <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
+            <div class="col-sm-4 card-body d-none d-sm-block"> <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
             </div>
-            <div class="col-sm-8 prueba">
+            <div class="col-sm-8">
                 <A name="capitanaMarvel">
                     <h2>Capitana Marvel</h2>
                 </A>

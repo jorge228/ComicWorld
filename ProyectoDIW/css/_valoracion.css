@@ -1,17 +1,4 @@
 @charset "UTF-8";
-.btn-primary {
-  background-color: #006C75 !important; }
-
-.text-primary {
-  color: #006C75 !important; }
-
-h3 {
-  color: #006C75; }
-
-/*
-body{
-    background-color: $info;
-}*/
 .valoracion {
   position: relative;
   overflow: hidden;
@@ -24,11 +11,11 @@ body{
 .valoracion label {
   float: right;
   /* color estrella vacía */
-  color: #868e96 !important;
-  font-size: 25px; }
+  color: #c1b8b8;
+  font-size: 20px; }
 
 .valoracion label:hover,
 .valoracion label:hover ~ label,
 .valoracion input:checked ~ label {
   /* color estrella llena */
-  color: #FFF09D !important; }
+  color: #ffff00; }
