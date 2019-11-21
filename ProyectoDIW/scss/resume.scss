@@ -1,7 +1,2 @@
 @import "variables.scss";
-body{
-    background-color: $info;
-}
-h3{
-    color: $warning;
-  }
+@import "bootstrapOverrides.scss";
