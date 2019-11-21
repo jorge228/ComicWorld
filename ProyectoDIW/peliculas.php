@@ -81,7 +81,7 @@
             </div>
             <div class="col-sm-8 prueba">
                 <A name="capitanAmerica">
-                    <h2>Capitán América: El primer Vengador</h2>
+                    <h2 class="text-center font-weight-bold">Capitán América: El primer Vengador</h2>
                 </A>
                 <h3>Fecha de estreno</h3>
                 <p>5 de agosto de 2011</p>
