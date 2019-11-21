@@ -16,6 +16,10 @@ body{
     color:#006c75 !important;
 }
 
+.text-secondary{
+    color:#fff09d !important;
+}
+
 h1,h2,h3,h4,h5{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -67,6 +71,29 @@ h1,h2,h3,h4,h5{
 
 }
 
+.overlayBannerPers{
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */  
+}
+
+.bannerPers{
+    /* The image used */
+    background-image: url("../assets/img/spidermanPS4.jpg");
+
+    /* Set a specific height */
+    height:600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.tituloPers{
+    font-size:5em;
+}
 /*////////////////////////////////////////////////////////////////////////////////////*/
 
 
