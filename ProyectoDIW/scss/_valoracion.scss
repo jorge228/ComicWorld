@@ -1,0 +1,25 @@
+.valoracion {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.valoracion input {
+    position: absolute;
+    top: -100px;
+}
+
+
+.valoracion label {
+    float:right;
+    /* color estrella vacía */ 
+    color: $gray-600 !important;
+    font-size: 25px;
+}
+
+.valoracion label:hover,
+.valoracion label:hover~label,
+.valoracion input:checked~label {
+    /* color estrella llena */ 
+    color: $info !important;
+}
