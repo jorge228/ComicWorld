@@ -10,9 +10,9 @@
         <?php include("includes/menuNav.php"); ?>
 
         <!--CARRUSEL-->
-        <div class="container-fluid mt-3 mb-5">
+        <div class="container-fluid mb-5">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <div id="carrusel" class="carousel slide " data-ride="carousel">
                         <!--Imágenes del carrusel-->
                         <div class="carousel-inner">

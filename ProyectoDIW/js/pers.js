@@ -22,7 +22,7 @@ $(function() {
         if (!scroll){
 
             //Tiempo que tardara en cargarse el grafico
-            tiempo=450;
+            tiempo=350;
 
             //IDs de los graficos
             idsCharts=["fuerza", "resistencia", "intel", "agilidad", "combate", "velocidad"];
@@ -39,14 +39,14 @@ $(function() {
                         lineCap:'square',
                         scaleLength:'1',
                         animate:({
-                            duration:"450",
+                            duration:"350",
                             enabled:true
                         })
                     });
                 }, tiempo);
 
                 //Aumentar tiempo
-                tiempo+=450;
+                tiempo+=350;
             }
 
             scroll=true;

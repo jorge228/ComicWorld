@@ -1,0 +1,39 @@
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 130px;
+    font-size:2em;
+    font-weight:bold;
+    z-index: 2;
+}
+
+.tituloPuntuacionPer{
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+.tablaDatos{
+    border-top:0px red;
+}
+
+@media (max-width:991px){
+    .tablaDatos{
+        border-top:1px solid lightgray !important;
+    }
+
+}

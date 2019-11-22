@@ -25,7 +25,7 @@
 <script src="js/jquery.easypiechart.js"></script>
 
 <!--Estilos personalizados  Bootstrap SASS -->
-<!--<link rel="stylesheet" type="text/css" href="css/resume.css">-->
+<link rel="stylesheet" type="text/css" href="css/resume.css">
 
 <!--Link CSS-->
 <link rel="stylesheet" type="text/css" href="css/main.css">
