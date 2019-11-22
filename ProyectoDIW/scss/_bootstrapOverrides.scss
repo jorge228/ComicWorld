@@ -1,56 +1,56 @@
 /* Start Override colors */
 .bg-primary {
-  background-color: #656661 !important;
+  background-color: $primary !important;
 }
 
 .bg-secondary {
-  background-color: #8E8F8B !important;
+  background-color: $secondary !important;
 }
 
 .bg-success {
-  background-color: #323842 !important;
+  background-color: $success !important;
 }
 
 .bg-info {
-  background-color: #FFF09D !important;
-}
+  background-color: $info !important;
+} 
 
 .bg-warning {
-  background-color: #006C75 !important;
-}
-
+  background-color: $warning !important;
+}  
 /* End Override colors */
+
 /* Start Override btn-success */
 btn.btn-success {
-  background-color: #323842 !important;
+  background-color: $success !important;
 }
 
-button.btn.btn-success:hover {
-  background-color: #272c33 !important;
+button.btn.btn-success:hover { 
+  background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
   border: none !important;
   -webkit-box-shadow: none !important;
-}
+}  
 
-button.btn.btn-success:focus {
-  background-color: #272c33 !important;
+button.btn.btn-success:focus { 
+  background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
   -webkit-box-shadow: none !important;
-}
+} 
 
 button.btn.btn-success:active {
-  background-color: #003d42 !important;
+  background-color: darken($warning, 10%) !important;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
   -webkit-box-shadow: none !important;
 }
 
 button.btn.btn-success:visited {
-  background-color: #323842 !important;
+  background-color: $success !important;
   box-shadow: none;
   outline: none;
   border: none !important;
@@ -58,7 +58,7 @@ button.btn.btn-success:visited {
 }
 
 button.btn.btn-success:active:focus {
-  background-color: #323842 !important;
+  background-color: $success !important;
   box-shadow: none;
   outline: none;
   border: none !important;
@@ -66,5 +66,3 @@ button.btn.btn-success:active:focus {
 }
 
 /* End Override btn-success */
-
-/*# sourceMappingURL=resume.css.map */
