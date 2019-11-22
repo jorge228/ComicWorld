@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark main-nav">
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-success main-nav">
     
     <div class="container-fluid">
             
@@ -17,7 +17,8 @@
 
                 <!-- Comics -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-secondary btn-sm bg-primary dropdown-toggle m-1" type="button"
+
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         COMICS
                     </button>
@@ -31,7 +32,7 @@
 
                 <!-- Peliculas -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PELICULAS
                     </button>
@@ -43,22 +44,22 @@
 
                 <!-- Videojuegos -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VIDEOJUEGOS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="videojuegos/SagaArkham.php">SAGA ARKHAM</a>
-                        <a class="dropdown-item" href="videojuegos/SagaMarvelvsCapcom.php">SAGA MARVEL VS CAPCOM</a>
-                        <a class="dropdown-item" href="videojuegos/SagaMarvelUltimateAlliance.php">SAGA MARVEL ULTIMATE ALLIANCE</a>
-                        <a class="dropdown-item" href="videojuegos/SagaInjustice.php">SAGA INJUSTICE</a>
-                        <a class="dropdown-item" href="videojuegos/LegoMarvelSuperheroes.php">LEGO MARVEL SUPERHEROES</a>
+                        <a class="dropdown-item" href="videojuegos_Arkham.php">SAGA ARKHAM</a>
+                        <a class="dropdown-item" href="videojuegos_MarvelvsCapcom.php">SAGA MARVEL VS CAPCOM</a>
+                        <a class="dropdown-item" href="videojuegos_UltimateAlliance.php">SAGA MARVEL ULTIMATE ALLIANCE</a>
+                        <a class="dropdown-item" href="videojuegos_Injustice.php">SAGA INJUSTICE</a>
+                        <a class="dropdown-item" href="videojuegos_Lego.php">LEGO MARVEL SUPERHEROES</a>
                     </div>
                 </div>
 
                 <!-- Personajes -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-secondary btn-sm bg-dark dropdown-toggle m-1 border-0" type="button"
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PERSONAJES
                     </button>
