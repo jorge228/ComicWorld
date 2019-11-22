@@ -1,26 +1,26 @@
-<?php include("../includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include("../includes/contenidoHead.php"); ?>
+        <?php include("includes/contenidoHead.php"); ?>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
-        <?php include("../includes/menuNav.php"); ?>
+        <?php include("includes/menuNav.php"); ?>
 
         <div class="container-fluid">
 
             <!-- Banner -->
             <div class="row">
-                <div class="col">
-                    Banner
+                <div class="col-12">
+                    <img class="w-100 h-50" src="assets/img/Banner.jpg"/>
                 </div>
             </div>
 
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <div class="col-3 align-self-center text-center">               
-                    <img class="shadow-lg" src="../assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                    <img class="rounded shadow-lg" src="assets/img/videojuegos_5_001.png"/>
                 </div>
                 <div class="col-9">
                     <div class="shadow card p-3">
@@ -60,14 +60,14 @@
                     </div>
                 </div>
                 <div class="col-3 mx-auto align-self-center text-center">
-                    <img class="shadow-lg" src="../assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                    <img class="shadow-lg" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
                 </div>
             </div>
 
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <div class="col-3 align-self-center text-center">               
-                    <img class="shadow-lg" src="../assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                    <img class="shadow-lg" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
                 </div>
                 <div class="col-9">
                     <div class="shadow card p-3">
@@ -87,7 +87,7 @@
 
         </div>
 
-        <?php include("../includes/footer.php"); ?>
+        <?php include("includes/footer.php"); ?>
 
     </body>
 </html>

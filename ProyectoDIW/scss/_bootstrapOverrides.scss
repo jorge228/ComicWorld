@@ -1,3 +1,4 @@
+/* Start Override colors */
 .bg-primary {
   background-color: $primary !important;
 }
@@ -17,10 +18,51 @@
 .bg-warning {
   background-color: $warning !important;
 }  
+/* End Override colors */
 
-.btn-success{
-  background-color: $red !important;
+/* Start Override btn-success */
+btn.btn-success {
+  background-color: $success !important;
 }
-.btn-success:hover{ 
-  background-color: $red !important;
+
+button.btn.btn-success:hover { 
+  background-color:darken($success, 5%) !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}  
+
+button.btn.btn-success:focus { 
+  background-color:darken($success, 5%) !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: none !important;
+} 
+
+button.btn.btn-success:active {
+  background-color: darken($warning, 10%) !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: none !important;
 }
+
+button.btn.btn-success:visited {
+  background-color: $success !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+button.btn.btn-success:active:focus {
+  background-color: $success !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+/* End Override btn-success */
