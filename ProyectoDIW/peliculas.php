@@ -8,30 +8,13 @@
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </head>
 <title>MCU</title>
-<style>
-    .prueba {
-        border: 1px solid !important;
-    }
-
-    .colocacar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    }
-
-   
-</style>
-
 <body>
 
     <!--MENU DE NAVEGACION-->
     <?php include "includes/menuNav.php"; ?>
 
     <!--CARRUSEL-->
-    <div class="container-fluid p-0">
+    <header class="container-fluid p-0">
         <!-- intervalo 2000 y que no se pare si entra el ratón sobre la imagen-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
             <ol class="carousel-indicators">
@@ -67,17 +50,15 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+    </header>
 
     <!--CUERPO-->
 
     <div class="container-fluid mt-3">
 
         <div class="row">
-            <div class="col-sm-4 d-none d-sm-block ">
-                <div class="card d-flex flex-column align-items-center">
-                    <img src="assets/img/fCapAmeCar.jpg" class="img-thumbnail">
-                </div>
+        <div class="col-sm-4 card-body d-none d-sm-block"> 
+                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
             </div>
             <div class="col-sm-8">
                 <A name="capitanAmerica">
@@ -117,7 +98,8 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-4 card-body d-none d-sm-block"> <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
+            <div class="col-sm-4 card-body d-none d-sm-block"> 
+                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
             </div>
             <div class="col-sm-8">
                 <A name="capitanaMarvel">
@@ -147,3 +129,15 @@
 </body>
 
 </html>
+
+
+
+<!--
+    <div class="col-sm-4 d-none d-sm-block align-self-center text-center">
+                
+            class="img-thumbnail">
+            <img src="assets/img/imagenesTarjetas.PNG" 
+                
+                </div>
+
+-->
