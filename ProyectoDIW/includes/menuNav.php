@@ -4,7 +4,7 @@
             
         <!-- Navbar header Logo -->
         <div class="navbar-header">
-            <a href="index.php"">
+            <a href="index.php">
                 <img src="assets/img/logo.png" alt="logo" height="40px" width="40px">
             </a>
         </div>

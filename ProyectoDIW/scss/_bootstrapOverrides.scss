@@ -66,3 +66,9 @@ button.btn.btn-success:active:focus {
 }
 
 /* End Override btn-success */
+
+/* Start Override btn-primary */
+.btn-primary{
+  background-color: $warning  !important;
+}
+/* End Override btn-primary */
