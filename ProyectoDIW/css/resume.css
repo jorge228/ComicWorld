@@ -1,9 +1,72 @@
-@charset "UTF-8";
-.btn-primary {
-  background-color: #006C75 !important; }
 
-.text-primary {
-  color: #006C75 !important; }
+/* Start Override colors */
+.bg-primary {
+  background-color: #656661 !important;
+}
+
+.bg-secondary {
+  background-color: #8E8F8B !important;
+}
+
+.bg-success {
+  background-color: #323842 !important;
+}
+
+.bg-info {
+  background-color: #FFF09D !important;
+}
+
+.bg-warning {
+  background-color: #006C75 !important;
+}
+
+/* End Override colors */
+/* Start Override btn-success */
+btn.btn-success {
+  background-color: #323842 !important;
+}
+
+button.btn.btn-success:hover {
+  background-color: #272c33 !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+button.btn.btn-success:focus {
+  background-color: #272c33 !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: none !important;
+}
+
+button.btn.btn-success:active {
+  background-color: #003d42 !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: none !important;
+}
+
+button.btn.btn-success:visited {
+  background-color: #323842 !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+button.btn.btn-success:active:focus {
+  background-color: #323842 !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+
 
 h3 {
   color: #006C75; }
