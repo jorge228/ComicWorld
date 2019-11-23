@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Start Override colors */
 .bg-primary {
   background-color: #656661 !important;
@@ -65,121 +66,128 @@ button.btn.btn-success:active:focus {
   -webkit-box-shadow: none !important;
 }
 
+/* End Override btn-success */
+/* Start Override btn-primary */
+.btn-primary {
+  background-color: #006C75 !important;
+}
 
+/* End Override btn-primary */
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
 
-h3 {
-  color: #006C75; }
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", sans-serif;
+}
 
+/*- - - - - - - - - Start Banners General - - - - - - - - - */
+.banner {
+  /*  Altura del contenedor   */
+  height: 430px;
+  /*  Propiedades de la imagen de fondo   */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*  Los banners tienen un overlay con texto, debe ser absolute para 
+que se ponga encima del banner y ocupar el 100% de su tamanio */
+.overlayBanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-shadow: 5px 5px 10px #000000;
+}
+
+/*- - - - - - - - - End Banners General - - - - - - - - - */
+/*- - - - - - - - - Start Banners Pag Personajes - - - - - - - - - */
+.bannerPers {
+  /*  Imagen de fondo */
+  background-image: url("../assets/img/personajes_banner_spiderman.jpg");
+}
+
+/*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
+/*- - - - - - - - - Start Banners Pag Videojuegos - - - - - - - - - */
+.bannerVid {
+  /*  Imagen de fondo */
+  background-image: url("../assets/img/videojuegos_banner_lego.jpg");
+}
+
+/*- - - - - - - - - End Banners Pag Videojuegos - - - - - - - - - */
+/*- - - - - - - - - Start Corrector Barra - - - - - - - - - */
+/*  Al utilizar una barra fija que tiene un z-index mayor que 
+el contenido la barra oculta parte del contenido, mediante esta clase aplicada
+a un contenedor se arregla este problema añadiendo un espacio en blanco y dejand
+visible el contenido importante   */
+#correctorBarra {
+  height: 40px;
+}
+
+/*- - - - - - - - - End Corrector Barra - - - - - - - - - */
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.percent {
+  display: inline-block;
+  line-height: 130px;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.tituloPuntuacionPer {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.tablaDatos {
+  border-top: 0px red;
+}
+
+@media (max-width: 991px) {
+  .tablaDatos {
+    border-top: 1px solid lightgray !important;
+  }
+}
 .valoracion {
   position: relative;
   overflow: hidden;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .valoracion input {
   position: absolute;
-  top: -100px; }
+  top: -100px;
+}
 
 .valoracion label {
   float: right;
   /* color estrella vacía */
   color: #868e96 !important;
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 .valoracion label:hover,
 .valoracion label:hover ~ label,
 .valoracion input:checked ~ label {
   /* color estrella llena */
-  color: #FFF09D !important; }
+  color: #FFF09D !important;
+}
 
-  .bg-secondary {
-    background-color: #868e96 !important;
-  }
-  
-  .bg-success {
-    background-color: #68a745 !important;
-  }
-  
-  .bg-info {
-    background-color: #17a2b8 !important;
-  }
-  
-  .bg-warning {
-    background-color: #ffc107 !important;
-  }
-  
-  .btn-primary {
-    background-color: #dc3545 !important;
-  }
-  
-  .btn-primary :hover {
-    background-color: #dc3545 !important;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-family: 'Roboto Condensed', sans-serif;
-  }
-  
-  .bannerPers {
-    background-image: url("../assets/img/spidermanPS4.jpg");
-    height: 430px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  @media (max-width: 576px) {
-    .bannerPers {
-      height: 300px;
-    }
-  }
-  
-  .overlayBannerPers {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .chart {
-    position: relative;
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .percent {
-    display: inline-block;
-    line-height: 130px;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
-  }
-  
-  .tituloPuntuacionPer {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  .tablaDatos {
-    border-top: 0px red;
-  }
-  
-  @media (max-width: 991px) {
-    .tablaDatos {
-      border-top: 1px solid lightgray !important;
-    }
-  }
+/*# sourceMappingURL=resume.css.map */

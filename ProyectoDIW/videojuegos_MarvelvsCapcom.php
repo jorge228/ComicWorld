@@ -3,26 +3,23 @@
 <html>
     <head>
         <?php include("includes/contenidoHead.php"); ?>
+        <?php include("includes/banners.php"); ?>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
         <?php include("includes/menuNav.php"); ?>
 
+        <!-- Banner -->
+        <?php banner("Vid", "LEGO MARVEL SUPERHEROES");?>    
+        
         <div class="container-fluid">
-
-            <!-- Banner -->
-            <div class="row">
-                <div class="col">
-                    Banner
-                </div>
-            </div>
 
             <!-- Fila 1 -->
             <div class="row mt-4">
-                <div class="col-3 align-self-center text-center">               
-                    <img class="shadow-lg" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                <div class="col-12 col-sm-3 align-self-center text-center">               
+                    <img class="zoom rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-sm-9">
                     <div class="shadow card p-3">
                         <p>
                         <h2 class="text-center">Lego Batman 2: DC Super Héroes</h2>    
@@ -45,7 +42,7 @@
 
             <!-- Fila 2 -->
             <div class="row mt-4">
-                <div class="col-9">
+                <div class="col-12 col-sm-9 order-2 order-sm-1">
                     <div class="shadow card p-3">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -59,17 +56,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-3 mx-auto align-self-center text-center">
-                    <img class="shadow-lg" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                <div class="col-12 col-sm-3 order-1 order-sm-2 mx-auto align-self-center text-center">
+                    <img class="shadow-lg m-3" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
                 </div>
             </div>
 
             <!-- Fila 3 -->
             <div class="row mt-4">
-                <div class="col-3 align-self-center text-center">               
-                    <img class="shadow-lg" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                <div class="col-12 col-sm-3 align-self-center text-center">               
+                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-sm-9">
                     <div class="shadow card p-3">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
