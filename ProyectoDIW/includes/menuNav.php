@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-success main-nav">
+<nav class="navbar fixed-top navbar-expand-lg navbar-fixed-top navbar-dark bg-success main-nav">
     
     <div class="container-fluid">
             
@@ -87,3 +87,5 @@
     </div>
 
 </nav>
+
+<div id="correctorBarra"></div>

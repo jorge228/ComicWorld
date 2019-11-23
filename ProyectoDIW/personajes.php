@@ -18,7 +18,7 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Contenido-->
-    <?php banner();?>
+    <?php banner("Pers", "SPIDERMAN");?>
     
     <!--Estadisticas personaje-->
     <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
