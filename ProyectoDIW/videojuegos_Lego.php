@@ -16,27 +16,80 @@
 
             <!-- Fila 1 -->
             <div class="row mt-4">
-                <div class="col-12 col-sm-3 align-self-center text-center">               
-                    <img class="zoom rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
-                </div>
+                <aside class="col-12 col-sm-3 align-self-center text-center">               
+                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png" alt="imagen" />
+                </aside>
                 <div class="col-12 col-sm-9">
-                    <div class="shadow card p-3">
-                        <p>
-                        <h2 class="text-center">Lego Batman 2: DC Super Héroes</h2>    
-                        Lego Batman 2: DC Super Heroes es un videojuego de Lego y DC comics estrenado en junio de 2012,
-                         y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
-                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
-                         PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
-                          variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
-                        </p>
-                        <p>Desarrollado por: Traveller's Tales</p>
-                        <p>Fecha lanzamiento: 19 de junio de 2012</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                    <article class="shadow card p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <section>
+                                    <h2 class="text-center text-warning">
+                                    <p>
+                                    Lego Batman 2: DC Super Héroes</h2>    
+                                    Lego Batman 2: DC Super Heroes es un videojuego de Lego y DC comics estrenado en junio de 2012,
+                                    y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
+                                    comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
+                                    PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
+                                    variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                    </p>
+                                </section>
+
+                                <section>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>  
+                                </section>
+
+                                <section class="text-center">
+                                    <img class="rounded shadow-lg m-3 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                </section>
+
+                            </div>
+                            <div class="col-12 col-sm-4 align-self-center">
+                                <section class="text-center">
+                                                   
+                                    <table class="table table-sm border p-1 text-center mx-auto">                            
+                                        <tr>
+                                            <th class="bg-info text-warning">Desarrollado por:</th>
+                                            <td class="text-secondary">Traveller's Tales</td>    
+                                        </tr>
+                                        <tr>
+                                            <th class="bg-info text-warning">Fecha lanzamiento:</th>
+                                            <td class="text-secondary">19 de junio de 2012</td>    
+                                        </tr>
+                                        <tr>
+                                            <th class="bg-info text-warning">algo</th>
+                                            <td class="text-secondary">algo mas</td>    
+                                        </tr>
+                                    </table>    
+
+                                    <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5">
+                                        <label for="radio1">★</label>
+                                        <input id="radio2" type="radio" name="estrellas" value="4">
+                                        <label for="radio2">★</label>
+                                        <input id="radio3" type="radio" name="estrellas" value="3">
+                                        <label for="radio3">★</label>
+                                        <input id="radio4" type="radio" name="estrellas" value="2">
+                                        <label for="radio4">★</label>
+                                        <input id="radio5" type="radio" name="estrellas" value="1">
+                                        <label for="radio5">★</label>
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>  
+
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
                 </div>
             </div>
 
@@ -57,14 +110,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-3 order-1 order-sm-2 mx-auto align-self-center text-center">
-                    <img class="shadow-lg m-3" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
+                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png" alt="imagen" />
                 </div>
             </div>
 
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <div class="col-12 col-sm-3 align-self-center text-center">               
-                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
+                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png" alt="imagen" />
                 </div>
                 <div class="col-12 col-sm-9">
                     <div class="shadow card p-3">

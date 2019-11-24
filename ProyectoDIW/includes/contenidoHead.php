@@ -5,7 +5,7 @@
 	<meta name="keywords" content="" /> 
 <?php } ?>
 
-<meta charset="UTF-8">
+<meta charset="UTF-8" lang="ES">
 <meta name="viewport" content="width=device-width">
 
 <!--Links fuentes e iconos-->

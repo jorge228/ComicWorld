@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Start Override colors */
+/* Start Override Backgrounds colors */
 .bg-primary {
   background-color: #656661 !important;
 }
@@ -20,7 +20,17 @@
   background-color: #006C75 !important;
 }
 
-/* End Override colors */
+/* End Override Backgrounds colors */
+/* Start Override Text colors */
+.text-secondary {
+  color: #8E8F8B !important;
+}
+
+.text-warning {
+  color: #006C75 !important;
+}
+
+/* End Override Text colors */
 /* Start Override btn-success */
 btn.btn-success {
   background-color: #323842 !important;
@@ -127,6 +137,18 @@ visible el contenido importante   */
 }
 
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
+/*- - - - - - - - - Start Carousel - - - - - - - - - - */
+.imgCarousel {
+  height: 430px;
+}
+
+@media (max-width: 992px) {
+  .imgCarousel {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+/*- - - - - - - - - End Carousel - - - - - - - - - - - */
 .chart {
   position: relative;
   display: inline-block;
