@@ -37,8 +37,8 @@
                         PELICULAS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">MARVEL</a>
-                        <a class="dropdown-item" href="#">DC COMICS</a>
+                        <a class="dropdown-item" href="peliculas.php">MARVEL</a>
+                        <a class="dropdown-item" href="peliculas.php">DC COMICS</a>
                     </div>
                 </div>
 
