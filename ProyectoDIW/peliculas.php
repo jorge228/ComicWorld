@@ -5,6 +5,7 @@
 <head>
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
+    <script src='js/ancla.js'></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </head>
 <title>MCU</title>
@@ -28,10 +29,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a title="CapitanAmerica" href="#capitanAmerica"><img src="assets/img/pCapitanAmerica.jpeg" class="d-block w-100" alt="imagen1" /></a>
+                    <a title="CapitanAmerica" href="#capitanAmerica"><img src="assets/img/f992x375.jpg" class="d-block w-100" alt="imagen1" /></a>
                 </div>
                 <div class="carousel-item">
-                    <a title="CapitanaMarvel" href="#capitanaMarvel"><img src="assets/img/pCapitanaMarvel.jpg" class="d-block w-100" alt="imagen2"></a>
+                    <a title="CapitanaMarvel" href="#capitanaMarvel"><img src="assets/img/f992x375b.jpg" class="d-block w-100" alt="imagen2"></a>
                 </div>
                 <!--
                 <div class="carousel-item">
@@ -55,22 +56,23 @@
 
     <!--CUERPO-->
 
-    <section class="container-fluid mt-3">
-        <div class="row">
+    <section class="container-fluid">
+        <div class="row mt-4">
             <!--Para centarla: align-self-center-->
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top">
+                <!-- m3 -->
+                <img src="assets/img/f250x350.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
-                <A name="capitanAmerica">
+                <A name="capitanAmerica" class="ancla">
                     <h2 class="text-center font-weight-bold text-primary">Capitán América: El primer Vengador</h2>
                 </A>
                 <article>
-                    <h3>Fecha de estreno</h3>
+                    <h3 class="text-success">Fecha de estreno</h3>
                     <p>5 de agosto de 2011</p>
-                    <h3>Director</h3>
+                    <h3 class="text-success">Director</h3>
                     <p>Joe Johnston</p>
-                    <h3>Sinopsis</h3>
+                    <h3 class="text-success">Sinopsis</h3>
                     <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
                 </article>
                 <!-- INICIO BOTÓN-->
@@ -84,7 +86,7 @@
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
                         anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
-                    <div class="card card-body">
+                    <div class="card card-body bg-secondary">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
                         anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
@@ -102,10 +104,10 @@
         <!-- segunda película -->
         <div class="row">
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
+                <img src="assets/img/f250x350b.jpg" class="card-img-top img-thumbnail border-0">
             </div>
             <div class="col-sm-8">
-                <A name="capitanaMarvel">
+                <A name="capitanaMarvel" class="ancla">
                     <h2>Capitana Marvel</h2>
                 </A>
                 <h3>Fecha de estreno</h3>
