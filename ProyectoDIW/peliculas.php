@@ -8,13 +8,14 @@
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </head>
 <title>MCU</title>
+
 <body>
 
     <!--MENU DE NAVEGACION-->
     <?php include "includes/menuNav.php"; ?>
 
     <!--CARRUSEL-->
-    <header class="container-fluid p-0">
+    <section class="container-fluid p-0">
         <!-- intervalo 2000 y que no se pare si entra el ratón sobre la imagen-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
             <ol class="carousel-indicators">
@@ -50,30 +51,30 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </header>
+    </section>
 
     <!--CUERPO-->
 
-    <div class="container-fluid mt-3">
-
+    <section class="container-fluid mt-3">
         <div class="row">
-        <div class="col-sm-4 card-body d-none d-sm-block"> 
-                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
+            <!--Para centarla: align-self-center-->
+            <div class="col-sm-4 card-body d-none d-sm-block">
+                <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top">
             </div>
             <div class="col-sm-8">
                 <A name="capitanAmerica">
                     <h2 class="text-center font-weight-bold text-primary">Capitán América: El primer Vengador</h2>
                 </A>
-                <h3>Fecha de estreno</h3>
-                <p>5 de agosto de 2011</p>
-                <h3>Director</h3>
-                <p>Joe Johnston</p>
-                <h3>Sinopsis</h3>
-                <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
-              
-
+                <article>
+                    <h3>Fecha de estreno</h3>
+                    <p>5 de agosto de 2011</p>
+                    <h3>Director</h3>
+                    <p>Joe Johnston</p>
+                    <h3>Sinopsis</h3>
+                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                </article>
                 <!-- INICIO BOTÓN-->
-                <p class="text-center">                  
+                <p class="text-center">
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
@@ -88,17 +89,19 @@
                         anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
                 </div>
-                <!-- FIN BOTÓN-->
-
+                <!-- FIN BOTÓN -->
+                <!-- VALORACIÓN -->
                 <div class="text-center">
                     <p>Envíanos tu valoración:</p>
-                    <?php $nombre = "capitan"; crear($nombre); ?>
+                    <?php $nombre = "capitan";
+                    crear($nombre); ?>
                 </div>
             </div>
         </div>
 
+        <!-- segunda película -->
         <div class="row">
-            <div class="col-sm-4 card-body d-none d-sm-block"> 
+            <div class="col-sm-4 card-body d-none d-sm-block">
                 <img src="assets/img/pCapitanaMarvelCartelO.jpg" class="card-img-top img-thumbnail border-0">
             </div>
             <div class="col-sm-8">
@@ -112,15 +115,14 @@
                 <h3>Sinopsis</h3>
                 <p>La historia sigue a Carol Danvers mientras se convierte en uno de los héroes más poderosos del universo, cuando la Tierra se encuentra atrapada en medio de una guerra galáctica entre dos razas alienígenas. Situada en los años 90, 'Capitana Marvel' es una historia nueva de un período de tiempo nunca antes visto en la historia del Universo Cinematográfico de Marvel.</p>
                 <h3>Críticas</h3>
-                
-                    <?php 
-                    $nombre = "capitana";
-                    crear($nombre)?>
-                
+                <?php
+                $nombre = "capitana";
+                crear($nombre) ?>
             </div>
         </div>
+        <!-- fin segunda peli -->
 
-    </div>
+    </section>
 
 
     <!--FOOTER-->
