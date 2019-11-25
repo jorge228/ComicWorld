@@ -53,3 +53,27 @@ h1, h2, h3, h4, h5 {
         height: 40px;
     }
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
+
+/*- - - - - - - - - Start Footer - - - - - - - - - - */
+.footer{
+    font-size:17px;
+    background-image:url("../assets/img/footer.jpg");
+    background-size: cover;
+
+    h4{
+        color:$white;
+    }
+
+    ul{
+        list-style:none;
+    }
+
+    a{
+        color:inherit;
+        &:hover{
+            color:$white;
+        }
+    }
+}
+/*- - - - - - - - - End Footer - - - - - - - - - */
+
