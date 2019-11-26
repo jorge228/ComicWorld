@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Start Override Backgrounds colors */
+/* Start Override colors */
 .bg-primary {
   background-color: #656661 !important; }
 
@@ -15,16 +15,7 @@
 .bg-warning {
   background-color: #006C75 !important; }
 
-/* End Override Backgrounds colors */
-
-/* Start Override Text colors */
-.text-secondary {
-  color: #8E8F8B !important; }
-
-.text-warning {
-  color: #006C75 !important; }
-
-/* End Override Text colors */
+/* End Override colors */
 /* Start Override btn-success */
 btn.btn-success {
   background-color: #323842 !important; }
@@ -99,9 +90,7 @@ h1, h2, h3, h4, h5 {
 /*- - - - - - - - - Start Banners Pag Personajes - - - - - - - - - */
 .bannerPers {
   /*  Imagen de fondo */
-
-  background-image: url("../assets/img/carrusel1.jpg"); }
-
+  background-image: url("../assets/img/personajes_banner_spiderman.jpg"); }
 
 /*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
 /*- - - - - - - - - Start Banners Pag Videojuegos - - - - - - - - - */
@@ -110,6 +99,12 @@ h1, h2, h3, h4, h5 {
   background-image: url("../assets/img/videojuegos_banner_lego.jpg"); }
 
 /*- - - - - - - - - End Banners Pag Videojuegos - - - - - - - - - */
+/*- - - - - - - - - Start Banners Pag Comic - - - - - - - - - */
+.bannerCom {
+  /*  Imagen de fondo */
+  background-image: url("../assets/img/comic_marvel_3.png"); }
+
+/*- - - - - - - - - End Banners Pag Comic - - - - - - - - - */
 /*- - - - - - - - - Start Corrector Barra - - - - - - - - - */
 /*  Al utilizar una barra fija que tiene un z-index mayor que 
     el contenido la barra oculta parte del contenido, mediante esta clase aplicada
@@ -119,35 +114,15 @@ h1, h2, h3, h4, h5 {
   height: 40px; }
 
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
+/*- - - - - - - - - Start Anchor - - - - - - - - - - */
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden; }
 
-/*- - - - - - - - - Start Footer - - - - - - - - - - */
-.footer {
-  font-size: 17px;
-  background-image: url("../assets/img/footer.jpg");
-  background-size: cover; }
-  .footer h4 {
-    color: #fff; }
-  .footer ul {
-    list-style: none; }
-  .footer a {
-    color: inherit; }
-    .footer a:hover {
-      color: #fff; }
-
-/*- - - - - - - - - End Footer - - - - - - - - - */
-
-/*- - - - - - - - - Start Carousel - - - - - - - - - - */
-.imgCarousel {
-  height: 430px; }
-
-@media (max-width: 992px) {
-  .imgCarousel {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: 50% 50%;
-    object-position: 50% 50%; } }
-
-/*- - - - - - - - - End Carousel - - - - - - - - - - - */
+/*- - - - - - - - - End Anchor - - - - - - - - - */
 .chart {
   position: relative;
   display: inline-block;

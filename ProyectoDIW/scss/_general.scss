@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
     .banner {
         /*  Altura del contenedor   */
         height:430px;
-        
+
         /*  Propiedades de la imagen de fondo   */
         background-attachment: fixed; 
         background-repeat: no-repeat; 
@@ -43,6 +43,13 @@ h1, h2, h3, h4, h5 {
         background-image: url("../assets/img/videojuegos_banner_lego.jpg");
     }
 /*- - - - - - - - - End Banners Pag Videojuegos - - - - - - - - - */
+
+/*- - - - - - - - - Start Banners Pag Comic - - - - - - - - - */
+    .bannerCom{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/comic_marvel_3.png");
+    }
+/*- - - - - - - - - End Banners Pag Comic - - - - - - - - - */
 
 /*- - - - - - - - - Start Corrector Barra - - - - - - - - - */
     /*  Al utilizar una barra fija que tiene un z-index mayor que 
@@ -93,4 +100,15 @@ h1, h2, h3, h4, h5 {
     }
 }
 /*- - - - - - - - - End Footer - - - - - - - - - */
+
+
+/*- - - - - - - - - Start Anchor - - - - - - - - - - */
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden; }
+  
+  /*- - - - - - - - - End Anchor - - - - - - - - - */
 
