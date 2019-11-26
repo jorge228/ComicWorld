@@ -56,18 +56,22 @@ h1, h2, h3, h4, h5 {
 
 /*- - - - - - - - - Start Footer - - - - - - - - - - */
 .footer{
-    font-size:17px;
+    font-size:15px;
     background-image:url("../assets/img/footer.jpg");
     background-size: cover;
 
+    //Titulos
     h4{
+        font-size:1.2em;
         color:$white;
     }
 
+    //Listas
     ul{
         list-style:none;
     }
 
+    //Links
     a{
         color:inherit;
         &:hover{

@@ -1,10 +1,10 @@
 <footer class="footer">
-    <div class="container-fluid mt-5 text-secondary pt-3 pt-md-5">
+    <div class="container-fluid mt-5 text-secondary pt-3 pt-md-4">
         <div class="row">
 
             <!--Icono CW-->
             <div class="col-12 col-md-3 text-center">
-                <img class="img-fluid" src="assets/img/logo.png" width="150px">
+                <img class="img-fluid" src="assets/img/logo.png" width="125px">
             </div>
 
             <!--Navegacion-->
@@ -22,7 +22,7 @@
             </div>
             
             <!--Sobre nosotros-->
-            <div class="col-6 col-md-3 px-0 pt-5 pt-md-0">
+            <div class="col-6 col-md-3 px-0 pt-5 pt-md-0 pr-4 text-center">
                 <h4> Sobre nosotros </h4>
                 <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaiones Web con fines meramente académicos</p>
             </div>

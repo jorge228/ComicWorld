@@ -17,13 +17,15 @@
     <!--MENU DE NAVEGACION-->
     <?php include("includes/menuNav.php"); ?>
 
-    <!--Contenido-->
+    <!--Banner-->
     <?php banner("Pers", "PERSONAJE");?>
     
     <!--Estadisticas personaje-->
     <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
 
+    <!--Cuerpo-->
     <section class="container-fluid p-0" id="contenidoPers">
+
         <!--Biografia y datos-->
         <div class="row mt-4 mx-2 pt-4 border-top">
 
@@ -33,7 +35,7 @@
             </div>
 
             <!--Contenido biografia-->
-            <section class="col-lg-7 px-5">
+            <section class="col-lg-7 px-md-5">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 
                 <article>
