@@ -54,6 +54,19 @@ h1, h2, h3, h4, h5 {
     }
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
 
+/*- - - - - - - - - Start Carousel - - - - - - - - - - */
+    .imgCarousel {
+        height: 430px;
+    }
+    @media (max-width: 992px) {
+        .imgCarousel {
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+/*- - - - - - - - - End Carousel - - - - - - - - - - - */
+
 /*- - - - - - - - - Start Footer - - - - - - - - - - */
 .footer{
     font-size:15px;
