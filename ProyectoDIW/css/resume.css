@@ -16,6 +16,7 @@
   background-color: #006C75 !important; }
 
 /* End Override Backgrounds colors */
+
 /* Start Override Text colors */
 .text-secondary {
   color: #8E8F8B !important; }
@@ -98,7 +99,9 @@ h1, h2, h3, h4, h5 {
 /*- - - - - - - - - Start Banners Pag Personajes - - - - - - - - - */
 .bannerPers {
   /*  Imagen de fondo */
-  background-image: url("../assets/img/personajes_banner_spiderman.jpg"); }
+
+  background-image: url("../assets/img/carrusel1.jpg"); }
+
 
 /*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
 /*- - - - - - - - - Start Banners Pag Videojuegos - - - - - - - - - */
@@ -116,6 +119,23 @@ h1, h2, h3, h4, h5 {
   height: 40px; }
 
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
+
+/*- - - - - - - - - Start Footer - - - - - - - - - - */
+.footer {
+  font-size: 17px;
+  background-image: url("../assets/img/footer.jpg");
+  background-size: cover; }
+  .footer h4 {
+    color: #fff; }
+  .footer ul {
+    list-style: none; }
+  .footer a {
+    color: inherit; }
+    .footer a:hover {
+      color: #fff; }
+
+/*- - - - - - - - - End Footer - - - - - - - - - */
+
 /*- - - - - - - - - Start Carousel - - - - - - - - - - */
 .imgCarousel {
   height: 430px; }

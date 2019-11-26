@@ -17,26 +17,45 @@
     <!--MENU DE NAVEGACION-->
     <?php include("includes/menuNav.php"); ?>
 
-    <!--Contenido-->
-    <?php banner("Pers", "SPIDERMAN"); ?>
+    <!--Banner-->
+    <?php banner("Pers", "PERSONAJE");?>
     
     <!--Estadisticas personaje-->
     <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
 
+    <!--Cuerpo-->
     <section class="container-fluid p-0" id="contenidoPers">
+
         <!--Biografia y datos-->
         <div class="row mt-4 mx-2 pt-4 border-top">
 
+            <!--Titulo-->
             <div class="col-lg-2 pr-3">
                 <h1 class="text-center font-weight-bold text-primary">BIOGRAFÍA</h1>
             </div>
 
-            <article class="col-lg-7 px-5">
-                <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy # 15 (10 de agosto de 1962), en la Edad de Plata de los cómics. Aparece en los cómics estadounidenses publicados por Marvel Comics, así como en varias películas, programas de televisión y adaptaciones de videojuegos ambientadas en el Universo Marvel. En las historias, Spider-Man es el alias de Peter Parker, un huérfano criado por su tía May y su tío Ben en la Ciudad de Nueva York después de que sus padres Richard y Mary Parker murieron en un accidente aéreo. Lee y Ditko tuvieron que lidiar con los problemas de la adolescencia y los problemas financieros, y lo acompañaron con muchos personajes de apoyo, como J. Jonah Jameson, Flash Thompson, Harry Osborn, los intereses románticos, Gwen Stacy y Mary Jane Watson, y enemigos como el Doctor Octopus, Kingpin, Duende Verde y Venom. Su historia de origen lo tiene adquiriendo habilidades relacionadas con la araña después de un mordisco de una araña radioactiva; estos incluyen aferrarse a las superficies, 
-                disparar telarañas desde dispositivos montados en la muñeca y detectar el peligro con su "sentido arácnido".</p>
+            <!--Contenido biografia-->
+            <section class="col-lg-7 px-md-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                
+                <article>
+                    <h3 class="font-weight-bold">Seccion 1</h3>
+                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc lacus, pharetra vitae felis in, semper dictum tortor. Cras mollis urna ultricies lacus interdum, et sollicitudin ante rhoncus. Maecenas scelerisque nibh eget venenatis suscipit. Suspendisse vitae pharetra neque. Aliquam porta velit tortor, ac feugiat ipsum congue nec. Suspendisse iaculis molestie ultricies. Morbi a dapibus urna. Cras vel euismod orci, sit amet gravida nulla. Etiam scelerisque nibh rutrum sodales volutpat. Pellentesque a consectetur enim. Nullam vel facilisis massa. Suspendisse vitae lacinia mauris. In dapibus diam porttitor luctus tristique. Proin orci magna, tincidunt eget lectus id, fringilla vehicula ipsum.</p>
 
-            </article>
+                    <p>Nunc mauris turpis, convallis eget lectus sed, facilisis gravida mi. Aenean eget accumsan odio. Maecenas pulvinar cursus arcu, at eleifend purus dignissim eu. Vestibulum eu turpis aliquam, suscipit dui in, tempor sapien. Vivamus sodales et quam ut suscipit. Nullam at nunc eu erat consectetur feugiat. Vestibulum ac ullamcorper turpis, sed vehicula leo. Curabitur quis ullamcorper risus. Integer diam est, maximus id vehicula quis, aliquam a felis. Suspendisse potenti. Aenean pulvinar ipsum felis, et aliquet urna commodo sed. Ut suscipit ullamcorper felis, a condimentum ex blandit ac. Aliquam id mi semper, faucibus eros quis, ultricies diam. Curabitur vel consequat mi.</p>
+                </article>
 
+                <article>
+                    <h3 class="font-weight-bold">Seccion 2</h3>
+                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
+                    <p>Ut laoreet euismod dolor in pellentesque. Pellentesque venenatis pulvinar lorem eget pellentesque. In dapibus lectus tempus faucibus cursus. Vivamus cursus ullamcorper nisi vitae tempus. Mauris porta sapien mi, eget vestibulum turpis consectetur ut. Nunc consectetur, tellus sed sollicitudin pellentesque, felis odio malesuada enim, et convallis massa dui id purus. Proin a venenatis risus. Ut non turpis urna. In molestie risus eget risus fermentum, vitae faucibus ligula pulvinar. Maecenas volutpat neque vestibulum leo tincidunt faucibus. Nulla neque justo, consequat quis tristique vel, porta eget enim. Sed a laoreet arcu.</p>
+
+                    <p>Nulla ut quam mattis, consequat mauris a, pulvinar ex. Vestibulum id eros lobortis lectus dictum malesuada. Morbi sed neque ut massa dictum gravida sed eu libero. Etiam nec egestas erat. Pellentesque dapibus lacus vel vulputate dapibus. Curabitur accumsan fringilla efficitur. Maecenas ullamcorper aliquam bibendum. Duis eget vestibulum mauris, sed lacinia justo. In quis dolor rhoncus, congue urna efficitur, bibendum nisl. Donec auctor, metus in eleifend dignissim, turpis velit maximus odio, a hendrerit tellus tellus sit amet nisl. Cras ac diam eget quam egestas tincidunt vel vitae urna. Maecenas eu maximus dui. Suspendisse potenti. Nullam consectetur interdum massa non auctor.</p>
+                </article>
+            </section>
+
+            <!--Tabla datos-->
             <aside class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
                 <table class="table table-sm border p-4">
                     <thead class="thead-light">
