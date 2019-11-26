@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-primary">BIOGRAFÍA</h1>
+                <h1 class="text-center font-weight-bold text-warning">BIOGRAFÍA</h1>
             </div>
 
             <!--Contenido biografia-->
@@ -57,56 +57,51 @@
 
             <!--Tabla datos-->
             <aside class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
-                <table class="table table-sm border p-4">
-                    <thead class="thead-light">
+                <table class="table  table-borderless table-lg p-4">
+                    <thead>
                         <tr class="text-center">
-                            <th colspan="2">Datos personales</th>
+                            <th colspan="2"><h3 class="font-weight-bold text-light">Perfil</h3></th>
                         </tr>
                     </thead>
                     <tr>
                         <th>Nombre</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Identidad</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Ojos</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Edad</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
-                    <thead class="thead-light">
-                        <tr class="text-center">
-                            <th colspan="2">Cómics</th>
-                        </tr>
-                    </thead>
                     <tr>
                         <th>Universo</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>$NombrePers</th>
+                        <td>N/A</th>
                     </tr>
 
                 </table>
