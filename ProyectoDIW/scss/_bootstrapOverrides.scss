@@ -1,4 +1,4 @@
-/* Start Override Backgrounds colors */
+/* Start Override colors */
 .bg-primary {
   background-color: $primary !important;
 }
@@ -18,18 +18,7 @@
 .bg-warning {
   background-color: $warning !important;
 }  
-/* End Override Backgrounds colors */
-
-/* Start Override Text colors */
-.text-secondary {
-  color: $secondary !important;
-}
-
-.text-warning {
-  color: $warning !important;
-}  
-/* End Override Text colors */
-
+/* End Override colors */
 
 /* Start Override btn-success */
 btn.btn-success {
@@ -48,7 +37,7 @@ button.btn.btn-success:focus {
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgb(255, 255, 255) !important;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
   -webkit-box-shadow: none !important;
 } 
 
@@ -56,7 +45,7 @@ button.btn.btn-success:active {
   background-color: darken($warning, 10%) !important;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgb(255, 255, 255) !important;
+  border: 1px solid rgb(255, 255, 255, 0.25) !important;
   -webkit-box-shadow: none !important;
 }
 
