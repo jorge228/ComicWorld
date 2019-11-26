@@ -18,7 +18,19 @@
 .bg-warning {
   background-color: $warning !important;
 }  
-/* End Override colors */
+
+/* End Override Backgrounds colors */
+
+/* Start Override Text colors */
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-warning {
+  color: $warning !important;
+}  
+/* End Override Text colors */
 
 /* Start Override btn-success */
 btn.btn-success {

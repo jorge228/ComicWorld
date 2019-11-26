@@ -61,6 +61,47 @@ h1, h2, h3, h4, h5 {
     }
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
 
+/*- - - - - - - - - Start Carousel - - - - - - - - - - */
+    .imgCarousel {
+        height: 430px;
+    }
+    @media (max-width: 992px) {
+        .imgCarousel {
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+/*- - - - - - - - - End Carousel - - - - - - - - - - - */
+
+/*- - - - - -- - - Start Footer - - - - - - - - - - */
+.footer{
+    font-size:15px;
+    background-image:url("../assets/img/footer.jpg");
+    background-size: cover;
+
+    //Titulos
+    h4{
+        font-size:1.2em;
+        color:$white;
+    }
+
+    //Listas
+    ul{
+        list-style:none;
+    }
+
+    //Links
+    a{
+        color:inherit;
+        &:hover{
+            color:$white;
+        }
+    }
+}
+/*- - - - - - - - - End Footer - - - - - - - - - */
+
+
 /*- - - - - - - - - Start Anchor - - - - - - - - - - */
 .ancla:before {
     display: block;
@@ -70,3 +111,4 @@ h1, h2, h3, h4, h5 {
     visibility: hidden; }
   
   /*- - - - - - - - - End Anchor - - - - - - - - - */
+
