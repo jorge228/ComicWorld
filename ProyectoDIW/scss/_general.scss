@@ -94,3 +94,12 @@ h1, h2, h3, h4, h5 {
 }
 /*- - - - - - - - - End Footer - - - - - - - - - */
 
+/*- - - - - - - - - Start Anchor - - - - - - - - - - */
+.ancla:before {       
+    display: block;       
+    content: " ";     
+    margin-top: -60px;       
+    height: 60px;       
+    visibility: hidden; 
+  } 
+  /*- - - - - - - - - End Anchor - - - - - - - - - */

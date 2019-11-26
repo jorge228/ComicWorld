@@ -1,4 +1,4 @@
-$('.navbar-nav li a').click(function(e){
+$('.prueba a').click(function(e){
     // Evitamos que se haga el scroll
     e.preventDefault();
 
@@ -14,7 +14,7 @@ $('.navbar-nav li a').click(function(e){
     // Hacemos el efecto scroll y le restamos algunos pixeles, en este caso 180
     $('html, body').animate({scrollTop: (position.top - 180)}, 0);
 });
-
+/*
 $(".dropdown-menu a[href^='#']").on('click', function(e) {
     // prevent default anchor click behavior
     e.preventDefault();
@@ -24,4 +24,4 @@ $(".dropdown-menu a[href^='#']").on('click', function(e) {
         scrollTop: $(this.hash).offset().top - 60
       }, 300, function(){
       });
- });
+ });*/

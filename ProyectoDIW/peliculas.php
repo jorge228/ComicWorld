@@ -5,8 +5,6 @@
 <head>
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
-    <script src='js/ancla.js'></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </head>
 <title>MCU</title>
 
@@ -64,9 +62,9 @@
                 <img src="assets/img/f250x350.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
-                <A name="capitanAmerica" class="ancla">
+                <a name="capitanAmerica" class="ancla" >
                     <h2 class="text-center font-weight-bold text-primary">Capitán América: El primer Vengador</h2>
-                </A>
+                </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
                     <p>5 de agosto de 2011</p>
@@ -96,7 +94,7 @@
                 <div class="text-center">
                     <p>Envíanos tu valoración:</p>
                     <?php $nombre = "capitan";
-                    crear($nombre); ?>
+                    crear($nombre) ?>
                 </div>
             </div>
         </div>
