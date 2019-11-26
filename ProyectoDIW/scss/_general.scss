@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
     .banner {
         /*  Altura del contenedor   */
         height:430px;
-        
+
         /*  Propiedades de la imagen de fondo   */
         background-attachment: fixed; 
         background-repeat: no-repeat; 
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 /*- - - - - - - - - Start Banners Pag Personajes - - - - - - - - - */
     .bannerPers {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/carrusel1.jpg");
+        background-image: url("../assets/img/personajes_banner_spiderman.jpg");
     }
 /*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
 
@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5 {
     }
 /*- - - - - - - - - End Banners Pag Videojuegos - - - - - - - - - */
 
+/*- - - - - - - - - Start Banners Pag Comic - - - - - - - - - */
+    .bannerCom{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/comic_marvel_3.png");
+    }
+/*- - - - - - - - - End Banners Pag Comic - - - - - - - - - */
+
 /*- - - - - - - - - Start Corrector Barra - - - - - - - - - */
     /*  Al utilizar una barra fija que tiene un z-index mayor que 
     el contenido la barra oculta parte del contenido, mediante esta clase aplicada
@@ -53,53 +60,3 @@ h1, h2, h3, h4, h5 {
         height: 40px;
     }
 /*- - - - - - - - - End Corrector Barra - - - - - - - - - */
-
-/*- - - - - - - - - Start Carousel - - - - - - - - - - */
-    .imgCarousel {
-        height: 430px;
-    }
-    @media (max-width: 992px) {
-        .imgCarousel {
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-    }
-
-/*- - - - - - - - - End Carousel - - - - - - - - - - - */
-
-/*- - - - - - - - - Start Footer - - - - - - - - - - */
-.footer{
-    font-size:15px;
-    background-image:url("../assets/img/footer.jpg");
-    background-size: cover;
-
-    //Titulos
-    h4{
-        font-size:1.2em;
-        color:$white;
-    }
-
-    //Listas
-    ul{
-        list-style:none;
-    }
-
-    //Links
-    a{
-        color:inherit;
-        &:hover{
-            color:$white;
-        }
-    }
-}
-/*- - - - - - - - - End Footer - - - - - - - - - */
-
-/*- - - - - - - - - Start Anchor - - - - - - - - - - */
-.ancla:before {       
-    display: block;       
-    content: " ";     
-    margin-top: -60px;       
-    height: 60px;       
-    visibility: hidden; 
-  } 
-  /*- - - - - - - - - End Anchor - - - - - - - - - */
