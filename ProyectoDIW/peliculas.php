@@ -63,7 +63,7 @@
             </div>
             <div class="col-sm-8">
                 <a name="peli1" class="ancla">
-                    <h2 class="text-center font-weight-bold text-primary">TÍTULO PELÍCULA 1</h2>
+                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 1</h2>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
@@ -75,7 +75,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa1" aria-expanded="false">
+                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa1" aria-expanded="false">
                         Críticas
                     </button>
                 </p>
@@ -109,7 +109,7 @@
             </div>
             <div class="col-sm-8">
                 <a name="peli2" class="ancla">
-                    <h2 class="text-center font-weight-bold text-primary">TÍTULO PELÍCULA 2</h2>
+                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 2</h2>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
@@ -121,7 +121,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa2" aria-expanded="false" aria-controls="colapsa2">
+                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa2" aria-expanded="false" aria-controls="colapsa2">
                         Críticas
                     </button>
                 </p>
@@ -153,7 +153,7 @@
             </div>
             <div class="col-sm-8">
                 <a name="peli3" class="ancla">
-                    <h2 class="text-center font-weight-bold text-primary">TÍTULO PELÍCULA 3</h2>
+                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 3</h2>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
@@ -165,7 +165,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa3" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa3" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
                 </p>
@@ -197,7 +197,7 @@
             </div>
             <div class="col-sm-8">
                 <a name="peli4" class="ancla">
-                    <h2 class="text-center font-weight-bold text-primary">TÍTULO PELÍCULA 4</h2>
+                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 4</h2>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
@@ -209,7 +209,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa4" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa4" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
                 </p>
@@ -241,7 +241,7 @@
             </div>
             <div class="col-sm-8">
                 <a name="peli5" class="ancla">
-                    <h2 class="text-center font-weight-bold text-primary">TÍTULO PELÍCULA 5</h2>
+                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 5</h2>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
@@ -253,7 +253,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
+                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
                         Críticas
                     </button>
                 </p>

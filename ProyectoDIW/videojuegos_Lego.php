@@ -4,6 +4,7 @@
     <head>
         <?php include("includes/contenidoHead.php"); ?>
         <?php include("includes/banners.php"); ?>
+        <?php include("includes/valoracion.php"); ?>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
@@ -65,19 +66,11 @@
                                             <td class="text-secondary">algo mas</td>    
                                         </tr>
                                     </table>    
-
-                                    <p class="clasificacion">
-                                        <input id="radio1" type="radio" name="estrellas" value="5">
-                                        <label for="radio1">★</label>
-                                        <input id="radio2" type="radio" name="estrellas" value="4">
-                                        <label for="radio2">★</label>
-                                        <input id="radio3" type="radio" name="estrellas" value="3">
-                                        <label for="radio3">★</label>
-                                        <input id="radio4" type="radio" name="estrellas" value="2">
-                                        <label for="radio4">★</label>
-                                        <input id="radio5" type="radio" name="estrellas" value="1">
-                                        <label for="radio5">★</label>
-                                    </p>
+                                   
+                                    <?php
+                                        $nombre = "v1";
+                                        crear($nombre);
+                                    ?>
 
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

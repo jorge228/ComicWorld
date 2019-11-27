@@ -12,11 +12,11 @@
                 <div class="w-50 m-auto">
                     <h4> Navegación </h4>
                     <ul class="p-0">
-                        <lI><a href="index.php">Inicio</a></li>
-                        <lI><a href="index.php">Cómics</a></li>
-                        <lI><a href="index.php">Películas</a></li>
-                        <lI><a href="index.php">Videojuegos</a></li>
-                        <lI><a href="index.php">Personajes</a></li>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="comic_Marvel.php">Cómics</a></li>
+                        <li><a href="peliculas.php">Películas</a></li>
+                        <li><a href="videojuegos_Lego.php">Videojuegos</a></li>
+                        <li><a href="personajes.php">Personajes</a></li>
                     </ul>
                 </div>
             </div>

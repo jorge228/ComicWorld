@@ -27,9 +27,15 @@
   color: $secondary !important;
 }
 
+.text-success {
+  color: $success !important;
+}  
+
 .text-warning {
   color: $warning !important;
 }  
+
+
 /* End Override Text colors */
 
 /* Start Override btn-success */
@@ -78,9 +84,9 @@ button.btn.btn-success:active:focus {
 }
 /* End Override btn-success */
 
-/* Start Override btn-primary */
-.btn-primary{
+/* Start Override btn-warning */
+.btn-warning {
   background-color: $warning  !important;
 }
-/* End Override btn-primary */
+/* End Override btn-warning */
 

@@ -23,10 +23,10 @@
                         COMICS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">MARVEL</a>
-                        <a class="dropdown-item" href="#">DC COMICS</a>
-                        <a class="dropdown-item" href="#">DARK HORSE</a>
-                        <a class="dropdown-item" href="#">OTROS</a>
+                        <a class="dropdown-item" href="comic_Marvel.php">MARVEL</a>
+                        <a class="dropdown-item" href="comic_Marvel.php">DC COMICS</a>
+                        <a class="dropdown-item" href="comic_Marvel.php">DARK HORSE</a>
+                        <a class="dropdown-item" href="comic_Marvel.php">OTROS</a>
                     </div>
                 </div>
 
@@ -64,11 +64,11 @@
                         PERSONAJES
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">SPIDERMAN</a>
-                        <a class="dropdown-item" href="#">SUPERMAN</a>
-                        <a class="dropdown-item" href="#">IRON MAN</a>
-                        <a class="dropdown-item" href="#">FLASH</a>
-                        <a class="dropdown-item" href="#">WONDER WOMAN</a>
+                        <a class="dropdown-item" href="personajes.php">SPIDERMAN</a>
+                        <a class="dropdown-item" href="personajes.php">SUPERMAN</a>
+                        <a class="dropdown-item" href="personajes.php">IRON MAN</a>
+                        <a class="dropdown-item" href="personajes.php">FLASH</a>
+                        <a class="dropdown-item" href="personajes.php">WONDER WOMAN</a>
                     </div>
                 </div>
 
@@ -76,7 +76,9 @@
         </div>
 
         <!-- Login button -->
-        <button class="btn fas fa-user text-white float-right"/>
+        <button class="btn float-right">
+            <a href="formulario.php"><i class="fas fa-user text-white"></i></a>
+        </button>
 
         <!-- Collapse button -->
         <button class="navbar-toggler ml-auto nav-flex-icons" type="button" data-toggle="collapse" data-target="#basicExampleNav"
