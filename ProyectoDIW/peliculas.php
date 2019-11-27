@@ -75,7 +75,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa1" aria-expanded="false">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa1" aria-expanded="false">
                         Críticas
                     </button>
                 </p>
@@ -121,7 +121,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa2" aria-expanded="false" aria-controls="colapsa2">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa2" aria-expanded="false" aria-controls="colapsa2">
                         Críticas
                     </button>
                 </p>
@@ -165,7 +165,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa3" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa3" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
                 </p>
@@ -209,7 +209,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa4" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa4" aria-expanded="false" aria-controls="collapseExample">
                         Críticas
                     </button>
                 </p>
@@ -253,7 +253,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning border-0" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
+                    <button class="btn btn-primary border-0" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
                         Críticas
                     </button>
                 </p>
