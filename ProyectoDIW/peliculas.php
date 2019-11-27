@@ -253,7 +253,7 @@
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
+                    <button class="btn btn-warning border-0" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
                         Críticas
                     </button>
                 </p>

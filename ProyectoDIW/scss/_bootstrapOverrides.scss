@@ -87,6 +87,54 @@ button.btn.btn-success:active:focus {
 /* Start Override btn-warning */
 .btn-warning {
   background-color: $warning  !important;
+  color: white;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+button.btn.btn-warning:hover { 
+  background-color:darken($success, 5%) !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  color: white;
+}  
+
+button.btn.btn-warning:focus { 
+  background-color:darken($success, 5%) !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255) !important;
+  -webkit-box-shadow: none !important;
+  color: white;
+} 
+
+button.btn.btn-warning:active {
+  background-color: darken($warning, 10%) !important;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255) !important;
+  -webkit-box-shadow: none !important;
+  color: white;
+}
+
+button.btn.btn-warning:visited {
+  background-color: $warning !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  color: white;
+}
+
+button.btn.btn-warning:active:focus {
+  background-color: $success !important;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  color: white;
 }
 /* End Override btn-warning */
 
