@@ -18,10 +18,10 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Banner-->
-    <?php banner("Pers", "PERSONAJE");?>
+    <?php banner("PersSpiderman", "SPIDERMAN");?>
     
     <!--Estadisticas personaje-->
-    <?php estadisticas(7, 10, 8, 9, 8, 8); ?>
+    <?php estadisticas(6, 5, 7, 8, 6, 6); ?>
 
     <!--Cuerpo-->
     <section class="container-fluid p-0" id="contenidoPers">
@@ -31,27 +31,31 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-warning">BIOGRAFÍA</h1>
+                <h1 class="text-center font-weight-bold text-warning">Biografía</h1>
             </div>
 
             <!--Contenido biografia-->
             <section class="col-lg-7 px-md-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko.
+                 Apareció por primera vez en el cómic de antología Amazing Fantasy # 15 (10 de agosto de 1962),
+                 en la Edad de Plata de los cómics. Aparece en los cómics estadounidenses publicados por Marvel Comics,
+                 así como en varias películas, programas de televisión y adaptaciones de videojuegos ambientadas en el Universo Marvel.</p>
                 
                 <article>
-                    <h3 class="font-weight-bold">Seccion 1</h3>
-                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc lacus, pharetra vitae felis in, semper dictum tortor. Cras mollis urna ultricies lacus interdum, et sollicitudin ante rhoncus. Maecenas scelerisque nibh eget venenatis suscipit. Suspendisse vitae pharetra neque. Aliquam porta velit tortor, ac feugiat ipsum congue nec. Suspendisse iaculis molestie ultricies. Morbi a dapibus urna. Cras vel euismod orci, sit amet gravida nulla. Etiam scelerisque nibh rutrum sodales volutpat. Pellentesque a consectetur enim. Nullam vel facilisis massa. Suspendisse vitae lacinia mauris. In dapibus diam porttitor luctus tristique. Proin orci magna, tincidunt eget lectus id, fringilla vehicula ipsum.</p>
-
-                    <p>Nunc mauris turpis, convallis eget lectus sed, facilisis gravida mi. Aenean eget accumsan odio. Maecenas pulvinar cursus arcu, at eleifend purus dignissim eu. Vestibulum eu turpis aliquam, suscipit dui in, tempor sapien. Vivamus sodales et quam ut suscipit. Nullam at nunc eu erat consectetur feugiat. Vestibulum ac ullamcorper turpis, sed vehicula leo. Curabitur quis ullamcorper risus. Integer diam est, maximus id vehicula quis, aliquam a felis. Suspendisse potenti. Aenean pulvinar ipsum felis, et aliquet urna commodo sed. Ut suscipit ullamcorper felis, a condimentum ex blandit ac. Aliquam id mi semper, faucibus eros quis, ultricies diam. Curabitur vel consequat mi.</p>
+                    <h3 class="font-weight-bold">Orígenes</h3>
+                    <img class="img-fluid mt-2" src="assets/img/pers_SpidermanOrig1.jpg">
+                    <p class="mt-2">En Forest Hills, Queens, Nueva York, ​el estudiante de la Escuela Midtown High, Peter Benjamin Parker es un científico huérfano que vive con su tío Ben y su tía May. Como se describe en Amazing Fantasy # 15 (agosto de 1962), es mordido por una araña radioactiva (erróneamente clasificada como un insecto en el panel) en una exhibición de ciencias y "adquiere la agilidad y la fuerza proporcional de un arácnido ". 
+                    Junto con la súper fuerza, Parker gana la capacidad de adherirse a paredes y techos. A través de su habilidad nativa para la ciencia, desarrolla un dispositivo que le permite disparar cintas adhesivas de su propio diseño a través de pequeños barriles montados en la muñeca. Inicialmente buscando capitalizar sus nuevas habilidades, Parker se pone un disfraz y, como "Spider-Man", se convierte en una estrella de televisión novedosa. 
+                    Sin embargo, "ignora alegremente la posibilidad de detener a un ladrón que huye, y su indiferencia irónicamente lo alcanza cuando el mismo delincuente más tarde roba y mata a su tío Ben". Spider-Man rastrea y domina al asesino y aprende, en la penúltima leyenda de la historia, "con gran poder también debe haber una gran responsabilidad".</p>
                 </article>
 
                 <article>
-                    <h3 class="font-weight-bold">Seccion 2</h3>
                     <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
-                    <p>Ut laoreet euismod dolor in pellentesque. Pellentesque venenatis pulvinar lorem eget pellentesque. In dapibus lectus tempus faucibus cursus. Vivamus cursus ullamcorper nisi vitae tempus. Mauris porta sapien mi, eget vestibulum turpis consectetur ut. Nunc consectetur, tellus sed sollicitudin pellentesque, felis odio malesuada enim, et convallis massa dui id purus. Proin a venenatis risus. Ut non turpis urna. In molestie risus eget risus fermentum, vitae faucibus ligula pulvinar. Maecenas volutpat neque vestibulum leo tincidunt faucibus. Nulla neque justo, consequat quis tristique vel, porta eget enim. Sed a laoreet arcu.</p>
-
-                    <p>Nulla ut quam mattis, consequat mauris a, pulvinar ex. Vestibulum id eros lobortis lectus dictum malesuada. Morbi sed neque ut massa dictum gravida sed eu libero. Etiam nec egestas erat. Pellentesque dapibus lacus vel vulputate dapibus. Curabitur accumsan fringilla efficitur. Maecenas ullamcorper aliquam bibendum. Duis eget vestibulum mauris, sed lacinia justo. In quis dolor rhoncus, congue urna efficitur, bibendum nisl. Donec auctor, metus in eleifend dignissim, turpis velit maximus odio, a hendrerit tellus tellus sit amet nisl. Cras ac diam eget quam egestas tincidunt vel vitae urna. Maecenas eu maximus dui. Suspendisse potenti. Nullam consectetur interdum massa non auctor.</p>
+                    <p class="mt-2">A pesar de sus superpoderes, Parker se esfuerza por ayudar a su tía a pagar el alquiler, se burla de sus compañeros, especialmente la estrella de fútbol Flash Thompson, y, como Spider-Man, engendra la ira editorial del editor de periódicos J. Jonah Jameson.
+                    ​Mientras lucha con sus enemigos por primera vez, ​Parker encuentra difícil hacer malabares con su vida personal y las aventuras disfrazadas. 
+                    Con el tiempo, Peter se gradúa de la escuela secundaria, ​y se matricula en la Universidad Empire State (una institución ficticia que evoca la vida real de la Universidad de Columbia y la Universidad de Nueva York), ​donde se encuentra con su compañero de cuarto y mejor amigo Harry Osborn, y su novia Gwen Stacy, y la tía May le presenta a Mary Jane Watson. 
+                    ​Mientras Peter lidia con los problemas de drogas de Harry, y se revela que el padre de Harry es el enemigo de Spider-Man, el Duende Verde, Peter incluso intenta abandonar su identidad de disfraz por un tiempo.
+                     El padre de Gwen Stacy, el detective de la policía de la ciudad de Nueva York, George Stacy, es asesinado accidentalmente durante una batalla entre Spider-Man y Doctor Octopus (# 90, noviembre de 1970).</p>
                 </article>
             </section>
 
@@ -64,46 +68,53 @@
                         </tr>
                     </thead>
                     <tr>
-                        <th>Nombre</th>
-                        <td>N/A</th>
+                        <th>Nombre real</th>
+                        <td>Peter Benjamin Parker</th>
                     </tr>
                     <tr>
-                        <th>Identidad</th>
-                        <td>N/A</th>
+                        <th>Raza</th>
+                        <td>Humano</th>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>N/A</th>
+                        <td>75 kg</th>
+                    </tr>
+                    <tr>
+                        <th>Altura</th>
+                        <td>1,78 m</th>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>N/A</th>
+                        <td>Masculino</th>
                     </tr>
                     <tr>
-                        <th>Ojos</th>
-                        <td>N/A</th>
+                        <th>Color de ojos</th>
+                        <td>Avellana</th>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>N/A</th>
+                        <td>Marrón</th>
                     </tr>
                     <tr>
-                        <th>Edad</th>
-                        <td>N/A</th>
+                        <th>Lugar de nacimiento</th>
+                        <td>Queens, Nueva York</th>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>N/A</th>
+                        <td>Marvel</th>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>N/A</th>
+                        <td>El Hombre Araña, el Increíble Spiderman, tu amigo y vecino Spiderman, Tigre</th>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>N/A</th>
+                        <td>Fuerza y agilidad sobrehumanas, reflejos sobrehumanos (sentido arácnido), capacidad para trepar paredes como una araña </th>
                     </tr>
-
+                    <tr>
+                        <th>Creado por</th>
+                        <td>Stan Lee y Steve Ditko </th>
+                    </tr>
                 </table>
             </aside>
         </div>
