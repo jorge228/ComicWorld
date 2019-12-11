@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include("includes/a_config.php"); ?>
 <html lang="en">
 <head>
     <?php
