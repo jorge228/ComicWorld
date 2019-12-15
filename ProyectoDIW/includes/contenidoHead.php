@@ -1,9 +1,4 @@
-<title><?php print $PAGE_TITLE;?></title>
-
-<?php if ($CURRENT_PAGE == "Index") { ?>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" /> 
-<?php } ?>
+<title>Comic World</title>
 
 <meta charset="UTF-8" lang="ES">
 <meta name="viewport" content="width=device-width">
