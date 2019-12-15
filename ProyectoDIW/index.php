@@ -17,9 +17,9 @@
         <?php addCarousel("carrusel1", "carrusel2", "carrusel3", "carrusel4"); ?>
                
         <!--TARJETAS-->
-        <div class="container-fluid mt-3">
+        <section class="container-fluid mt-3">
             <!--Tarjetas-->
-            <div class="row">
+            <article class="row">
 
                 <!--Primera columna-->
 
@@ -64,9 +64,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             
-        </div>
+        </section>
 
         <?php include("includes/footer.php"); ?>
 

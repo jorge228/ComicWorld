@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include("includes/a_config.php"); ?>
 <html lang="en">
 <head>
     <?php
@@ -21,7 +20,7 @@
     <?php banner("PersSpiderman", "IRON MAN");?>
     
     <!--Estadisticas personaje-->
-    <?php estadisticas(9, 9, 5, 7, 7, 8); ?>
+    <?php estadisticas(7, 7, 9, 7, 7, 8); ?>
 
     <!--Cuerpo-->
     <section class="container-fluid p-0" id="contenidoPers">

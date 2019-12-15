@@ -15,6 +15,8 @@ $(function() {
         fontSize:tamanios[1]+"em"
     });
 
+
+
     //Evento que se activara cuando el usuario haga scroll
     $(window).scroll(function () { 
 

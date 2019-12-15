@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include("includes/a_config.php"); ?>
 <html lang="en">
 <head>
     <?php
@@ -18,10 +17,10 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Banner-->
-    <?php banner("PersSpiderman", "IRON MAN");?>
+    <?php banner("PersFlash", "FLASH");?>
     
     <!--Estadisticas personaje-->
-    <?php estadisticas(9, 9, 5, 7, 7, 8); ?>
+    <?php estadisticas(6, 7, 6, 8, 7, 10); ?>
 
     <!--Cuerpo-->
     <section class="container-fluid p-0" id="contenidoPers">
@@ -63,10 +62,10 @@
 
             <!--Tabla datos-->
             <aside class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
-                <table class="table  table-borderless table-lg p-4">
-                    <thead>
+                <table class="table table-bordered table-lg p-4">
+                    <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class="font-weight-bold text-light">Perfil</h3></th>
+                            <th colspan="2"><h3 class=" text-light">Perfil</h3></th>
                         </tr>
                     </thead>
                     <tr>
