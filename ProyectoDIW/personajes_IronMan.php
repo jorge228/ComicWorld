@@ -17,7 +17,7 @@
     <?php include("includes/menuNav.php"); ?>
 
     <!--Banner-->
-    <?php banner("PersSpiderman", "IRON MAN");?>
+    <?php banner("PersIronMan", "IRON MAN");?>
     
     <!--Estadisticas personaje-->
     <?php estadisticas(7, 7, 9, 7, 7, 8); ?>
@@ -41,7 +41,7 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers_SpidermanOrig1.jpg">
+                    <img class="img-fluid mt-2" src="assets/img/pers/pers_IronManOrig1.jpg">
                     <p class="mt-2">Anthony Edward Stark es el hijo del jefe de Industrias Stark, Howard Stark y su esposa Maria Stark. 
                     Un niño genio que ingresa al MIT a la edad de 15 años para estudiar ingeniería mecánica y luego recibe maestrías en ingeniería eléctrica y física. 
                     Después de que sus padres mueren en un accidente automovilístico, hereda la compañía de su padre.</p>
@@ -53,7 +53,7 @@
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_IronManOrig2.jpg">
                     <p class="mt-2">De vuelta a casa, Stark descubre que el fragmento de metralla alojado en su pecho no se puede quitar sin matarlo, y él se ve obligado a utilizar la placa del pecho debajo de la ropa para actuar como un regulador para su corazón. También tiene que recargar la placa todos los días o de lo contrario corre el riesgo de que la metralla lo mate. La portada para Iron Man dice que él es el guardaespaldas de Stark y la mascota de su empresa. 
                     Con ese fin, Iron Man lucha contra las amenazas a su empresa, (como la oponente comunista Natasha Romanoff, el Dínamo Carmesí y el Hombre de Titanio), así como villanos independientes como el Mandarín, quien finalmente se convertiría en su peor enemigo. Nadie sospecha de que Stark es Iron Man, ya que cultiva su imagen como un millonario y empresario. 
                     Dos miembros notables del reparto de la serie, en este punto, son su chófer personal Harold "Happy" Hogan, y su
@@ -68,10 +68,10 @@
 
             <!--Tabla datos-->
             <aside class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
-                <table class="table  table-borderless table-lg p-4">
-                    <thead>
+                <table class="table  table-bordered table-lg p-4">
+                    <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class="font-weight-bold text-light">Perfil</h3></th>
+                            <th colspan="2"><h3 class="text-light">Perfil</h3></th>
                         </tr>
                     </thead>
                     <tr>

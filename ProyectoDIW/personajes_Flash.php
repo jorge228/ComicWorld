@@ -40,7 +40,7 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers_SpidermanOrig1.jpg">
+                    <img class="img-fluid mt-2" src="assets/img/pers/pers_FlashOrig1.jpg">
                     <p class="mt-2">Hasta ahora, al menos cuatro personajes diferentes, cada uno de los cuales de alguna manera obtuvo el poder de "la Fuerza de la Velocidad", han asumido el papel del Flash en las historias de DC: el atleta universitario Jay Garrick siendo el primero en portar el título (1940-1951, 1961-2011, 2017-presente ), el científico forense Barry Allen (1956-1985, 2008-presente), el sobrino de Barry Wally West (1986-2011, 2016-presente) y el nieto de Barry Bart Allen (2006-2007). 
                     Cada encarnación de Flash ha sido un miembro clave de al menos uno de los principales equipos de DC: Sociedad de la Justicia de América, Liga de la Justicia de América, Los Jóvenes Titanes y Young Justice. Wally West y Bart Allen originalmente fueron conocidos como Kid Flash, posteriormente asumieron el manto de Flash (Bart también era conocido como Impulso).</p>
 
@@ -50,7 +50,7 @@
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_FlashOrig2.jpg">
                     <p class="mt-2">Al igual que sus compañeros de la Liga de la Justicia Mujer Maravilla, Superman y Batman, Flash tiene un elenco distintivo de adversarios, incluidos los diversos Renegados (únicos entre los supervillanos de DC por su código de honor) comandados por Capitán Frío y los diversos "velocistas" psicópatas que se conocen con el nombre "Flash Reverso o "Zoom" o el Supervillano Gorilla Grodd como uno de los villanos mas importantes de Flash. Otros personajes secundarios en las historias de Flash incluyen a la esposa de Barry, 
                     Iris West, la esposa de Wally, Linda Park, la novia de Bart, Valerie Perez, el compañero velocista Max Mercury y los miembros del departamento de policía de Ciudad Central, David Singh y Patty Spivot.</p>
 

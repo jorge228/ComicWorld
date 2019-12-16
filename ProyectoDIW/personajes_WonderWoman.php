@@ -42,14 +42,14 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers_SpidermanOrig1.jpg">
+                    <img class="img-fluid mt-2" src="assets/img/pers/pers_WonderWomanOrig1.jpg">
                     <p class="mt-2">Debutando en All Star Comics #8, Diana era miembro de una tribu de mujeres llamadas las Amazonas, nativa de Isla Paraíso. Esta era una isla aislada situada en medio de un vasto océano, allí el capitán Steve Trevor tuvo un accidente aéreo donde logró apenas aterrizar su aeronave cerca a la isla, fue encontrado vivo pero inconsciente. Diana lo encontró junto a una compañera amazona. Diana le cuidó hasta que sanó pero terminó enamorándose de él. 
                     Se llevó a cabo una competencia entre todas las amazonas ante la corte de la madre de Diana, Hipólita la Reina de las Amazonas, con el fin de determinar quién era la más digna de entre todas las mujeres para llevar de regreso a Steve al mundo exterior; Hipólita le adjudicaría a la ganadora la responsabilidad de entregarle al capitán Steve Trevor su regreso al mundo humano y para poder luchar por la justicia. Hipólita le prohibía a Diana participar en el concurso; no obstante, aun así ella tomó parte, usando una máscara para ocultar su identidad. Ganó el concurso y se revela a sí misma, sorprendiendo a su madre Hipólita, que al final se dejaría llevar por el deseo de su hija Diana para que fuese al mundo de los hombres. Ella entonces regresa a salvo a Steve Trevor de vuelta a su casa y se le 
                     concede un vestido especial hecho por su propia madre para llevar su nuevo papel como Wonder Woman.</p>
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="https://via.placeholder.com/600x200">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_WonderWomanOrig2.jpg">
                     <p class="mt-2">Después de este suceso llega al mundo del hombre por primera vez, a tierras de los Estados Unidos. La Mujer Maravilla se encuentra con una enfermera del ejército llorando llamada Diana Prince. Esta le pregunta acerca de su situación, en donde ella le relata que como enfermera deseaba partir a América del Sur con su novio, pero no pudo debido que no tenía suficiente dinero para costearse el viaje.
                      Como ambas parecían estar en una misma situación y como Wonder Woman necesitaba un trabajo y una identidad válida para cuidar de Steve (al cual ingresó al mismo hospital del ejército), le da el dinero que había ganado anteriormente para ayudarla para que fuese con su prometido a cambio de obtener sus credenciales. La enfermera le revela que su nombre es Diana Prince, por lo tanto, ella tomaría dicha identidad
                      como suya y sería la identidad secreta de la Mujer Maravilla, comenzando a trabajar como enfermera en el ejército. Wonder Woman después tomaría parte en varias aventuras, sobre todo al lado de Trevor. Sus enemigos más comunes durante este período serían las fuerzas nazis, y a veces supervillanos como Circe, Giganta, La Baronesa Paula Von Gunther, Chita, Doctor Psycho y el Duque del Engaño.</p>
@@ -58,10 +58,10 @@
 
             <!--Tabla datos-->
             <aside class="col-lg-3 p-0 tablaDatos pt-4 pt-lg-0">
-                <table class="table  table-borderless table-lg p-4">
-                    <thead>
+                <table class="table  table-bordered table-lg p-4">
+                    <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class="font-weight-bold text-light">Perfil</h3></th>
+                            <th colspan="2"><h3 class=" text-light">Perfil</h3></th>
                         </tr>
                     </thead>
                     <tr>
