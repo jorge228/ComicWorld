@@ -64,11 +64,11 @@
                         PERSONAJES
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="personajes.php">SPIDERMAN</a>
-                        <a class="dropdown-item" href="personajes.php">SUPERMAN</a>
-                        <a class="dropdown-item" href="personajes.php">IRON MAN</a>
-                        <a class="dropdown-item" href="personajes.php">FLASH</a>
-                        <a class="dropdown-item" href="personajes.php">WONDER WOMAN</a>
+                        <a class="dropdown-item" href="personajes_Spiderman.php">SPIDERMAN</a>
+                        <a class="dropdown-item" href="personajes_Superman.php">SUPERMAN</a>
+                        <a class="dropdown-item" href="personajes_IronMan.php">IRON MAN</a>
+                        <a class="dropdown-item" href="personajes_Flash.php">FLASH</a>
+                        <a class="dropdown-item" href="personajes_WonderWoman.php">WONDER WOMAN</a>
                     </div>
                 </div>
 

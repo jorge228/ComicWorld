@@ -31,9 +31,33 @@ h1, h2, h3, h4, h5 {
 /*- - - - - - - - - End Banners General - - - - - - - - - */
 
 /*- - - - - - - - - Start Banners Pag Personajes - - - - - - - - - */
-    .bannerPers {
+    .bannerPersSpiderman {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/personajes_banner_spiderman.jpg");
+        background-image: url("../assets/img/pers/pers_SpidermanBanner.jpg");
+    }
+
+    .bannerPersSuperman{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/pers/pers_SupermanBanner.jpg");
+
+    }
+
+    .bannerPersIronMan{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/pers/pers_IronManBanner.jpg");
+
+    }
+
+    .bannerPersFlash{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/pers/pers_FlashBanner.jpg");
+
+    }
+
+    .bannerPersWonderWoman{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/pers/pers_WonderWomanBanner.jpg");
+
     }
 /*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
 
