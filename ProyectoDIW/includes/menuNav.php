@@ -15,6 +15,13 @@
 
             <ul class="nav navbar-nav mx-auto">
 
+                <!-- Home -->
+                <div class="nav-item dropdown">
+                    <form action="index.php" method="GET">
+                        <button class="btn btn-success bg-success btn-sm m-1 border-0" type="submit">HOME</button>
+                    </form>
+                </div>
+
                 <!-- Comics -->
                 <div class="nav-item dropdown">
 
@@ -69,6 +76,20 @@
                         <a class="dropdown-item" href="personajes.php">IRON MAN</a>
                         <a class="dropdown-item" href="personajes.php">FLASH</a>
                         <a class="dropdown-item" href="personajes.php">WONDER WOMAN</a>
+                    </div>
+                </div>
+
+                <!-- Juegps -->
+                <div class="nav-item dropdown">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        JUEGOS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">JUEGO 1</a>
+                        <a class="dropdown-item" href="#">JUEGO 2</a>
+                        <a class="dropdown-item" href="#">JUEGO 3</a>
+                        <a class="dropdown-item" href="#">JUEGO 4</a>
                     </div>
                 </div>
 
