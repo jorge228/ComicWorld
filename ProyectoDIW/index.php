@@ -4,9 +4,10 @@
         <?php 
             include("includes/contenidoHead.php");
             include("includes/carousel.php");
+            include("includes/videos.php");
         ?>
 
-
+        <script src='js/controlesVideo.js'></script>
     </head>
     <body>
 
@@ -66,6 +67,18 @@
                 </div>
             </article>
             
+            <!--Videos-->
+            <article class="row">
+                <div class="col-12 col-md-4">
+                    <?php video("assets/videos/mikethefrog.mp4", "mp4"); ?>
+                </div>
+                <div class="col-12 col-md-4">
+                    <?php video("assets/videos/mikethefrog.mp4", "mp4"); ?>
+                </div>
+                <div class="col-12 col-md-4">
+                    <?php video("assets/videos/mikethefrog.mp4", "mp4"); ?>
+                </div>
+            </article>
         </section>
 
         <?php include("includes/footer.php"); ?>
