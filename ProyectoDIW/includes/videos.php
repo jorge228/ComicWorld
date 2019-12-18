@@ -6,7 +6,7 @@ function video($ruta, $formatoVideo){?>
         <!-- Video -->
         <div class="embed-responsive embed-responsive-16by9">
             <video class="video">
-                <source src="<?php echo $ruta; ?>" type="video/<?php echo $formatoVideo; ?>">
+                <source src="assets/videos/<?php echo $ruta; ?>" type="video/<?php echo $formatoVideo; ?>">
             </video>
         </div>
 
