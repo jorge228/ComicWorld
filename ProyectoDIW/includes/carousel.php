@@ -10,16 +10,16 @@ function addCarousel ($imgName1, $imgName2, $imgName3, $imgName4) {
                 <!--Imágenes del carrusel-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/' . $imgName1 . '.jpg" alt="slide">'; ?>
+                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/home/' . $imgName1 . '.jpg" alt="slide">'; ?>
                     </div>
                     <div class="carousel-item">
-                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/' . $imgName2 . '.jpg" alt="slide">'; ?>
+                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/home/' . $imgName2 . '.jpg" alt="slide">'; ?>
                     </div>
                     <div class="carousel-item">
-                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/' . $imgName3 . '.jpg" alt="slide">'; ?>
+                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/home/' . $imgName3 . '.jpg" alt="slide">'; ?>
                     </div>
                     <div class="carousel-item">
-                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/' . $imgName4 . '.jpg" alt="slide">'; ?>
+                        <?php echo '<img class="imgCarousel d-block w-100" src="assets/img/home/' . $imgName4 . '.jpg" alt="slide">'; ?>
                     </div>
                 </div>
 

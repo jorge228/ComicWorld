@@ -6,7 +6,7 @@ function banner($idPage, $titulo) {
         Los idPage disponibles son: 
         Pers  --> Para las paginas de Personajes
         Vid  --> Para las paginas de Videojuegos
-    */
+    */ 
     
     echo '<header class="container-fluid ">';
         echo '<div class="row">';
