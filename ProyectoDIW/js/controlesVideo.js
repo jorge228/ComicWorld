@@ -102,38 +102,36 @@ function configurarBarrasVideo(video){
     video.addEventListener("timeupdate", function() {
         //Elegir barra objetivo
         contenedorVideo=$(this).closest(".video-container");
-        barraProgresoObjetivo=$(contenedorVideo).find(".barraProgresoVideo").get(0);
+        barraProgreso=$(contenedorVideo).find(".barraProgresoVideo").get(0);
 
         //Calcular progreso del video
         var tiempo = (100 / this.duration) * this.currentTime;
 
         //Actualizar barra con el tiempo del video
-        barraProgresoObjetivo.value = tiempo;
+        barraProgreso.value = tiempo;
     });
 
     //Pausar el video mientras el usuario mueve la barra de progreso
-    $(barraProgreso).mousedown(function () { //NO FUNCIONA
-        //Obtener video objetivo
-        contenedorVideo=$(this).closest(".video-container");
-        videoObjetivo=$(contenedorVideo).find("video").get(0);
-        
+    $(barraProgreso).mousedown(function () {       
         //Pausar
-        videoObjetivo.pause();
+        video.pause();
+
+        actualizaIconoPlay(video);
     });
 
     //Reanudar el video cuando el usuario deje de arrastrar la barra de progreso
-    $(barraProgreso).mouseup(function () { //NO FUNCIONA
-        //Obtener video objetivo
-        contenedorVideo=$(this).closest(".video-container");
-        videoObjetivo=$(contenedorVideo).find("video").get(0);
+    $(barraProgreso).mouseup(function () {
         
         //Calcular tiempo exacto
-        var tiempo = videoObjetivo.duration * (this.value / 100);
+        var tiempo = video.duration * (this.value / 100);
 
         //Actualizar con tiempo
-        videoObjetivo.currentTime = tiempo
+        video.currentTime = tiempo
 
-        videoObjetivo.play();
+        //Reproducir
+        video.play();
+        
+        actualizaIconoPlay(video);
     });
 
     ///////////////////////VOLUMEN//////////////////////

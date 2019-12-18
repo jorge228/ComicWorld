@@ -28,8 +28,8 @@
                     <div class="card">
                         <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="card-title text-center">Cómics</h4>
+                            <p>¿Te gustan los cómics? ¡Has venido al sitio indicado! En ComicWorld podrás consultar información de los últimos cómics de tus personajes favoritos.</p>
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
                     <div class="card">
                         <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="card-title text-center">Películas</h4>
+                            <p>Información sobre las últimas películas del Universo Cinematográfico de Marvel y el DC Extended Universe en nuestra sección de películas</p>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@
                     <div class="card">
                         <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
                         <div class="card-body text-justify">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="card-title text-center">Videojuegos</h4>
+                            <p>Para los gamers: los últimos videojuegos de superhéroes</p>
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,8 @@
                     <div class="card">
                         <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
                         <div class="card-body text-justify">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="card-title text-center">Personajes</h4>
+                            <p>¿No conoces la historia de tu personaje favorito? ¡Entra en nuestra sección de personajes e infórmate! </p>
                         </div>
                     </div>
                 </div>
