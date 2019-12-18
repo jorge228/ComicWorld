@@ -4,6 +4,9 @@
         <?php include("includes/contenidoHead.php"); ?>
         <?php include("includes/banners.php"); ?>
         <?php include("includes/valoracion.php"); ?>
+        <?php include("includes/videos.php"); ?>
+
+        <script src="js/controlesVideo.js"></script>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
@@ -36,12 +39,12 @@
                                 </section>
 
                                 <section class="text-center">
-                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                    <?php video("mikethefrog.mp4", "mp4") ?>
                                 </section>
 
                             </div>
                             <div class="col-12 col-sm-4">
-                                <section class="tablaDatos"">
+                                <section class="tablaDatos">
                                     
                                     <!--Tabla datos-->
                                     <table class="table table-bordered table-lg p-4">
@@ -105,12 +108,12 @@
                                 </section>
 
                                 <section class="text-center">
-                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                    <?php video("mikethefrog.mp4", "mp4") ?>
                                 </section>
 
                             </div>
                             <div class="col-12 col-sm-4">
-                                <section class="tablaDatos"">
+                                <section class="tablaDatos">
                                     
                                     <!--Tabla datos-->
                                     <table class="table table-bordered table-lg p-4">
@@ -174,12 +177,12 @@
                                 </section>
 
                                 <section class="text-center">
-                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                    <?php video("mikethefrog.mp4", "mp4") ?>
                                 </section>
 
                             </div>
                             <div class="col-12 col-sm-4">
-                                <section class="tablaDatos"">
+                                <section class="tablaDatos">
                                     
                                     <!--Tabla datos-->
                                     <table class="table table-bordered table-lg p-4">
