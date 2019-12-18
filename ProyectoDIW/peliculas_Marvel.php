@@ -104,7 +104,7 @@
         <div class="row mt-4">
             <!--Para centarla: align-self-center-->
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/peliculas/capitanaC.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/peliculas/capitanaCF.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli2" class="ancla">
