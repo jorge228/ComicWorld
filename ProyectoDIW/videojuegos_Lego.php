@@ -10,14 +10,14 @@
         <?php include("includes/menuNav.php"); ?>
 
         <!-- Banner -->
-        <?php banner("Vid", "LEGO MARVEL SUPERHEROES");?>    
+        <?php banner("VidLego", "LEGO MARVEL SUPERHEROES");?>    
         
         <div class="container-fluid">
 
             <!-- Fila 1 -->
             <div class="row mt-4">
-                <aside class="p-5 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/videojuegos_5_001.png" alt="imagen" />
+                <aside class="p-4 col-12 col-sm-3 card-body">               
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -26,47 +26,55 @@
                                 <section>
                                     <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
                                     <p>
-                                        Lego Batman 2: DC Super Heroes es un videojuego de Lego y DC comics estrenado en junio de 2012,
+                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
                                         y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
                                         comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
                                         PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
                                         variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
                                     </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>  
+ 
                                 </section>
 
                                 <section class="text-center">
-                                    <img class="rounded shadow-lg m-3 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
                                 </section>
 
                             </div>
                             <div class="col-12 col-sm-4">
-                                <section class="text-center">
-
-                                    <table class="table table-sm border p-1 text-center mx-auto">                            
+                                <section class="tablaDatos"">
+                                    
+                                    <!--Tabla datos-->
+                                    <table class="table table-bordered table-lg p-4">
+                                        <thead class="bg-success">
+                                            <tr class="text-center">
+                                                <th colspan="2"><h3 class=" text-light">Información General</h3></th>
+                                            </tr>
+                                        </thead>
                                         <tr>
-                                            <th class="text-warning">Desarrollado por:</th>
-                                            <td class="text-warning">Traveller's Tales</td>          
+                                            <th>Desarrollado por:</th>
+                                            <td>Traveller's Tales</th>
                                         </tr>
                                         <tr>
-                                            <th class="text-warning">Fecha lanzamiento:</th>
-                                            <td class="text-warning">19 de junio de 2012</td>    
-                                        </tr>
+                                            <th>Fecha lanzamiento:</th>
+                                            <td>19 de junio de 2012</th>
+                                        </tr>                                    
                                         <tr>
-                                            <th class="text-warning">algo</th>
-                                            <td class="text-warning">algo mas</td>    
-                                        </tr>
-                                    </table>    
-                                   
+                                            <th>Plataforma(s):</th>
+                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                        </tr> 
+                                        <tr>
+                                            <th>Modos de juego:</th>
+                                            <td>Un jugador, Multijugador</th>
+                                        </tr> 
+                                        	
+                                    </table>
+                                    
                                     <?php
                                         //Estrellas
                                         $nombre = "v1";
                                         crear($nombre);
                                     ?>
-
+                                    
                                 </section>
                             </div>
                         </div>
@@ -77,43 +85,139 @@
 
             <!-- Fila 2 -->
             <div class="row mt-4">
-                <div class="col-12 col-sm-9 order-2 order-sm-1">
-                    <div class="card p-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3 order-1 order-sm-2 mx-auto align-self-center text-center">
-                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png" alt="imagen" />
+                <aside class="p-4 col-12 col-sm-3 card-body">               
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                </aside>
+                <div class="col-12 col-sm-9">
+                    <article class="p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <section>
+                                    <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
+                                    <p>
+                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
+                                        y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
+                                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
+                                        PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
+                                        variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                    </p>
+ 
+                                </section>
+
+                                <section class="text-center">
+                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                </section>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <section class="tablaDatos"">
+                                    
+                                    <!--Tabla datos-->
+                                    <table class="table table-bordered table-lg p-4">
+                                        <thead class="bg-success">
+                                            <tr class="text-center">
+                                                <th colspan="2"><h3 class=" text-light">Información General</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <th>Desarrollado por:</th>
+                                            <td>Traveller's Tales</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha lanzamiento:</th>
+                                            <td>19 de junio de 2012</th>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Plataforma(s):</th>
+                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                        </tr> 
+                                        <tr>
+                                            <th>Modos de juego:</th>
+                                            <td>Un jugador, Multijugador</th>
+                                        </tr> 
+                                        	
+                                    </table>
+                                    
+                                    <?php
+                                        //Estrellas
+                                        $nombre = "v1";
+                                        crear($nombre);
+                                    ?>
+                                    
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
                 </div>
             </div>
 
             <!-- Fila 3 -->
             <div class="row mt-4">
-                <div class="col-12 col-sm-3 align-self-center text-center">               
-                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png" alt="imagen" />
-                </div>
+                <aside class="p-4 col-12 col-sm-3 card-body">               
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                </aside>
                 <div class="col-12 col-sm-9">
-                    <div class="card p-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                    <article class="p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <section>
+                                    <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
+                                    <p>
+                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
+                                        y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
+                                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
+                                        PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
+                                        variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                    </p>
+ 
+                                </section>
+
+                                <section class="text-center">
+                                    <img class="rounded shadow-lg m-1 img-thumbnail" src="assets/img/imagenesTarjetas.PNG" alt="imagen" />
+                                </section>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <section class="tablaDatos"">
+                                    
+                                    <!--Tabla datos-->
+                                    <table class="table table-bordered table-lg p-4">
+                                        <thead class="bg-success">
+                                            <tr class="text-center">
+                                                <th colspan="2"><h3 class=" text-light">Información General</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <th>Desarrollado por:</th>
+                                            <td>Traveller's Tales</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha lanzamiento:</th>
+                                            <td>19 de junio de 2012</th>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Plataforma(s):</th>
+                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                        </tr> 
+                                        <tr>
+                                            <th>Modos de juego:</th>
+                                            <td>Un jugador, Multijugador</th>
+                                        </tr> 
+                                        	
+                                    </table>
+                                    
+                                    <?php
+                                        //Estrellas
+                                        $nombre = "v1";
+                                        crear($nombre);
+                                    ?>
+                                    
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
                 </div>
             </div>
 
