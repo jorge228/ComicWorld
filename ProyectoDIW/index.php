@@ -23,11 +23,10 @@
             <article class="row">
 
                 <!--Primera columna-->
-
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
-                        <div class="card-body text-justify">
+                <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
+                    <div class="card h-100  border-0 shadow">
+                        <img src="assets/img/home/home_Comics.jpg" class="card-img-top img-thumbnail "/>
+                        <div class="card-body text-justify border ">
                             <h4 class="card-title text-center">Cómics</h4>
                             <p>¿Te gustan los cómics? ¡Has venido al sitio indicado! En ComicWorld podrás consultar información de los últimos cómics de tus personajes favoritos.</p>
                         </div>
@@ -35,8 +34,8 @@
                 </div>
 
                 <!--Segunda columna-->
-                <div class="col-sm-3">
-                    <div class="card">
+                <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
+                    <div class="card h-100 border-0 shadow">
                         <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Películas</h4>
@@ -45,20 +44,20 @@
                     </div>
                 </div>
                 <!--Tercera columna-->
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
+                <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
+                    <div class="card h-100 border-0 shadow">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Videojuegos</h4>
-                            <p>Para los gamers: los últimos videojuegos de superhéroes</p>
+                            <p>Para los gamers: los últimos videojuegos de superhéroes en todas las consolas.</p>
                         </div>
                     </div>
                 </div>
                 
                 <!--Cuarta columna-->
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-bottom img-thumbnail border-0"/>
+                <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
+                    <div class="card h-100 border-0 shadow">
+                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Personajes</h4>
                             <p>¿No conoces la historia de tu personaje favorito? ¡Entra en nuestra sección de personajes e infórmate! </p>
@@ -68,6 +67,7 @@
             </article>
         </section>
 
+        <!--Footer-->
         <?php include("includes/footer.php"); ?>
 
     </body>
