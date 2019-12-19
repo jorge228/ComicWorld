@@ -38,8 +38,8 @@
  
                                 </section>
 
-                                <section class="text-center">
-                                    <?php video("mikethefrog.mp4", "mp4") ?>
+                                <section class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -72,12 +72,13 @@
                                         	
                                     </table>
                                     
-                                    <?php
-                                        //Estrellas
-                                        $nombre = "v1";
-                                        crear($nombre);
-                                    ?>
-                                    
+                                    <div class="text-center">
+                                        <?php
+                                            //Estrellas
+                                            $nombre = "v1";
+                                            crear($nombre);
+                                        ?>
+                                    </div>
                                 </section>
                             </div>
                         </div>
@@ -107,8 +108,8 @@
  
                                 </section>
 
-                                <section class="text-center">
-                                    <?php video("mikethefrog.mp4", "mp4") ?>
+                                <section class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -141,11 +142,13 @@
                                         	
                                     </table>
                                     
-                                    <?php
-                                        //Estrellas
-                                        $nombre = "v1";
-                                        crear($nombre);
-                                    ?>
+                                    <div class="text-center">
+                                        <?php
+                                            //Estrellas
+                                            $nombre = "v1";
+                                            crear($nombre);
+                                        ?>
+                                    </div>
                                     
                                 </section>
                             </div>
@@ -173,11 +176,10 @@
                                         PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
                                         variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
                                     </p>
- 
                                 </section>
 
-                                <section class="text-center">
-                                    <?php video("mikethefrog.mp4", "mp4") ?>
+                                <section class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -210,11 +212,13 @@
                                         	
                                     </table>
                                     
-                                    <?php
-                                        //Estrellas
-                                        $nombre = "v1";
-                                        crear($nombre);
-                                    ?>
+                                    <div class="text-center">
+                                        <?php
+                                            //Estrellas
+                                            $nombre = "v1";
+                                            crear($nombre);
+                                        ?>
+                                    </div>
                                     
                                 </section>
                             </div>
