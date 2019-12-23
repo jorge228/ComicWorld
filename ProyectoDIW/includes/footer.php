@@ -17,6 +17,7 @@
                         <li><a href="peliculas.php">Películas</a></li>
                         <li><a href="videojuegos_Lego.php">Videojuegos</a></li>
                         <li><a href="personajes.php">Personajes</a></li>
+                        <li><a href="terminos_legales.php">Términos Legales</a></li>
                     </ul>
                 </div>
             </div>
