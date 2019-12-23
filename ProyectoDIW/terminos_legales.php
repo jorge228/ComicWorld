@@ -27,8 +27,8 @@
             <p>Las licencias Creative Commons (CC) nacen de una organización sin ánimo de lucro, cuyo propósito es el desarrollo de modelos de licencias que permitan un mayor alcance de la cultura, utilizando las nuevas tecnologías, oprimiendo los obstáculos que presenta el copyright y protegiendo los derechos de los autores a la conservación de su obra original.</p>
             <p>Con estas licencias el autor puede definir los usos que se le podrá dar a su obra. El uso de estas licencias es gratuito y gozan de garantías legales internacionales. El Titular de la obra siempre conservará sus derechos como autor.</p>
             <p>En nuestra página web, ComicWorld, utilizamos el tipo de Reconocimiento-No Comercial. Esta licencia le permite a otros entremezclar, ajustar y construir a partir de la obra original con fines no comerciales, sin embargo aunque en las nuevas creaciones deban reconocer la autoría y no puedan ser usadas de forma comercial.</p>
-            <aside class=" tablaDatos">
-                <table class="table  table-bordered">
+            <aside class="tablaDatos">
+                <table class="table table-bordered">
                     <thead class="bg-success">
                         <tr class="text-center">
                             <th><h3 class="text-light">Página</h3></th>
