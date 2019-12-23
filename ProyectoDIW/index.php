@@ -4,9 +4,10 @@
         <?php 
             include("includes/contenidoHead.php");
             include("includes/carousel.php");
+            include("includes/videos.php");
         ?>
 
-
+        <script src='js/controlesVideo.js'></script>
     </head>
     <body>
 
@@ -15,7 +16,19 @@
 
         <!--CARRUSEL-->
         <?php addCarousel("carrusel1", "carrusel2", "carrusel3", "carrusel4"); ?>
-               
+
+        <!-- VIDEO HOME -->
+        <section class="container-fluid mt-3 m-4">
+            <article class="row">
+                <!--Primera columna-->
+                <div class="col-12 col-sm-2"></div>
+                <div class="col-12 col-sm-8">
+                    <?php video("homeVideo.mp4", "mp4") ?>
+                </div>
+                <div class="col-12 col-sm-2"></div>
+            </article>
+        </section>
+
         <!--TARJETAS-->
         <section class="container-fluid mt-3">
             <!--Tarjetas-->
@@ -65,8 +78,9 @@
                     </div>
                 </div>
             </article>
-            
         </section>
+
+
 
         <?php include("includes/footer.php"); ?>
 
