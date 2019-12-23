@@ -58,7 +58,7 @@
         <div class="row mt-4">
             <!--Para centarla: align-self-center-->
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/f250x350a.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/capitana2.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli1" class="ancla">
