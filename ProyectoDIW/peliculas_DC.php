@@ -5,7 +5,7 @@
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
 </head>
-<title>MCU</title>
+<title>DC</title>
 
 <body>
 
@@ -21,25 +21,20 @@
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
                 <li data-target="#carousel" data-slide-to="3"></li>
-                <li data-target="#carousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a title="peli1" href="#peli1"><img src="assets/img/f992x375a.jpg" class="d-block w-100" alt="imagen1" /></a>
+                    <a title="peli1" href="#peli1"><img src="assets/img/peliculas/batmanVsSupermanB.jpg" class="d-block w-100" alt="imagen1" /></a>
                 </div>
                 <div class="carousel-item">
-                    <a title="peli2" href="#peli2"><img src="assets/img/f992x375b.jpg" class="d-block w-100" alt="imagen2"></a>
+                    <a title="peli2" href="#peli2"><img src="assets/img/peliculas/escuadronB.jpg" class="d-block w-100" alt="imagen2"></a>
                 </div>
                 <div class="carousel-item">
-                    <a title="peli3" href="#peli3"><img src="assets/img/f992x375c.jpg" class="d-block w-100" alt="imagen3" /></a>
+                    <a title="peli3" href="#peli3"><img src="assets/img/peliculas/ligaB.jpg" class="d-block w-100" alt="imagen3" /></a>
                 </div>
                 <div class="carousel-item">
-                    <a title="peli4" href="#peli4"><img src="assets/img/f992x375d.jpg" class="d-block w-100" alt="imagen4"></a>
+                    <a title="peli4" href="#peli4"><img src="assets/img/peliculas/jokerB.jpg" class="d-block w-100" alt="imagen4"></a>
                 </div>
-                <div class="carousel-item">
-                    <a title="peli5" href="#peli5"><img src="assets/img/f992x375e.jpg" class="d-block w-100" alt="imagen5"></a>
-                </div>
-
             </div>
             <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,19 +53,19 @@
         <div class="row mt-4">
             <!--Para centarla: align-self-center-->
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/capitana2.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/peliculas/batmanVsSupermanC.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli1" class="ancla">
-                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 1</h2>
+                    <h1 class="font-weight-bold text-warning">Batman Vs. Superman: El Amanecer de la Justicia</h1>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
-                    <p>5 de agosto de 2011</p>
+                    <p>23 de marzo de 2016</p>
                     <h3 class="text-success">Director</h3>
-                    <p>Joe Johnston</p>
+                    <p>Zack Snyder</p>
                     <h3 class="text-success">Sinopsis</h3>
-                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                    <p>Ante el temor de las acciones que pueda llevar a cabo Superman, el vigilante de Gotham City aparece para poner a raya al superhéroe de Metrópolis, mientras que la opinión pública debate cuál es realmente el héroe que necesitan. El hombre de acero y Batman se sumergen en una contienda territorial, pero las cosas se complican cuando una nueva y peligrosa amenaza surge rápidamente, poniendo en jaque la existencia de la humanidad.</p>
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
@@ -80,12 +75,12 @@
                 </p>
                 <div class="collapse" id="colapsa1">
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>Tiene dos partes bien diferenciadas: una, sombría y virulenta; otra, titánica y espectacular. Puede satisfacer a los amantes del puro espectáculo devastador y a los seguidores del trazo oscuro de los superhéroes.</p>
+                        <p>Quim Casas: Diario El Periódico</p>
                     </div>
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>La tabla de salvación de 'BvS' es contar con Ben Affleck como caballero oscuro gruñón, temerario y fascista en lo que, esencialmente, es una aventura de Batman: el desarrollo de Superman es nulo.</p>
+                        <p>Daniel De Partearroyo: Cinemanía</p>
                     </div>
                 </div>
                 <!-- FIN BOTÓN -->
@@ -104,19 +99,19 @@
         <div class="row mt-4">
             <!--Para centarla: align-self-center-->
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/f250x350b.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/peliculas/escuadronC.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli2" class="ancla">
-                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 2</h2>
+                    <h1 class="font-weight-bold text-warning">Escuadrón Suicida</h1>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
-                    <p>5 de agosto de 2011</p>
+                    <p>5 de agosto de 2016</p>
                     <h3 class="text-success">Director</h3>
-                    <p>Joe Johnston</p>
+                    <p>David Ayer</p>
                     <h3 class="text-success">Sinopsis</h3>
-                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                    <p>Mientras el gobierno de EE.UU no tiene claro cómo responder a una visita alienígena a la Tierra con intenciones malignas, Amanda 'El Muro' Waller (Viola Davis), la líder de la agencia secreta A.R.G.U.S., ofrece una curiosa solución: reclutar a los villanos más crueles, con habilidades letales e incluso mágicas, para que trabajen para ellos. Sin demasiadas opciones a dar una negativa, los ocho supervillanos más peligrosos del mundo acceden a colaborar con el Ejecutivo en peligrosas misiones secretas, casi suicidas, para así lograr limpiar su expediente.</p>
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
@@ -126,12 +121,12 @@
                 </p>
                 <div class="collapse" id="colapsa2">
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>La decepción ha sido mayúscula. David Ayer no demuestra pasión por lo que cuenta, más bien abulia y frialdad. Superhéroes prediseñados con mimo crematístico pero sin alma ni ápice de carisma.</p>
+                        <p>Jordi Batlle Caminal: Fotogramas</p>
                     </div>
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>Persigue la nihilista fanfarronería de 'Deadpool' y la caprichosa anarquía de 'Guardianes de la galaxia', pero tropieza con sus propios pies. Para ser una película sobre una banda de temibles forajidos, 'Suicide Squad' tiene un enorme cuidado de no pasarse de la raya.</p>
+                        <p>A. O. Scott: The New York Times</p>
                     </div>
                 </div>
                 <!-- FIN BOTÓN -->
@@ -148,19 +143,19 @@
     <section class="container-fluid">
         <div class="row mt-4">
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/f250x350c.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/peliculas/ligaC.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli3" class="ancla">
-                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 3</h2>
+                    <h1 class="font-weight-bold text-warning">Liga de la Justicia</h1>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
-                    <p>5 de agosto de 2011</p>
+                    <p>16 de noviembre de 2017</p>
                     <h3 class="text-success">Director</h3>
-                    <p>Joe Johnston</p>
+                    <p>Zack Snyder</p>
                     <h3 class="text-success">Sinopsis</h3>
-                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                    <p>Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas.</p>
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
@@ -170,12 +165,12 @@
                 </p>
                 <div class="collapse" id="colapsa3">
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>Los creadores enfrentan al grupo de estrellas de la casa con uno de los villanos más inanes y ridículos del reciente cine de superhéroes. Es una prueba de cargo más para los detractores de la excesiva ola de cine superheroico.</p>
+                        <p>Javier Ocaña: Diario El Pais</p>
                     </div>
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>La cinta expone sus materiales de una forma tan torpe y tan estruendosa a la vez, que su visionado requiere tanto esfuerzo como el de una de Béla Tarr. Incoherente, sin carisma y llena de costurones.</p>
+                        <p>Yago García: Cinemanía</p>
                     </div>
                 </div>
                 <!-- FIN BOTÓN -->
@@ -192,19 +187,19 @@
     <section class="container-fluid">
         <div class="row mt-4">
             <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/f250x350d.jpg" class="card-img-top img-thumbnail">
+                <img src="assets/img/peliculas/jokerC.jpg" class="card-img-top img-thumbnail">
             </div>
             <div class="col-sm-8">
                 <a name="peli4" class="ancla">
-                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 4</h2>
+                    <h1 class="font-weight-bold text-warning">Joker</h1>
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
-                    <p>5 de agosto de 2011</p>
+                    <p>4 de octubre de 2019</p>
                     <h3 class="text-success">Director</h3>
-                    <p>Joe Johnston</p>
+                    <p>Todd Phillips</p>
                     <h3 class="text-success">Sinopsis</h3>
-                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
+                    <p>Arthur Fleck (Phoenix) vive en Gotham con su madre, y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
                 </article>
                 <!-- INICIO BOTÓN-->
                 <p class="text-center">
@@ -214,12 +209,12 @@
                 </p>
                 <div class="collapse" id="colapsa4">
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>Joaquin Phoenix convierte las carcajadas en tos nerviosa, y la sonrisa en el primer síntoma de una enfermedad que se extiende mucho más allá de su cuerpo. Lo mejor de ‘Joker’ es que detrás esconde a un cineasta utilizando el universo prestado... y que nunca es la adaptación la que le está utilizando a él. Una película amoral, que nos recuerda que la anarquía tiene un componente humorístico irresistible, incluso liberador.</p>
+                        <p>Victor Esquirol: FilmAffinity</p>
                     </div>
                     <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <p>A mil millas de la previsión, Phillips desmantela al Joker, lo reconstruye, lo convierte en algo triste, patético y brutal. Tan cierto es que «Joker» es una gran película, como que no se deja disfrutar fácilmente.</p>
+                        <p>Oti Rodríguez Marchante: Diario ABC</p>
                     </div>
                 </div>
                 <!-- FIN BOTÓN -->
@@ -232,65 +227,10 @@
             </div>
         </div>
     </section>
-    <!-- quinta película-->
-    <section class="container-fluid">
-        <div class="row mt-4">
-            <div class="col-sm-4 card-body d-none d-sm-block">
-                <img src="assets/img/f250x350e.jpg" class="card-img-top img-thumbnail">
-            </div>
-            <div class="col-sm-8">
-                <a name="peli5" class="ancla">
-                    <h2 class="text-center font-weight-bold text-warning">TÍTULO PELÍCULA 5</h2>
-                </a>
-                <article>
-                    <h3 class="text-success">Fecha de estreno</h3>
-                    <p>5 de agosto de 2011</p>
-                    <h3 class="text-success">Director</h3>
-                    <p>Joe Johnston</p>
-                    <h3 class="text-success">Sinopsis</h3>
-                    <p>Nacido durante la Gran Depresión (años 30), Steve Rogers creció como un chico enclenque en una familia pobre. Horrorizado por las noticias que llegaban de Europa sobre los nazis, decidió enrolarse en el ejército; sin embargo, debido a su precaria salud, fue rechazado una y otra vez. Enternecido por sus súplicas, el General Chester Phillips le ofreció la oportunidad de participar en un experimento especial: la "Operación Renacimiento". Tras administrarle el “Suero Super-Soldado” y bombardearlo con “vitarrayos”, el cuerpo de Steve se hace perfecto. A continuación, se sometió a un intensivo programa de entrenamiento físico y táctico. Tres meses después, le encomendaron su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como centinela de la libertad y líder de los Vengadores.</p>
-                </article>
-                <!-- INICIO BOTÓN-->
-                <p class="text-center">
-                    <button class="btn btn-primary border-0" type="button" data-toggle="collapse" data-target="#colapsa5" aria-expanded="false">
-                        Críticas
-                    </button>
-                </p>
-                <div class="collapse" id="colapsa5">
-                    <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                    <div class="card card-body bg-secondary">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                </div>
-                <!-- FIN BOTÓN -->
-                <!-- VALORACIÓN -->
-                <div class="text-center">
-                    <p>Envíanos tu valoración:</p>
-                    <?php $nombre = "peli5";
-                    crear($nombre) ?>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--FOOTER-->
     <?php include "includes/footer.php"; ?>
 
 </body>
 
 </html>
-
-
-
-<!--
-    <div class="col-sm-4 d-none d-sm-block align-self-center text-center">
-                
-            class="img-thumbnail">
-            <img src="assets/img/imagenesTarjetas.PNG" 
-                
-                </div>
-
--->

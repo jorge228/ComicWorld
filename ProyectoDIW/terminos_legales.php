@@ -38,9 +38,9 @@
                         </tr>
                     </thead>
                     <tr>
-                        <td>Películas Marvel</td>
-                        <td>Capitana marvel, Capitán América, otroasdfasdf, otros.....otros</th>
-                        <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></th>
+                        <td>Películas - Capitán América</td>
+                        <td>Capitan carrusel</th>
+                        <td><a href="https://visualsluis.artstation.com/">Ver página del autor</a></th>
                     </tr>
                     <tr>
                         <td>Películas Marvel</td>
