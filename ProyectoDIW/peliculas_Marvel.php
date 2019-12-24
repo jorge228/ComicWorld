@@ -61,7 +61,7 @@
                 </a>
                 <article>
                     <h3 class="text-success">Fecha de estreno</h3>
-                    <p>8 de Marzo de 2019</p>
+                    <p>8 de marzo de 2019</p>
                     <h3 class="text-success">Director</h3>
                     <p>Anna Boden, Tyan Fleck</p>
                     <h3 class="text-success">Sinopsis</h3>
@@ -74,7 +74,7 @@
                     </button>
                 </p>
                 <div class="collapse" id="colapsa1">
-                    <div class="card card-body bg-secondary" href="https://www.abc.es/play/cine/criticas/abci-critica-capitana-marvel-superheroina-tiempo-201903072122_noticia.html">
+                    <div class="card card-body bg-secondary">
                         <p>Lo único que importa de verdad es el contenido ideológico. El resto, poco importa. Anivel visual resulta predecible y vvulgar, contiene graves problesmas de ritmo y el resultado no deja de ser agridulce.</p>
                         <p>Beatriz Martínez: Diario El Periódico</p>
                     </div>
@@ -227,7 +227,7 @@
             </div>
         </div>
     </section>
-   
+
     <!--FOOTER-->
     <?php include "includes/footer.php"; ?>
 
