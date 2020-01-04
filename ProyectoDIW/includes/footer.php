@@ -4,7 +4,7 @@
 
             <!--Icono CW-->
             <div class="col-12 col-md-3 text-center">
-                <img class="img-fluid" src="assets/img/logo.png" width="125px">
+                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px">
             </div>
 
             <!--Navegacion-->
@@ -13,10 +13,6 @@
                     <h4> Navegación </h4>
                     <ul class="p-0">
                         <li><a href="index.php">Inicio</a></li>
-                        <li><a href="comic_Marvel.php">Cómics</a></li>
-                        <li><a href="peliculas.php">Películas</a></li>
-                        <li><a href="videojuegos_Lego.php">Videojuegos</a></li>
-                        <li><a href="personajes.php">Personajes</a></li>
                         <li><a href="terminos_legales.php">Términos Legales</a></li>
                     </ul>
                 </div>
@@ -25,7 +21,7 @@
             <!--Sobre nosotros-->
             <div class="col-6 col-md-3 px-0 pt-5 pt-md-0 pr-4 text-center">
                 <h4> Sobre nosotros </h4>
-                <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaiones Web con fines meramente académicos</p>
+                <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaciones Web con fines meramente académicos</p>
             </div>
             
             <!--Redes sociales-->
