@@ -13,33 +13,35 @@
         <?php include("includes/menuNav.php"); ?>
 
         <!-- Banner -->
-        <?php banner("VidLego", "LEGO MARVEL SUPERHEROES");?>    
+        <?php banner("VidUltimateAlliance", "ULTIMATE ALLIANCE");?>    
         
         <div class="container-fluid">
 
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_001.jpg" alt="imagen" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
                         <div class="row">
                             <div class="col-12 col-sm-8">
                                 <section>
-                                    <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
+                                    <h2 class="text-warning">Marvel Ultimate Alliance 3: The Black Order</h2>    
                                     <p>
-                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
-                                        y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
-                                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
-                                        PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
-                                        variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                        Marvel Ultimate Alliance 3: The Black Order es un videojuego desarrollado por 
+                                        Team Ninja de Koei Tecmo y publicado por Nintendo para Nintendo Switch. Es la 
+                                        tercera entrega de la serie Marvel: Ultimate Alliance después de Marvel: Ultimate 
+                                        Alliance de 2006 y Marvel: Ultimate Alliance 2 de 2009, y el primer juego de Marvel
+                                        publicado por Nintendo. Está ambientado en un universo completamente diferente al 
+                                        de los dos juegos anteriores. Tras su lanzamiento, el juego recibió críticas 
+                                        mixtas o promedio de los críticos.
                                     </p>
  
                                 </section>
 
                                 <section class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-GvRiJ37_IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -55,15 +57,15 @@
                                         </thead>
                                         <tr>
                                             <th>Desarrollado por:</th>
-                                            <td>Traveller's Tales</th>
+                                            <td>Team Ninja</th>
                                         </tr>
                                         <tr>
                                             <th>Fecha lanzamiento:</th>
-                                            <td>19 de junio de 2012</th>
+                                            <td>19 de Julio, 2019</th>
                                         </tr>                                    
                                         <tr>
                                             <th>Plataforma(s):</th>
-                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                            <td>Nintendo Switch</th>
                                         </tr> 
                                         <tr>
                                             <th>Modos de juego:</th>
@@ -90,26 +92,28 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_002.jpg" alt="imagen" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
                         <div class="row">
                             <div class="col-12 col-sm-8">
                                 <section>
-                                    <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
+                                    <h2 class="text-warning">Marvel: Ultimate Alliance</h2>    
                                     <p>
-                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
-                                        y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
-                                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
-                                        PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
-                                        variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                        Marvel: Ultimate Aliance es un videojuego de rol de acción, parecido a otros
+                                        dos títulos de juegos de Marvel que son X-Men Legends y X-Men Legends II: Rise of Apocalypse,
+                                        este contiene a 140 villanos y héroes del Universo Marvel, entre los más notables están: Spider-Man, 
+                                        Wolverine, Iron Man, Capitán América, Los 4 Fantásticos, Thor, Elektra, Nick Furia y como presentación 
+                                        especial Silver Surfer, entre otros. Entre los más notables villanos están: Dr. Doom (jefe de la alianza 
+                                        de villanos), Loki, Galactus, Ymir, Mephisto y Blackheart, M.O.D.O.K., entre muchos otros. 
+                                        Tiene una secuela, Marvel Ultimate Alliance 2.
                                     </p>
  
                                 </section>
 
                                 <section class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bwMxBctbUf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -125,15 +129,15 @@
                                         </thead>
                                         <tr>
                                             <th>Desarrollado por:</th>
-                                            <td>Traveller's Tales</th>
+                                            <td>Raven Software</th>
                                         </tr>
                                         <tr>
                                             <th>Fecha lanzamiento:</th>
-                                            <td>19 de junio de 2012</th>
+                                            <td>24 de octubre de 2006</th>
                                         </tr>                                    
                                         <tr>
                                             <th>Plataforma(s):</th>
-                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                            <td>Xbox, Microsoft Windows, PlayStation 2, Xbox 360, Game Boy Advance, PlayStation Portable, Wii, PlayStation 3</th>
                                         </tr> 
                                         <tr>
                                             <th>Modos de juego:</th>
@@ -161,25 +165,26 @@
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_003.jpg" alt="imagen" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
                         <div class="row">
                             <div class="col-12 col-sm-8">
                                 <section>
-                                    <h2 class="text-warning">Lego Batman 2: DC Super Héroes</h2>    
+                                    <h2 class="text-warning">Marvel: Ultimate Alliance 2</h2>    
                                     <p>
-                                        Lego Batman 2 es un videojuego de Lego y DC comics estrenado en junio de 2012,
-                                        y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
-                                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
-                                        PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
-                                        variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
+                                        Marvel Ultimate Alliance 2, anteriormente conocido como Marvel Ultimate Alliance: 
+                                        Fusion (y actualmente abreviado como MUA2), es el segundo videojuego de la saga de 
+                                        Marvel: Ultimate Alliance, la cual ha sido desarrollada por Vicarious Visions 
+                                        Alchemy. Su historia trata sobre las novelas gráficas Secret Wars y Civil War, 
+                                        publicadas por Marvel Comics. Aunque la jugabilidad es muy similar a su predecesor,
+                                        contiene algunas novedades.
                                     </p>
                                 </section>
 
                                 <section class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HHgDZzuoIOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/85y9xNlMiKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                                 </section>
 
                             </div>
@@ -195,15 +200,15 @@
                                         </thead>
                                         <tr>
                                             <th>Desarrollado por:</th>
-                                            <td>Traveller's Tales</th>
+                                            <td>Vicarious Visions Alchemy, Savage Entertainment, N-Space</th>
                                         </tr>
                                         <tr>
                                             <th>Fecha lanzamiento:</th>
-                                            <td>19 de junio de 2012</th>
+                                            <td>15 de septiembre de 2009</th>
                                         </tr>                                    
                                         <tr>
                                             <th>Plataforma(s):</th>
-                                            <td>PlayStation 3, PlayStation Vita, Wii, Xbox 360, Nintendo 3DS, Nintendo DS, Microsoft Windows</th>
+                                            <td>Nintendo DS, PlayStation 2, Wii, PlayStation Portable, PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows, PlayStation 3</th>
                                         </tr> 
                                         <tr>
                                             <th>Modos de juego:</th>

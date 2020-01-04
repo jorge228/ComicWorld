@@ -17,7 +17,7 @@
         <section>
             <h1 class="font-weight-bold text-warning">Aviso Legal</h1>
             <h2 class="text-success">1. Datos Identificativos</h2>
-            <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaiones Web con fines meramente académicos.</p>
+            <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaciones Web con fines meramente académicos.</p>
             <h2 class="text-success">2. Aceptación por el Usuario</h2>
             <p>Las presentes Condiciones Generales de Utilización de ComicWorld tienen por finalidad regular la puesta a disposición de los usuarios la información contenida en nuestra web.</p>
             <p>Por la mera navegación en nuestra web y/o por la utilización de los servicios incluidos en él, Ud. adquiere la condición de Usuario. Tanto la navegación como la utilización de ComicWorld y/o la utilización de cualquiera de los servicios suponen la aceptación como Usuario, sin reservas de ninguna clase, de todas y cada una de las presentes Condiciones Generales de Utilización.</p>
@@ -57,11 +57,15 @@
                         <td>Capitana marvel, Capitán América, otroasdfasdf, otros.....otros</th>
                         <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></th>
                     </tr>
+                    <tr>
+                        <td>Videojuegos Saga Arkham</td>
+                        <td>vid_ark_001, vid_ark_002, vid_ark_003, vid_banner_Arkham</th>
+                        <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></th>
+                    </tr>
                 </table>
             </aside>
         </section>
     </div>
-
 
     <!--FOOTER-->
     <?php include "includes/footer.php"; ?>
