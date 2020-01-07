@@ -2,7 +2,11 @@
 <html>
 
 <head>
-    <?php include "includes/contenidoHead.php"; ?>
+    <?php 
+    include "includes/contenidoHead.php";
+    include "includes/videos.php"; 
+    ?>
+    <script src='js/controlesVideo.js'></script>
 </head>
 <title>Términos Legales</title>
 
@@ -26,41 +30,65 @@
             <p>Derechos de propiedad intelectual e industrial son todos los derechos reconocidos por la legislación de propiedad intelectual que tengan carácter patrimonial o de explotación para cualquier finalidad y para cualquier modalidad de uso, así como todos los derechos reconocidos por la legislación de propiedad industrial, incluidos en ambos casos la facultad de solicitar los registros e inscripciones oportunos para la obtención o protección de estos derechos.</p>
             <p>Las licencias Creative Commons (CC) nacen de una organización sin ánimo de lucro, cuyo propósito es el desarrollo de modelos de licencias que permitan un mayor alcance de la cultura, utilizando las nuevas tecnologías, oprimiendo los obstáculos que presenta el copyright y protegiendo los derechos de los autores a la conservación de su obra original.</p>
             <p>Con estas licencias el autor puede definir los usos que se le podrá dar a su obra. El uso de estas licencias es gratuito y gozan de garantías legales internacionales. El Titular de la obra siempre conservará sus derechos como autor.</p>
+            <section class="container-fluid mt-3 m-4">
+                <article class="row">
+                    <!--Primera columna-->
+                    <div class="col-12 col-sm-2"></div>
+                    <div class="col-12 col-sm-8">
+                        <?php video("v_licenciaCC.mp4", "mp4") ?>
+                    </div>
+                    <div class="col-12 col-sm-2"></div>
+                </article>
+            </section>
             <p>En nuestra página web, ComicWorld, utilizamos el tipo de Reconocimiento-No Comercial. Esta licencia le permite a otros entremezclar, ajustar y construir a partir de la obra original con fines no comerciales, sin embargo aunque en las nuevas creaciones deban reconocer la autoría y no puedan ser usadas de forma comercial.</p>
             <h2 class="text-success">4. Uso de Contenido de Terceros</h2>
             <aside class="tablaDatos">
                 <table class="table table-bordered">
                     <thead class="bg-success">
                         <tr class="text-center">
-                            <th><h3 class="text-light">Página</h3></th>
-                            <th><h3 class="text-light">Imagen</h3></th>
-                            <th><h3 class="text-light">Licencia</h3></th>
+                            <th>
+                                <h3 class="text-light">Página</h3>
+                            </th>
+                            <th>
+                                <h3 class="text-light">Archivo</h3>
+                            </th>
+                            <th>
+                                <h3 class="text-light">Licencia</h3>
+                            </th>
+                            <th>
+                                <h3 class="text-light">Web</h3>
+                            </th>
                         </tr>
                     </thead>
                     <tr>
-                        <td>Películas - Capitán América</td>
-                        <td>Capitan carrusel</th>
+                        <td>terminos_legales.php</td>
+                        <td>v_licenciaCC.mp4</th>
+                        <td>Creative Commons: by</th>
+                        <td><a href="https://creativecommons.org/">Ver página web</a></th>
+                    </tr>
+                    <tr>
+                        <td>películas_Marvel.php</td>
+                        <td>capitanB.jpg</th>
+                        <td>Copyright ©</th>
                         <td><a href="https://visualsluis.artstation.com/">Ver página del autor</a></th>
                     </tr>
                     <tr>
-                        <td>Películas Marvel</td>
-                        <td>Capitana marvel, Capitán América, otroasdfasdf, otros.....otros</th>
-                        <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></th>
+                        <td>películas_Marvel.php</td>
+                        <td>capitanaB.jpg, capitanaC.jpg, capitanC.jpg, thorB.jpg, thorC.jpg, guardianesB.jpg, guardiancesC.jpg</td>
+                        <td>©2020 MARVEL</th>
+                        <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
                     </tr>
                     <tr>
-                        <td>Películas Marvel</td>
-                        <td>Capitana marvel, Capitán América, otroasdfasdf, otros.....otros</th>
-                        <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></th>
-                    </tr>
-                    <tr>
-                        <td>Películas Marvel</td>
-                        <td>Capitana marvel, Capitán América, otroasdfasdf, otros.....otros</th>
-                        <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></th>
+                        <td>peliculas_DC.php</td>
+                        <td>batmanVsSupermanB.jpg, batmanVsSupermanC.jpg, escuadronB.jpg, escuadronC.jpg, jokerB.jpg, jokerC.jpg, ligaB.jpg, ligaC.jpg</td>
+                        <td>TM & © 2015 Warner Bros. Entertainment Inc. All rights reserved.</th>
+                        <td><a href="https://policies.warnerbros.com/privacy/es-eu/html/privacy_es-eu_1.1.0.html">Ver su página web</a></th>
                     </tr>
                     <tr>
                         <td>Videojuegos Saga Arkham</td>
-                        <td>vid_ark_001, vid_ark_002, vid_ark_003, vid_banner_Arkham</th>
-                        <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></th>
+                        <td>vid_ark_001, vid_ark_002, vid_ark_003, vid_banner_Arkham</td>
+                        <td></td>
+                        <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></td>
                     </tr>
                 </table>
             </aside>
