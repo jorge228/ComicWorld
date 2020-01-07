@@ -25,8 +25,8 @@
                 <!--Primera columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100  border-0 shadow">
-                        <img src="assets/img/home/home_Comics.jpg" class="card-img-top img-thumbnail "/>
-                        <div class="card-body text-justify border ">
+                        <img src="assets/img/home/home_Comics.jpg" class="card-img-top img-thumbnail border-0"/>
+                        <div class="card-body text-justify">
                             <h4 class="card-title text-center">Cómics</h4>
                             <p>¿Te gustan los cómics? ¡Has venido al sitio indicado! En ComicWorld podrás consultar información de los últimos cómics de tus personajes favoritos.</p>
                         </div>
@@ -36,7 +36,7 @@
                 <!--Segunda columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
+                        <img src="assets/img/home/home_peliculas.jpg" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Películas</h4>
                             <p>Información sobre las últimas películas del Universo Cinematográfico de Marvel y el DC Extended Universe en nuestra sección de películas</p>
@@ -46,7 +46,7 @@
                 <!--Tercera columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
+                        <img src="assets/img/home/home_Videojuegos.jpg" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Videojuegos</h4>
                             <p>Para los gamers: los últimos videojuegos de superhéroes en todas las consolas.</p>
@@ -57,7 +57,7 @@
                 <!--Cuarta columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow">
-                        <img src="assets/img/imagenesTarjetas.PNG" class="card-img-top img-thumbnail border-0"/>
+                        <img src="assets/img/home/home_personajes.jpg" class="card-img-top img-thumbnail border-0"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Personajes</h4>
                             <p>¿No conoces la historia de tu personaje favorito? ¡Entra en nuestra sección de personajes e infórmate! </p>
