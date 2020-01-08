@@ -1,10 +1,10 @@
 <?php
 //Funcion para insertar un video pasando ruta y tipo de video
-function video($ruta, $formatoVideo){?>
+function video($ruta, $formatoVideo, $aspecto){?>
 
     <div class="video-container">
         <!-- Video -->
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-<?php echo $aspecto ?>">
             <video class="video">
                 <source src="assets/videos/<?php echo $ruta; ?>" type="video/<?php echo $formatoVideo; ?>">
             </video>

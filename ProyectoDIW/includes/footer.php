@@ -32,7 +32,13 @@
                     <li class="d-inline px-2"><a href="#"><i class="fab fa-youtube fa-3x"></i></a></li>
                     <li class="d-inline px-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
                 </ul>
+
+                <!--Imagen licencia-->
+                <div class="text-center">
+                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg">
+                </div>
             </div>
+
         </div>
     </div>
 </footer>

@@ -23,7 +23,7 @@
                 <!--Primera columna-->
                 <div class="col-12 col-sm-2"></div>
                 <div class="col-12 col-sm-8">
-                    <?php video("homeVideo.mp4", "mp4") ?>
+                    <?php video("homeVideo.mp4", "mp4", "16by9") ?>
                 </div>
                 <div class="col-12 col-sm-2"></div>
             </article>

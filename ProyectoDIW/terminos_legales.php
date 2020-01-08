@@ -35,7 +35,7 @@
                     <!--Primera columna-->
                     <div class="col-12 col-sm-2"></div>
                     <div class="col-12 col-sm-8">
-                        <?php video("v_licenciaCC.mp4", "mp4") ?>
+                        <?php video("v_licenciaCC.mp4", "mp4", "4by3") ?>
                     </div>
                     <div class="col-12 col-sm-2"></div>
                 </article>
