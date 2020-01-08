@@ -15,6 +15,10 @@
     <!--JUEGO-->
     <div class="container-fluid mt-5">
         <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-warning font-weight-bold">Floaty Bird</h1>
+            </div>
+
             <div class="col-12 d-flex justify-content-center">
                 <canvas width="900" height="560" id="canvasJuego" >Tu navegador no soporta HTML5</canvas>
             </div>
