@@ -62,27 +62,27 @@
                     </thead>
                     <tr>
                         <td>terminos_legales.php</td>
-                        <td>v_licenciaCC.mp4</th>
-                        <td>Creative Commons: by</th>
-                        <td><a href="https://creativecommons.org/">Ver página web</a></th>
+                        <td>v_licenciaCC.mp4</td>
+                        <td>Creative Commons: by</td>
+                        <td><a href="https://creativecommons.org/">Ver su página web</a></td>
                     </tr>
                     <tr>
                         <td>películas_Marvel.php</td>
-                        <td>capitanB.jpg</th>
-                        <td>Copyright ©</th>
-                        <td><a href="https://visualsluis.artstation.com/">Ver página del autor</a></th>
+                        <td>capitanB.jpg</td>
+                        <td>Copyright ©</td>
+                        <td><a href="https://visualsluis.artstation.com/">Ver página del autor</a></td>
                     </tr>
                     <tr>
                         <td>películas_Marvel.php</td>
                         <td>capitanaB.jpg, capitanaC.jpg, capitanC.jpg, thorB.jpg, thorC.jpg, guardianesB.jpg, guardiancesC.jpg</td>
-                        <td>©2020 MARVEL</th>
-                        <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
+                        <td>©2020 MARVEL</td>
+                        <td><a href="https://disneytermsofuse.com/spanish">Ver su página web</a></td>
                     </tr>
                     <tr>
                         <td>peliculas_DC.php</td>
                         <td>batmanVsSupermanB.jpg, batmanVsSupermanC.jpg, escuadronB.jpg, escuadronC.jpg, jokerB.jpg, jokerC.jpg, ligaB.jpg, ligaC.jpg</td>
-                        <td>TM & © 2015 Warner Bros. Entertainment Inc. All rights reserved.</th>
-                        <td><a href="https://policies.warnerbros.com/privacy/es-eu/html/privacy_es-eu_1.1.0.html">Ver su página web</a></th>
+                        <td>TM & © 2015 Warner Bros. Entertainment Inc. All rights reserved.</td>
+                        <td><a href="https://policies.warnerbros.com/privacy/es-eu/html/privacy_es-eu_1.1.0.html">Ver su página web</a></td>
                     </tr>
                     <tr>
                         <td>Videojuegos Saga Arkham</td>
