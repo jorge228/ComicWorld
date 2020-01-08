@@ -59,32 +59,37 @@ h1, h2, h3, h4, h5 {
         background-image: url("../assets/img/pers/pers_WonderWomanBanner.jpg");
 
     } 
+
+    .bannerCom{
+        /*  Imagen de fondo */
+        background-image: url("../assets/img/personajes_banner_spiderman.jpg");
+    }
 /*- - - - - - - - - End Banners Pag Personajes - - - - - - - - - */
 
 /*- - - - - - - - - Start Banners Pag Videojuegos - - - - - - - - - */
     .bannerVidArkham {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/vid/vid_banner_lego.jpg");
+        background-image: url("../assets/img/vid/vid_banner_Arkham.jpg");
     }
 
     .bannerVidInjustice {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/vid/vid_banner_lego.jpg");
+        background-image: url("../assets/img/vid/vid_banner_Injustice.jpg");
     }
 
     .bannerVidLego {
         /*  Imagen de fondo */
         background-image: url("../assets/img/vid/vid_banner_lego.jpg");
-    }
+    } 
 
     .bannerVidMarvelvsCapcom {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/vid/vid_banner_lego.jpg");
+        background-image: url("../assets/img/vid/vid_banner_marvelvscapcom.jpg");
     }
 
     .bannerVidUltimateAlliance {
         /*  Imagen de fondo */
-        background-image: url("../assets/img/vid/vid_banner_lego.jpg");
+        background-image: url("../assets/img/vid/vid_banner_Ultimate.jpg");
     }
 /*- - - - - - - - - End Banners Pag Videojuegos - - - - - - - - - */
  
@@ -249,4 +254,4 @@ h1, h2, h3, h4, h5 {
 
 .wrapperPntCompletaVideo{
 	float:right;
-}
+} 

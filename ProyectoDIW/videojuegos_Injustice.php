@@ -3,85 +3,164 @@
     <head>
         <?php include("includes/contenidoHead.php"); ?>
         <?php include("includes/banners.php"); ?>
+        <?php include("includes/valoracion.php"); ?>
+        <?php include("includes/videos.php"); ?>
+
+        <script src="js/controlesVideo.js"></script>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
         <?php include("includes/menuNav.php"); ?>
 
         <!-- Banner -->
-        <?php banner("Vid", "LEGO MARVEL SUPERHEROES");?>    
+        <?php banner("VidInjustice", "SAGA INJUSTICE");?>    
         
         <div class="container-fluid">
 
             <!-- Fila 1 -->
             <div class="row mt-4">
-                <div class="col-12 col-sm-3 align-self-center text-center">               
-                    <img class="zoom rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
-                </div>
+                <aside class="p-4 col-12 col-sm-3 card-body">               
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_001.jpg" alt="imagen" />
+                </aside>
                 <div class="col-12 col-sm-9">
-                    <div class="shadow card p-3">
-                        <p>
-                        <h2 class="text-center">Lego Batman 2: DC Super Héroes</h2>    
-                        Lego Batman 2: DC Super Heroes es un videojuego de Lego y DC comics estrenado en junio de 2012,
-                         y es la secuela de Lego Batman: El Videojuego (2008). Fue desarrollado por Traveller's Tales y
-                        comercializado por Warner Bros. Interactive Entertainment. Hay versiones para PlayStation 3,
-                         PlayStation Vita, Nintendo 3DS, Wii, Nintendo DS, Xbox 360, y Microsoft Windows. Una gran
-                          variedad de personajes de DC Comics dentro y fuera de la continuidad de Batman serán personajes jugables. Lego Batman 2: DC Super Heroes también cuenta con diálogo, el segundo juego Lego de Traveller's Tales en hacerlo.
-                        </p>
-                        <p>Desarrollado por: Traveller's Tales</p>
-                        <p>Fecha lanzamiento: 19 de junio de 2012</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                    <article class="p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <section>
+                                    <h2 class="text-warning">Injustice: Gods Among Us</h2>    
+                                    <p>
+                                        Injustice: Gods Among Us (en español: Injustice: Dioses entre nosotros) es un videojuego 
+                                        de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive. 
+                                        El juego está protagonizado por los héroes y villanos del Universo DC; su historia está 
+                                        ubicada en un universo alternativo, donde Superman se vuelve un dictador y forma un nuevo 
+                                        orden mundial llamado el Régimen. Injustice fue anunciado oficialmente el 31 de mayo de 2012 
+                                        y lanzado el 16 de abril de 2013 para PlayStation 3, Wii U y Xbox 360.2​ El principal 
+                                        desarrollador del juego Ed Boon dijo que la idea principal era crear una nueva serie de 
+                                        peleas fuera de Mortal Kombat, así como crear un nuevo modo de juego.
+                                    </p>
+ 
+                                </section>
+
+                                <section class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hMkTQSbE6Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                </section>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <section class="tablaDatos">
+                                    
+                                    <!--Tabla datos-->
+                                    <table class="table table-bordered table-lg p-4">
+                                        <thead class="bg-success">
+                                            <tr class="text-center">
+                                                <th colspan="2"><h3 class=" text-light">Información General</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <th>Desarrollado por:</th>
+                                            <td>NetherRealm Studios</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha lanzamiento:</th>
+                                            <td>16 de abril de 2013</th>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Plataforma(s):</th>
+                                            <td>PlayStation 3, Wii U</th>
+                                        </tr> 
+                                        <tr>
+                                            <th>Modos de juego:</th>
+                                            <td>Un jugador, Multijugador</th>
+                                        </tr> 
+                                        	
+                                    </table>
+                                    
+                                    <div class="text-center">
+                                        <?php
+                                            //Estrellas
+                                            $nombre = "v1";
+                                            crear($nombre);
+                                        ?>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
                 </div>
             </div>
 
             <!-- Fila 2 -->
             <div class="row mt-4">
-                <div class="col-12 col-sm-9 order-2 order-sm-1">
-                    <div class="shadow card p-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3 order-1 order-sm-2 mx-auto align-self-center text-center">
-                    <img class="shadow-lg m-3" src="assets/img/videojuegos_5_001.jpg" style="height: 200px;"/>
-                </div>
-            </div>
-
-            <!-- Fila 3 -->
-            <div class="row mt-4">
-                <div class="col-12 col-sm-3 align-self-center text-center">               
-                    <img class="rounded shadow-lg m-3" src="assets/img/videojuegos_5_001.png"/>
-                </div>
+                <aside class="p-4 col-12 col-sm-3 card-body">               
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_002.jpg" alt="imagen" />
+                </aside>
                 <div class="col-12 col-sm-9">
-                    <div class="shadow card p-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                    <article class="p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <section>
+                                    <h2 class="text-warning">Injustice 2</h2>    
+                                    <p>
+                                        Injustice 2 es un videojuego de lucha desarrollado por NetherRealm Studios y publicado 
+                                        por Warner Bros. Interactive Entertainment. Es la secuela del videojuego de 2013 Injustice: 
+                                        Dioses entre nosotros. El juego fue lanzado a la venta en mayo de 2017 para las consolas 
+                                        PlayStation 4 y Xbox One, y el 14 de noviembre en Microsoft Windows a través de la Tienda 
+                                        Microsoft y de la plataforma Steam. Al igual que la entrega anterior, una app móvil fue 
+                                        lanzada para dispositivos de IOS y Android.
+                                    </p>
+ 
+                                </section>
+
+                                <section class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hX0WA6yIZ7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                </section>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <section class="tablaDatos">
+                                    
+                                    <!--Tabla datos-->
+                                    <table class="table table-bordered table-lg p-4">
+                                        <thead class="bg-success">
+                                            <tr class="text-center">
+                                                <th colspan="2"><h3 class=" text-light">Información General</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <th>Desarrollado por:</th>
+                                            <td>NetherRealm Studios</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha lanzamiento:</th>
+                                            <td>4 de noviembre de 2017</th>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Plataforma(s):</th>
+                                            <td>PlayStation 4, Xbox One</th>
+                                        </tr> 
+                                        <tr>
+                                            <th>Modos de juego:</th>
+                                            <td>Un jugador, Multijugador</th>
+                                        </tr> 
+                                        	
+                                    </table>
+                                    
+                                    <div class="text-center">
+                                        <?php
+                                            //Estrellas
+                                            $nombre = "v1";
+                                            crear($nombre);
+                                        ?>
+                                    </div>
+                                    
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
                 </div>
             </div>
-
-        </div>
 
         <?php include("includes/footer.php"); ?>
 
