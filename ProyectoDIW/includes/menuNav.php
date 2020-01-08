@@ -87,7 +87,7 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">JUEGO 1</a>
-                        <a class="dropdown-item" href="#">JUEGO 2</a>
+                        <a class="dropdown-item" href="juegoJorge.php">CAZA AL DUENDE</a>
                         <a class="dropdown-item" href="#">JUEGO 3</a>
                         <a class="dropdown-item" href="juegoDani.php">FLOATY BIRD</a>
                     </div>
