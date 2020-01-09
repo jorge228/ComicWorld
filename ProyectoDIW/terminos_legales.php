@@ -85,10 +85,52 @@
                         <td><a href="https://policies.warnerbros.com/privacy/es-eu/html/privacy_es-eu_1.1.0.html">Ver su página web</a></td>
                     </tr>
                     <tr>
-                        <td>Videojuegos Saga Arkham</td>
-                        <td>vid_ark_001, vid_ark_002, vid_ark_003, vid_banner_Arkham</td>
-                        <td></td>
-                        <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></td>
+                        <td>index.php</td>
+                        <td>homeVideo.mp4 (audio)</td>
+                        <td>©2020 Creative Commons 3.0</td>
+                        <td><a href="https://www.pond5.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>index.php</td>
+                        <td>homeVideo.mp4 (Imágenes cedidas por The Top Comics Youtube)</td>
+                        <td>Licencia estandar Youtube</td>
+                        <td><a href="https://www.youtube.com/channel/UCiBwOVBljEjcsLUjwI274Xw">Ver canal Youtube autor</a></td>
+                    </tr>
+                    <tr>
+                        <td>index.php</td>
+                        <td>home_Comics.jpg, home_peliculas.jpg, home_Personajes.jpg, home_Videojuegos.jpg</td>
+                        <td>©2020 Creative Commons 3.0</td>
+                        <td><a href="https://www.flaticon.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Arkham.php</td>
+                        <td>vid_ark_001.jpg, vid_ark_002.jpg, vid_ark_003.jpg, vid_banner_Arkham.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Injustice.php</td>
+                        <td>vid_injustice_001.jpg, vid_injustice_002.jpg, vid_banner_Injustice.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Lego.php</td>
+                        <td>vid_lego_001.jpg, vid_lego_002.jpg, vid_lego_003.jpg, vid_banner_lego.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_MarvelvsCapcom.php</td>
+                        <td>vid_marvelvscapcom_001.jpg, vid_marvelvscapcom_002.jpg, vid_marvelvscapcom_003.jpg, vid_banner_marvelvscapcom.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_UltimateAlliance.php</td>
+                        <td>vid_ultimate_001.jpg, vid_ultimate_002.jpg, vid_ultimate_003.jpg, vid_banner_Ultimate.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
                     </tr>
                     <tr>
                         <td>personajes_Spiderman.php</td>
@@ -119,6 +161,18 @@
                         <td>pers_WonderWomanBanner.jpg, pers_WonderWomanOrig1.jpg, pers_WonderWomanOrig2.jpeg</td>
                         <td>©2020 DC COMICS</td>
                         <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>footer.php</td>
+                        <td>footer.jpg</td>
+                        <td>COMIC WORLD</td>
+                        <td><a href="#">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>footer.php</td>
+                        <td>logo.png</td>
+                        <td>COMIC WORLD (Recurso Propio)</td>
+                        <td><a href="#">Ver página web</a></td>
                     </tr>
                 </table>
             </aside>
