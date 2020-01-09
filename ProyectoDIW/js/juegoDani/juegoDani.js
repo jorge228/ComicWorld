@@ -47,19 +47,6 @@ function init(){
     canvas=document.getElementById("canvasJuego");
     ctx=canvas.getContext("2d");
 
-    //Controles teclado
-    window.addEventListener("keyup", function(e){
-
-        e.preventDefault();
-        
-        //Si el juego no ha terminado y el usuario pulsa la tecla cursor arriba o la tecla espacio
-        //el pajaro aleteara (ademas, el pajaro no puede salirse del canvas por arriba)
-        if (e.keyCode==38 || e.keyCode==32){
-            controles();
-        }
-
-    });
-
     //Control click raton
     canvas.addEventListener("click", controles, false);
 }
@@ -313,8 +300,8 @@ function paintGetReady(){
     ctx.lineWidth="1.3";
     ctx.strokeStyle="black";
     ctx.fillStyle="#f5c842";
-    ctx.fillText("Click, espacio o flecha arriba para empezar", 230,370);
-    ctx.strokeText( "Click, espacio o flecha arriba para empezar", 230,370);
+    ctx.fillText("Click izquierdo para empezar", 285,370);
+    ctx.strokeText( "Click izquierdo para empezar", 285,370);
 
     ctx.drawImage(imgGetReady, 300, ALTO_CANVAS/5);
     ctx.drawImage(imgTutorial, 360, ALTO_CANVAS/2.7);
