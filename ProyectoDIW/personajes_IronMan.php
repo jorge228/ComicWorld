@@ -41,7 +41,7 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers/pers_IronManOrig1.jpg">
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_IronManOrig1.jpg">
                     <p class="mt-2">Anthony Edward Stark es el hijo del jefe de Industrias Stark, Howard Stark y su esposa Maria Stark. 
                     Un niño genio que ingresa al MIT a la edad de 15 años para estudiar ingeniería mecánica y luego recibe maestrías en ingeniería eléctrica y física. 
                     Después de que sus padres mueren en un accidente automovilístico, hereda la compañía de su padre.</p>

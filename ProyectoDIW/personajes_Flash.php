@@ -40,7 +40,7 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers/pers_FlashOrig1.jpg">
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_FlashOrig1.jpg">
                     <p class="mt-2">Hasta ahora, al menos cuatro personajes diferentes, cada uno de los cuales de alguna manera obtuvo el poder de "la Fuerza de la Velocidad", han asumido el papel del Flash en las historias de DC: el atleta universitario Jay Garrick siendo el primero en portar el título (1940-1951, 1961-2011, 2017-presente ), el científico forense Barry Allen (1956-1985, 2008-presente), el sobrino de Barry Wally West (1986-2011, 2016-presente) y el nieto de Barry Bart Allen (2006-2007). 
                     Cada encarnación de Flash ha sido un miembro clave de al menos uno de los principales equipos de DC: Sociedad de la Justicia de América, Liga de la Justicia de América, Los Jóvenes Titanes y Young Justice. Wally West y Bart Allen originalmente fueron conocidos como Kid Flash, posteriormente asumieron el manto de Flash (Bart también era conocido como Impulso).</p>
 

@@ -42,7 +42,7 @@
                 
                 <article>
                     <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2" src="assets/img/pers/pers_WonderWomanOrig1.jpg">
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_WonderWomanOrig1.jpg">
                     <p class="mt-2">Debutando en All Star Comics #8, Diana era miembro de una tribu de mujeres llamadas las Amazonas, nativa de Isla Paraíso. Esta era una isla aislada situada en medio de un vasto océano, allí el capitán Steve Trevor tuvo un accidente aéreo donde logró apenas aterrizar su aeronave cerca a la isla, fue encontrado vivo pero inconsciente. Diana lo encontró junto a una compañera amazona. Diana le cuidó hasta que sanó pero terminó enamorándose de él. 
                     Se llevó a cabo una competencia entre todas las amazonas ante la corte de la madre de Diana, Hipólita la Reina de las Amazonas, con el fin de determinar quién era la más digna de entre todas las mujeres para llevar de regreso a Steve al mundo exterior; Hipólita le adjudicaría a la ganadora la responsabilidad de entregarle al capitán Steve Trevor su regreso al mundo humano y para poder luchar por la justicia. Hipólita le prohibía a Diana participar en el concurso; no obstante, aun así ella tomó parte, usando una máscara para ocultar su identidad. Ganó el concurso y se revela a sí misma, sorprendiendo a su madre Hipólita, que al final se dejaría llevar por el deseo de su hija Diana para que fuese al mundo de los hombres. Ella entonces regresa a salvo a Steve Trevor de vuelta a su casa y se le 
                     concede un vestido especial hecho por su propia madre para llevar su nuevo papel como Wonder Woman.</p>
