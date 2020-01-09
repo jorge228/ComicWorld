@@ -90,6 +90,36 @@
                         <td></td>
                         <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></td>
                     </tr>
+                    <tr>
+                        <td>personajes_Spiderman.php</td>
+                        <td>pers_SpidermanBanner.jpg, pers_SpidermanOrig1.jpeg, pers_SpidermanOrig2.jpg</td>
+                        <td>©2020 MARVEL</td>
+                        <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>personajes_Superman.php</td>
+                        <td>pers_SupermanBanner.jpg, pers_SupermanOrig1.jpg, pers_SupermanOrig2.jpeg</td>
+                        <td>©2020 DC COMICS</td>
+                        <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>personajes_IronMan.php</td>
+                        <td>pers_IronManBanner.jpg, pers_IronManOrig1.jpeg, pers_IronManOrig2.jpg</td>
+                        <td>©2020 MARVEL</td>
+                        <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>personajes_Flash.php</td>
+                        <td>pers_FlashBanner.jpg, pers_FlashOrig1.jpg, pers_FlashOrig2.jpeg</td>
+                        <td>©2020 DC COMICS</td>
+                        <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>personajes_WonderWoman.php</td>
+                        <td>pers_WonderWomanBanner.jpg, pers_WonderWomanOrig1.jpg, pers_WonderWomanOrig2.jpeg</td>
+                        <td>©2020 DC COMICS</td>
+                        <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
+                    </tr>
                 </table>
             </aside>
         </section>
