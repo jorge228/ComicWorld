@@ -162,8 +162,6 @@
                         <td>©2020 DC COMICS</td>
                         <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
                     </tr>
-
-
                     <tr>
                         <td>comic_DarkHorse.php</td>
                         <td>dark_horse_1.jpg, dark_horse_2.jpg, dark_horse_3.jpg, dark_horse_4.jpg, dark_horse_5.jpg, dark_horse_6.jpg, dark_horse_7.jpg, dark_horse_8.jpg, dark_horse_9.jpg, dark_horse_10.jpg, dark_horse_11.jpg, dark_horse_12.jpg, dark_horse_13.jpg, dark_horse_14.jpg, dark_horse_15.jpg, dark_horse_16.jpg, dark_horse_17.jpg, dark_horse_18.jpg</td>
@@ -188,8 +186,6 @@
                         <td>® and © 2020 Image Comics,  Inc. All rights reserved.</td>
                         <td><a href="https://imagecomics.com/terms-and-conditions">Ver página web</a></td>
                     </tr>
-
-
                     <tr>
                         <td>footer.php</td>
                         <td>footer.jpg</td>
