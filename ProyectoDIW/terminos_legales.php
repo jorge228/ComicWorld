@@ -166,26 +166,26 @@
 
                     <tr>
                         <td>comic_DarkHorse.php</td>
-                        <td>dark_horse_1.jpg,dark_horse_2.jpg,dark_horse_3.jpg,dark_horse_4.jpg,dark_horse_5.jpg,dark_horse_6.jpg,dark_horse_7.jpg,dark_horse_8.jpg,dark_horse_9.jpg,dark_horse_10.jpg,dark_horse_11.jpg,dark_horse_12.jpg,dark_horse_13.jpg,dark_horse_14.jpg,dark_horse_15.jpg,dark_horse_16.jpg,dark_horse_17.jpg,dark_horse_18.jpg</td>
+                        <td>dark_horse_1.jpg, dark_horse_2.jpg, dark_horse_3.jpg, dark_horse_4.jpg, dark_horse_5.jpg, dark_horse_6.jpg, dark_horse_7.jpg, dark_horse_8.jpg, dark_horse_9.jpg, dark_horse_10.jpg, dark_horse_11.jpg, dark_horse_12.jpg, dark_horse_13.jpg, dark_horse_14.jpg, dark_horse_15.jpg, dark_horse_16.jpg, dark_horse_17.jpg, dark_horse_18.jpg</td>
                         <td>Dark Horse Comics LLC</td>
                         <td><a href="https://www.darkhorse.com/Services/InternationalLicensing/">Ver página web</a></td>
                     </tr> 
                     <tr>
                         <td>comic_DCComic.php</td>
-                        <td>comic_dc_1.jpg,comic_dc_2.jpg,comic_dc_3.jpg,comic_dc_4.jpg,comic_dc_5.jpg,comic_dc_6.jpg,dc_comic_07.jpg,dc_comic_08.jpg,dc_comic_09.jpg,dc_comic_10.jpg,dc_comic_11.jpg,dc_comic_12.jpg,dc_comic_13.jpg,dc_comic_14.jpg,dc_comic_15.jpg,dc_comic_16.jpg,dc_comic_17.jpg,dc_comic_18.jpg</td>
+                        <td>comic_dc_1.jpg, comic_dc_2.jpg, comic_dc_3.jpg, comic_dc_4.jpg, comic_dc_5.jpg, comic_dc_6.jpg, dc_comic_07.jpg, dc_comic_08.jpg, dc_comic_09.jpg, dc_comic_10.jpg, dc_comic_11.jpg, dc_comic_12.jpg, dc_comic_13.jpg, dc_comic_14.jpg, dc_comic_15.jpg, dc_comic_16.jpg, dc_comic_17.jpg, dc_comic_18.jpg</td>
                         <td>©2020 DC COMICS</td>
                         <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
                     </tr> 
                     <tr>
                         <td>comic_Marvel.php</td>
-                        <td>comic_marvel_4.jpg,comic_marvel_5.jpg,comic_marvel_6.jpg,comic_marvel_7.jpg,comic_marvel_8.jpg,comic_marvel_9.jpg,comic_marvel_10.jpg,comic_marvel_11.jpg,comic_marvel_12.jpg,comic_marvel_13.jpg,comic_marvel_14.jpg,comic_marvel_15.jpg,comic_marvel_16.jpg,comic_marvel_17.jpg,comic_marvel_18.jpg,comic_marvel_19.jpg,comic_marvel_20.jpg,comic_marvel_21.jpg</td>
+                        <td>comic_marvel_4.jpg, comic_marvel_5.jpg, comic_marvel_6.jpg, comic_marvel_7.jpg, comic_marvel_8.jpg, comic_marvel_9.jpg, comic_marvel_10.jpg, comic_marvel_11.jpg, comic_marvel_12.jpg, comic_marvel_13.jpg, comic_marvel_14.jpg, comic_marvel_15.jpg, comic_marvel_16.jpg, comic_marvel_17.jpg, comic_marvel_18.jpg, comic_marvel_19.jpg, comic_marvel_20.jpg, comic_marvel_21.jpg</td>
                         <td>©2020 MARVEL</td>
                         <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
                     </tr> 
                     <tr>
                         <td>comic_Otros.php</td>
-                        <td>otros_1.jpg,otros_2.jpg,otros_3.jpg,otros_4.jpg,otros_5.jpg,otros_6.jpg,otros_7.jpg,otros_8.jpg,otros_9.jpg,otros_10.jpg,otros_11.jpg,otros_12.jpg,otros_13.jpg,otros_14.jpg,otros_15.jpg,otros_16.jpg,otros_17.jpg,otros_18.jpg</td>
-                        <td>® and © 2020 Image Comics, Inc. All rights reserved.</td>
+                        <td>otros_1.jpg, otros_2.jpg, otros_3.jpg, otros_4.jpg, otros_5.jpg, otros_6.jpg, otros_7.jpg, otros_8.jpg, otros_9.jpg, otros_10.jpg, otros_11.jpg, otros_12.jpg, otros_13.jpg, otros_14.jpg, otros_15.jpg, otros_16.jpg, otros_17.jpg, otros_18.jpg</td>
+                        <td>® and © 2020 Image Comics,  Inc. All rights reserved.</td>
                         <td><a href="https://imagecomics.com/terms-and-conditions">Ver página web</a></td>
                     </tr>
 
