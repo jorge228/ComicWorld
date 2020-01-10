@@ -188,7 +188,11 @@ var game = (function () {
             jugador.paint(ctx);
             
             // Se pinta los escudos
-            escudos[0].paint(ctx);
+            if (escudos.length > 0) {
+                for (let index = 0; index < escudos.length; index++) {
+                    escudos[index].paint(ctx);
+                }
+            }
             
             // Si no hemos llegado al fin del juego, esperamos 200 milisegundos y llamamos a la función "interactua".
             // La variable "finJuego" se establecerá a valor true en la función "interactua"
@@ -200,6 +204,8 @@ var game = (function () {
 
     function interactua () {
 
+        comprobarColisionesConEscudo();
+
         // Si se llega a este método pero el juego ya ha terminado, se debe acabar la ejecución del programa, este método ya no
         // llamará a "paintEscena" y la ejecución terminará
         if (finJuego) {
@@ -208,6 +214,12 @@ var game = (function () {
 
         paintEscena();
         jugador.setEstado("iddle");
+    }
+
+    function comprobarColisionesConEscudo() {
+        if(jugador.getX() == 0) {
+
+        }
     }
 
     /**
