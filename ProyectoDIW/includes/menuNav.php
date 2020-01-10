@@ -30,13 +30,12 @@
                         COMICS
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="comic_Marvel.php">MARVEL</a>
-                        <a class="dropdown-item" href="comic_Marvel.php">DC COMICS</a>
-                        <a class="dropdown-item" href="comic_Marvel.php">DARK HORSE</a>
-                        <a class="dropdown-item" href="comic_Marvel.php">OTROS</a>
+                    <a class="dropdown-item" href="comic_Marvel.php">MARVEL</a>
+                        <a class="dropdown-item" href="comic_DCComic.php">DC COMICS</a>
+                        <a class="dropdown-item" href="comic_DarkHorse.php">DARK HORSE</a>
+                        <a class="dropdown-item" href="comic_Otros.php">OTROS</a>
                     </div>
                 </div>
-
                 <!-- Peliculas -->
                 <div class="nav-item dropdown">
                     <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button"
