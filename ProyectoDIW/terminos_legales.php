@@ -43,7 +43,7 @@
             <p>En nuestra página web, ComicWorld, utilizamos el tipo de Reconocimiento-No Comercial. Esta licencia le permite a otros entremezclar, ajustar y construir a partir de la obra original con fines no comerciales, sin embargo aunque en las nuevas creaciones deban reconocer la autoría y no puedan ser usadas de forma comercial.</p>
             <h2 class="text-success">4. Uso de Contenido de Terceros</h2>
             <aside class="tablaDatos">
-                <table class="table table-bordered">
+                <table class="table table-responsive table-bordered">
                     <thead class="bg-success">
                         <tr class="text-center">
                             <th>
@@ -85,10 +85,52 @@
                         <td><a href="https://policies.warnerbros.com/privacy/es-eu/html/privacy_es-eu_1.1.0.html">Ver su página web</a></td>
                     </tr>
                     <tr>
-                        <td>Videojuegos Saga Arkham</td>
-                        <td>vid_ark_001, vid_ark_002, vid_ark_003, vid_banner_Arkham</td>
-                        <td></td>
-                        <td><a href="https://www.eneba.com/">Permisos cedidos por esta web</a></td>
+                        <td>index.php</td>
+                        <td>homeVideo.mp4 (audio)</td>
+                        <td>©2020 Creative Commons 3.0</td>
+                        <td><a href="https://www.pond5.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>index.php</td>
+                        <td>homeVideo.mp4 (Imágenes cedidas por The Top Comics Youtube)</td>
+                        <td>Licencia estandar Youtube</td>
+                        <td><a href="https://www.youtube.com/channel/UCiBwOVBljEjcsLUjwI274Xw">Ver canal Youtube autor</a></td>
+                    </tr>
+                    <tr>
+                        <td>index.php</td>
+                        <td>home_Comics.jpg, home_peliculas.jpg, home_Personajes.jpg, home_Videojuegos.jpg</td>
+                        <td>©2020 Creative Commons 3.0</td>
+                        <td><a href="https://www.flaticon.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Arkham.php</td>
+                        <td>vid_ark_001.jpg, vid_ark_002.jpg, vid_ark_003.jpg, vid_banner_Arkham.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Injustice.php</td>
+                        <td>vid_injustice_001.jpg, vid_injustice_002.jpg, vid_banner_Injustice.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_Lego.php</td>
+                        <td>vid_lego_001.jpg, vid_lego_002.jpg, vid_lego_003.jpg, vid_banner_lego.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_MarvelvsCapcom.php</td>
+                        <td>vid_marvelvscapcom_001.jpg, vid_marvelvscapcom_002.jpg, vid_marvelvscapcom_003.jpg, vid_banner_marvelvscapcom.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>Videojuegos_UltimateAlliance.php</td>
+                        <td>vid_ultimate_001.jpg, vid_ultimate_002.jpg, vid_ultimate_003.jpg, vid_banner_Ultimate.jpg</td>
+                        <td>©2020 ENEBA</td>
+                        <td><a href="https://www.eneba.com/">Ver página web</a></td>
                     </tr>
                     <tr>
                         <td>personajes_Spiderman.php</td>
@@ -120,26 +162,45 @@
                         <td>©2020 DC COMICS</td>
                         <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
                     </tr>
+
+
                     <tr>
                         <td>comic_DarkHorse.php</td>
                         <td>dark_horse_1.jpg,dark_horse_2.jpg,dark_horse_3.jpg,dark_horse_4.jpg,dark_horse_5.jpg,dark_horse_6.jpg,dark_horse_7.jpg,dark_horse_8.jpg,dark_horse_9.jpg,dark_horse_10.jpg,dark_horse_11.jpg,dark_horse_12.jpg,dark_horse_13.jpg,dark_horse_14.jpg,dark_horse_15.jpg,dark_horse_16.jpg,dark_horse_17.jpg,dark_horse_18.jpg</td>
                         <td>Dark Horse Comics LLC</td>
                         <td><a href="https://www.darkhorse.com/Services/InternationalLicensing/">Ver página web</a></td>
-                    </tr> <tr>
+                    </tr> 
+                    <tr>
                         <td>comic_DCComic.php</td>
                         <td>comic_dc_1.jpg,comic_dc_2.jpg,comic_dc_3.jpg,comic_dc_4.jpg,comic_dc_5.jpg,comic_dc_6.jpg,dc_comic_07.jpg,dc_comic_08.jpg,dc_comic_09.jpg,dc_comic_10.jpg,dc_comic_11.jpg,dc_comic_12.jpg,dc_comic_13.jpg,dc_comic_14.jpg,dc_comic_15.jpg,dc_comic_16.jpg,dc_comic_17.jpg,dc_comic_18.jpg</td>
                         <td>©2020 DC COMICS</td>
                         <td><a href="https://www.dccomics.com/copyright">Ver página web</a></td>
-                    </tr> <tr>
+                    </tr> 
+                    <tr>
                         <td>comic_Marvel.php</td>
                         <td>comic_marvel_4.jpg,comic_marvel_5.jpg,comic_marvel_6.jpg,comic_marvel_7.jpg,comic_marvel_8.jpg,comic_marvel_9.jpg,comic_marvel_10.jpg,comic_marvel_11.jpg,comic_marvel_12.jpg,comic_marvel_13.jpg,comic_marvel_14.jpg,comic_marvel_15.jpg,comic_marvel_16.jpg,comic_marvel_17.jpg,comic_marvel_18.jpg,comic_marvel_19.jpg,comic_marvel_20.jpg,comic_marvel_21.jpg</td>
                         <td>©2020 MARVEL</td>
                         <td><a href="https://disneytermsofuse.com/spanish">Ver página web</a></td>
-                    </tr> <tr>
+                    </tr> 
+                    <tr>
                         <td>comic_Otros.php</td>
                         <td>otros_1.jpg,otros_2.jpg,otros_3.jpg,otros_4.jpg,otros_5.jpg,otros_6.jpg,otros_7.jpg,otros_8.jpg,otros_9.jpg,otros_10.jpg,otros_11.jpg,otros_12.jpg,otros_13.jpg,otros_14.jpg,otros_15.jpg,otros_16.jpg,otros_17.jpg,otros_18.jpg</td>
                         <td>® and © 2020 Image Comics, Inc. All rights reserved.</td>
                         <td><a href="https://imagecomics.com/terms-and-conditions">Ver página web</a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>footer.php</td>
+                        <td>footer.jpg</td>
+                        <td>COMIC WORLD</td>
+                        <td><a href="#">Ver página web</a></td>
+                    </tr>
+                    <tr>
+                        <td>footer.php</td>
+                        <td>logo.png</td>
+                        <td>COMIC WORLD (Recurso Propio)</td>
+                        <td><a href="#">Ver página web</a></td>
                     </tr>
                 </table>
             </aside>
