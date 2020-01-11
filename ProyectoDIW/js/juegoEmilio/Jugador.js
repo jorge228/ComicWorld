@@ -10,14 +10,11 @@ class Jugador {
         this.x = 0; 
         this.y = 325;
         this.puntuacion = 0;
+        this.ancho = 80;
     }
   
-    get getEstaVivo()   {
-        return this.estaVivo;
-    }
-
-    set setEstaVivo (b) {
-        this.estaVivo = b; 
+    getAncho()   {
+        return this.ancho;
     }
 
     setEstado (s) {
@@ -34,6 +31,18 @@ class Jugador {
 
     setPuntuacion (puntuacion) {
         this.puntuacion = puntuacion
+    }
+
+    getPuntuacion () {
+        return this.puntuacion;
+    }
+
+    getVida () {
+        return this.vida;
+    }
+
+    setVida(vida) {
+        this.vida = vida;
     }
 
     getX (){
@@ -88,7 +97,5 @@ class Jugador {
         }
 
     }
-
-
 
 }

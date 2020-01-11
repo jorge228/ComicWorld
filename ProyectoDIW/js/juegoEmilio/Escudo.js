@@ -6,12 +6,18 @@ class Escudo {
 		this.valor = valor;
 		this.escudoImages = escudoImages;
 		this.disable = false;
-		this.ancho = 10;
+		this.ancho = 100;
 		this.frame = 0;
 	}
-
+	getValor() {
+		return this.valor;
+	}
 	setDisable (b) {
 		this.disable = b;
+	}
+
+	getDisable() {
+		return this.disable;
 	}
 
 	getAncho () {

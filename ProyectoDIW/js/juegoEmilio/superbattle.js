@@ -7,14 +7,17 @@ var game = (function () {
     var imgFondo; // Imagen del background del juego
     var jugadorIddleImages = [];
     var jugadorRunImages = [];
+    var gameoverImage;
     var escudoImages = [];
     var martilloImages = [];
     var imgCargadas = 0; // Control de la cantidad de imágenes cargadas
-    var totalImagenes = 14;
+    var totalImagenes = 15;
     var finJuego = false;
     var jugador;
     var sensibilidad = 1;
     var escudos = [];
+    var martillos = [];
+    var tiempo = 0;
 
     $(document).keypress(function (e) { 
             
@@ -48,6 +51,8 @@ var game = (function () {
         jugador = new Jugador(true, 100, "iddle", 0, jugadorIddleImages, jugadorRunImages);
         //Se genera el primer escudo
         escudos.push(new Escudo(1, escudoImages));
+        //Se crea el primer martillo
+        martillos.push(new Martillo(martilloImages));
     }
 
     /**
@@ -64,7 +69,14 @@ var game = (function () {
             imgCargadas++;
             paintEscena();
           }, false);
-
+        //Carga la imagen de game over
+        gameoverImage = new Image();
+        gameoverImage.src = 'assets/img/juegoEmilio/gameover.jpg';
+        gameoverImage.addEventListener('load', function() {
+              // Este trozo de código se ejecutará de manera asíncrona cuando la imagen se haya realmente cargado.
+              imgCargadas++;
+              paintEscena();
+            }, false);
         //	Carga personaje
         //Iddle 1
         jugadorIddleImages.push(new Image());
@@ -193,7 +205,15 @@ var game = (function () {
                     escudos[index].paint(ctx);
                 }
             }
+
+            //Se pintan los martillos
+            if (martillos.length > 0) {
+                for (let index = 0; index < martillos.length; index++) {
+                    martillos[index].paint(ctx);
+                }
+            }
             
+            paintInformacion();
             // Si no hemos llegado al fin del juego, esperamos 200 milisegundos y llamamos a la función "interactua".
             // La variable "finJuego" se establecerá a valor true en la función "interactua"
             if (!finJuego) {
@@ -202,13 +222,26 @@ var game = (function () {
         }
     }   
 
+    function paintInformacion () {
+        ctx.fillStyle = "#ffffff";
+        ctx.font="30px Verdana";
+		ctx.fillText("Puntuacion:"+jugador.getPuntuacion()+ " Vida: "+jugador.getVida(), 50, 50);
+    }
+
     function interactua () {
 
+        limpiarEscudosDesabilitados();
         comprobarColisionesConEscudo();
-
-        // Si se llega a este método pero el juego ya ha terminado, se debe acabar la ejecución del programa, este método ya no
-        // llamará a "paintEscena" y la ejecución terminará
+        agregarEscudo();
+        agregarMartillos();
+        moverMartillos();
+        limpiarMartillos();
+        comprobarColisionesConMartillos();
+        comprobarFinJuego();
+        // Si se llega a este método pero el juego ya ha terminado, se debe acabar la ejecución del programa,
+        //  la ejecución terminará
         if (finJuego) {
+            ctx.drawImage(gameoverImage, 0, 0);
             return;
         }
 
@@ -216,10 +249,126 @@ var game = (function () {
         jugador.setEstado("iddle");
     }
 
-    function comprobarColisionesConEscudo() {
-        if(jugador.getX() == 0) {
+    function comprobarFinJuego() {
+        if(jugador.getVida() <= 0) finJuego = true;
+    }
 
+    function comprobarColisionesConMartillos() {
+        if (martillos.length > 0) {
+            for (let index = 0; index < martillos.length; index++) {
+                let colisiona = false;
+
+                // Creacion de colisionador arriba bloque
+                let ctUpx = 60 + jugador.getX();
+                let ctUpy = jugador.getY(); 
+                let ctUpwidth = 50; //tamaño x
+                let ctUpheight = 30; //tamaño y
+                // Creacion de colisionador abajo bloque
+                let ctDownx = 60 + jugador.getX();
+                let ctDowny = jugador.getY() + ctUpheight - 1; 
+                let ctDownwidth = ctUpwidth;
+                let ctDownheight = 1;
+                // Creacion de colisionador izquierda bloque
+                let ctLeftx = 60 + jugador.getX();
+                let ctLefty = jugador.getY(); 
+                let ctLeftwidth = 1;
+                let ctLeftheight = ctUpwidth;
+                // Creacion de colisionador derecho bloque
+                let ctRightx = 60 + jugador.getX() + ctUpwidth - 1;
+                let ctRighty = jugador.getY(); 
+                let ctRightwidth = 1;
+                let ctRightheight = ctUpheight;
+                        
+                
+                // Colision arriba
+                if (ctUpx < martillos[index].getX() + 120 &&
+                    ctUpx + ctUpwidth > martillos[index].getX() &&
+                    ctUpy < martillos[index].getY() + 120 &&
+                    ctUpheight + ctUpy > martillos[index].getY()) {
+                        colisiona = true;
+                }
+                // Colision abajo
+                if (ctDownx < martillos[index].getX() + 120 &&
+                    ctDownx + ctDownwidth > martillos[index].getX() &&
+                    ctDowny < martillos[index].getY() + 120 &&
+                    ctDownheight + ctDowny > martillos[index].getY()) {
+                        colisiona = true;
+                }
+                // Colision izquierda
+                if (ctLeftx < martillos[index].getX() + 120 &&
+                    ctLeftx + ctLeftwidth > martillos[index].getX() &&
+                    ctLefty < martillos[index].getY() + 120 &&
+                    ctLeftheight + ctLefty > martillos[index].getY()) {
+                        colisiona = true;
+                }
+                // Colision derecha 
+                if (ctRightx < martillos[index].getX() + 120 &&
+                    ctRightx + ctRightwidth > martillos[index].getX() &&
+                    ctRighty < martillos[index].getY() + 120 &&
+                    ctRightheight + ctRighty > martillos[index].getY()) {
+                        colisiona = true;
+                }
+                if (colisiona) {
+                    jugador.setVida(jugador.getVida() - (1 + Math.floor(Math.random() * 10))); //Daño del martillo
+                    martillos[index].setDisable(true);
+                }
+            }
         }
+
+    }
+
+    function agregarMartillos () {
+        if ((tiempo % 11 == 0)) {
+            martillos.push(new Martillo(martilloImages));
+        }    
+    }
+
+    function limpiarMartillos() {
+        if (martillos.length > 0) {
+            let arrayAuxiliar = [];
+            for (let index = 0; index < martillos.length; index++) {
+                if (!martillos[index].getDisable()) arrayAuxiliar.push(martillos[index]);
+            }
+            martillos = arrayAuxiliar;
+        }          
+    }
+
+    function moverMartillos () {
+        if (martillos.length > 0) {
+            for (let index = 0; index < martillos.length; index++) {
+                martillos[index].mover(10+jugador.getPuntuacion());
+                if (martillos[index].getY() > 600) martillos[index].setDisable(true);
+            }
+        }
+    }
+
+    function agregarEscudo() {
+        if ((tiempo == 29) && (escudos.length < 10)) {
+            escudos.push(new Escudo(1, escudoImages));
+        }
+        tiempo++;
+		if (tiempo == 30) tiempo = 0;
+    }
+
+    function comprobarColisionesConEscudo() {
+        if (escudos.length > 0) {
+            for (let index = 0; index < escudos.length; index++) {
+                if((jugador.getX()+85 >= escudos[index].getX()) && (jugador.getX() <= (escudos[index].getX()))) {
+                    escudos[index].setDisable(true);
+                    jugador.setPuntuacion(jugador.getPuntuacion()+escudos[index].getValor());
+                }
+            }
+        }
+    }
+
+    function limpiarEscudosDesabilitados () {
+        if (escudos.length > 0) {
+            let arrayAuxiliar = [];
+            for (let index = 0; index < escudos.length; index++) {
+                if (!escudos[index].getDisable()) arrayAuxiliar.push(escudos[index]);
+            }
+            escudos = arrayAuxiliar;
+        }           
     }
 
     /**
