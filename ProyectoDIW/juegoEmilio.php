@@ -28,6 +28,7 @@
     <!--Scripts-->
     <script src="js/juegoEmilio/Jugador.js"></script>
     <script src="js/juegoEmilio/Escudo.js"></script>
+    <script src="js/juegoEmilio/Martillo.js"></script>
     <script src="js/juegoEmilio/superbattle.js" type="text/javascript"></script>
 
     <!--Footer-->
