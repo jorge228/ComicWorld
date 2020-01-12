@@ -7,36 +7,51 @@
     ?>
 </head>
 
-<body onload="inicializa()">
+<body>
 
     <!--MENU DE NAVEGACION-->
     <?php
     include "includes/menuNav.php";
     ?>
-    <link rel="stylesheet" type="text/css" class="body">
 
     <!--JUEGO-->
     <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="text-warning font-weight-bold">Piedra-Papel-Tijera</h1>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <canvas id="canvas" name="canvas" width="700" height="300">Tu navegador no soporta HTML5</canvas>
-            </div>
-            <div id="juego">
-                <h1>Juega Contra el ordenador</h1>
-                <div onclick="usuario('0');" id="piedra"></div>
-                <div onclick="usuario('1');" id="papel"></div>
-                <div onclick="usuario('2');" id="tijera"></div>
-            </div>
-            <div id="efecto" style="display:none" onclick="quitarEfecto();"></div>
+                <h1 class="text-warning font-weight-bold">Piedra, Papel o Tijera (juego Sandra)</h1>
+                <br></br>
+                <h4>Tu elección . . .</h4>
+                <input type="button" name="botonPiedra" value="Piedra" onclick=jugadorElige('assets/img/juegoSandra/piedra2.png','piedra')> <input type="button" name="botonPapel" value="Papel" onclick=jugadorElige('assets/img/juegoSandra/papel2.png','papel')> <input type="button" name="botonTijera" value="Tijera" onclick=jugadorElige('assets/img/juegoSandra/tijera2.png','tijera')> <img src="assets/img/juegoSandra/pregunta.png" id="jugador" />
+                </br></br>
+                <h4>El rival ha elegido . . .</h4>
+                <img src="assets/img/juegoSandra/pregunta.png" id="rival" />
+                </br></br>
+                <center>
+                    <table border=1 class="egt">
+                        <tr>
+                            <td>Tu</td>
+                            <td>Rival</td>
+                            <td>Empatados</td>
+                        </tr>
+                        <tr>
+                            <td id="cantidadGanados">0</td>
+                            <td id="cantidadPerdidos">0</td>
+                            <td id="cantidadEmpatados">0</td>
+                        </tr>
+                    </table>
+                </center>
 
+
+            </div>
+
+            <div class="col-12 d-flex justify-content-center">
+                <canvas id="canvas" width="899" height="560">TU NAVEGADOR NO SOPORTA HTML5!</canvas>
+            </div>
         </div>
     </div>
 
     <!--Scripts-->
-    <script src="js/juegoSandra/juego.js"></script>
+    <script src="js/juegoSandra/juego.js" type="text/javascript"></script>
 
     <!--Footer-->
     <?php include "includes/footer.php"; ?>
