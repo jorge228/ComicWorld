@@ -1,70 +1,68 @@
-//Opciones
-var opciones = [0, 1, 2];
-var eleccionOrdenador;
+var ganados=0;
+var perdidos=0;
+var empatados=0;
 
-//Aleatorio
-function aleatorio(minimo, maximo){
-    var numero = Math.floor(Math.random() * (maximo - minimo +1) + minimo);
-    return numero;
+
+function jugadorElige(fotoelegida,eleccionJugador){
+    document.getElementById("jugador").src=fotoelegida;
+    turnoDelRival(eleccionJugador)
 }
-//Elección usuario
-function usuario(eleccionUsuario){
-    eleccionUsuario = parseInt(eleccionUsuario);
-    eleccionOrdenador = aleatorio(0,2);
-
-    //Si el usuario elege piedra
-    if(eleccionUsuario == 0){ 
-        //Sale papel
-        if(opciones[eleccionOrdenador] == 1){
-            document.getElementById('efecto').innerHTML ='<h1>¡Has perdido!</h1> <h3>El ordenador ha elegido papel, gana a la piedra.</h3>';
-        }else{//Sale tijeras
-            if(opciones[eleccionOrdenador] == 2){
-                document.getElementById('efecto').innerHTML ='<h1>¡Has ganaste!</h1> <h3>El ordenador ha elegido tijera, gana la piedra.</h3>';
-            }else{//Sale piedra
-                if(opciones[eleccionOrdenador] == 0){
-                    document.getElementById('efecto').innerHTML ='<h1>¡Empate!</h1> <h3>Ambos eligieron piedra.</h3>';
-                }
-            }
-        } 
+function turnoDelRival(eleccionJugador){
+    var eleccionRival = Math.round(Math.random() * (3-1)+1);
+    if (eleccionRival==1){
+        eleccionRival="piedra";
+        document.getElementById("rival").src='assets/img/juegoSandra/piedra2.png';
     }
-    //Si el usuario elege papel
-
-    if(eleccionUsuario == 1){
-        //Sale tijeras
-        if(opciones[eleccionOrdenador] == 2){
-            document.getElementById('efecto').innerHTML ='<h1>¡Has perdido!</h1> <h3>El ordenador ha elegido tijera, gana al papel.</h3>';
-        }else{//Sale piedra
-            if(opciones[eleccionOrdenador] == 0){
-                document.getElementById('efecto').innerHTML ='<h1>¡Has ganado!</h1> <h3>El ordenador ha elegido piedra, gana el papel.</h3>';
-            }else{//Sale papel
-                if(opciones[eleccionOrdenador] == 1){
-                    document.getElementById('efecto').innerHTML ='<h1>¡Empate!</h1> <h3>Ambos eligieron papel.</h3>'; 
-                }
-            }
-        }
+    if (eleccionRival==2){
+        eleccionRival="papel";
+        document.getElementById("rival").src='assets/img/juegoSandra/papel2.png';
     }
-    //Si el usuario elege tijera
-
-    if(eleccionUsuario == 2) {
-        //Sale papel
-        if(opciones[eleccionOrdenador] == 1){
-            document.getElementById('efecto').innerHTML ='<h1>¡Has ganado!</h1> <h3>El ordenador ha elegido papel, gana la tijera.</h3>';      
-        }else{//Sale piedra
-            if(opciones[eleccionOrdenador] == 0){
-                document.getElementById('efecto').innerHTML ='<h1>¡Has ganado!</h1> <h3>El ordenador ha elegido piedra, gana a la tijera.</h3>'; 
-            }else{//Sale tijeras
-                if(opciones[eleccionOrdenador] == 2) {
-                    document.getElementById('efecto').innerHTML ='<h1>¡Empate!</h1> <h3>Ambos eligieron tijera.</h3>';
-                }
-            }
-        }
+    if (eleccionRival==3){
+        eleccionRival="tijera";
+        document.getElementById("rival").src='assets/img/juegoSandra/tijera2.png';
     }
 
-    document.getElementById('efecto').style.display = "";
+    evaluar(eleccionJugador, eleccionRival);
+
 }
 
+function evaluar(eleccionJugador,eleccionRival){
+    if(eleccionJugador == eleccionRival){
+        alert("Has empatado con el rival");
+        empatados++;
+    }
+    if(eleccionJugador == 'piedra' && eleccionRival=='papel'){
+        alert("Has perdido, el papel le gana a la piedra");
+        perdidos++;
+    }
+    if(eleccionJugador == 'piedra' && eleccionRival=='tijera'){
+        alert("Has ganado, la piedra le gana a la tijera");
+        ganados++;
+    }
+    if(eleccionJugador == 'papel' && eleccionRival=='piedra'){
+        alert("Has ganado, el papel le gana a la piedra");
+        ganados++;
+    }
+    if(eleccionJugador == 'papel' && eleccionRival=='tijera'){
+        alert("Has perdido, la tijera le gana al papel");
+        perdidos++;
+    }
+    if(eleccionJugador == 'tijera' && eleccionRival=='papel'){
+        alert("Has ganado, la tijera le gana al papel");
+        ganados++;
+    }
+    if(eleccionJugador == 'tijera' && eleccionRival=='piedra'){
+        alert("Has perdido, la piedra le gana a la tijera");
+        perdidos++;
+    }
+    actualizaEstadisticas();
+
+}
+
+function actualizaEstadisticas(){
+    document.getElementById("cantidadGanados").innerHTML=ganados;
+    document.getElementById("cantidadPerdidos").innerHTML=perdidos;
+    document.getElementById("cantidadEmpatados").innerHTML=empatados;
 
 
-function quitarEfecto() {
-    document.getElementById('efecto').style.display = "none";
 }
