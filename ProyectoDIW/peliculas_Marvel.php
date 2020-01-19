@@ -4,6 +4,11 @@
 <head>
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
+    <?php
+    include_once 'models/controlador/ControladorPelicula.php';
+    include_once 'includes/inclAdmin/listarFilasUsuarios.php';
+    $peliculas = ControladorPelicula::getAllPeliculas();
+    ?>
 </head>
 <title>MCU</title>
 
