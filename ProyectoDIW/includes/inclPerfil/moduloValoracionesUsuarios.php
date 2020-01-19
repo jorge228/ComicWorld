@@ -28,13 +28,17 @@ function listarValoracionesUsuario($idUsuario){
                 <p>"<?php echo $valoracion->texto ?>"</p>
             </div>
 
-            <div class="col-12 text-center">
+            <div class="col-12 text-center ">
+                <div class="valoracion">
                 <?php
                     for ($i = 1; $i < 6; $i++) {
-                        echo "<input id='radio".$pelicula."+$i' type='radio' name='$pelicula' value='$i'>";
-                        echo "<label for='radio".$pelicula."+$i'>★</label>";
+                    ?>
+                        <input type="radio" id='<?php echo "radio$valoracion->id" ?>' name='<?php echo "radio$valoracion->id" ?>' value='<?php echo $i?>' <?php  if ($valoracion->puntuacion==$i) echo 'checked' ?>>
+                        <label for='<?php echo "radio$valoracion->id" ?>'>★</label>
+                    <?php
                     }
                 ?>
+                </div>
             </div>
         </div>
 
