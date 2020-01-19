@@ -255,3 +255,16 @@ h1, h2, h3, h4, h5 {
 .wrapperPntCompletaVideo{
 	float:right;
 } 
+
+//Contenedores para arreglar footer
+.contenedorGlobal{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedorContenido{
+    flex:1;
+    margin-bottom:20px;
+}
+

@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Conexion.php';
-require_once 'modelo/Pelicula.php';
+require_once 'entidades/Pelicula.php';
 
 /**
  * Controlador para obtener datos de la tabla pelicula
