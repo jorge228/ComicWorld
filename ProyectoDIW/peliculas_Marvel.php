@@ -103,8 +103,7 @@
                         <!-- VALORACIÓN -->
                         <div class="text-center">
                         <i class="fas fa-pencil-alt prefix"></i>Envíanos tu valoración:
-                            <?php $idPelicula = "<?php echo $pelicula->id ?>";
-                            crear($idPelicula ) ?>
+                            <?php crear($pelicula->id) ?>
                         </div>
                     </div>
                 </div>
