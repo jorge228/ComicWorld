@@ -50,6 +50,26 @@ class ControladorValoracion {
     }
 
     /**
+     * Obtener todas las valoraciones de una película mediante ID de Película
+     * @return \Valoraciones
+     */
+    public static function getValoracionesPelicula($id){
+        $conexion=new Conexion();
+        $valoraciones=[];
+        
+        $resultados=$conexion->query("SELECT * FROM valoracion where id_pelicula=$id");
+        
+        while($registro=$resultados->fetch_object()){
+            $valoracion=new Valoracion($registro->id_usuario, $registro->id_pelicula, $registro->texto, $registro->puntuacion, $registro->fecha_valoracion, $registro->id);
+            $valoraciones[]=$valoracion;
+        }
+        
+        $conexion->close();
+        
+        return $valoraciones;
+    }
+
+    /**
      * Obtener valoracion mediante ID de Usuario
      * @param type $id
      * @return \Pelicula
