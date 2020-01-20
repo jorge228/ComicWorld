@@ -11,7 +11,7 @@ function crear($idPelicula)
                 echo "<label for='radio<?php echo ($idPelicula +$i) ?>'>★</label>";
             }
             ?></div><br>
-        <button class="btn btn-primary" type="submit" action="" name="enviar" value="<?php echo $idPelicula ?>">Enviar</button>
+        <button class="btn btn-primary" type="submit" action="" name="enviar" value="<?php echo $idPelicula ?>">Enviar</button><br><br><br>
     </form>
 <?php
 }
