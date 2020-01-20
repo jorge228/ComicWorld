@@ -40,12 +40,14 @@ class ControladorUsuario {
         
         $usuario=false;
 
-        if ($conexion->errno!=0){
+        if ($conexion->errno==0){
             $resultado=$conexion->query("SELECT * FROM usuario WHERE id=$id");
         
-            if($conexion->affected_rows()>0)
+            if($conexion->affected_rows>0){
+                $registro=$resultado->fetch_object();
                 $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2);
-            
+            }
+
             $conexion->close();
         }
         

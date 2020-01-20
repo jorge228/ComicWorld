@@ -11,7 +11,6 @@ if (isset($_GET['id'])){
     //Obtener usuario de BD
     $usuario=ControladorUsuario::getUsuarioById($_GET['id']);
 
-    var_dump($usuario);
     //Comprobar si el usuario existe
     if ($usuario!=false)
         $error=false;
@@ -200,7 +199,9 @@ if (!$error){
 else{
 ?>
     <article class="container-fluid mt-2 border-secondary h-100">
-        <div class="text-center"><p class="p-2 m-0 text-danger font-weight-bold">Error: ese usuario no existe</p></div>
+        <div class="mensajeError">
+            <p>Error al mostrar perfil de usuario</p>
+        </div>
     </article>
 <?php
 }

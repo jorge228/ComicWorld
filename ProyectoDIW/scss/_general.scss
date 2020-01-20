@@ -255,6 +255,7 @@ h1, h2, h3, h4, h5 {
 .wrapperPntCompletaVideo{
 	float:right;
 } 
+  /*- - - - - - - - - End Videos - - - - - - - - - */
 
 //Contenedores para arreglar footer
 .contenedorGlobal{
@@ -268,3 +269,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom:20px;
 }
 
+.mensajeError{
+    background-color:#eeb8b8;
+    color:red;
+    border:2px solid darkred;
+    text-align:center;
+    font-weight:bold;
+    padding:5px;
+}

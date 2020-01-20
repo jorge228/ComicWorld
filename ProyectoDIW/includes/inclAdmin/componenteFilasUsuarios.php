@@ -7,7 +7,7 @@ function listarUsuarios($usuarios){
     if (!is_array($usuarios)){?>
 
         <div class="row p-2 text-center ">
-            <div class="col-12">
+            <div class="col-12 mensajeError">
                 <h5 class="text-error">Error al recuperar usuarios de la base de datos</h5>
             </div>
         </div>
@@ -41,7 +41,7 @@ function listarUsuarios($usuarios){
                 <!--Perfil form-->
                 <div class="col-4">
 
-                    <form action="#" method="POST">
+                    <form action="#" method="GET">
                         <input type="hidden" name="id" value="<?php echo $usuario->id ?>">
                         <input type="submit" class="btn btn-primary btn-md" name="modificarPerfil" value="Modificar usuario">
                     </form>

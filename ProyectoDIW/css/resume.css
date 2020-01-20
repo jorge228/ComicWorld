@@ -274,6 +274,7 @@ h1, h2, h3, h4, h5 {
 .wrapperPntCompletaVideo {
   float: right; }
 
+/*- - - - - - - - - End Videos - - - - - - - - - */
 .contenedorGlobal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +290,14 @@ h1, h2, h3, h4, h5 {
   -ms-flex: 1;
   flex: 1;
   margin-bottom: 20px; }
+
+.mensajeError {
+  background-color: #eeb8b8;
+  color: red;
+  border: 2px solid darkred;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px; }
 
 /* - - - - - - - - - - - - - - - CSS PARA LA TABLA DE PUNTUACIONES - - - - - - - - - - - -*/
 .chart {
@@ -386,13 +395,13 @@ h1, h2, h3, h4, h5 {
 
 .contenedorPerfilUsuario {
   font-size: 1.2em;
-  border: 1px solid #006C75; }
+  border: 2px solid #006C75; }
 
 .filaInformacionPerfil {
-  border-left: 3px solid #006C75; }
+  border-left: 2px solid #006C75; }
 
 .contenedorValoracionesPerfil {
-  border-top: 3px solid #006C75; }
+  border-top: 2px solid #006C75; }
 
 .wrapperValoracionesPerfil {
-  max-height: 250px; }
+  max-height: 300px; }
