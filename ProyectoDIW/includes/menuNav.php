@@ -8,8 +8,7 @@
                 <img src="assets/img/logo.png" alt="logo" height="40px" width="40px">
             </a>
         </div>
-            
-            
+
         <!-- Elementos del menu -->
         <div class="collapse navbar-collapse" id="basicExampleNav">
 
@@ -97,7 +96,7 @@
 
         <!-- Login button -->
         <button class="btn float-right">
-            <a href="formulario.php"><i class="fas fa-user text-white"></i></a>
+            <a href="login.php"><i class="fas fa-user text-white"></i></a>
         </button>
 
         <!-- Collapse button -->
