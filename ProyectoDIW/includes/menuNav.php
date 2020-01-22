@@ -90,6 +90,16 @@
         </div>
 
         <!-- Login button -->
+        <?php
+        if (isset($_SESSION['id_usuario'])){
+        ?>
+            <div class="text-center text-white">
+                <p class="p-2 m-0"><a href="perfilUsuario.php?id=<?php echo $usuario->id ?>" class="nombreUsuarioLogeado"><?php echo $usuario->username?></a></p>
+            </div>
+        <?php
+        }
+        ?>
+
         <div>
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li id="dropdownLoginLI" class="dropdown order-1">

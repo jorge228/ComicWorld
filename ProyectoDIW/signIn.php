@@ -1,6 +1,6 @@
+<?php include_once 'includes/sesion.php';?>
 <?php
-session_start();
-if(isset($_SESSION['usuario'])) {
+if(isset($_SESSION['id_usuario'])) {
     header('location:index.php');
 }
 echo '<!DOCTYPE html>';

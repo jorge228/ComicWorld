@@ -1,3 +1,4 @@
+<?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

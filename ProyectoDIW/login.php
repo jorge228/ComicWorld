@@ -1,6 +1,7 @@
 <?php
-session_start();
-if(isset($_SESSION['usuario'])) {
+include_once 'includes/sesion.php';
+
+if(isset($_SESSION['id_usuario'])) {
     header('location:index.php');
 }
 
@@ -15,7 +16,7 @@ echo '<body>';
 
     if (isset($_POST['btnEntrar']) && (ControladorUsuario::isRegistered($_POST['usuario'], $_POST['password']) != -1)) { 
         //  Guardamos los datos en la sesion:
-        $_SESSION['usuario'] = ControladorUsuario::isRegistered($_POST['usuario'], $_POST['password']);
+        $_SESSION['id_usuario'] = ControladorUsuario::isRegistered($_POST['usuario'], $_POST['password']);
         //  Guardamos los datos en cookies:
         if (isset($_POST['recuerdame'])) {    
             setcookie("datos[usuario]", $_POST['usuario'], time() + 3600);

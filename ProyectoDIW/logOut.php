@@ -1,7 +1,7 @@
 <?php
 session_start();
 //  Redirige a la pagina principal si entras con la URL de manera directa
-if (!isset($_SESSION["usuario"])) {
+if (!isset($_SESSION["id_usuario"])) {
     die('<script>alert("Primero debes iniciar sesion")</script><a href="index.php">Volver a Home</a>');
 }
 
