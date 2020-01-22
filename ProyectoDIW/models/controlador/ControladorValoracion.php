@@ -1,6 +1,6 @@
 <?php
-require_once 'Conexion.php';
-require_once 'models/entidades/Valoracion.php';
+include_once 'Conexion.php';
+include_once 'models/entidades/Valoracion.php';
 
 
 /**
