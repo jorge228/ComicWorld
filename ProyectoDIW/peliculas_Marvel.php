@@ -1,4 +1,4 @@
-<?php include_once 'includes/sesion.php';?>
+<?php include_once 'includes/sesion.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -7,9 +7,18 @@
     include_once 'models/controladores/ControladorPelicula.php';
     include_once 'models/controladores/ControladorValoracion.php';
     $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
+    if(isset($_POST['enviar'])){
+        echo "<br><br><br><br>";
+        echo "comentario: ".$_POST['textarea_valoracion']."<br>";
+        echo "idpeli: ".$_POST['enviar']."<br>";
+        echo "idusuario: ".$_SESSION['id_usuario']."<br>";
+        echo "puntuacion: ".$_POST['puntuacion']."<br>";
+        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'],$_POST['textarea_valoracion'],$_POST['puntuacion']);
+    }
     ?>
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
+
 
 </head>
 <title>MCU</title>
@@ -93,19 +102,43 @@
                     <div class="collapse" id="colapsa<?php echo $pelicula->id ?>">
                         <?php
                         $valoraciones = ControladorValoracion::getValoracionesPelicula($pelicula->id);
-                        foreach ($valoraciones as $valoracion) {
-                            echo "<div class='card card-body bg-info'>";
-                            echo "<p>" . $valoracion->texto . "</p>";
-                            echo "<p>" . $valoracion->fecha_valoracion . "</p>";
-                            echo "</div><br>";
+                        if (!empty($valoraciones)) {
+                            foreach ($valoraciones as $valoracion) {
+                                echo "<div class='card card-body bg-info'>";
+                                echo "<p>" . $valoracion->texto . "</p>";
+                                echo "<p>" . $valoracion->fecha_valoracion . "</p>";
+                                echo "</div><br>";
+                            }
+                        } else {
+                        ?>
+                            <article class="container-fluid mt-2 border-secondary h-100">
+                                <div class="mensajeError">
+                                    <p>Esta película no tiene valoraciones</p>
+                                </div>
+                            </article><br>
+                        <?php
                         }
                         ?>
                         <!-- FIN BOTÓN -->
                         <!-- VALORACIÓN -->
-                        <div class="text-center">
-                        <i class="fas fa-pencil-alt prefix"></i>Envíanos tu valoración:
-                            <?php crear($pelicula->id) ?>
-                        </div>
+                        <?php
+                        if (isset($_SESSION['id_usuario'])) {
+                        ?>
+                            <div class="text-center">
+                                <i class="fas fa-pencil-alt prefix"></i>Envíanos tu valoración:
+                                <?php crear($pelicula->id) ?>
+                            </div>
+                        <?php
+                        } else {
+                        ?>
+                            <div class="text-center">
+                                <form action="login.php" method="POST">
+                                    <button class="btn btn-primary" type="submit">Regístrate para enviar una valoración</button>
+                                </form>
+                            </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
         </section>
