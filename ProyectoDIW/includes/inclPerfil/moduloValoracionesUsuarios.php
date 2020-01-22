@@ -1,6 +1,6 @@
 <?php
 
-include_once 'models/controlador/ControladorValoracion.php';
+include_once 'models/controladores/ControladorValoracion.php';
 
 function listarValoracionesUsuario($idUsuario){
     $valoraciones=ControladorValoracion::getValoracionByIDUsuario($idUsuario);

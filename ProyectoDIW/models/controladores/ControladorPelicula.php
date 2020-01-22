@@ -1,7 +1,6 @@
 <?php
-
-require_once 'Conexion.php';
-require_once 'modelo/Pelicula.php';
+include_once 'Conexion.php';
+include_once 'models/entidades/Pelicula.php';
 
 /**
  * Controlador para obtener datos de la tabla pelicula
@@ -31,6 +30,26 @@ class ControladorPelicula {
         return $peliculas;
     }
     
+    /**
+     * Obtener todas las peliculas de una saga
+     * @return \Pelicula
+     */
+    public static function getPeliculasSaga($saga){
+        $conexion=new Conexion();
+        $peliculas=[];
+        
+        $resultados=$conexion->query("SELECT * FROM pelicula where saga='$saga'");
+        
+        while($registro=$resultados->fetch_object()){
+            $pelicula=new Pelicula($registro->saga, $registro->titulo, $registro->fecha_estreno, $registro->director, $registro->sinopsis, $registro->img_carrusel, $registro->img_cartelera, $registro->id);
+            $peliculas[]=$pelicula;
+        }
+        
+        $conexion->close();
+        
+        return $peliculas;
+    }
+
     /**
      * Obtener pelicula mediante ID
      * @param type $id

@@ -3,8 +3,8 @@
 
 <head>
     <?php
-    include_once 'models/controlador/ControladorPelicula.php';
-    include_once 'models/controlador/ControladorValoracion.php';
+    include_once 'models/controladores/ControladorPelicula.php';
+    include_once 'models/controladores/ControladorValoracion.php';
     $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
     ?>
     <?php include "includes/contenidoHead.php"; ?>

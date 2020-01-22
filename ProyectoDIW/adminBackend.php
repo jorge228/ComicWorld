@@ -3,7 +3,7 @@
     <head>
         <?php 
             include("includes/contenidoHead.php");
-            include_once 'models/controlador/ControladorUsuario.php';
+            include_once 'models/controladores/ControladorUsuario.php';
             include_once 'includes/inclAdmin/componenteFilasUsuarios.php';
 
             $usuarios=ControladorUsuario::getAllUsuarios();

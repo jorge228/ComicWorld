@@ -1,6 +1,6 @@
 <?php
 include_once("includes/inclPerfil/moduloValoracionesUsuarios.php");
-include_once("models/controlador/ControladorUsuario.php");
+include_once("models/controladores/ControladorUsuario.php");
 
 $error=true;
 
