@@ -1,0 +1,18 @@
+//Perfil usuarios
+.contenedorPerfilUsuario{
+    font-size:1.2em;
+    border:2px solid $warning;
+
+}
+
+.filaInformacionPerfil{
+    border-left:2px solid $warning;
+}
+
+.contenedorValoracionesPerfil{
+    border-top: 2px solid $warning;
+}
+
+.wrapperValoracionesPerfil{
+    max-height:300px;
+}
