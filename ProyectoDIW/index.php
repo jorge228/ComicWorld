@@ -1,3 +1,4 @@
+<?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,7 +80,7 @@
             </article>
         </section>
 
-
+        <?php if(isset($_SESSION["usuario"])) echo $_SESSION["usuario"]; ?>
         <!--Footer-->
         <?php include("includes/footer.php"); ?>
 

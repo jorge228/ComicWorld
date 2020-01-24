@@ -6,7 +6,10 @@
 }
 
 .filaInformacionPerfil{
-    border-left:2px solid $warning;
+    
+    @media (min-width:768px) {
+        border-left:2px solid $warning;
+    }
 }
 
 .contenedorValoracionesPerfil{

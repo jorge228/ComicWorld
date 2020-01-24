@@ -1,6 +1,6 @@
 <?php
 
-include_once 'models/controlador/ControladorValoracion.php';
+include_once 'models/controladores/ControladorValoracion.php';
 
 function listarValoracionesUsuario($idUsuario){
     $valoraciones=ControladorValoracion::getValoracionByIDUsuario($idUsuario);
@@ -19,21 +19,25 @@ function listarValoracionesUsuario($idUsuario){
     foreach($valoraciones as $pelicula=>$valoracion){
     ?>
 
-        <div class="row bg-light m-3 p-2 rounded border">
-            <div class="col-12 p-2">
+        <div class="row m-3 p-2 bg-white rounded border border-dark">
+            <div class="col-12 p-2 text-center">
                 <h4 class="font-weight-bold"><?php echo $pelicula ?></h4>
             </div>
 
-            <div class="col-12 text-muted">
-                <p>"<?php echo $valoracion->texto ?>"</p>
+            <div class="col-12 text-muted p-3 text-center overflow-auto">
+                <p class="m-0">"<?php echo $valoracion->texto ?>"</p>
             </div>
 
+            <div class="col-12 m-0 text-center">
+                <h5 class="m-0 font-weight-bold"><?php echo $valoracion->puntuacion ?> de 5</h5>
+            </div>
+            
             <div class="col-12 text-center ">
                 <div class="valoracion">
                 <?php
-                    for ($i = 1; $i < 6; $i++) {
+                    for ($i = 5; $i > 0; $i--) {
                     ?>
-                        <input type="radio" id='<?php echo "radio$valoracion->id" ?>' name='<?php echo "radio$valoracion->id" ?>' value='<?php echo $i?>' <?php  if ($valoracion->puntuacion==$i) echo 'checked' ?>>
+                        <input type="radio" id='<?php echo "radio".($valoracion->id+$i) ?>' name='<?php echo "radio$valoracion->id" ?>'  <?php  if ($valoracion->puntuacion==$i) echo 'checked' ?> disabled>
                         <label for='<?php echo "radio$valoracion->id" ?>'>★</label>
                     <?php
                     }

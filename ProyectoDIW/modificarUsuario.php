@@ -1,9 +1,10 @@
+<?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
         include("includes/contenidoHead.php");
-        include_once("models/controlador/ControladorUsuario.php");
+        include_once("models/controladores/ControladorUsuario.php");
 
         $usuario=ControladorUsuario::getUsuarioById(2);
         ?>

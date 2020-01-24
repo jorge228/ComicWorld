@@ -1,4 +1,4 @@
-<title>Comic World</title>
+<title><?php echo $PAGE_TITLE ?></title>
 
 <meta charset="UTF-8" lang="ES">
 <meta name="viewport" content="width=device-width">
