@@ -19,7 +19,6 @@
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
 
-
 </head>
 <title>MCU</title>
 
@@ -106,6 +105,9 @@
                             foreach ($valoraciones as $valoracion) {
                                 echo "<div class='card card-body bg-info'>";
                                 echo "<p>" . $valoracion->texto . "</p>";
+                                echo "<p>" . $valoracion->puntuacion . "</p>";
+                                //$fecha = $valoracion->fecha_valoracion;
+                                //$fechaF = $fecha->format('d - m - Y');
                                 echo "<p>" . $valoracion->fecha_valoracion . "</p>";
                                 echo "</div><br>";
                             }
@@ -136,6 +138,7 @@
                                     <button class="btn btn-primary" type="submit">Regístrate para enviar una valoración</button>
                                 </form>
                             </div>
+                            <br><br>
                         <?php
                         }
                         ?>

@@ -7,15 +7,14 @@ function crear($idPelicula)
         <div class="valoracion">
             <?php
             for ($i = 5; $i >= 1; $i--) {
-                echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "'>";
+                if($i==1){
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "' checked>";
                     echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
-                    /*echo "<input id='radio" . ($idPelicula + $i) . "' type='radio' name='puntuacion' value='" . $i . "'>";
-                    echo "<label for='radio" . ($idPelicula + $i) . "'>★</label>";*/
-                /*echo "<input id='radio<?php echo ($idPelicula +$i) ?>' type='radio' name='pelicula<?php echo $idPelicula ?>' value='<?php echo $i ?>'>";
-                echo "<label for='radio<?php echo ($idPelicula +$i) ?>'>★</label>";*/
-                
-                /*echo "<label><input id='radio<?php echo ($idPelicula +$i) ?>' type='radio' name='<?php echo $idPelicula ?>' value='<?php echo $i ?>' style='visibility:hidden' required >★</label>";*/
-            }
+                }else{
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "'>";
+                    echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
+                }
+             }
             ?></div><br>
         <button class="btn btn-primary" type="submit" action="" name="enviar" value="<?php echo $idPelicula ?>">Enviar</button><br><br><br>
     </form>
