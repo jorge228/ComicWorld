@@ -20,35 +20,25 @@ function listarUsuarios($usuarios){
 
         foreach($usuarios as $usuario){
         ?>
-            <div class="row p-2 text-center ">
-
-                <!--Nombre-->
-                <div class="col-4">
-
-                    <h5 class="py-2 m-0 font-weight-bold"><?php echo $usuario->username ?></h5>
-
-                </div>
-
-                <div class="col-4">
-
+            <tr>
+                <td><?php echo $usuario->id ?></td>
+                <td><?php echo $usuario->username ?></td>
+                <td>
                     <form action="perfilUsuario.php" method="GET">
-                        <input type="hidden" name="id" value="<?php echo $usuario->id ?>">
-                        <input type="submit" class="btn btn-primary btn-md" name="verPerfil" value="Ver perfil">
+                        <input type="hidden" value="<?php echo $usuario->id ?>" name="id">
+                        <input type="submit" class="btn btn-primary" value="Ver Perfil" name="verPerfil">
                     </form>
-
-                </div>
-
-                <!--Perfil form-->
-                <div class="col-4">
-
-                    <form action="#" method="GET">
-                        <input type="hidden" name="id" value="<?php echo $usuario->id ?>">
-                        <input type="submit" class="btn btn-primary btn-md" name="modificarPerfil" value="Modificar usuario">
+                </td>
+                <td>
+                    <form action="#" method="POST">
+                        <select name="rolUsuario">
+                            <option value="admin" <?php if($usuario->rol=="admin") echo 'selected'; ?>>Administrador</option>
+                            <option value="editor" <?php if($usuario->rol=="editor") echo 'selected'; ?>>Editor</option>
+                            <option value="usuario" <?php if($usuario->rol=="usuario") echo 'selected'; ?>>Usuario</option>
+                        </select>
                     </form>
-
-                </div>
-            </div>
-        
+                </td>
+            </tr>        
         <?php   
         }
     }

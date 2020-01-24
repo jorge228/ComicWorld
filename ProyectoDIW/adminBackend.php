@@ -11,59 +11,62 @@
 
     </head>
     <body>
+        <!--Menu-->
+        <?php include("includes/menuNav.php"); ?>
 
-        <div class="contenedorGlobal">
+        <!--TITULO-->
+        <div class="contenedorBackend mt-3">
 
-            <div class="contenedorContenido mx-3">
+            <!--Sidebar-->
+            <aside class="flex-column bg-dark ">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-12 text-center p-4">
+                            <img class="img-fluid rounded-circle" src="assets/img/imagenPerfilPorDefecto.jpg">
+                        </div>
 
-                <!--MENU DE NAVEGACION-->
-                <?php include("includes/menuNav.php"); ?>
+                        <div class="col-12">
+                            <h4 class="text-center font-weight-bold">Admin</h5>
+                        </div>
+                    </div>
 
-                <!--TITULO-->
-                <header class="mt-4 p-3 text-center">
-                    <h1 class="text-warning">Gestión del sitio</h1>
-                </header>
-
-                <!--Contenido-->
-                <section class="container mt-4">
-
-                    <article class="shadow">
-                        <!--Items del nav-->
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active text-success" id="nav-home-tab" data-toggle="tab" href="#usuarios" role="tab" aria-controls="nav-usuarios" aria-selected="true">Usuarios</a>
-                                <a class="nav-item nav-link text-success" id="nav-profile-tab" data-toggle="tab" href="#adios" role="tab" aria-controls="" aria-selected="false">N/A</a>
-                                <a class="nav-item nav-link text-success" id="nav-profile-tab" data-toggle="tab" href="#contacto" role="tab" aria-controls="" aria-selected="false">N/A</a>
-                            </div>
-                        </nav>
-
-                        <!--Contenido de las tabs-->
-                        <div class="tab-content border" id="nav-tabContent">
-                            <div class="tab-pane fade show active filaInformacionPerfil" id="usuarios" role="tabpanel" aria-labelledby="nav-usuarios-tab">
-
-                                <?php listarUsuarios($usuarios); ?>
-
-                            </div>
-
-                            <div class="tab-pane fade show" id="adios" role="tabpanel" aria-labelledby="nav-home-tab">
-
-                                adios
-
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="list-group text-center">
+                                <a href="#" class="list-group-item list-group-item-dark list-group-item-action active">Gestión de usuarios</a>
+                                <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Gestión de contenidos</a>
+                                <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Morbi leo risus</a>
                             </div>
                         </div>
-                    </article>
-                </section>
+                    </div>
+                </div>
 
+            </aside>
 
-            </div>
+            <!--Contenido-->
+            <section class="flex-column flex-grow-1 m-3">
+                <div class="container-fluid p-0 border">
+                    <div class="row">
+                        <div class="col-12">
+                        
+                            <table class="table table-striped text-center">
+                            
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Usuario</th>
+                                        <th>Perfil</th>
+                                        <th>Rol</th>
+                                    </tr>
+                                </thead>
+                                
+                                <?php listarUsuarios($usuarios) ?>
+                            </table>
 
-
-            <!--Footer-->
-            <?php include("includes/footer.php"); ?>
-
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-
-
-
     </body>
 </html>

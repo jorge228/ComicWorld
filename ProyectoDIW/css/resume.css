@@ -405,3 +405,13 @@ h1, h2, h3, h4, h5 {
 
 .wrapperValoracionesPerfil {
   max-height: 300px; }
+
+.contenedorBackend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 100vh; }
