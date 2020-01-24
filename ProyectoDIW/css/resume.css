@@ -419,7 +419,7 @@ visible el contenido importante   */
 .valoracion label {
   float: right;
   /* color estrella vacía */
-  color: #868e96 !important;
+  color: #3b3b3b !important;
   font-size: 25px;
 }
 
@@ -427,7 +427,7 @@ visible el contenido importante   */
 .valoracion label:hover ~ label,
 .valoracion input:checked ~ label {
   /* color estrella llena */
-  color: #FFF09D !important;
+  color: #cff109 !important;
 }
 
 .zoom {
@@ -474,8 +474,10 @@ visible el contenido importante   */
   border: 2px solid #006C75;
 }
 
-.filaInformacionPerfil {
-  border-left: 2px solid #006C75;
+@media (min-width: 768px) {
+  .filaInformacionPerfil {
+    border-left: 2px solid #006C75;
+  }
 }
 
 .contenedorValoracionesPerfil {

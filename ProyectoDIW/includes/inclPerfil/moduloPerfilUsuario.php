@@ -1,6 +1,5 @@
 <?php
 include_once("includes/inclPerfil/moduloValoracionesUsuarios.php");
-include_once("models/controladores/ControladorUsuario.php");
 
 $error=true;
 
@@ -184,16 +183,23 @@ if (!$error){
 
 
     <!--BOTON MODIFICAR USUARIO-->
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-12 text-center text-center p-3">
-                <form action="#" method="POST">
-                    <input type="submit" class="btn btn-primary btn-md" name="modificarPerfil" value="Modificar perfil">
-                </form>
+    <?php
+    //El boton para modificar usuario solo se mostrara si la id del usuario logeado es la misma que la del usuario al que pertenece el perfil
+    if (isset($_SESSION['id_usuario'])){
+        if ($usuario->rol=="admin" || $usuario->id==$_GET['id']){
+        ?>
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-12 text-center text-center p-3">
+                        <form action="#" method="POST">
+                            <input type="submit" class="btn btn-primary btn-md" name="modificarPerfil" value="Modificar perfil">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-<?php
+        <?php
+        }
+    }
 }
 //Si hay un error se muestra un mensaje de error
 else{

@@ -13,7 +13,7 @@
 .valoracion label {
     float:right;
     /* color estrella vacía */ 
-    color: $gray-600 !important;
+    color: $gris-estrellas !important;
     font-size: 25px;
 }
 
@@ -21,5 +21,5 @@
 .valoracion label:hover~label,
 .valoracion input:checked~label {
     /* color estrella llena */ 
-    color: $info !important;
+    color: $amarillo-estrellas !important;
 }
