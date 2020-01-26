@@ -70,10 +70,17 @@ class ControladorUsuario {
     public static function deleteUsuario($id){
         
         $conexion=new Conexion();
-        
-        $conexion->query("DELETE FROM usuario WHERE id=$id");
-        
+        $resultado=false;
+
+        if ($conexion->errno==0){
+            $resultado=$conexion->query("DELETE FROM valoracion WHERE id_usuario=$id");
+
+            $resultado=$conexion->query("DELETE FROM usuario WHERE id=$id");
+        }
+
         $conexion->close();
+
+        return $resultado;
     }
 
     /**
@@ -93,6 +100,23 @@ class ControladorUsuario {
             return -1;
         }
         
+    }
+
+
+    /**
+     * Cambiar rol de usuario
+     */
+    public static function updateRol($id, $rol){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE usuario SET rol='$rol' WHERE id=$id");
+        
+        $conexion->close();
+
+        return $resultado;
     }
     
 }

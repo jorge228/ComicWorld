@@ -7,16 +7,16 @@ $error=true;
 //Comprobar si se ha enviado la id
 if (isset($_GET['id'])){
 
-    //Obtener usuario de BD
-    $usuario=ControladorUsuario::getUsuarioById($_GET['id']);
+    //Obtener usuarioPerfil de BD
+    $usuarioPerfil=ControladorUsuario::getUsuarioById($_GET['id']);
 
-    //Comprobar si el usuario existe
-    if ($usuario!=false)
+    //Comprobar si el usuarioPerfil existe
+    if ($usuarioPerfil!=false)
         $error=false;
 }
 
 
-//Si no hay un error se muestra el perfil de usuario
+//Si no hay un error se muestra el perfil de usuarioPerfil
 if (!$error){
 ?>
     <!--Perfil-->
@@ -37,10 +37,10 @@ if (!$error){
                         </div>
                     </div>
 
-                    <!--Nombre del usuario-->
+                    <!--Nombre del usuarioPerfil-->
                     <div class="col-12 text-center p-2">
                         <div>
-                            <h3 class="font-weight-bold"><?php echo $usuario->username ?></h3>
+                            <h3 class="font-weight-bold"><?php echo $usuarioPerfil->username ?></h3>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ if (!$error){
             </aside>
 
             <!--Columna derecha-->
-            <!--Informacion del usuario-->
+            <!--Informacion del usuarioPerfil-->
             <div class="col-12 col-md-9 filaInformacionPerfil">
 
                 <!--Nombre-->
@@ -62,7 +62,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->nombre ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->nombre ?></p>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo "$usuario->apellido1 $usuario->apellido2" ?></p>
+                            <p class="p-2 m-0"><?php echo "$usuarioPerfil->apellido1 $usuarioPerfil->apellido2" ?></p>
                         </div>
                     </div>
 
@@ -96,7 +96,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->fecha_nacimiento ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->fecha_nacimiento ?></p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->correo ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->correo ?></p>
                         </div>
                     </div>
 
@@ -129,7 +129,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->pais ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->pais ?></p>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->codigo_postal ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->codigo_postal ?></p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuario->telefono ?></p>
+                            <p class="p-2 m-0"><?php echo $usuarioPerfil->telefono ?></p>
                         </div>
                     </div>
                 </div>
@@ -171,20 +171,20 @@ if (!$error){
         <!--VALORACIONES-->
         <div class="row contenedorValoracionesPerfil">
             <div class="col-12 text-center p-3">
-                <h3 class="font-weight-bold">Valoraciones escritas por <?php echo $usuario->username ?></h3>
+                <h3 class="font-weight-bold">Valoraciones escritas por <?php echo $usuarioPerfil->username ?></h3>
             </diV>
         </div>
 
         <!--Listar valoraciones de cada pelicula-->
         <div class="wrapperValoracionesPerfil overflow-auto">
-            <?php listarValoracionesUsuario($usuario->id) ?>
+            <?php listarValoracionesUsuario($usuarioPerfil->id) ?>
         </div>
     </article>
 
 
-    <!--BOTON MODIFICAR USUARIO-->
+    <!--BOTON MODIFICAR USUARIOPerfil-->
     <?php
-    //El boton para modificar usuario solo se mostrara si la id del usuario logeado es la misma que la del usuario al que pertenece el perfil
+    //El boton para modificar usuarioPerfil solo se mostrara si la id del usuarioPerfil logeado es la misma que la del usuarioPerfil al que pertenece el perfil
     if (isset($_SESSION['id_usuario'])){
         if ($usuario->rol=="admin" || $usuario->id==$_GET['id']){
         ?>
@@ -206,7 +206,7 @@ else{
 ?>
     <article class="container-fluid mt-2 border-secondary h-100">
         <div class="mensajeError">
-            <p>Error al mostrar perfil de usuario</p>
+            <p>Error al mostrar perfil de usuarioPerfil</p>
         </div>
     </article>
 <?php

@@ -89,4 +89,43 @@ class ControladorValoracion {
         
         return $valoraciones;
     }
+
+    /**
+     * Devuelve array
+     */
+    public static function getValoracionesYUsuarios(){
+        $conexion=new Conexion();
+        $idsPeliculas=[];
+        $valoraciones=[];
+
+        $resultado=$conexion->query("SELECT DISTINCT id_pelicula FROM valoracion v");
+                
+        //Obtener ids de las peliculas que tienen valoraciones
+        while($registro=$resultado->fetch_object()){
+            $idsPeliculas[]=$registro->id_pelicula;
+        }
+
+        //Preparar consulta
+        $consultaPreparada=$conexion->prepare("SELECT p.titulo, u.username, v.* FROM valoracion v, pelicula p, usuario u WHERE v.id_pelicula=p.id AND u.id=v.id_usuario AND v.id_pelicula=?");
+
+        //Obtener valoraciones de cada pelicula con titulo de la pelicula y username del usuario que escribio la valoracion
+        foreach($idsPeliculas as $pelicula){
+            $consultaPreparada->bind_param('i', $pelicula);
+
+            $consultaPreparada->execute();
+
+            $resultado=$consultaPreparada->get_result();
+
+            //Almacenar valoraciones de la pelicula
+            while($registro=$resultado->fetch_object()){
+                $valoracion=new Valoracion($registro->id_usuario, $registro->id_pelicula, $registro->texto, $registro->puntuacion, $registro->fecha_valoracion, $registro->id);
+                $valoraciones[$registro->titulo][$registro->username]=[$valoracion];
+            }
+
+        }
+
+        $conexion->close();
+        
+        return $valoraciones;
+    }
 }

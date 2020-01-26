@@ -2,4 +2,35 @@
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+    margin:0px;
+}
+
+.containerAlturaBackend{
+    @media (min-width:550px) {
+        height:100vh;
+    }
+}
+
+.tablaBackend{
+
+    td{
+        p{
+            margin:0px;
+            padding:5px;
+        }
+    }
+}
+
+.mensajeExitoBackend{
+    color:green;
+    background-color:lightgreen;
+    border: 2px solid green;
+    padding:10px;
+}
+
+
+.mensajeErrorBackend{
+    color:red;
+    background-color:rgb(238, 144, 144);
+    border: 2px solid red;
 }
