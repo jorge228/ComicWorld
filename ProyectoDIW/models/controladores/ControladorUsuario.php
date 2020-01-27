@@ -119,4 +119,20 @@ class ControladorUsuario {
         return $resultado;
     }
     
+
+    /**
+     * Actualizar usuario
+     */
+    public static function updateUsuario($usuario){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', password='$usuario->password', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
+        
+        $conexion->close();
+
+        return $resultado;
+    }
 }

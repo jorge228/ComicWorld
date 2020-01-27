@@ -30,7 +30,7 @@ function listarUsuarios($usuarios, $idUsuarioLogeado){
     
                     <td>
                         <form action="modificarUsuario.php" method="POST">
-                            <input type="hidden" value="<?php echo $usuarioFila->id ?>" name="id">
+                            <input type="hidden" value="<?php echo $usuarioFila->id ?>" name="idUsuarioMod">
                             <input type="submit" class="btn btn-primary btn-sm" value="Modificar datos" name="verPerfil">
                         </form>
                     </td>
