@@ -40,14 +40,15 @@ include_once 'includes/sesion.php';
                             <form class="formModificarUsuario needs-validation" action="#" method="POST" novalidate>
                                 
                                 <!--Usuario, nombre, apellidos-->
-                                <div class="form-group">
-                                    <div class=" input group">
-                                        <label for="userForm"><h5>Nombre de usuario</h5></label>
-                                        <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre de usuario" value="<?php echo $usuario->username ?>" pattern="^[0-9A-Za-z]+$" maxlength="50" required>
-                                        <div class="valid-feedback"><p>Correcto</p></div>
-                                        <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (máximo: 50 caracteres)</p></div>
+                                <div class="input-group">
+                                    
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="valid-feedback"><p>Correcto</p></div>
+                                    <div class="invalid-feedback"><p>Debe introducir una dirección de correo electrónico válida</p></div>
+
                                 </div>
 
                                 <div class="form-group">
