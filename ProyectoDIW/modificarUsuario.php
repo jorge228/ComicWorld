@@ -10,13 +10,17 @@ if ($usuario->rol!="admin")
 
 //Actulizar en caso de que el usuario le de a guardar
 if (isset($_POST['guardarMod'])){
-    $usuarioMod=new Usuario($_POST['usernameMod'], $_POST['passwordMod'], $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
+    $usuarioMod=new Usuario($_POST['usernameMod'], null, $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
 
     //Meter apellido en objeto en caso de que se haya enviado con el formulario
     if (isset($_POST['apellido2Mod']))
         $usuarioMod->apellido2=$_POST['apellido2Mod'];
     else
         $usuarioMod->apellido2="";
+
+    //Guardar contrasena si se ha enviado
+    if (isset($_POST['passwordMod']))
+        $usuarioMod->password=md5($_POST['passwordMod']);
 
     //Guardar resultado de la operacion en una variable
     $resultadoOperacion=ControladorUsuario::updateUsuario($usuarioMod);
@@ -50,6 +54,10 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                 <!--TITULO-->
                 <div class="col-12 mt-4 p-3 text-center">
                     <h1 class="text-warning">Modificar usuario '<?php echo $usuarioPerfil->username ?>'</h1>
+                    <p class="text-warning">Modifique los datos que desea cambiar en los campos correspondientes y presione el botón <span class="font-weight-bold">'Guardar cambios'</span>.</p>
+                    <p class="text-warning">Los campos con un asterisco (*) al lado del nombre <span class="font-weight-bold">no se pueden dejar en blanco.</span></p>
+                    <p class="text-warning font-weight-bold">Importante: si no desea cambiar la contraseña del usuario déjela en blanco.</p>
+
                 </div>
 
 
@@ -74,10 +82,10 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                 <!--FORMULARIO-->
                 <article class="container">
                 
-                    <div class="row">
+                    <div class="row d-flex justify-content-center">
 
-                        <div class="col-12 px-5 py-3 rounded">
-                            <form class="formModificarUsuario needs-validation" action="#" method="POST" novalidate>
+                        <div class="col-12 col-lg-8 px-2 px-md-5 py-3 rounded">
+                            <form class="formModificarUsuario needs-validation border border-primary p-3" action="#" method="POST" novalidate>
                                 
                                 <input type="hidden" name="idUsuarioMod" value="<?php echo $_POST['idUsuarioMod'] ?>">
 
@@ -88,19 +96,19 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php echo $usuarioPerfil->username ?>" pattern="^[A-Za-z0-9]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php echo $usuarioPerfil->username ?>" pattern="^[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (max: 50 caracteres)</p></div>
                                 </div>
 
                                 <!--Contrasena-->
-                                <label for="passForm"><h5 class="mb-0">Contraseña*</h5></label><br>
+                                <label for="passForm"><h5 class="mb-0">Cambiar contraseña</h5></label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="passwordMod" placeholder="Contraseña de la cuenta" value="<?php echo $usuarioPerfil->password ?>" maxlength="50" required>
+                                    <input type="text" class="form-control" name="passwordMod" id="inputPasswordMod" placeholder="Introduzca una contraseña aquí SOLO si desea cambiar la actual" maxlength="50">
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Debe escribir una contraseña</p></div>
                                 </div>
@@ -124,7 +132,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="nombreMod" placeholder="Nombre real" value="<?php echo $usuarioPerfil->nombre ?>" pattern="^[A-Za-z]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="nombreMod" placeholder="Nombre real" value="<?php echo $usuarioPerfil->nombre ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre solo puede contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -136,7 +144,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido1Mod" placeholder="Primer apellido" value="<?php echo $usuarioPerfil->apellido1 ?>" pattern="^[A-Za-z]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="apellido1Mod" placeholder="Primer apellido" value="<?php echo $usuarioPerfil->apellido1 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -148,7 +156,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido2Mod" placeholder="Segundo apellido" value="<?php echo $usuarioPerfil->apellido2 ?>" pattern="^[A-Za-z]+$" maxlength="50">
+                                    <input type="text" class="form-control" name="apellido2Mod" placeholder="Segundo apellido" value="<?php echo $usuarioPerfil->apellido2 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50">
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -183,17 +191,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-globe-africa"></i></span>
                                     </div>
-
-                                    <select class="form-control" name="paisMod">
-                                        <option value="España">España</option>
-                                        <option value="Portugal">Portugal</option>
-                                        <option value="Francia">Francia</option>
-                                        <option value="Reino Unido">Reino Unido</option>
-                                        <option value="Alemania">Alemania</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="paisMod" placeholder="Pais natal" value="<?php echo $usuarioPerfil->pais ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>Debe seleccionar un país</p></div>
+                                    <div class="invalid-feedback"><p>Debe introducir el nombre de un país</p></div>
                                 </div>
 
                                 <!--Codigo postal-->
@@ -218,7 +218,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
 
                                     <!--Volver al backend-->
                                     <div class="col-12 my-3 text-center">
-                                        <a href="adminUsuario.php" class="btn btn-primary" role="button">Volver al panel de gestión</a>
+                                        <a href="backendUsuario.php" class="btn btn-primary" role="button">Volver al panel de gestión</a>
                                     </div>
                                 </div>
                             </form>

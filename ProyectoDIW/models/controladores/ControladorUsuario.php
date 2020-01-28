@@ -143,9 +143,39 @@ class ControladorUsuario {
         $conexion=new Conexion();
         $resultado=false;
     
-        if ($conexion->errno==0)        
-            $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', password='$usuario->password', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
+        if ($conexion->errno==0){        
+            if ($usuario->password!=null)
+                $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', password='$usuario->password', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
+            else
+                $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
+        }
+
+        $conexion->close();
         
+        return $resultado;
+    }
+
+    /**
+     * Actualizar password pasando id de usuario y la nueva password
+     */
+    public static function updatePasswordByID($id, $nuevaPassword){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0){        
+            $consultaPreparada=$conexion->prepare("UPDATE usuario SET password=? WHERE id=? ");
+
+            $consultaPreparada->bind_param('si', $nuevaPassword, $id);
+
+            $consultaPreparada->execute();
+            
+            $consultaPreparada->get_result();
+        }
+
+        if ($conexion->errno==0)
+            $resultado=true;
+
         $conexion->close();
 
         return $resultado;
