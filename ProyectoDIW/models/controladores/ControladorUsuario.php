@@ -70,10 +70,33 @@ class ControladorUsuario {
     public static function deleteUsuario($id){
         
         $conexion=new Conexion();
-        
-        $conexion->query("DELETE FROM usuario WHERE id=$id");
-        
+        $resultado=false;
+
+        if ($conexion->errno==0){
+            $resultado=$conexion->query("DELETE FROM valoracion WHERE id_usuario=$id");
+
+            $resultado=$conexion->query("DELETE FROM usuario WHERE id=$id");
+        }
+
         $conexion->close();
+
+        return $resultado;
+    }
+
+    /**
+     * Comprueba si un usuario está registrado en la BBDD dado como parámetros únicamente su nombre de usuario.
+     * Si es encotrado se retornará "true" de lo contrario "false".
+     * @param type $username
+     */
+    public static function findByUsername($username) {
+        $found = false;
+        $conexion=new Conexion();
+        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "'");
+        if ($result->num_rows == 1) {
+            $found = true;
+        }
+        $conexion->close();
+        return $found;
     }
 
     /**
@@ -92,7 +115,39 @@ class ControladorUsuario {
             $conexion->close();
             return -1;
         }
+    }
+
+
+    /**
+     * Cambiar rol de usuario
+     */
+    public static function updateRol($id, $rol){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE usuario SET rol='$rol' WHERE id=$id");
         
+        $conexion->close();
+
+        return $resultado;
     }
     
+
+    /**
+     * Actualizar usuario
+     */
+    public static function updateUsuario($usuario){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', password='$usuario->password', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
+        
+        $conexion->close();
+
+        return $resultado;
+    }
 }

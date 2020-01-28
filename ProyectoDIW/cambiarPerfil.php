@@ -1,16 +1,13 @@
 <?php
 include_once 'includes/sesion.php';
 
-//Redirigir si el usuario no es admin
-if (!isset($_SESSION['id_usuario']))
+//Redirigir si el usuario no esta logeado o no es el usuario al que pertenece esta info
+if (!isset($_SESSION['id_usuario']) || !isset($_POST['idUsuarioPerfil']))
     header("Location: index.php");
 
-if ($usuario->rol!="admin")
-    header("Location: index.php");
-
-//Actulizar en caso de que el usuario le de a guardar
+//Actualizar en caso de que el usuario le de a guardar
 if (isset($_POST['guardarMod'])){
-    $usuarioMod=new Usuario($_POST['usernameMod'], $_POST['passwordMod'], $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
+    $usuarioMod=new Usuario($_POST['usernameMod'], $_POST['passwordMod'], $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioPerfil'] );
 
     //Meter apellido en objeto en caso de que se haya enviado con el formulario
     if (isset($_POST['apellido2Mod']))
@@ -22,8 +19,7 @@ if (isset($_POST['guardarMod'])){
     $resultadoOperacion=ControladorUsuario::updateUsuario($usuarioMod);
 }
 
-//Obtener usuario a modificar
-$usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
+$usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
 
 ?>
 <!DOCTYPE html>
@@ -49,7 +45,8 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
 
                 <!--TITULO-->
                 <div class="col-12 mt-4 p-3 text-center">
-                    <h1 class="text-warning">Modificar usuario '<?php echo $usuarioPerfil->username ?>'</h1>
+                    <h1 class="text-warning">Modificar datos</h1>
+                    <p class="text-warning">Cambie los datos que desea modificar en los campos de abajo y presione 'Guardar cambios'</p>
                 </div>
 
 
@@ -79,7 +76,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                         <div class="col-12 px-5 py-3 rounded">
                             <form class="formModificarUsuario needs-validation" action="#" method="POST" novalidate>
                                 
-                                <input type="hidden" name="idUsuarioMod" value="<?php echo $_POST['idUsuarioMod'] ?>">
+                                <input type="hidden" name="idUsuarioPerfil" value="<?php echo $_POST['idUsuarioPerfil'] ?>">
 
                                 <!--Usuario-->
                                 <label for="usernameForm"><h5 class="mb-0">Usuario*</h5></label><br>
@@ -218,7 +215,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
 
                                     <!--Volver al backend-->
                                     <div class="col-12 my-3 text-center">
-                                        <a href="adminUsuario.php" class="btn btn-primary" role="button">Volver al panel de gestión</a>
+                                        <a href="perfilUsuario.php?id=<?php echo $usuarioPerfil->id ?>" class="btn btn-primary" role="button">Volver a mi perfil</a>
                                     </div>
                                 </div>
                             </form>

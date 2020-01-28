@@ -14,7 +14,7 @@ echo '</head>';
 echo '<body>';
 
     if (isset($_POST["btnRegistrar"]) && verificarPassword()) {
-        $usuario = new Usuario($_POST["username"], $_POST["password1"], $_POST["nombre"], $_POST["apellido1"], $_POST["correo"], $_POST["fecha_nacimiento"], $_POST["pais"], $_POST["codigo_postal"], $_POST["telefono"], "usuario", "", $_POST["apellido2"]);
+        $usuario = new Usuario($_POST["username"], md5($_POST["password1"]), $_POST["nombre"], $_POST["apellido1"], $_POST["correo"], $_POST["fecha_nacimiento"], $_POST["pais"], $_POST["codigo_postal"], $_POST["telefono"], "usuario", "", $_POST["apellido2"]);
         ControladorUsuario::insertUsuario($usuario);
         header('location:index.php');
     } else {
@@ -90,7 +90,9 @@ function formularioRegistro() {
                         echo '<input type="text" class="form-control" name="telefono" id="telefono" placeholder="Escriba aquí su telefono" value="" required/>';
                     echo '</div>';
 
-	                echo ' <button type="submit" name="btnRegistrar" class="btn btn-primary">Registrar</button>';
+                    echo '<input type="reset" class="btn btn-secondary" id="reset" value="Limpiar"/>';
+                    echo ' <button type="submit" name="btnRegistrar" class="btn btn-primary">Registrar</button>';
+                    
                 echo '</form>';       
 			echo '</div>';
 			echo '<div class="col-1 col-sm-3 text-center"></div>';
@@ -99,12 +101,14 @@ function formularioRegistro() {
 }
 
 function verificarPassword () {
-    if ($_POST["password1"] == $_POST["password2"]){
-        return true;
-    } else {
-        echo '<script>$(function() {alert("Error usario no registrado. Las contraseñas no coinciden, vuelva a intentarlo");});</script>';
-        return false;
-    }
+    $ok = true;
+    if ($_POST["password1"] != $_POST["password2"]) $ok = false;
+    // Comprueba si las contraseñas coinciden
+    if ($_POST["password1"] != $_POST["password2"]) $ok = false;
+    // Comprueba si el usuario introducido ya está en BBDD
+    if (ControladorUsuario::findByUsername($_POST["username"])) $ok = false;
+    if ($ok == false) echo '<script>$(function() {alert("Error usario no registrado. Revise los datos introducidos y vuelva a intentarlo");});</script>';
+    return $ok;
 }
 
 ?>

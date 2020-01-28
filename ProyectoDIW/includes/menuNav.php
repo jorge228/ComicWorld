@@ -1,3 +1,6 @@
+<!-- Incluye las ventanas modales de login y registro -->
+<?php if (!isset($_SESSION['id_usuario'])) include_once "loginModal.php" ?>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-fixed-top navbar-dark bg-success main-nav">
 
     <div class="container-fluid">
@@ -99,36 +102,30 @@
         <?php
         }
         ?>
+        <?php if (isset($_SESSION['id_usuario'])){ ?>
+            <div>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li id="dropdownLoginLI" class="dropdown order-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle"><i class="fas fa-user text-white"></i> <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
 
-        <div>
-            <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-                <li id="dropdownLoginLI" class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle"><i class="fas fa-user text-white"></i> <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-2">
-                        <li class="px-3 py-2">
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-block">
-                                    <a class="text-white" href="login.php">Inicia sesión</a>
-                                </button>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-block">
-                                    <a class="text-white" href="logOut.php">Cerrar sesión</a>
-                                </button>
-                            </div>
-                            <div class="text-center">
-                                <small class="">o</small>
-                            </div>
-                            <div class="form-group">
-                                <button id="googleSignInBtn" class="btn-google">Inicia sesión con Google</button>
-                            </div>
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block">
+                                        <a class="text-white" href="logOut.php">Cerrar sesión</a>
+                                    </button>
+                                </div>
 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <?php } else { ?>
+                <button class="btn float-right" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-user text-white"></i>
+                </button>
+            <?php } ?>
         <!-- Collapse button -->
         <button class="navbar-toggler ml-auto nav-flex-icons" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
