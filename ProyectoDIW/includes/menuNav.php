@@ -116,14 +116,6 @@
                                     </button>
                                 </div>
 
-                                <div class="text-center">
-                                    <small class="">o</small>
-                                </div>
-
-                                <div class="form-group">
-                                    <button id="googleSignInBtn" class="btn-google">Inicia sesión con Google</button>
-                                </div>
-
                             </li>
                         </ul>
                     </li>
@@ -131,7 +123,7 @@
             </div>
             <?php } else { ?>
                 <button class="btn float-right" data-toggle="modal" data-target="#exampleModal">
-                <i class="fas fa-user text-white"></i>
+                    <i class="fas fa-user text-white"></i>
                 </button>
             <?php } ?>
         <!-- Collapse button -->

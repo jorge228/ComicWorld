@@ -79,13 +79,6 @@
                                         	
                                     </table>
                                     
-                                    <div class="text-center">
-                                        <?php
-                                            //Estrellas
-                                            $nombre = "v1";
-                                            crear($nombre);
-                                        ?>
-                                    </div>
                                 </section>
                             </div>
                         </div>
@@ -147,13 +140,7 @@
                                         	
                                     </table>
                                     
-                                    <div class="text-center">
-                                        <?php
-                                            //Estrellas
-                                            $nombre = "v1";
-                                            crear($nombre);
-                                        ?>
-                                    </div>
+
                                     
                                 </section>
                             </div>
@@ -224,13 +211,7 @@
                                         	
                                     </table>
                                     
-                                    <div class="text-center">
-                                        <?php
-                                            //Estrellas
-                                            $nombre = "v1";
-                                            crear($nombre);
-                                        ?>
-                                    </div>
+
                                     
                                 </section>
                             </div>
