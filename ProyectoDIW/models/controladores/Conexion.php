@@ -15,7 +15,7 @@ class Conexion extends mysqli{
     private $server='localhost';
     private $usuario='dwes';
     private $pass='abc123.';
-    private $bdd='comicWorld';
+    private $bdd='comicworld';
     
     public function __construct() {
         parent::__construct($this->server, $this->usuario, $this->pass, $this->bdd);
