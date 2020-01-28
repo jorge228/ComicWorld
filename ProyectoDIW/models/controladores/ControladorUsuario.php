@@ -84,6 +84,22 @@ class ControladorUsuario {
     }
 
     /**
+     * Comprueba si un usuario está registrado en la BBDD dado como parámetros únicamente su nombre de usuario.
+     * Si es encotrado se retornará "true" de lo contrario "false".
+     * @param type $username
+     */
+    public static function findByUsername($username) {
+        $found = false;
+        $conexion=new Conexion();
+        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "'");
+        if ($result->num_rows == 1) {
+            $found = true;
+        }
+        $conexion->close();
+        return $found;
+    }
+
+    /**
      * Comprueba si un usuario está registrado en la BBDD dado como parámetros su nombre de usuario 
      * y su contraseña. Si ambas existen y coinciden se devolvera la id del usuario encontrado, en caso contrario devolverá "-1".
      * @param type $username
@@ -99,7 +115,6 @@ class ControladorUsuario {
             $conexion->close();
             return -1;
         }
-        
     }
 
 
