@@ -88,4 +88,23 @@ button.btn.btn-success:active:focus {
 .btn-primary{
   background-color: $warning  !important;
 }
+
+.btn-outline-primary{
+  border-color: $warning  !important;
+  color:$warning !important;
+}
+
+.btn-outline-primary:hover{
+  background-color: $warning  !important;
+  color:white !important;
+}
+
 /* End Override btn-primary */
+
+.valid-feedback{
+  font-size:1em !important;
+}
+
+.invalid-feedback{
+  font-size:1em !important;
+}
