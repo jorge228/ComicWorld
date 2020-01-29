@@ -84,4 +84,37 @@ class ControladorPelicula {
 
         return $resultado;
     }
+
+    /**
+     * Obtener todas las sagas
+     */
+    public static function getSagas(){
+        $conexion=new Conexion();
+        $peliculas=[];
+        
+        $resultados=$conexion->query("SELECT DISTINCT saga FROM pelicula");
+        
+        while($registro=$resultados->fetch_object()){
+            $saga=$registro->saga;
+            $sagas[]=$saga;
+        }
+        
+        $conexion->close();
+        
+        return $sagas;
+    }
+
+    /**
+     * Insertar un usuario en la BD
+     * @param type $usuario
+     */
+    public static function insertPelicula($saga, $titulo, $fecha, $director, $sinopsis, $img1, $img2){
+        
+        $conexion=new Conexion();
+        
+        $conexion->query("INSERT INTO pelicula (saga, titulo, fecha_estreno, director, sinopsis, img_carrusel, img_cartelera) "
+                . "VALUES('$saga', '$titulo', '$fecha', '$director', '$sinopsis', '$img1', '$img2')");
+    
+        $conexion->close();
+    }
 }
