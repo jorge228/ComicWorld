@@ -10,7 +10,7 @@ if ($usuario->rol!="admin")
 
 //Actulizar en caso de que el usuario le de a guardar
 if (isset($_POST['guardarMod'])){
-    $usuarioMod=new Usuario($_POST['usernameMod'], $_POST['passwordMod'], $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
+    $usuarioMod=new Usuario($_POST['usernameMod'], md5($_POST['passwordMod']), $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
 
     //Meter apellido en objeto en caso de que se haya enviado con el formulario
     if (isset($_POST['apellido2Mod']))
@@ -77,7 +77,8 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                     <div class="row">
 
                         <div class="col-12 px-5 py-3 rounded">
-                            <form class="formModificarUsuario needs-validation" action="#" method="POST" novalidate>
+
+                            <form class="needs-validation" action="#" method="POST" novalidate>
                                 
                                 <input type="hidden" name="idUsuarioMod" value="<?php echo $_POST['idUsuarioMod'] ?>">
 

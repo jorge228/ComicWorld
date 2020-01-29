@@ -125,7 +125,6 @@ class ControladorValoracion {
         }
 
         $conexion->close();
-  
         return $valoraciones;
     }
   
