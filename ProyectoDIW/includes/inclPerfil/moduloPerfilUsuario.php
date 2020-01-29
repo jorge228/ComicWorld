@@ -3,20 +3,11 @@ include_once("includes/inclPerfil/moduloValoracionesUsuarios.php");
 
 $error=true;
 
+//Comprobar si el usuario existe
+if (isset($usuario))
+    $error=false;
 
-//Comprobar si se ha enviado la id
-if (isset($_GET['id'])){
-
-    //Obtener usuarioPerfil de BD
-    $usuarioPerfil=ControladorUsuario::getUsuarioById($_GET['id']);
-
-    //Comprobar si el usuarioPerfil existe
-    if ($usuarioPerfil!=false)
-        $error=false;
-}
-
-
-//Si no hay un error se muestra el perfil de usuarioPerfil
+//Si no hay un error se muestra el perfil de usuario
 if (!$error){
 ?>
     <!--Perfil-->
@@ -40,7 +31,7 @@ if (!$error){
                     <!--Nombre del usuarioPerfil-->
                     <div class="col-12 text-center p-2">
                         <div>
-                            <h3 class="font-weight-bold"><?php echo $usuarioPerfil->username ?></h3>
+                            <h3 class="font-weight-bold"><?php echo $usuario->username ?></h3>
                         </div>
                     </div>
                 </div>
@@ -62,7 +53,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->nombre ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->nombre ?></p>
                         </div>
                     </div>
 
@@ -79,7 +70,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo "$usuarioPerfil->apellido1 $usuarioPerfil->apellido2" ?></p>
+                            <p class="p-2 m-0"><?php echo "$usuario->apellido1 $usuario->apellido2" ?></p>
                         </div>
                     </div>
 
@@ -96,7 +87,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->fecha_nacimiento ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->fecha_nacimiento ?></p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +103,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->correo ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->correo ?></p>
                         </div>
                     </div>
 
@@ -129,7 +120,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->pais ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->pais ?></p>
                         </div>
                     </div>
                 </div>
@@ -145,7 +136,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->codigo_postal ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->codigo_postal ?></p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +152,7 @@ if (!$error){
 
                     <div class="col-12 col-md-9 text-center text-md-left">
                         <div class="info">
-                            <p class="p-2 m-0"><?php echo $usuarioPerfil->telefono ?></p>
+                            <p class="p-2 m-0"><?php echo $usuario->telefono ?></p>
                         </div>
                     </div>
                 </div>
@@ -171,43 +162,37 @@ if (!$error){
         <!--VALORACIONES-->
         <div class="row contenedorValoracionesPerfil">
             <div class="col-12 text-center p-3">
-                <h3 class="font-weight-bold">Valoraciones escritas por <?php echo $usuarioPerfil->username ?></h3>
+                <h3 class="font-weight-bold">Valoraciones escritas por <?php echo $usuario->username ?></h3>
             </diV>
         </div>
 
         <!--Listar valoraciones de cada pelicula-->
         <div class="wrapperValoracionesPerfil overflow-auto">
-            <?php listarValoracionesUsuario($usuarioPerfil->id) ?>
+            <?php listarValoracionesUsuario($usuario->id) ?>
         </div>
     </article>
 
-
     <!--BOTON MODIFICAR USUARIOPerfil-->
-    <?php
-    //El boton para modificar usuarioPerfil solo se mostrara si la id del usuarioPerfil logeado es la misma que la del usuarioPerfil al que pertenece el perfil
-    if (isset($_SESSION['id_usuario'])){
-        if ($usuario->rol=="admin" || $usuario->id==$_GET['id']){
-        ?>
-            <div class="container mt-2">
-                <div class="row">
-                    <div class="col-12 text-center text-center p-3">
-                        <form action="cambiarPerfil.php" method="POST">
-                            <input type="hidden" name="idUsuarioPerfil" value="<?php echo $usuario->id ?>">
-                            <input type="submit" class="btn btn-primary btn-md" name="modificarPerfil" value="Modificar perfil">
-                        </form>
-                    </div>
-                </div>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 text-center text-center p-3">
+                <a href="modificarPerfil.php" class="btn btn-primary">Modificar mi perfil</a>
             </div>
-        <?php
-        }
-    }
+
+            <div class="col-12 text-center text-center p-3">
+                <a href="cambiarPassword.php" class="btn btn-primary">Cambiar contraseña</a>
+            </div>
+        </div>
+    </div>
+
+<?php    
 }
 //Si hay un error se muestra un mensaje de error
 else{
 ?>
     <article class="container-fluid mt-2 border-secondary h-100">
         <div class="mensajeError">
-            <p>Error al mostrar perfil de usuarioPerfil</p>
+            <p>Error al mostrar perfil de usuario</p>
         </div>
     </article>
 <?php

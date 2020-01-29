@@ -22,7 +22,7 @@ function listarUsuarios($usuarios, $idUsuarioLogeado){
             ?>
                 <tr class="filaInformacionPerfil">
                     <td><p><?php echo $usuarioFila->id ?></p></td>
-                    <td><p id="<?php echo "nombre$usuarioFila->username" ?>"><a href="perfilUsuario.php?id=<?php echo $usuarioFila->id ?>"><?php echo $usuarioFila->username?></a></p></td>
+                    <td><p id="<?php echo "nombre$usuarioFila->username" ?>"><?php echo $usuarioFila->username?></p></td>
 
                     <td>
                         <p><?php echo ucfirst($usuarioFila->rol) ?></p>

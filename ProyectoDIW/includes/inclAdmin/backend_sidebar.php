@@ -2,7 +2,7 @@
 <?php 
 
 //Mostrar sidebar
-function sidebar(){
+function sidebar($usuario){
 
     ?>
     <!--Sidebar-->
@@ -15,17 +15,27 @@ function sidebar(){
             </div>
 
             <div class="col-12">
-                <h4 class="text-center text-white font-weight-bold">Panel de gestión</h5>
+                <h4 class="text-center text-white font-weight-bold">Panel de gestión</h4>
             </div>
+            <div class="col-12">
+                <p class="text-center text-white m-1"><?php echo ucfirst($usuario->rol) ?></p>
+            </div>
+
         </div>
 
         <!--Menu-->
         <div class="row my-3">
             <div class="col-12">
                 <div class="list-group text-center">
-                    <a href="adminUsuario.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "adminUsuario.php" )!=false) echo "active" ?>">Gestión de usuarios</a>
-                    <a href="adminContenido.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "adminContenido.php" )!=false) echo "active" ?>">Gestión de contenidos</a>
-                    <a href="adminValoraciones.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "adminValoraciones.php" )!=false) echo "active" ?>">Gestión de valoraciones</a>
+                    <?php
+                    //Solo se mostrara el menu de gestion de usuarios a los administradores
+                    if ($usuario->rol=="admin"){
+                    ?>
+                        <a href="backendUsuario.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "backendUsuario.php" )!=false) echo "active" ?>">Gestión de usuarios</a>
+                    <?php
+                    }
+                    ?>
+                    <a href="backendContenido.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "backendContenido.php" )!=false) echo "active" ?>">Gestión de contenidos</a>
                 </div>
             </div>
         </div>

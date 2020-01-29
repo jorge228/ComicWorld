@@ -1,10 +1,16 @@
-<?php include_once 'includes/sesion.php';?>
+<?php
+include_once 'includes/sesion.php';
+
+//Redirigir si no ha iniciado sesion
+if (!isset($_SESSION['id_usuario']))
+    header("Location:index.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
         include("includes/contenidoHead.php");
-        
         ?>
 
     </head>
