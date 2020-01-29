@@ -85,8 +85,8 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                     <div class="row d-flex justify-content-center">
 
                         <div class="col-12 col-lg-8 px-2 px-md-5 py-3 rounded">
-                            <form class="formModificarUsuario needs-validation border border-primary p-3" action="#" method="POST" novalidate>
-                                
+                            <form class="needs-validation border border-primary p-3" action="#" method="POST" novalidate>
+                              
                                 <input type="hidden" name="idUsuarioMod" value="<?php echo $_POST['idUsuarioMod'] ?>">
 
                                 <!--Usuario-->
