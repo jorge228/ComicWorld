@@ -125,7 +125,18 @@ class ControladorValoracion {
         }
 
         $conexion->close();
-        
         return $valoraciones;
     }
+  
+    /**
+     * Inserta valoración
+     */
+    public static function creaValoracion($id_usuario, $id_pelicula, $texto, $puntuacion){
+        $conexion=new Conexion();
+        $fecha = new DateTime();
+        $format_fecha = $fecha->format('Y-m-d');
+        $conexion->query("INSERT INTO valoracion (id_usuario, id_pelicula, texto, puntuacion, fecha_valoracion) VALUES ('$id_usuario', '$id_pelicula', '$texto', $puntuacion, '$format_fecha')");
+        $conexion->close();
+    }
+  
 }

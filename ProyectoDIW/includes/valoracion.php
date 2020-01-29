@@ -3,13 +3,18 @@ function crear($idPelicula)
 {
 ?>
     <form action="" method="POST">
-        <textarea class="form-control rounded-0" style="width: 100%" maxlength="1000"></textarea><br>
+        <textarea class="form-control rounded-0" name="textarea_valoracion" style="width: 100%" maxlength="1000" required></textarea><br>
         <div class="valoracion">
             <?php
-            for ($i = 0; $i < 5; $i++) {
-                echo "<input id='radio<?php echo ($idPelicula +$i) ?>' type='radio' name='<?php echo $idPelicula ?>' value='<?php echo $i ?>'>";
-                echo "<label for='radio<?php echo ($idPelicula +$i) ?>'>★</label>";
-            }
+            for ($i = 5; $i >= 1; $i--) {
+                if($i==1){
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "' checked>";
+                    echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
+                }else{
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "'>";
+                    echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
+                }
+             }
             ?></div><br>
         <button class="btn btn-primary" type="submit" action="" name="enviar" value="<?php echo $idPelicula ?>">Enviar</button><br><br><br>
     </form>
