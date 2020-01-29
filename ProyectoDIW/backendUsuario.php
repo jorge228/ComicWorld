@@ -61,12 +61,12 @@ $usuarios=ControladorUsuario::getAllUsuarios();
                                 if (isset($resultadoOperacion)){
                                     if ($resultadoOperacion){
                                     ?>
-                                        <script>toastr.success('Se ha realizado la operación con éxito.', 'Info', {closeButton:true})</script>
+                                        <script>toastr.success('Se ha realizado la operación con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
                                     <?php
                                     }
                                     else{
                                     ?>
-                                        <script>toastr.error('Ha habido un error al realizar la operación, vuelva a intentarlo más tarde.', 'Error', {closeButton:true})</script>
+                                        <script>toastr.error('Ha habido un error al realizar la operación, vuelva a intentarlo más tarde.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
                                     <?php
                                     }
                                 }

@@ -20,25 +20,3 @@
         }
     }
 }
-
-//Mensajes de error y exito backend
-.mensajeResultado{
-    width:50%;
-    margin:auto;
-    padding:10px;
-    text-align:center;
-
-}
-
-.mensajeExitoBackend{
-    color:green;
-    background-color:lightgreen;
-    border: 2px solid green;
-}
-
-
-.mensajeErrorBackend{
-    color:red;
-    background-color:rgb(243, 180, 180);
-    border: 2px solid red;
-}
