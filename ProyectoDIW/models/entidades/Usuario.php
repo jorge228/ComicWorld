@@ -17,6 +17,7 @@ class Usuario {
     public $codigo_postal;
     public $telefono;
     public $rol;
+    public $baneado;
     
     public function __construct($username, $password, $nombre, $apellido1, $correo, $fecha_nacimiento, $pais, $codigo_postal, $telefono, $rol="usuario", $id=0, $apellido2="") {
         $this->username=$username;

@@ -7,14 +7,10 @@
     include_once 'models/controladores/ControladorPelicula.php';
     include_once 'models/controladores/ControladorValoracion.php';
     $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
-    if(isset($_POST['enviar'])){
-        echo "<br><br><br><br>";
-        echo "comentario: ".$_POST['textarea_valoracion']."<br>";
-        echo "idpeli: ".$_POST['enviar']."<br>";
-        echo "idusuario: ".$_SESSION['id_usuario']."<br>";
-        echo "puntuacion: ".$_POST['puntuacion']."<br>";
-        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'],$_POST['textarea_valoracion'],$_POST['puntuacion']);
+    if (isset($_POST['enviar'])) {
+        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'], $_POST['textarea_valoracion'], $_POST['puntuacion']);
     }
+
     ?>
     <?php include "includes/contenidoHead.php"; ?>
     <?php include "includes/valoracion.php"; ?>
@@ -103,21 +99,19 @@
                         $valoraciones = ControladorValoracion::getValoracionesPelicula($pelicula->id);
                         if (!empty($valoraciones)) {
                             foreach ($valoraciones as $valoracion) {
+                                $usuario = ControladorUsuario::getUsuarioByID($valoracion->id_usuario);
                                 echo "<div class='card card-body bg-info'>";
-                                echo "<p>" . $valoracion->texto . "</p>";
-                                echo "<p>" . $valoracion->puntuacion . "</p>";
-                                //$fecha = $valoracion->fecha_valoracion;
-                                //$fechaF = $fecha->format('d - m - Y');
-                                echo "<p>" . $valoracion->fecha_valoracion . "</p>";
+                                echo "<p><span class='font-weight-bold'>" . $usuario->nombre . " " . $usuario->apellido1 . "</span>: " . $valoracion->texto . "</p>";
+                                echo "<p>Fecha: " . $valoracion->fecha_valoracion . "</p><hr>";
+                                echo "<p class='text-right'>Puntuación: " . $valoracion->puntuacion . "/5</p>";
                                 echo "</div><br>";
                             }
                         } else {
                         ?>
-                            <article class="container-fluid mt-2 border-secondary h-100">
-                                <div class="mensajeError">
-                                    <p>Esta película no tiene valoraciones</p>
-                                </div>
-                            </article><br>
+                            <div class="alert alert-secondary">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <strong>¡Lo sentimos!</strong> Esta película no tiene valoraciones.
+                            </div><br>
                         <?php
                         }
                         ?>
@@ -134,7 +128,7 @@
                         } else {
                         ?>
                             <div class="text-center">
-                                <form action="login.php" method="POST">
+                                <form action="signUp.php" method="POST">
                                     <button class="btn btn-primary" type="submit">Regístrate para enviar una valoración</button>
                                 </form>
                             </div>
