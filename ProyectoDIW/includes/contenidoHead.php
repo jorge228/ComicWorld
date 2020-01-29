@@ -19,6 +19,10 @@
 
 <script src="js/jquery.easypiechart.js"></script>
 
+<!--Links Toastr-->
+<link rel="stylesheet" type="text/css" href="css/toastr.css">
+<script src="js/toastr.js"></script>
+
 <!--Estilos personalizados  Bootstrap SASS -->
 <link rel="stylesheet" type="text/css" href="css/resume.css">
 

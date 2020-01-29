@@ -68,4 +68,20 @@ class ControladorPelicula {
         
         return $pelicula;
     }
+
+    /**
+     * Borrar pelicula y valoraciones de la misma con id
+     */
+    public static function deletePeliculaByID($id){
+        $conexion=new Conexion();
+
+        $resultado=false;
+
+        if ($conexion->errno==0){
+            $resultado=$conexion->query("DELETE FROM valoracion WHERE id_pelicula=$id");
+            $resultado=$conexion->query("DELETE FROM pelicula WHERE id=$id");
+        }
+
+        return $resultado;
+    }
 }
