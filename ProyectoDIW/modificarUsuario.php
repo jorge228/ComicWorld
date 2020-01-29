@@ -38,6 +38,8 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
         ?>
 
         <script src="js/validacion_form/form_modificar_usuario.js"></script>
+        <script src="js/backend/backend_toastr.js"></script>
+
     </head>
 
     <body>
@@ -64,18 +66,16 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                 <?php
                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                 if (isset($resultadoOperacion)){
-                ?>
-                    <div class="col-12 text-center ">
-                    
-                        <?php
-                        if ($resultadoOperacion)
-                            echo "<p class='mensajeExitoBackend'>Se ha actualizado el usuario con éxito</p>";
-                        else
-                            echo "<p class='mensajeErrorBackend'>Ha habido un error al actualizar al usuario</p>"
-                        ?>
-                        
-                    </div>
-                <?php
+                    if ($resultadoOperacion){
+                    ?>
+                        <script>toastr.success('Se ha actualizado el usuario con exito.', 'Info', {closeButton:true})</script>
+                    <?php
+                    }
+                    else{
+                    ?>
+                        <script>toastr.success('Ha habido un error al actulizar el usuario.', 'Error', {closeButton:true})</script>
+                    <?php
+                    }
                 }
                 ?>
 
