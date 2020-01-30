@@ -13,7 +13,7 @@
 
 
 //Si el usuario le ha dado a cambiar rol
- if (isset($_POST['cambiarRol']))
+if (isset($_POST['cambiarRol']))
     $resultadoOperacion=ControladorUsuario::updateRol($_POST['idUsuarioOperacion'], $_POST['rolUsuario']);
 
 //Si el usuario le ha dado a borraer
@@ -46,7 +46,7 @@ $usuarios=ControladorUsuario::getAllUsuarios();
                     <div class="row ">
                     
                         <!--Sidebar-->
-                        <?php sidebar(); ?>
+                        <?php sidebar($usuario); ?>
 
                         <!--Contenido-->
                         <div class="col-12 col-sm-9">
@@ -59,7 +59,7 @@ $usuarios=ControladorUsuario::getAllUsuarios();
                                 <?php
                                 if (isset($resultadoOperacion)){
                                 ?>
-                                    <div class="col-12 text-center ">
+                                    <div class="mensajeResultado text-center ">
                                     
                                         <?php
                                         if ($resultadoOperacion)

@@ -2,12 +2,12 @@
 include_once 'includes/sesion.php';
 
 //Redirigir si el usuario no esta logeado o no es el usuario al que pertenece esta info
-if (!isset($_SESSION['id_usuario']) || !isset($_POST['idUsuarioPerfil']))
+if (!isset($_SESSION['id_usuario']))
     header("Location: index.php");
 
 //Actualizar en caso de que el usuario le de a guardar
 if (isset($_POST['guardarMod'])){
-    $usuarioMod=new Usuario($_POST['usernameMod'], $_POST['passwordMod'], $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioPerfil'] );
+    $usuarioMod=new Usuario($_POST['usernameMod'], null, $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $usuario->id );
 
     //Meter apellido en objeto en caso de que se haya enviado con el formulario
     if (isset($_POST['apellido2Mod']))
@@ -15,11 +15,12 @@ if (isset($_POST['guardarMod'])){
     else
         $usuarioMod->apellido2="";
 
+
     //Guardar resultado de la operacion en una variable
     $resultadoOperacion=ControladorUsuario::updateUsuario($usuarioMod);
 }
 
-$usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
+$usuario=ControladorUsuario::getUsuarioByID($usuario->id);
 
 ?>
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
         include("includes/contenidoHead.php");
         ?>
 
-        <script src="js/validacion_form/form_modificar_usuario.js"></script>
+        <script src="js/validacion_form/form_modificar_perfil.js"></script>
     </head>
 
     <body>
@@ -45,8 +46,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
 
                 <!--TITULO-->
                 <div class="col-12 mt-4 p-3 text-center">
-                    <h1 class="text-warning">Modificar datos</h1>
-                    <p class="text-warning">Cambie los datos que desea modificar en los campos de abajo y presione 'Guardar cambios'</p>
+                    <h1 class="text-warning">Cambiar datos personales</h1>
+                    <p class="text-warning">Modifique los datos que desea cambiar en los campos correspondientes y presione el botón <span class="font-weight-bold">'Guardar cambios'</span>.</p>
+                    <p class="text-warning">Los campos con un asterisco (*) al lado del nombre <span class="font-weight-bold">no se pueden dejar en blanco.</span></p>
                 </div>
 
 
@@ -54,7 +56,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                 if (isset($resultadoOperacion)){
                 ?>
-                    <div class="col-12 text-center ">
+                    <div class="mensajeResultado text-center ">
                     
                         <?php
                         if ($resultadoOperacion)
@@ -71,13 +73,11 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                 <!--FORMULARIO-->
                 <article class="container">
                 
-                    <div class="row">
+                    <div class="row d-flex justify-content-center">
 
-                        <div class="col-12 px-5 py-3 rounded">
-                            <form class="formModificarUsuario needs-validation" action="#" method="POST" novalidate>
+                        <div class="col-12 col-lg-8 px-2 px-md-5 py-3 rounded">
+                            <form class="formModificarUsuario needs-validation border border-primary p-3" action="#" method="POST" novalidate>
                                 
-                                <input type="hidden" name="idUsuarioPerfil" value="<?php echo $_POST['idUsuarioPerfil'] ?>">
-
                                 <!--Usuario-->
                                 <label for="usernameForm"><h5 class="mb-0">Usuario*</h5></label><br>
                                 <div class="input-group mb-3">
@@ -85,21 +85,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php echo $usuarioPerfil->username ?>" pattern="^[A-Za-z0-9]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="usernameMod" placeholder="Tu nick de usuario" value="<?php echo $usuario->username ?>" pattern="^[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (max: 50 caracteres)</p></div>
-                                </div>
-
-                                <!--Contrasena-->
-                                <label for="passForm"><h5 class="mb-0">Contraseña*</h5></label><br>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                    </div>
-
-                                    <input type="text" class="form-control" name="passwordMod" placeholder="Contraseña de la cuenta" value="<?php echo $usuarioPerfil->password ?>" maxlength="50" required>
-                                    <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>Debe escribir una contraseña</p></div>
                                 </div>
 
                                 <!--Correo-->
@@ -109,19 +97,19 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-at"></i></span>
                                     </div>
 
-                                    <input type="email" class="form-control" name="correoMod" placeholder="Correo electrónico del usuario" value="<?php echo $usuarioPerfil->correo ?>" required>
+                                    <input type="email" class="form-control" name="correoMod" placeholder="Tu correo electrónico" value="<?php echo $usuario->correo ?>" required>
                                     <div class="valid-feedback"><p>Correcto*</p></div>
                                     <div class="invalid-feedback"><p>Debe introducir una dirección de correo electrónico válida</p></div>
                                 </div>
 
                                 <!--Nombre-->
-                                <label for="nombreForm"><h5 class="mb-0">Nombre real*</h5></label><br>
+                                <label for="nombreForm"><h5 class="mb-0">Nombre*</h5></label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="nombreMod" placeholder="Nombre real" value="<?php echo $usuarioPerfil->nombre ?>" pattern="^[A-Za-z]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="nombreMod" placeholder="Tu nombre real" value="<?php echo $usuario->nombre ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre solo puede contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -133,7 +121,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido1Mod" placeholder="Primer apellido" value="<?php echo $usuarioPerfil->apellido1 ?>" pattern="^[A-Za-z]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="apellido1Mod" placeholder="Tu primer apellido" value="<?php echo $usuario->apellido1 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -145,7 +133,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido2Mod" placeholder="Segundo apellido" value="<?php echo $usuarioPerfil->apellido2 ?>" pattern="^[A-Za-z]+$" maxlength="50">
+                                    <input type="text" class="form-control" name="apellido2Mod" placeholder="Tu segundo apellido (opcional)" value="<?php echo $usuario->apellido2 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50">
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
@@ -157,7 +145,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-calendar"></i></span>
                                     </div>
 
-                                    <input type="date" class="form-control" name="fecha_nacimientoMod" placeholder="Fecha de nacimiento" value="<?php echo $usuarioPerfil->fecha_nacimiento ?>" min="1900-01-01" max="2020-01-01" required>
+                                    <input type="date" class="form-control" name="fecha_nacimientoMod" placeholder="Tu fecha de nacimiento" value="<?php echo $usuario->fecha_nacimiento ?>" min="1900-01-01" max="2020-01-01" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Fecha de nacimiento inválida</p></div>
                                 </div>
@@ -169,7 +157,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="telefonoMod" placeholder="Teléfono" value="<?php echo $usuarioPerfil->telefono ?>" pattern="^[0-9]{9}$" required>
+                                    <input type="text" class="form-control" name="telefonoMod" placeholder="Tu número de teléfono" value="<?php echo $usuario->telefono ?>" pattern="^[0-9]{9}$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Debe introducir un número de teléfono válido</p></div>
                                 </div>
@@ -180,17 +168,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-globe-africa"></i></span>
                                     </div>
-
-                                    <select class="form-control" name="paisMod">
-                                        <option value="España">España</option>
-                                        <option value="Portugal">Portugal</option>
-                                        <option value="Francia">Francia</option>
-                                        <option value="Reino Unido">Reino Unido</option>
-                                        <option value="Alemania">Alemania</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="paisMod" placeholder="Tu pais natal" value="<?php echo $usuario->pais ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>Debe seleccionar un país</p></div>
+                                    <div class="invalid-feedback"><p>Debe introducir el nombre de un país</p></div>
                                 </div>
 
                                 <!--Codigo postal-->
@@ -200,7 +180,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
                                         <span class="input-group-text"><i class="fas fa-home"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="codigo_postalMod" placeholder="Código postal" value="<?php echo $usuarioPerfil->codigo_postal ?>" pattern="^[0-9A-Z-]+$" required>
+                                    <input type="text" class="form-control" name="codigo_postalMod" placeholder="Tu código postal" value="<?php echo $usuario->codigo_postal ?>" pattern="^[0-9A-Z-]+$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El código postal solo puede caracteres alfanuméricos</p></div>
                                 </div>
@@ -215,7 +195,7 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioPerfil']);
 
                                     <!--Volver al backend-->
                                     <div class="col-12 my-3 text-center">
-                                        <a href="perfilUsuario.php?id=<?php echo $usuarioPerfil->id ?>" class="btn btn-primary" role="button">Volver a mi perfil</a>
+                                        <a href="perfilUsuario.php?id=<?php echo $usuario->id ?>" class="btn btn-primary" role="button">Volver a mi perfil</a>
                                     </div>
                                 </div>
                             </form>

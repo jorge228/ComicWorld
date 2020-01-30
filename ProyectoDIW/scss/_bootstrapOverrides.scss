@@ -21,6 +21,13 @@
 
 /* End Override Backgrounds colors */
 
+/* Start Override Border colors */
+
+.border-primary{
+  border-color:$warning !important;
+}
+/* End Override border colors */
+
 /* Start Override Text colors */
 
 .text-secondary {
@@ -101,6 +108,7 @@ button.btn.btn-success:active:focus {
 
 /* End Override btn-primary */
 
+/* Override feedback */
 .valid-feedback{
   font-size:1em !important;
 }
@@ -108,3 +116,4 @@ button.btn.btn-success:active:focus {
 .invalid-feedback{
   font-size:1em !important;
 }
+/* End Override feedback */

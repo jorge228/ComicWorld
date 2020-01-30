@@ -6,7 +6,7 @@
 
  //Redirigir usuario si no ha iniciado sesion o si no es admin
  if (isset($_SESSION['id_usuario'])){
-     if ($usuario->rol!='admin')
+     if ($usuario->rol!="admin" && $usuario->rol!="editor")
         header("Location: index.php");
  }
  else
@@ -43,7 +43,7 @@ $peliculas=ControladorPelicula::getAllPeliculas();
 
                     <div class="row ">
                         <!--Sidebar-->
-                        <?php sidebar(); ?>
+                        <?php sidebar($usuario); ?>
 
                         <!--Contenido-->
                         <div class="col-12 col-sm-9">
@@ -56,13 +56,13 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                 <?php
                                 if (isset($resultadoOperacion)){
                                 ?>
-                                    <div class="col-12 text-center ">
+                                    <div class="mensajeResultado text-center ">
                                     
                                         <?php
                                         if ($resultadoOperacion)
-                                            echo "<p class='mensajeExitoBackend'>Se ha realizado la operación con éxito</p>";
+                                            echo "<p class='mensaje mensajeExitoBackend'>Se ha realizado la operación con éxito</p>";
                                         else
-                                            echo "<p class='mensajeErrorBackend'>Ha habido un error al realizar la operación</p>"
+                                            echo "<p class='mensaje mensajeErrorBackend'>Ha habido un error al realizar la operación</p>"
                                         ?>
                                         
                                     </div>
