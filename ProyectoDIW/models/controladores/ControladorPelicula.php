@@ -105,8 +105,7 @@ class ControladorPelicula {
     }
 
     /**
-     * Insertar un usuario en la BD
-     * @param type $usuario
+     * Insertar película
      */
     public static function insertPelicula($saga, $titulo, $fecha, $director, $sinopsis, $img1, $img2){
         
@@ -116,5 +115,21 @@ class ControladorPelicula {
                 . "VALUES('$saga', '$titulo', '$fecha', '$director', '$sinopsis', '$img1', '$img2')");
     
         $conexion->close();
+    }
+
+    /**
+     * Actualizar película
+     */
+    public static function updatePelicula($pelicula){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE pelicula SET saga='$pelicula->saga', titulo='$pelicula->titulo', fecha_estreno='$pelicula->fecha_estreno', director='$pelicula->director', sinopsis='$pelicula->sinopsis', img_carrusel='$pelicula->img_carrusel', img_cartelera='$pelicula->img_cartelera' WHERE id=$pelicula->id ");
+        
+        $conexion->close();
+
+        return $resultado;
     }
 }

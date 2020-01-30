@@ -128,9 +128,7 @@
                         } else {
                         ?>
                             <div class="text-center">
-                                <form action="signUp.php" method="POST">
-                                    <button class="btn btn-primary" type="submit">Regístrate para enviar una valoración</button>
-                                </form>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="submit">Regístrate o inicia sesión</button>
                             </div>
                             <br><br>
                         <?php
