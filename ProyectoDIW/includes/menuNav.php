@@ -93,32 +93,35 @@
         </div>
 
         <!-- Login button -->
-        <?php
-        if (isset($_SESSION['id_usuario'])){
-        ?>
-            <div class="text-center text-white">
-                <p class="p-2 m-0"><a href="perfilUsuario.php" class="nombreUsuarioLogeado"><?php echo $usuario->username?></a></p>
-            </div>
-        <?php
-        }
-        ?>
         <?php if (isset($_SESSION['id_usuario'])){ ?>
-            <div>
+            <div class="nav-item dropdown">
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+
                     <li id="dropdownLoginLI" class="dropdown order-1">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle"><i class="fas fa-user text-white"></i> <span class="caret"></span></button>
-                        <ul class="dropdown-menu dropdown-menu-right mt-2">
-                            <li class="px-3 py-2">
-
-                                <div class="form-group">
-                                    <button class="btn btn-primary btn-block">
-                                        <a class="text-white" href="logOut.php">Cerrar sesión</a>
-                                    </button>
-                                </div>
-
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-secondary dropdown-toggle">
+                            <?php echo $usuario->username?> <i class="fas fa-user text-white"></i>     
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a class="dropdown-item" href="perfilUsuario.php"><i class="fas fa-user"></i> Mi Perfil</a>
+                            </li>
+                            <?php if($usuario->rol == "admin") { ?>
+                                <li>
+                                    <a class="dropdown-item" href="backendUsuario.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
+                                </li>
+                            <?php } ?>
+                            <?php if($usuario->rol == "editor") { ?>
+                                <li>
+                                    <a class="dropdown-item" href="backendContenido.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
+                                </li>
+                            <?php } ?>
+                            <li>
+                                <a class="dropdown-item" href="logOut.php"><i class="fas fa-power-off text-danger"></i> Cerrar sesión</a>
                             </li>
                         </ul>
+
                     </li>
+
                 </ul>
             </div>
             <?php } else { ?>

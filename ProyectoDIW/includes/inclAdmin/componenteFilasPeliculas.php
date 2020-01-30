@@ -39,8 +39,9 @@ function listarPeliculas($peliculas){
                 </td>
 
                 <td>
-                    <form action="modificarUsuario.php" method="POST">
-                        <input type="submit" class="btn btn-primary btn-sm" value="Modificar datos" name="modificarUsuario">
+                    <form action="editPelicula.php" method="POST">
+                        <input type="hidden" name="idPeliculaModificar" value="<?php echo $peliculaFila->id?>">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Modificar datos" name="modificarPelicula">
                     </form>
                 </td>
 

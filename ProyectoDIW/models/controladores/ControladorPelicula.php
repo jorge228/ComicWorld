@@ -84,4 +84,52 @@ class ControladorPelicula {
 
         return $resultado;
     }
+
+    /**
+     * Obtener todas las sagas
+     */
+    public static function getSagas(){
+        $conexion=new Conexion();
+        $peliculas=[];
+        
+        $resultados=$conexion->query("SELECT DISTINCT saga FROM pelicula");
+        
+        while($registro=$resultados->fetch_object()){
+            $saga=$registro->saga;
+            $sagas[]=$saga;
+        }
+        
+        $conexion->close();
+        
+        return $sagas;
+    }
+
+    /**
+     * Insertar película
+     */
+    public static function insertPelicula($saga, $titulo, $fecha, $director, $sinopsis, $img1, $img2){
+        
+        $conexion=new Conexion();
+        
+        $conexion->query("INSERT INTO pelicula (saga, titulo, fecha_estreno, director, sinopsis, img_carrusel, img_cartelera) "
+                . "VALUES('$saga', '$titulo', '$fecha', '$director', '$sinopsis', '$img1', '$img2')");
+    
+        $conexion->close();
+    }
+
+    /**
+     * Actualizar película
+     */
+    public static function updatePelicula($pelicula){
+
+        $conexion=new Conexion();
+        $resultado=false;
+    
+        if ($conexion->errno==0)        
+            $resultado=$conexion->query("UPDATE pelicula SET saga='$pelicula->saga', titulo='$pelicula->titulo', fecha_estreno='$pelicula->fecha_estreno', director='$pelicula->director', sinopsis='$pelicula->sinopsis', img_carrusel='$pelicula->img_carrusel', img_cartelera='$pelicula->img_cartelera' WHERE id=$pelicula->id ");
+        
+        $conexion->close();
+
+        return $resultado;
+    }
 }
