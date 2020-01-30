@@ -91,7 +91,8 @@ class ControladorValoracion {
     }
 
     /**
-     * Devuelve array
+     * Obtener las valoraciones de cada pelicula en formato array. Cada pelicula es un array que a su vez contiene un array que usa como clave el nombre 
+     * del usuario que ha hecho la valoracion (ejemplo: valoraciones['Capitana Marvel']['jorge']=<objeto valoracion de jorge>)
      */
     public static function getValoracionesYUsuarios(){
         $conexion=new Conexion();
@@ -119,7 +120,7 @@ class ControladorValoracion {
             //Almacenar valoraciones de la pelicula
             while($registro=$resultado->fetch_object()){
                 $valoracion=new Valoracion($registro->id_usuario, $registro->id_pelicula, $registro->texto, $registro->puntuacion, $registro->fecha_valoracion, $registro->id);
-                $valoraciones[$registro->titulo][$registro->username]=[$valoracion];
+                $valoraciones[$registro->titulo][$registro->username]=$valoracion;
             }
 
         }
@@ -137,6 +138,29 @@ class ControladorValoracion {
         $format_fecha = $fecha->format('Y-m-d');
         $conexion->query("INSERT INTO valoracion (id_usuario, id_pelicula, texto, puntuacion, fecha_valoracion) VALUES ('$id_usuario', '$id_pelicula', '$texto', $puntuacion, '$format_fecha')");
         $conexion->close();
+    }
+
+    /**
+     * Borrar valoracion mediante ID
+     */
+    public static function deleteValoracionByID($id_valoracion){
+        $conexion=new Conexion();
+
+        $resultado=false;
+
+        if ($conexion->errno==0){
+            $consultaPreparada=$conexion->prepare("DELETE FROM valoracion WHERE id=?");
+
+            $consultaPreparada->bind_param('i', $id_valoracion);
+
+            $consultaPreparada->execute();
+
+            if ($conexion->errno==0)
+                $resultado=true;
+
+        }
+
+        return $resultado;
     }
   
 }

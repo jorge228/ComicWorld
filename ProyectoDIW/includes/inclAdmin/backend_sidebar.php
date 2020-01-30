@@ -28,7 +28,7 @@ function sidebar($usuario){
             <div class="col-12">
                 <div class="list-group text-center">
                     <?php
-                    //Solo se mostrara el menu de gestion de usuarios a los administradores
+                    //Solo se mostrara el menu de gestion de usuarios y valoraciones a los administradores
                     if ($usuario->rol=="admin"){
                     ?>
                         <a href="backendUsuario.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "backendUsuario.php" )!=false) echo "active" ?>">Gestión de usuarios</a>
@@ -36,6 +36,13 @@ function sidebar($usuario){
                     }
                     ?>
                     <a href="backendContenido.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "backendContenido.php" )!=false) echo "active" ?>">Gestión de contenidos</a>
+                    <?php
+                    if ($usuario->rol=="admin"){
+                    ?>
+                        <a href="backendValoraciones.php" class="list-group-item list-group-item-dark list-group-item-action <?php if (strpos($_SERVER['SCRIPT_NAME'], "backendValoraciones.php" )!=false) echo "active" ?>">Gestión de valoraciones</a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

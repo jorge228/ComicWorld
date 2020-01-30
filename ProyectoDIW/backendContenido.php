@@ -54,19 +54,18 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                 </div>
 
                                 <?php
+                                //Mostrar mensaje de estado en caso de que se haya enviado el form
                                 if (isset($resultadoOperacion)){
-                                ?>
-                                    <div class="mensajeResultado text-center ">
-                                    
-                                        <?php
-                                        if ($resultadoOperacion)
-                                            echo "<p class='mensaje mensajeExitoBackend'>Se ha realizado la operación con éxito</p>";
-                                        else
-                                            echo "<p class='mensaje mensajeErrorBackend'>Ha habido un error al realizar la operación</p>"
-                                        ?>
-                                        
-                                    </div>
-                                <?php
+                                    if ($resultadoOperacion){
+                                    ?>
+                                        <script>toastr.success('Se ha realizado la operación con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                                    <?php
+                                    }
+                                    else{
+                                    ?>
+                                        <script>toastr.error('Ha habido un error al realizar la operación, vuelva a intentarlo más tarde.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                                    <?php
+                                    }
                                 }
                                 ?>
                                 <div class="col-12 mt-4 tablaBackend overflow-auto">

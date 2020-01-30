@@ -9,7 +9,7 @@ echo '<head>';
     include_once("includes/contenidoHead.php");
     include_once("models/controladores/ControladorUsuario.php");
     include_once("models/entidades/Usuario.php");
-    echo '<script src="js/validacion_form/form_modificar_usuario.js"></script>';
+    echo '<script src="js/validacion_form/form_signUp.js"></script>';
 echo '</head>';
 
 echo '<body>';
@@ -49,7 +49,7 @@ function formularioRegistro () {
 
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Escriba aquí su apodo (será usado para acceder)" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["username"]; ?>" pattern="^[A-Za-z0-9]+$" minlength="4" maxlength="50" required>
                                 <div class="valid-feedback"><p>Correcto</p></div>
-                                <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (Debe tener entre 4 y 50 caracteres)</p></div>
+                                <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras sin tildes y números (Debe tener entre 4 y 50 caracteres)</p></div>
                             </div>
                         
                             <!--Contraseña-->
@@ -95,7 +95,7 @@ function formularioRegistro () {
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba aquí su nombre real" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["nombre"]; ?>" pattern="^[A-Za-z]+$" minlength="1" maxlength="50" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba aquí su nombre real" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["nombre"]; ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" minlength="1" maxlength="50" required>
                                 <div class="valid-feedback"><p>Correcto</p></div>
                                 <div class="invalid-feedback"><p>El nombre solo puede contener letras (Debe tener entre 1 y 50 caracteres)</p></div>
                             </div>
@@ -107,7 +107,7 @@ function formularioRegistro () {
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="Escriba aquí solo su primer apellido" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["apellido1"]; ?>" pattern="^[A-Za-z]+$" minlength="1" maxlength="50" required>
+                                <input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="Escriba aquí solo su primer apellido" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["apellido1"]; ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" minlength="1" maxlength="50" required>
                                 <div class="valid-feedback"><p>Correcto</p></div>
                                 <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (Debe tener entre 1 y 50 caracteres)</p></div>
                             </div>
@@ -119,7 +119,7 @@ function formularioRegistro () {
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="Escriba aquí su segundo apellido (Opcional)" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["apellido2"]; ?>" pattern="^[A-Za-z]+$" maxlength="50">
+                                <input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="Escriba aquí su segundo apellido (Opcional)" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["apellido2"]; ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50">
                                 <div class="valid-feedback"><p>Correcto</p></div>
                                 <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                             </div>
@@ -155,14 +155,7 @@ function formularioRegistro () {
                                     <span class="input-group-text"><i class="fas fa-globe-africa"></i></span>
                                 </div>
 
-                                <select class="form-control" id="pais" name="pais">
-                                    <option value="España" selected>España</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="Francia">Francia</option>
-                                    <option value="Reino Unido">Reino Unido</option>
-                                    <option value="Alemania">Alemania</option>
-                                    <option value="Otro">Otro</option>
-                                </select>
+                                <input type="text" class="form-control" id="pais" name="pais" placeholder="Escriba aquí su Pais natal" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["pais"]; ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" required>
                                 <div class="valid-feedback"><p>Correcto</p></div>
                                 <div class="invalid-feedback"><p>Debe seleccionar un país</p></div>
                             </div>
@@ -200,6 +193,35 @@ function verificarPassword () {
     $ok = true;
     $contErrores = 0;
     $errorMessage = "";
+    // Comprueba si el usuario introducido ya está en BBDD
+    if (ControladorUsuario::findByUsername($_POST["username"])) {
+        $contErrores++;
+        $ok = false;
+        $errorMessage = "Error usuario no registrado. El usuario introducido ya está en uso. Escoja otro.  Por favor, revíselo y vuelva a intentarlo";
+        $_POST["username"] = "";
+    }
+    // Comprueba si el correo introducido ya está en BBDD
+    if (ControladorUsuario::findByEmail($_POST["correo"])) {
+        $contErrores++;
+        $ok = false;
+        $errorMessage = "Error usuario no registrado. El correo electrónico introducido ya está en uso. Escoja otro.  Por favor, revíselo y vuelva a intentarlo";
+        $_POST["correo"] = "";
+    }
+    // Comprueba si el usuario introducido no contiene caracteres especiales (escapados)
+    if ((strpos($_POST["username"], "'") !== false) || (strpos($_POST["username"], '"') !== false)) {
+        $contErrores++;
+        $ok = false;
+        $errorMessage = "Error usuario no registrado. No se permiten caracteres especiales. Escoja otro.  Por favor, revíselo y vuelva a intentarlo";
+        $_POST["username"] = "";
+    }
+    // Comprueba si la contraseña introducida no contiene caracteres especiales (escapados)
+    if ((strpos($_POST["password1"], "'") !== false) || (strpos($_POST["password1"], '"') !== false)) {
+        $contErrores++;
+        $ok = false;
+        $errorMessage = "Error usuario no registrado. No se permiten caracteres especiales. Escoja otro.  Por favor, revíselo y vuelva a intentarlo";
+        $_POST["password1"] = "";
+        $_POST["password2"] = "";
+    }
     // Comprueba si las contraseñas coinciden
     if ($_POST["password1"] != $_POST["password2"]) {
         $contErrores++;
@@ -207,13 +229,6 @@ function verificarPassword () {
         $errorMessage = "Error usuario no registrado. Las contraseñas no coinciden. Por favor, revíselo y vuelva a intentarlo";
         $_POST["password1"] = "";
         $_POST["password2"] = "";
-    }
-    // Comprueba si el usuario introducido ya está en BBDD
-    if (ControladorUsuario::findByUsername($_POST["username"])) {
-        $contErrores++;
-        $ok = false;
-        $errorMessage = "Error usuario no registrado. El usuario introducido ya está en uso. Escoja otro.  Por favor, revíselo y vuelva a intentarlo";
-        $_POST["username"] = "";
     }
     if ($ok == false) {
         // Si existe unicamente un error muestra un mensaje específico, si hay mas de un error muestra un mensaje genérico
