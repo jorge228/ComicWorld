@@ -4,13 +4,13 @@
 function listarPeliculas($peliculas){
 
     //Si no se introduce un array se muestra un mensaje de error
-    if (!is_array($peliculas)){?>
+    if (count($peliculas)==0){?>
 
-        <div class="row p-2 text-center ">
-            <div class="col-12 mensajeError">
-                <h5 class="text-error">Error al recuperar películas de la base de datos</h5>
-            </div>
-        </div>
+        <tr>
+            <td class="text-center" colspan="6">
+                <h5 class="font-weight-bold">No hay películas en la base de datos</h5>
+            </td>
+        </tr>
 
     <?php
     }

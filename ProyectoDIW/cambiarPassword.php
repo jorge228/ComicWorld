@@ -73,9 +73,9 @@ if (isset($_POST['btnEnviarPass'])){
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="password" class="form-control" name="password" id="password" placeholder="Introduce tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" required>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Introduce tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" minlength="4" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>La contraseña solo puede contener letras y numeros</p></div>
+                                    <div class="invalid-feedback"><p>La contraseña debe tener entre 4 y 50 caracteres y solo puede contener letras y números</p></div>
                                 </div>
 
                                 <!--Contraseña-->
@@ -85,8 +85,7 @@ if (isset($_POST['btnEnviarPass'])){
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="password" class="form-control" name="confirmarPassword" id="confirmarPassword" placeholder="Vuelve a introducir tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" required>
-                                    <div class="invalid-feedback"><p>La contraseña solo puede contener letras y numeros</p></div>
+                                    <input type="password" class="form-control" name="confirmarPassword" id="confirmarPassword" placeholder="Vuelve a introducir tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" minlength="4" maxlength="50" required>
                                 </div>
 
 
