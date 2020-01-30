@@ -83,7 +83,7 @@ $usuario=ControladorUsuario::getUsuarioByID($usuario->id);
     
                 if (isset($errorUsername)){
                 ?>
-                    <script>toastr.error("Ese nick de usuario ya está en uso, introduzca otra por favor", 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                    <script>toastr.error("Ese nick de usuario ya está en uso, introduzca otro por favor", 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
                 <?php
                 }
                 ?>
