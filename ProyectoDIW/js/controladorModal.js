@@ -14,6 +14,13 @@ $(function() {
         $('#errorMode').remove();
         e.preventDefault();      
     });
+
+    $("#exampleModal").keypress(function (e) {      
+        if (e.which == 13) {
+            $('#btnEntrar').click();
+            e.preventDefault();
+        }
+    }); 
     //  Fin Control Eventos:
 
     if ($('#errorMode').length) {

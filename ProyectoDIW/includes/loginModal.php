@@ -1,7 +1,7 @@
 <?php
 echo '<script src="js/controladorModal.js"></script>';
 
-if (isset($_POST['btnEntrar']) && (ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password'])) != -1)) { 
+if (isset($_POST['btnEntrar']) && (!contieneCaracteresEscapables()) && (ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password'])) != -1)) { 
     
     //  Guardamos los datos en la sesion:
     $_SESSION['id_usuario'] = ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password']));
@@ -29,7 +29,7 @@ function modalInicioSesion() {
                         echo '<span aria-hidden="true">&times;</span>';
                     echo ' </button>';
                 echo '  </div>';
-                echo '<form name="" action="" method="POST">';
+                echo '<form id="modalForm" name="" action="" method="POST">';
                     echo ' <div class="modal-body">';
                         formularioInicioSesion(); 
                     echo ' </div>';
@@ -83,6 +83,37 @@ function formularioInicioSesion() {
             echo '</div>';
         echo '</div>';
     echo '</div>';
+}
+
+function contieneCaracteresEscapables() {
+    $flag = false;
+    if ((strpos($_POST["password"], "'") !== false) || (strpos($_POST["password"], '"') !== false) 
+     || (strpos($_POST["usuario"], "'")  !== false) || (strpos($_POST["usuario"], '"')  !== false)) {
+        $flag = true;
+        ?>
+        <script>
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            toastr["error"]("No se permiten caracteres especiales", "Error");
+        </script>    
+        <?php
+    }
+    return $flag;
 }
 
 function valorUsuario () {   
