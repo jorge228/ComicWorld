@@ -16,61 +16,63 @@ function listarValoraciones($valoraciones){
     }
     //Si se introduce un array se mostrara una fila para cada usuario
     else{
-        
-        foreach($valoraciones as $valoracionesFila){
+        //Variable para las ids del target
+        $i=0;
+        foreach($valoraciones as $pelicula=>$arrayValoraciones){
             ?>
-            <table class="table text-center border">
-                
-                <thead class="thead-light">
-                    <tr>
-                        <th>ID</th>
-                        <th>Autor</th>
-                        <th>Fecha</th>
-                        <th>Texto</th>
-                        <th>Puntuación</th>
-                        <th></th>
-                        <th></th>
 
-                    </tr>
-                </thead>
-                
-                <?php var_dump($valoraciones)?>
-            
-                <tr class="filaInformacionPerfil">
-                    <td><p><?php echo $peliculaFila->id ?></p></td>
-
-                    <td>
-                        <p id="<?php echo "nombre$peliculaFila->id" ?>"><?php echo $peliculaFila->titulo ?></p>
-                    </td>
-
-                    <td>
-                        <p><?php echo $peliculaFila->fecha_estreno ?></p>
-                    </td>
-
-                    <td>
-                        <p><?php echo substr($peliculaFila->img_carrusel, 11) ?></p>
-                    </td>
-
-                    <td>
-                        <p><?php echo substr($peliculaFila->img_cartelera, 11) ?></p>
-                    </td>
-
-                    <td>
-                        <form action="modificarUsuario.php" method="POST">
-                            <input type="submit" class="btn btn-primary btn-sm" value="Modificar datos" name="modificarUsuario">
-                        </form>
-                    </td>
-
-                    <td>
-                        <form action="#" method="POST" class="claseFormPelicula">
-                            <input type="hidden" value="<?php echo $peliculaFila->id ?>" name="idPeliculaOperacion">
-                            <input type="submit" name="eliminarPelicula" value="X" class="btn btn-danger btn-sm">
-                        </form>
-                    </td>
+            <thead class="thead-light" data-toggle="collapse" href="<?php echo "#target$i" ?>" aria-expanded="true" aria-controls="<?php echo "#target$i" ?>">
+                <tr >
+                    <th colspan="6" data="toggle" class="text-center"><?php echo $pelicula ?></th>
                 </tr>
-            </table>        
+            </thead>
+
+            <tbody id="<?php echo "target$i" ?>">
+                <tr>
+                    <th>ID</th>
+                    <th>Autor</th>
+                    <th>Fecha</th>
+                    <th>Texto</th>
+                    <th>Puntuación</th>
+                    <th></th>
+                </tr>
+
             <?php
-            
+            foreach($arrayValoraciones as $usuario=>$valoracion){
+                ?>
+                <tr>
+                    <td><p><?php echo $valoracion->id ?></p></td>
+
+                    <td>
+                        <p id="<?php echo "autor" ?>"><?php echo $usuario ?></p>
+                    </td>
+
+                    <td>
+                        <p><?php echo $valoracion->fecha_valoracion ?></p>
+                    </td>
+
+                    <td>
+                        <p></p>
+                    </td>
+
+                    <td>
+                        <p><?php echo $valoracion->puntuacion?></p>
+                    </td>
+
+                    <td>
+                        <form action="#" class="formGestionValoracion" method="POST">
+                            <input type="hidden" value="<?php echo $valoracion->id ?>" name="idValoracion">
+                            <input type="submit" name="btnEliminarValoracion" value="X" class="btn btn-danger btn-sm">
+                        </form>
+                    </td>
+
+                </tr>
+                <?php
+            }
+            $i++;
+            ?>
+            </tbody>
+            <?php
         }
     }
 }

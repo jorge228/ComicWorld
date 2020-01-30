@@ -3,7 +3,7 @@ $(function(){
 
         var botonPulsado = $(document.activeElement);
 
-        //Obtener nombre del usuario
+        //Obtener nombre de la pelicula
         var nombrePelicula=$(this).parent().siblings(":has([id*=nombre])");
         nombrePelicula=$(nombrePelicula).find("p").text();
 

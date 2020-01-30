@@ -197,4 +197,38 @@ class ControladorUsuario {
         return $resultado;
     }
 
+    /**
+     * Comprobar si es posible cambiar el email
+     */
+    public static function comprobarCambioEmail($correo, $id){
+        $conexion=new Conexion();
+        $disponible = true;
+        $result = $conexion->query("SELECT * FROM usuario WHERE correo='$correo' AND id!=$id ");
+
+        if ($result->num_rows == 1)
+            $disponible = false;
+        
+
+        $conexion->close();
+
+        return $disponible;
+    }
+
+    /**
+     * Comprobar si es posible cambiar el nombre
+     */
+    public static function comprobarCambioUsername($username, $id){
+        $conexion=new Conexion();
+        $disponible = true;
+        $result = $conexion->query("SELECT * FROM usuario WHERE username='$username' AND id!=$id ");
+
+        if ($result->num_rows == 1)
+            $disponible = false;
+        
+
+        $conexion->close();
+
+        return $disponible;
+    }
+
 }
