@@ -7,6 +7,7 @@
     <?php
     include_once 'includes/contenidoHead.php';
     include_once 'models/controladores/ControladorPelicula.php';
+    include "includes/toast_pelicula_mod.php";
     $sagas = ControladorPelicula::getSagas();
     $modificar = false;
     if (isset($_POST['guardar'])) {
@@ -20,14 +21,13 @@
         }
         ControladorPelicula::insertPelicula($_POST['saga'], $_POST['titulo'], $_POST['fecha'], $_POST['director'], $_POST['sinopsis'], $rutaCarrusel, $rutaCartelera);
     }
+
     if (isset($_POST['modificarPelicula'])) {
-        //este botón es el de la página adminContindo.php->componenteFilasPelicula.php
+        //este botón es el de la página backendContenido.php->componenteFilasPelicula.php
         $modificar = true;
-        $peliculaAModificar = ControladorPelicula::getPeliculaByID($_POST['idPeliculaModificar']); 
+        $peliculaAModificar = ControladorPelicula::getPeliculaByID($_POST['idPeliculaModificar']);
     }
-    if(isset($_POST['volver'])){
-        header("Location:adminContenido.php");
-    }
+
     if (isset($_POST['btnModificar'])) {
         if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
             $rutaCarrusel = "assets/img/peliculas/" . $_FILES['img_carrusel']['name'];
@@ -41,7 +41,7 @@
         } else {
             $rutaCartelera = $_POST['img_cartelera_mantener'];
         }
-        $peliculaModificada = new Pelicula($_POST['saga'], $_POST['titulo'], $_POST['fecha'], $_POST['director'],$_POST['sinopsis'], $rutaCarrusel, $rutaCartelera, $_POST['idPeliculaModificar']);
+        $peliculaModificada = new Pelicula($_POST['saga'], $_POST['titulo'], $_POST['fecha'], $_POST['director'], $_POST['sinopsis'], $rutaCarrusel, $rutaCartelera, $_POST['idPeliculaModificar']);
         ControladorPelicula::updatePelicula($peliculaModificada);
     }
     ?>
@@ -60,21 +60,29 @@
                     } else {
                         echo "<h1>Formulario de Añadir</h1>";
                     }
+                    if (isset($_POST['guardar'])) {
+                        $opcion = 'añadida';
+                        imprimeToast($opcion);
+                    }
+                    if (isset($_POST['btnModificar'])) {
+                        $opcion = 'modificada';
+                        imprimeToast($opcion);
+                    }
                     ?>
                     <div class="form-group">
                         <label for="saga">Saga</label>
                         <select class="form-control" name="saga" id="saga">
                             <?php
-                            foreach ($sagas as $saga) {
-                                if ($modificar) {
-                                    if ($peliculaAModificar->saga == $saga) {
-                                        echo "<option value='" . $saga  . "' selected>" . $saga . "</option>";
-                                    } else {
-                                        echo "<option value='" . $saga  . "'>" . $saga . "</option>";
-                                    }
-                                } else {
-                                    echo "<option value='" . $saga  . "'>" . $saga . "</option>";
-                                }
+                            if ($modificar) {
+                            ?>
+                                <option value="MARVEL" <?php if ($peliculaAModificar->saga == 'MARVEL') echo 'selected'; ?>>MARVEL</option>
+                                <option value="DC" <?php if ($peliculaAModificar->saga == 'DC') echo 'selected'; ?>>DC</option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="MARVEL">MARVEL</option>
+                                <option value="DC">DC</option>
+                            <?php
                             }
                             ?>
                         </select>
@@ -99,26 +107,25 @@
                         <textarea type="text" class="form-control rounded-0" name="sinopsis" style="width: 100%" maxlength="1000" id="sinopsis" required> <?php if ($modificar) echo $peliculaAModificar->sinopsis ?> </textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="img_carrusel">Imagen Carrusel</label>
+                    <div class="custom-file">
+                        <label for="img_carrusel" class="custom-file-label" lang="es">Seleccione imagen para el Carrusel</label><br>
                         <?php if ($modificar) { ?>
                             <div class="col-sm-4 card-body">
                                 <img src="<?php echo $peliculaAModificar->img_carrusel ?>" class="card-img-top img-thumbnail">
                                 <input type="hidden" name="img_carrusel_mantener" value="<?php echo $peliculaAModificar->img_carrusel ?>">
                             </div>
                         <?php } ?>
-                        <input type="file" class="form-control" name="img_carrusel" id="img_carrusel" <?php if (!$modificar) echo " required" ?> />
+                        <input type="file" class="custom-file-input" name="img_carrusel" id="img_carrusel" <?php if (!$modificar) echo " required" ?> />
                     </div>
-
-                    <div class="form-group">
-                        <label for="img_cartelera">Imagen Cartelera</label>
+                    <div class="custom-file">
+                        <label for="img_cartelera" class="custom-file-label">Seleccione imagen para la Cartelera</label><br>
                         <?php if ($modificar) { ?>
                             <div class="col-sm-4 card-body">
                                 <img src="<?php echo $peliculaAModificar->img_cartelera ?>" class="card-img-top img-thumbnail">
                                 <input type="hidden" name="img_cartelera_mantener" value="<?php echo $peliculaAModificar->img_cartelera ?>">
                             </div>
                         <?php } ?>
-                        <input type="file" class="form-control" name="img_cartelera" id="img_cartelera" <?php if (!$modificar) echo " required" ?> />
+                        <input type="file" class="custom-file-input" name="img_cartelera" id="img_cartelera" <?php if (!$modificar) echo " required" ?> />
                     </div>
 
                     <input type="reset" class="btn btn-secondary" id="reset" value="Limpiar" />
@@ -130,11 +137,12 @@
                         echo "<button type='submit' name='guardar' class='btn btn-primary'>Guardar</button>";
                     }
                     ?>
-                    <button type='submit' name="volver" class='btn btn-primary'>Volver</button>
+                    <a href="backendContenido.php" class='btn btn-primary'>Volver</a>
                 </form>
             </div>
         </div>
     </div>
     <?php include "includes/footer.php"; ?>
 </body>
+
 </html>
