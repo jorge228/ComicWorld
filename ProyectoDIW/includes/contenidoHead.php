@@ -2,6 +2,7 @@
 
 <meta charset="UTF-8" lang="ES">
 <meta name="viewport" content="width=device-width">
+<meta name="google-signin-client_id" content="387402295013-ksb2t1i15ob162otbs43pf9967nck6q0.apps.googleusercontent.com">
 
 <!--Links fuentes e iconos-->
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
@@ -26,6 +27,8 @@
 <!--Estilos personalizados  Bootstrap SASS -->
 <link rel="stylesheet" type="text/css" href="css/resume.css">
 
+<!--Links Google-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 
   

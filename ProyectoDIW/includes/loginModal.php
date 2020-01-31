@@ -72,7 +72,7 @@ function formularioInicioSesion() {
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
                             echo '<div class="form-group">';
-                                echo '<button id="googleSignInBtn" class="btn-google">Inicia sesión con Google</button>';
+                                echo '<div class="g-signin2" data-onsuccess="onSignIn" id="btnLoginGoogle"></div>';
                             echo '</div>';
                             echo '<a href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
