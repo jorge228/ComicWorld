@@ -4,13 +4,13 @@
 function listarValoraciones($valoraciones){
 
     //Si no se introduce un array se muestra un mensaje de error
-    if (!is_array($valoraciones)){?>
+    if (count($valoraciones)==0){?>
 
-        <div class="row p-2 text-center ">
-            <div class="col-12 mensajeError">
-                <h5 class="text-error">Error al recuperar valoraciones de la base de datos</h5>
-            </div>
-        </div>
+        <tr>
+            <td class="text-center">
+                <h5 class="font-weight-bold">No hay valoraciones de la base de datos</h5>
+            </td>
+        </tr>
 
     <?php
     }
@@ -52,7 +52,7 @@ function listarValoraciones($valoraciones){
                     </td>
 
                     <td>
-                        <p></p>
+                        <p><?php echo $valoracion->texto ?></p>
                     </td>
 
                     <td>

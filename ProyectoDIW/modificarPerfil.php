@@ -104,9 +104,9 @@ $usuario=ControladorUsuario::getUsuarioByID($usuario->id);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="usernameMod" placeholder="Tu nick de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuario->username ?>" pattern="^[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="usernameMod" placeholder="Tu nick de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuario->username ?>" pattern="^[A-Za-z0-9]+$" minlength="4" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (max: 50 caracteres)</p></div>
+                                    <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras sin tildes y números, y debe tener una longitud de entre 4 y 50 caracteres</p></div>
                                 </div>
 
                                 <!--Correo-->
@@ -166,7 +166,7 @@ $usuario=ControladorUsuario::getUsuarioByID($usuario->id);
 
                                     <input type="date" class="form-control" name="fecha_nacimientoMod" placeholder="Tu fecha de nacimiento" value="<?php if (isset($usuarioMod)) echo $usuarioMod->fecha_nacimiento; else echo $usuario->fecha_nacimiento ?>" min="1900-01-01" max="2020-01-01" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>Fecha de nacimiento inválida</p></div>
+                                    <div class="invalid-feedback"><p>La fecha de nacimiento debe estar comprendida entre el 1-1-1900 y el 1-1-2020</p></div>
                                 </div>
 
                                 <!--Telefono-->

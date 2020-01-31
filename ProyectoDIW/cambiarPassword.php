@@ -43,18 +43,16 @@ if (isset($_POST['btnEnviarPass'])){
                 <?php
                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                 if (isset($resultadoOperacion)){
-                ?>
-                    <div class="mensajeResultado text-center ">
-                    
-                        <?php
-                        if ($resultadoOperacion)
-                            echo "<p class='mensaje mensajeExitoBackend'>Se ha cambiado tu contraseña con éxito</p>";
-                        else
-                            echo "<p class='mensaje mensajeErrorBackend'>Ha habido un error al cambiar tu contraseña, vuelve a intentarlo más tarde</p>"
-                        ?>
-                        
-                    </div>
-                <?php
+                    if ($resultadoOperacion){
+                    ?>
+                        <script>toastr.success('Tu contraseña ha sido cambiada con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                    <?php
+                    }
+                    else{
+                    ?>
+                        <script>toastr.error('Ha habido un error al cambiar tu contraseña.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                    <?php
+                    }
                 }
                 ?>
 
@@ -73,9 +71,9 @@ if (isset($_POST['btnEnviarPass'])){
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="password" class="form-control" name="password" id="password" placeholder="Introduce tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" required>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Introduce tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" minlength="4" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>La contraseña solo puede contener letras y numeros</p></div>
+                                    <div class="invalid-feedback"><p>La contraseña debe tener entre 4 y 50 caracteres y solo puede contener letras y números</p></div>
                                 </div>
 
                                 <!--Contraseña-->
@@ -85,8 +83,7 @@ if (isset($_POST['btnEnviarPass'])){
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="password" class="form-control" name="confirmarPassword" id="confirmarPassword" placeholder="Vuelve a introducir tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" required>
-                                    <div class="invalid-feedback"><p>La contraseña solo puede contener letras y numeros</p></div>
+                                    <input type="password" class="form-control" name="confirmarPassword" id="confirmarPassword" placeholder="Vuelve a introducir tu nueva contraseña aquí" pattern="^[0-9A-Za-z]+$" minlength="4" maxlength="50" required>
                                 </div>
 
 

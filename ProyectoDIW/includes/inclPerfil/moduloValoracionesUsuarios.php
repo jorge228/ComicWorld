@@ -10,7 +10,7 @@ function listarValoracionesUsuario($idUsuario){
         ?>
         <div class="row  m-3 p-2 rounded text-center text-muted">
             <div class="col-12 w-25 justify-content-center bg-light border">
-                <p class="p-2 m-0  mx-auto">Este usuario no ha escrito ninguna valoración</p>
+                <p class="p-2 m-0  mx-auto">Aún no has escrito ninguna valoración</p>
             </div>
         </div>
         <?php

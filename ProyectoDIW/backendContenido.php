@@ -53,6 +53,10 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                     <h1 class="text-warning">Gestión de películas</h1>
                                 </div>
 
+                                <div class="col-12 text-center mt-4">
+                                    <a href="editPelicula.php" class="btn btn-primary btn-sm">Añadir película</a>
+                                </div>
+
                                 <?php
                                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                                 if (isset($resultadoOperacion)){

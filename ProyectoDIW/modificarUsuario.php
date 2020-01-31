@@ -115,9 +115,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuarioPerfil->username  ?>" pattern="^[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuarioPerfil->username  ?>" pattern="^[A-Za-z0-9]+$" minlength="4" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras y números (max: 50 caracteres)</p></div>
+                                    <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras sin tildes y números, y debe tener una longitud de entre 4 y 50 caracteres </p></div>
                                 </div>
 
                                 <!--Contrasena-->
@@ -127,9 +127,9 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="passwordMod" id="inputPasswordMod" placeholder="Introduzca una contraseña aquí SOLO si desea cambiar la actual" maxlength="50">
+                                    <input type="text" class="form-control" name="passwordMod" id="inputPasswordMod" placeholder="Introduzca una contraseña aquí SOLO si desea cambiar la actual" minlength="4" maxlength="50" pattern="^[A-Za-z0-9]+$">
                                     <div class="valid-feedback"><p>Correcto</p></div>
-                                    <div class="invalid-feedback"><p>Debe escribir una contraseña</p></div>
+                                    <div class="invalid-feedback"><p>La contraseña solo puede contener letras sin tildes y números, y debe tener una longitud de entre 4 y 50 caracteres</p></div>
                                 </div>
 
                                 <!--Correo-->
