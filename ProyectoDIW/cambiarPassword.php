@@ -43,18 +43,16 @@ if (isset($_POST['btnEnviarPass'])){
                 <?php
                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                 if (isset($resultadoOperacion)){
-                ?>
-                    <div class="mensajeResultado text-center ">
-                    
-                        <?php
-                        if ($resultadoOperacion)
-                            echo "<p class='mensaje mensajeExitoBackend'>Se ha cambiado tu contraseña con éxito</p>";
-                        else
-                            echo "<p class='mensaje mensajeErrorBackend'>Ha habido un error al cambiar tu contraseña, vuelve a intentarlo más tarde</p>"
-                        ?>
-                        
-                    </div>
-                <?php
+                    if ($resultadoOperacion){
+                    ?>
+                        <script>toastr.success('Tu contraseña ha sido cambiada con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                    <?php
+                    }
+                    else{
+                    ?>
+                        <script>toastr.error('Ha habido un error al cambiar tu contraseña.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"})</script>
+                    <?php
+                    }
                 }
                 ?>
 
