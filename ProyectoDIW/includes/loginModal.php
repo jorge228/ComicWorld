@@ -65,9 +65,11 @@ function formularioInicioSesion() {
                                 echo '<input type="password" class="form-control" name="password" id="password" placeholder="" value="" required/>';
                             echo '</div>';
 
-                            echo '<div class="form-group">';
-                                echo '<p> <input type="checkbox" name="recuerdame" ' . isCheck() . '/> Recuerdame </p>';
-                            echo '</div>';
+                            if (isset($_COOKIE['acceptCookies'])) {
+                                echo '<div class="form-group">';
+                                    echo '<p> <input type="checkbox" name="recuerdame" ' . isCheck() . '/> Recuerdame </p>';
+                                echo '</div>';
+                            }
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
