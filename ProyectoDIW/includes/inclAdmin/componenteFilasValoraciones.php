@@ -41,10 +41,10 @@ function listarValoraciones($valoraciones){
             foreach($arrayValoraciones as $usuario=>$valoracion){
                 ?>
                 <tr>
-                    <td><p><?php echo $valoracion->id ?></p></td>
+                    <td><p id="id<?php echo $valoracion->id?>"><?php echo $valoracion->id ?></p></td>
 
                     <td>
-                        <p id="<?php echo "autor" ?>"><?php echo $usuario ?></p>
+                        <p><?php echo $usuario ?></p>
                     </td>
 
                     <td>
@@ -52,11 +52,11 @@ function listarValoraciones($valoraciones){
                     </td>
 
                     <td>
-                        <p><?php echo $valoracion->texto ?></p>
+                        <button class="btnTextoVal btn btn-primary">Mostrar texto</button>
                     </td>
 
                     <td>
-                        <p><?php echo $valoracion->puntuacion?></p>
+                        <p class="valoracion"><?php echo $valoracion->puntuacion?>★</p>
                     </td>
 
                     <td>
