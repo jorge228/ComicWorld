@@ -69,11 +69,12 @@ function formularioInicioSesion() {
                                 echo '<p> <input type="checkbox" name="recuerdame" ' . isCheck() . '/> Recuerdame </p>';
                             echo '</div>';
 
+                            echo '<div class="form-group d-flex justify-content-center">';
+                                echo '<div id="btnGoogleSignin" class="btn btn-danger"><i class="fab fa-google p-2"></i>Login con Google</div>';
+                            echo '</div>';
+
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
-                            echo '<div class="form-group">';
-                                echo '<div class="g-signin2" data-onsuccess="onSignIn" id="btnLoginGoogle"></div>';
-                            echo '</div>';
                             echo '<a href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
                         echo '</div>';

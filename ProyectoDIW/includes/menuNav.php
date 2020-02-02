@@ -98,8 +98,8 @@
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 
                     <li id="dropdownLoginLI" class="dropdown order-1">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-secondary dropdown-toggle">
-                            <?php echo $usuario->username?> <i class="fas fa-user text-white"></i>     
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-secondary dropdown-toggle ml-1">
+                            <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="img-fluid rounded-circle mr-2" width="30px"><p class="d-none d-md-inline m-0"><?php echo $usuario->username?></p></span>    
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li>

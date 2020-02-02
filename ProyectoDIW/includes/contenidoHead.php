@@ -28,7 +28,9 @@
 <link rel="stylesheet" type="text/css" href="css/resume.css">
 
 <!--Links Google-->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
+<script src="js/google-signin.js"></script>
 
   

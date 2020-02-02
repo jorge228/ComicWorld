@@ -24,7 +24,7 @@ if (!$error){
                     <div class="col-12 text-center p-3">
                         
                         <div>
-                            <img class="img-fluid rounded-circle shadow" src="assets/img/imagenPerfilPorDefecto.jpg"></img>
+                            <img class="img-fluid rounded-circle shadow" src="<?php echo $usuario->img_perfil ?>"></img>
                         </div>
                     </div>
 
