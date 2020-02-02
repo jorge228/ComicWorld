@@ -85,6 +85,24 @@ $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
                 </section>
             </div>
 
+            <!--Modal texto valoracion-->
+            <div class="modal fade" tabindex="-1" role="dialog" id="modalTextos">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title font-weight-bold" id="tituloModalVal"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-muted p-5 text-break" id="textoModalVal">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <?php include("includes/footer.php"); ?>
         </div>

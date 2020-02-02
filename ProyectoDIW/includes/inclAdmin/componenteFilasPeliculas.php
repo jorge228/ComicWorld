@@ -20,7 +20,7 @@ function listarPeliculas($peliculas){
         foreach($peliculas as $peliculaFila){
             ?>
             <tr class="filaInformacionPerfil">
-                <td><p><?php echo $peliculaFila->id ?></p></td>
+                <td><p id='id<?php echo $peliculaFila->id ?>'><?php echo $peliculaFila->id ?></p></td>
 
                 <td>
                     <p id="<?php echo "nombre$peliculaFila->id" ?>"><?php echo $peliculaFila->titulo ?></p>
@@ -31,11 +31,11 @@ function listarPeliculas($peliculas){
                 </td>
 
                 <td>
-                    <p><?php echo substr($peliculaFila->img_carrusel, 11) ?></p>
+                    <button class="btnImgCarrusel btn btn-info btn-sm" >Ver imagen carrusel</button>
                 </td>
 
                 <td>
-                    <p><?php echo substr($peliculaFila->img_cartelera, 11) ?></p>
+                    <button class="btnImgCartelera btn btn-info btn-sm" >Ver imagen cartelera</button>
                 </td>
 
                 <td>

@@ -19,5 +19,52 @@ $(function(){
             this.submit();
         else
             e.preventDefault();
-    })
+    });
+
+    //Modal texto valoracion
+    $(".btnImgCarrusel").click(mostrarImagen);
+    $(".btnImgCartelera").click(mostrarImagen);
+
 })
+
+//Funcion para mostrar modal con imagen
+function mostrarImagen(e){
+    idPel=$(this).parent().siblings(":has([id*=id])").text();
+
+    //Determinar imagen
+    if ($(this).hasClass('btnImgCartelera'))
+        imagen="cartelera";
+    else
+        imagen="carrusel";
+
+    $.ajax({
+        //Metodo por el que se va a enviar la solicitud
+        type: "POST",
+
+        //URL del archivo del servidor que va a mostrar la respuesta
+        url: "includes/ajax/peliculas_imagenes_ajax.php",
+
+        //Datos que seran enviados
+        data:{
+            idPel:idPel
+        },
+        //Tipo de dato que va a devolver la respuesta
+        dataType: "json",
+
+        //En caso de recibir respuesta exitosa
+        success: function (response) {  
+            $('#tituloModalImg').text("Imagen de " + imagen +" de "+ response.titulo);
+
+            if (imagen=="cartelera")
+                $('#imgModalImg').attr('src', response.img_cartelera);
+            else
+                $('#imgModalImg').attr('src', response.img_carrusel);
+
+            $('#modalImagenes').modal("show");
+        },
+
+        error: function(response){
+            toastr.error('Ha habido un error al intentar obtener la imagen, inténtelo más tarde.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"});
+        }
+    });     
+}
