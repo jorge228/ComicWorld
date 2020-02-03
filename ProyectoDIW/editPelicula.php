@@ -8,6 +8,12 @@
     include_once 'includes/contenidoHead.php';
     include_once 'models/controladores/ControladorPelicula.php';
     include "includes/toast_pelicula_mod.php";
+    //Redirigir usuario si no ha iniciado sesion o si no es admin
+    if (isset($_SESSION['id_usuario'])) {
+        if ($usuario->rol != "admin" && $usuario->rol != "editor")
+            header("Location: index.php");
+    } else
+        header("Location: index.php");
     $sagas = ControladorPelicula::getSagas();
     $modificar = false;
     if (isset($_POST['guardar'])) {
@@ -61,11 +67,11 @@
                         echo "<h1>Formulario de Añadir</h1>";
                     }
                     if (isset($_POST['guardar'])) {
-                        $opcion = 'añadida';
+                        $opcion = 'Película añadida correctamente';
                         imprimeToast($opcion);
                     }
                     if (isset($_POST['btnModificar'])) {
-                        $opcion = 'modificada';
+                        $opcion = 'Película modificada correctamente';
                         imprimeToast($opcion);
                     }
                     ?>

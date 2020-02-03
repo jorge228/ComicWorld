@@ -13,8 +13,8 @@
  */
 class Conexion extends mysqli{
     private $server='localhost';
-    private $usuario='dwes';
-    private $pass='abc123.';
+    private $usuario='root';
+    private $pass='';
     private $bdd='comicworld';
     
     public function __construct() {
