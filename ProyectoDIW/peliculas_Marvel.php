@@ -6,14 +6,9 @@
     <?php
     include_once 'models/controladores/ControladorPelicula.php';
     include_once 'models/controladores/ControladorValoracion.php';
-    $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
-    if (isset($_POST['enviar'])) {
-        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'], $_POST['textarea_valoracion'], $_POST['puntuacion']);
-    }
-
-    ?>
-    <?php include "includes/contenidoHead.php"; ?>
-    <?php include "includes/valoracion.php"; ?>
+    include "includes/toast_pelicula_mod.php";
+    include "includes/contenidoHead.php";
+    include "includes/valoracion.php"; ?>
 
 </head>
 <title>MCU</title>
@@ -21,6 +16,14 @@
 <body>
     <!--MENU DE NAVEGACION-->
     <?php include "includes/menuNav.php"; ?>
+    <?php
+    $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
+    if (isset($_POST['enviar'])) {
+        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'], $_POST['textarea_valoracion'], $_POST['puntuacion']);
+        $opcion = 'Comentario insertado correctamente';
+        imprimeToast($opcion);
+    }
+    ?>
 
     <!--CARRUSEL-->
     <section class="container-fluid p-0">
@@ -89,15 +92,17 @@
                         <p><?php echo $pelicula->sinopsis ?></p>
                     </article>
                     <!-- INICIO BOTÓN-->
-                    <p class="text-center">
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#colapsa<?php echo $pelicula->id ?>" aria-expanded="false">
-                            Valoraciones
-                        </button>
-                    </p>
-                    <div class="collapse" id="colapsa<?php echo $pelicula->id ?>">
-                        <?php
+                    <?php
+                    if (isset($_SESSION['id_usuario'])) {
                         $valoraciones = ControladorValoracion::getValoracionesPelicula($pelicula->id);
+                        $val = count($valoraciones);
                         if (!empty($valoraciones)) {
+                            echo "<p class='text-center'>";
+                            echo "<button class='btn btn-primary' type='button' data-toggle='collapse' data-target='#colapsa" . $pelicula->id . "' aria-expanded='false'>";
+                            echo "Vea las " . $val . " valoraciones";
+                            echo "</button>";
+                            echo "</p>";
+                            echo "<div class='collapse' id='colapsa" . $pelicula->id . "'>";
                             foreach ($valoraciones as $valoracion) {
                                 $usuario = ControladorUsuario::getUsuarioByID($valoracion->id_usuario);
                                 echo "<div class='card card-body bg-info'>";
@@ -106,36 +111,34 @@
                                 echo "<p class='text-right'>Puntuación: " . $valoracion->puntuacion . "/5</p>";
                                 echo "</div><br>";
                             }
+                            echo "<div class='text-center'>";
+                            echo "<i class='fas fa-pencil-alt prefix'></i>Envíanos tu valoración:";
+                    ?>
+                            <?php crear($pelicula->id) ?>
+                        <?php
+                            echo "</div>";
+                            echo "</div>";
                         } else {
-                        ?>
-                            <div class="alert alert-secondary">
-                                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                <strong>¡Lo sentimos!</strong> Esta película no tiene valoraciones.
-                            </div><br>
-                        <?php
-                        }
-                        ?>
-                        <!-- FIN BOTÓN -->
-                        <!-- VALORACIÓN -->
-                        <?php
-                        if (isset($_SESSION['id_usuario'])) {
                         ?>
                             <div class="text-center">
                                 <i class="fas fa-pencil-alt prefix"></i>Envíanos tu valoración:
                                 <?php crear($pelicula->id) ?>
                             </div>
-                        <?php
-                        } else {
-                        ?>
-                            <div class="text-center">
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="submit">Regístrate o inicia sesión</button>
-                            </div>
-                            <br><br>
-                        <?php
-                        }
-                        ?>
-                    </div>
                 </div>
+            <?php
+                        }
+                    } else {
+            ?>
+            <div class="text-center">
+                <br>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="submit">Regístrate o inicia sesión para ver sus valoraciones</button>
+            </div>
+            <br><br>
+            </div>
+            </div>
+        <?php
+                    }
+        ?>
         </section>
     <?php
     }

@@ -8,7 +8,7 @@ function imprimeToast($opcion)
             "debug": false,
             "newestOnTop": false,
             "progressBar": false,
-            "positionClass": "toast-top-right",
+            "positionClass": "toast-top-center",
             "preventDuplicates": false,
             "onclick": null,
             "showDuration": "300",
@@ -20,7 +20,7 @@ function imprimeToast($opcion)
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut"
         }
-        toastr["success"]("Película <?php echo $opcion; ?> correctamente", "Correcto");
+        toastr["success"]("<?php echo $opcion; ?>", "Info");
     </script>
 <?php
 }
