@@ -285,7 +285,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /*- - - - - - - - - Start imagen perfil usuario nav - - - - - - - - - */
+.nombreUsuarioNav{
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:1.1em;
+    color:white;
+}
+
 .imgPerfilNav{
     border:2px solid $warning;
+    width:35px;
 }
 /*- - - - - - - - - End imagen perfil usuario nav- - - - - - - - - */

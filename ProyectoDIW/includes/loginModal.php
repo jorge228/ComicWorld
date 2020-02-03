@@ -2,7 +2,6 @@
 echo '<script src="js/controladorModal.js"></script>';
 
 if (isset($_POST['btnEntrar']) && (!contieneCaracteresEscapables()) && (ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password'])) != -1)) { 
-    
     //  Guardamos los datos en la sesion:
     $_SESSION['id_usuario'] = ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password']));
     //  Guardamos los datos en cookies:
@@ -15,7 +14,14 @@ if (isset($_POST['btnEntrar']) && (!contieneCaracteresEscapables()) && (Controla
     }
     setcookie("recordar[usuario]", $_POST['usuario']);
     header('location:index.php');
-} else {
+}
+//Login de Google
+elseif(isset($_POST['btnGoogleSignIn'])){
+    //  Guardamos los datos en la sesion:
+    $_SESSION['id_usuario'] = ControladorUsuario::getUsuarioGoogleByUsername($_POST['usuario'])->id;
+    header('location:index.php');
+}
+else {
     modalInicioSesion();
 }
 

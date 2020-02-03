@@ -48,7 +48,26 @@ class ControladorUsuario {
         
         return $usuario;
     }
-    
+
+    /**
+     * Obtener usuario mediante username para USUARIOS DE GOOGLE
+     * @param type $id
+     * @return \Usuario
+     */
+    public static function getUsuarioGoogleByUsername($username){
+        $conexion=new Conexion();
+                
+        $resultado=$conexion->query("SELECT * FROM usuario WHERE username='$username' AND usuario_google=1");
+
+        $registro=$resultado->fetch_object();
+
+        $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2, $registro->usuario_google, $registro->img_perfil);
+        
+        $conexion->close();
+        var_dump($usuario);
+        return $usuario;
+    }
+
     /**
      * Insertar un usuario en la BD
      * @param type $usuario

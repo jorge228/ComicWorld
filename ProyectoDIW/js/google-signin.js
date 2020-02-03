@@ -12,7 +12,8 @@ $(function(){
 })
 
 function attachSignin(element) {
-    console.log("AQUI");
+
+
     auth2.attachClickHandler(element, {},
         function(googleUser) {
             if (auth2.isSignedIn.get()){
@@ -41,13 +42,15 @@ function attachSignin(element) {
         
                     //En caso de recibir respuesta exitosa
                     success: function (response) { 
+                        //Es necesario meterle este input type hidden mediante jquery para que se envie con el DOM
+                        $("#modalForm").append("<input type='hidden' name='btnGoogleSignIn'>");
                         $("#usuario").val(nombreUsuario);
                         $("#password").val("google");
                         $("#modalForm").submit();
                     },
         
                     error: function(response){
-                        console.log(response);
+                        toastr.error('No se ha podido logear con esa cuenta de Google, inténtelo más tarde.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"});
                     }
                 });   
             }

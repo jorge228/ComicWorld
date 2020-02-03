@@ -26,7 +26,7 @@ if (!isset($_SESSION['id_usuario']))
 
                 <!--TITULO-->
                 <header class="mt-4 p-3 text-center">
-                    <h1 class="text-warning">Perfil de usuario</h1>
+                    <h1 class="text-warning">Mi perfil</h1>
                 </header>
 
                 <?php
