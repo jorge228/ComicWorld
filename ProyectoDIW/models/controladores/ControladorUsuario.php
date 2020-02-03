@@ -123,7 +123,7 @@ class ControladorUsuario {
      */
     public static function isRegistered($username, $password) {
         $conexion=new Conexion();
-        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "' && password='" . $password . "'");
+        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "' && password='" . $password . "' && usuario_google=0");
         if ($result->num_rows == 1) {
             $conexion->close();
             return ($result->fetch_object())->id;

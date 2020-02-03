@@ -2,6 +2,13 @@
 include_once '../../models/controladores/Conexion.php';
 include_once '../../models/entidades/Usuario.php';
 
+/*
+    1-. Comprobar si usuario existe
+    2-. Si existe, actualizarlo. Si no existe, crearlo.
+    3-. Enviar JSON respuesta, que sera un true o false.
+    4-. Logear al usuario usando informacion proporcionada por API
+*/
+
 function insertUsuario($usuario){
         
     $conexion=new Conexion();
@@ -12,23 +19,31 @@ function insertUsuario($usuario){
     $conexion->close();
 }
 
+function usuarioExiste($username){
+    $resultado=false;
+
+    $conexion=new Conexion();
+    
+    $conexion->query("SELECT username FROM usuario WHERE username='$username'");
+
+    if($conexion->affected_rows>0)
+        $resultado=true;
+
+    $conexion->close();
+
+    return $resultado;
+}
+
 //Conexion
 $conex=new Conexion();
 
-//Consulta con parametro
-$resultado=insertUsuario(new Usuario($_POST['username'], '', $_POST['nombre'], $_POST['apellido1'], $_POST['email'], '', '', '', '', "usuario", 0, "", 1, $_POST['imagen']));
+if (!usuarioExiste($_POST['username'])){
+    insertUsuario(new Usuario($_POST['username'], 'google', $_POST['nombre'], $_POST['apellido1'], $_POST['email'], '', '', '', '', "usuario", 0, "", 1, $_POST['imagen']));
+}
 
-//Fetch object para el conseguir resultado en formato objeto
-
-$usuario=$conex->query("SELECT id FROM usuario WHERE email='$_POST[email]'");
-$usuario=$usuario->fetch_object();
-
-
-session_start();
-$_SESSION['id_usuario']=$usuario->id;
-
+//Encode json respuesta
 $jsonRespuesta=[
-    "exito"=>$conex->error
+    "done"=>"true"
 ];
 
 //Convertir $usuario en objeto JSON
