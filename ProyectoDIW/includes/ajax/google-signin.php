@@ -65,10 +65,6 @@ function getUsuarioGoogleByUsername($username){
     $conexion->close();
     return $usuario;
 }
-
-//Conexion
-$conex=new Conexion();
-
 //Crear usuario con los datos proporcionados por Google.
 $usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $_POST['apellido1'], $_POST['email'], '', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
 
@@ -91,5 +87,4 @@ $jsonRespuesta=json_encode($jsonRespuesta);
 
 //echo para que Ajax pille la respuesta
 echo $jsonRespuesta;
-
 ?>

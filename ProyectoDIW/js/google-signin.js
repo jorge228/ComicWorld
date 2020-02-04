@@ -42,7 +42,7 @@ function attachSignin(element) {
         
                     //En caso de recibir respuesta exitosa
                     success: function (response) { 
-                        //Es necesario meterle este input type hidden mediante jquery para que se envie con el DOM
+                        //Es necesario meterle este input type hidden mediante jquery para que se envie con el form
                         $("#modalForm").append("<input type='hidden' name='btnGoogleSignIn'>");
                         $("#usuario").val(nombreUsuario);
                         $("#password").val("google");
@@ -50,6 +50,7 @@ function attachSignin(element) {
                     },
         
                     error: function(response){
+                        console.log(response);
                         toastr.error('No se ha podido logear con esa cuenta de Google, inténtelo más tarde.', 'Error', {closeButton:true, positionClass:"toast-top-full-width"});
                     }
                 });   
