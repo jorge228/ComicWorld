@@ -21,7 +21,7 @@ class ControladorUsuario {
         $resultados=$conexion->query("SELECT * FROM usuario");
         
         while($registro=$resultados->fetch_object()){
-            $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2);
+            $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2, $registro->usuario_google, $registro->img_perfil);
             $usuarios[]=$usuario;
         }
         
@@ -42,13 +42,32 @@ class ControladorUsuario {
         
         $registro=$resultado->fetch_object();
         
-        $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2);
+        $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2, $registro->usuario_google, $registro->img_perfil);
         
         $conexion->close();
         
         return $usuario;
     }
-    
+
+    /**
+     * Obtener usuario mediante username para USUARIOS DE GOOGLE
+     * @param type $id
+     * @return \Usuario
+     */
+    public static function getUsuarioGoogleByUsername($username){
+        $conexion=new Conexion();
+                
+        $resultado=$conexion->query("SELECT * FROM usuario WHERE username='$username' AND usuario_google=1");
+
+        $registro=$resultado->fetch_object();
+
+        $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2, $registro->usuario_google, $registro->img_perfil);
+        
+        $conexion->close();
+        var_dump($usuario);
+        return $usuario;
+    }
+
     /**
      * Insertar un usuario en la BD
      * @param type $usuario
@@ -57,8 +76,8 @@ class ControladorUsuario {
         
         $conexion=new Conexion();
         
-        $conexion->query("INSERT INTO usuario (username, password, nombre, apellido1, apellido2, correo, fecha_nacimiento, pais, codigo_postal, telefono, rol) "
-                . "VALUES('$usuario->username', '$usuario->password', '$usuario->nombre', '$usuario->apellido1', '$usuario->apellido2', '$usuario->correo', '$usuario->fecha_nacimiento', '$usuario->pais', '$usuario->codigo_postal', '$usuario->telefono', '$usuario->rol')");
+        $conexion->query("INSERT INTO usuario (username, password, nombre, apellido1, apellido2, correo, fecha_nacimiento, pais, codigo_postal, telefono, rol, usuario_google, img_perfil) "
+                . "VALUES('$usuario->username', '$usuario->password', '$usuario->nombre', '$usuario->apellido1', '$usuario->apellido2', '$usuario->correo', '$usuario->fecha_nacimiento', '$usuario->pais', '$usuario->codigo_postal', '$usuario->telefono', '$usuario->rol', '$usuario->usuario_google', '$usuario->img_perfil')");
     
         $conexion->close();
     }
@@ -123,7 +142,7 @@ class ControladorUsuario {
      */
     public static function isRegistered($username, $password) {
         $conexion=new Conexion();
-        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "' && password='" . $password . "'");
+        $result = $conexion->query("SELECT id FROM usuario where username='" . $username . "' && password='" . $password . "' && usuario_google=0");
         if ($result->num_rows == 1) {
             $conexion->close();
             return ($result->fetch_object())->id;

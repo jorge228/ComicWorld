@@ -24,7 +24,7 @@ if (!$error){
                     <div class="col-12 text-center p-3">
                         
                         <div>
-                            <img class="img-fluid rounded-circle shadow" src="assets/img/imagenPerfilPorDefecto.jpg"></img>
+                            <img class="w-75 rounded-circle shadow" src="<?php echo $usuario->img_perfil ?>"></img>
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@ if (!$error){
         <!--VALORACIONES-->
         <div class="row contenedorValoracionesPerfil">
             <div class="col-12 text-center p-3">
-                <h3 class="font-weight-bold">Valoraciones escritas por <?php echo $usuario->username ?></h3>
+                <h3 class="font-weight-bold">Tus valoraciones</h3>
             </diV>
         </div>
 
@@ -172,20 +172,20 @@ if (!$error){
         </div>
     </article>
 
-    <!--BOTON MODIFICAR USUARIOPerfil-->
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-12 text-center text-center p-3">
-                <a href="modificarPerfil.php" class="btn btn-primary">Modificar mi perfil</a>
-            </div>
-
-            <div class="col-12 text-center text-center p-3">
-                <a href="cambiarPassword.php" class="btn btn-primary">Cambiar contraseña</a>
+    <!--BOTON MODIFICAR USUARIO Y CONTRASEÑA (no disponibles para los usuarios de Google)-->
+    <?php
+    if ($usuario->usuario_google==0){
+    ?>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-12 text-center text-center p-3">
+                    <a href="modificarPerfil.php" class="btn btn-primary m-1">Modificar mi perfil</a>
+                    <a href="cambiarPassword.php" class="btn btn-primary m-1">Cambiar contraseña</a>
+                </div>
             </div>
         </div>
-    </div>
-
-<?php    
+    <?php
+    } 
 }
 //Si hay un error se muestra un mensaje de error
 else{

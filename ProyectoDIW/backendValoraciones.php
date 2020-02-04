@@ -18,7 +18,6 @@ if (isset($_POST['btnEliminarValoracion']))
  
 //Obtener peliculas de la bd
 $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +55,7 @@ $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
                                 <?php
                                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                                 if (isset($resultadoOperacion)){
-                                    if (!$resultadoOperacion){
+                                    if ($resultadoOperacion){
                                     ?>
                                         <script>toastr.success('Se ha realizado la operación con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
                                     <?php

@@ -60,7 +60,7 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                 <?php
                                 //Mostrar mensaje de estado en caso de que se haya enviado el form
                                 if (isset($resultadoOperacion)){
-                                    if ($resultadoOperacion){
+                                    if (!$resultadoOperacion){
                                     ?>
                                         <script>toastr.success('Se ha realizado la operación con éxito.', 'Info', {closeButton:true, positionClass:"toast-top-full-width"})</script>
                                     <?php
@@ -81,8 +81,8 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                                 <th>ID</th>
                                                 <th>Título</th>
                                                 <th>Fecha de estreno</th>
-                                                <th>Archivo imagen carrusel</th>
-                                                <th>Archivo imagen cartelera</th>
+                                                <th>Imagen carrusel</th>
+                                                <th>Imagen cartelera</th>
                                                 <th></th>
                                                 <th></th>
 

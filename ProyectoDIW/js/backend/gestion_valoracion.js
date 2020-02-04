@@ -38,7 +38,7 @@ $(function(){
             //En caso de recibir respuesta exitosa
             success: function (response) {  
                 $('#tituloModalVal').text("Valoración de "+ response.username + " para " + response.titulo);
-                $('#textoModalVal').html(response.texto);
+                $('#textoModalVal').html('"'+response.texto+'"');
                 $('#modalTextos').modal("show");
             },
 

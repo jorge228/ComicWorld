@@ -2,7 +2,6 @@
 echo '<script src="js/controladorModal.js"></script>';
 
 if (isset($_POST['btnEntrar']) && (!contieneCaracteresEscapables()) && (ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password'])) != -1)) { 
-    
     //  Guardamos los datos en la sesion:
     $_SESSION['id_usuario'] = ControladorUsuario::isRegistered($_POST['usuario'], md5($_POST['password']));
     //  Guardamos los datos en cookies:
@@ -15,7 +14,14 @@ if (isset($_POST['btnEntrar']) && (!contieneCaracteresEscapables()) && (Controla
     }
     setcookie("recordar[usuario]", $_POST['usuario']);
     header('location:index.php');
-} else {
+}
+//Login de Google
+elseif(isset($_POST['btnGoogleSignIn'])){
+    //  Guardamos los datos en la sesion:
+    $_SESSION['id_usuario'] = ControladorUsuario::getUsuarioGoogleByUsername($_POST['usuario'])->id;
+    header('location:index.php');
+}
+else {
     modalInicioSesion();
 }
 
@@ -71,11 +77,12 @@ function formularioInicioSesion() {
                                 echo '</div>';
                             }
 
+                            echo '<div class="form-group d-flex justify-content-center">';
+                                echo '<div id="btnGoogleSignin" class="btn btn-danger"><i class="fab fa-google p-2"></i>Login con Google</div>';
+                            echo '</div>';
+
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
-                            echo '<div class="form-group">';
-                                echo '<div class="g-signin2" data-onsuccess="onSignIn" id="btnLoginGoogle"></div>';
-                            echo '</div>';
                             echo '<a href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
                         echo '</div>';

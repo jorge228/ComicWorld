@@ -106,6 +106,13 @@ button.btn.btn-success:active:focus {
   color:white !important;
 }
 
+.btn-outline-primary:focus{
+  background-color: $warning  !important;
+}
+
+.btn-outline-primary:active{
+  background-color: $warning  !important;
+}
 /* End Override btn-primary */
 
 /* Override feedback */
