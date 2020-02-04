@@ -98,7 +98,7 @@
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 
                     <li id="dropdownLoginLI" class="dropdown order-1">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle ml-1 p-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1">
                             <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
