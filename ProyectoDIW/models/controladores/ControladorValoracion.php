@@ -128,15 +128,26 @@ class ControladorValoracion {
         $conexion->close();
         return $valoraciones;
     }
-  
+
     /**
-     * Inserta valoración
+     * Inserta una única valoración de usuario por película
      */
     public static function creaValoracion($id_usuario, $id_pelicula, $texto, $puntuacion){
         $conexion=new Conexion();
-        $fecha = new DateTime();
-        $format_fecha = $fecha->format('Y-m-d');
-        $conexion->query("INSERT INTO valoracion (id_usuario, id_pelicula, texto, puntuacion, fecha_valoracion) VALUES ('$id_usuario', '$id_pelicula', '$texto', $puntuacion, '$format_fecha')");
+        
+        $result = $conexion->query("SELECT * FROM valoracion WHERE id_usuario='$id_usuario' AND id_pelicula='$id_pelicula'");
+
+        if ($result->num_rows == 1){
+            $conexion->close();
+            return true;
+        }else{
+            $fecha = new DateTime();
+            $format_fecha = $fecha->format('Y-m-d');
+            $conexion->query("INSERT INTO valoracion (id_usuario, id_pelicula, texto, puntuacion, fecha_valoracion) VALUES ('$id_usuario', '$id_pelicula', '$texto', $puntuacion, '$format_fecha')");
+            $conexion->close();
+            return false;
+        }
+
         $conexion->close();
     }
 

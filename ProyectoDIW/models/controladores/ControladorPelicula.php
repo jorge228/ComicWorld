@@ -110,11 +110,18 @@ class ControladorPelicula {
     public static function insertPelicula($saga, $titulo, $fecha, $director, $sinopsis, $img1, $img2){
         
         $conexion=new Conexion();
-        
+
+        $result = $conexion->query("SELECT * FROM pelicula WHERE titulo='$titulo'");
+        if ($result->num_rows == 1){
+            $conexion->close();
+            return true;
+        }else{
         $conexion->query("INSERT INTO pelicula (saga, titulo, fecha_estreno, director, sinopsis, img_carrusel, img_cartelera) "
                 . "VALUES('$saga', '$titulo', '$fecha', '$director', '$sinopsis', '$img1', '$img2')");
-    
-        $conexion->close();
+                $conexion->close();
+                return false;
+        }
+        
     }
 
     /**

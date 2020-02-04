@@ -1,5 +1,5 @@
 <?php
-function imprimeToast($opcion)
+function imprimeToast($modelo, $texto, $valor)
 {
 ?>
     <script>
@@ -20,7 +20,7 @@ function imprimeToast($opcion)
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut"
         }
-        toastr["success"]("<?php echo $opcion; ?>", "Info");
+        toastr["<?php echo $modelo; ?>"]("<?php echo $texto; ?>", "<?php echo $valor; ?>");
     </script>
 <?php
 }

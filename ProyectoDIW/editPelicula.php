@@ -14,20 +14,8 @@
             header("Location: index.php");
     } else
         header("Location: index.php");
-    $sagas = ControladorPelicula::getSagas();
+    
     $modificar = false;
-    if (isset($_POST['guardar'])) {
-        if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
-            $rutaCarrusel = "assets/img/peliculas/" . $_FILES['img_carrusel']['name'];
-            move_uploaded_file($_FILES['img_carrusel']['tmp_name'], $rutaCarrusel);
-        }
-        if (is_uploaded_file($_FILES['img_cartelera']['tmp_name'])) {
-            $rutaCartelera = "assets/img/peliculas/" . $_FILES['img_cartelera']['name'];
-            move_uploaded_file($_FILES['img_cartelera']['tmp_name'], $rutaCartelera);
-        }
-        ControladorPelicula::insertPelicula($_POST['saga'], $_POST['titulo'], $_POST['fecha'], $_POST['director'], $_POST['sinopsis'], $rutaCarrusel, $rutaCartelera);
-    }
-
     if (isset($_POST['modificarPelicula'])) {
         //este botón es el de la página backendContenido.php->componenteFilasPelicula.php
         $modificar = true;
@@ -67,12 +55,31 @@
                         echo "<h1>Formulario de Añadir</h1>";
                     }
                     if (isset($_POST['guardar'])) {
-                        $opcion = 'Película añadida correctamente';
-                        imprimeToast($opcion);
+                        if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
+                            $rutaCarrusel = "assets/img/peliculas/" . $_FILES['img_carrusel']['name'];
+                            move_uploaded_file($_FILES['img_carrusel']['tmp_name'], $rutaCarrusel);
+                        }
+                        if (is_uploaded_file($_FILES['img_cartelera']['tmp_name'])) {
+                            $rutaCartelera = "assets/img/peliculas/" . $_FILES['img_cartelera']['name'];
+                            move_uploaded_file($_FILES['img_cartelera']['tmp_name'], $rutaCartelera);
+                        }
+                        $valido = ControladorPelicula::insertPelicula($_POST['saga'], $_POST['titulo'], $_POST['fecha'], $_POST['director'], $_POST['sinopsis'], $rutaCarrusel, $rutaCartelera);                
+                        if($valido){
+                            $modelo ='error';
+                            $valor='Info';
+                            $opcion = 'El título de la película ya se encuentra en la base de datos';
+                        }else{
+                            $modelo ='success';
+                            $valor='Info';
+                            $opcion = 'Película añadida correctamente';
+                        }
+                        imprimeToast($modelo, $opcion, $valor);
                     }
                     if (isset($_POST['btnModificar'])) {
+                        $modelo ='success';
+                        $valor='Info';
                         $opcion = 'Película modificada correctamente';
-                        imprimeToast($opcion);
+                        imprimeToast($modelo, $opcion, $valor);
                     }
                     ?>
                     <div class="form-group">
@@ -110,7 +117,7 @@
 
                     <div class="form-group">
                         <label for="sinopsis">Sinopsis</label>
-                        <textarea type="text" class="form-control rounded-0" name="sinopsis" style="width: 100%" maxlength="1000" id="sinopsis" required> <?php if ($modificar) echo $peliculaAModificar->sinopsis ?> </textarea>
+                        <textarea type="text" class="form-control rounded-0" name="sinopsis" style="width: 100%" maxlength="1000" id="sinopsis" required><?php if ($modificar) echo $peliculaAModificar->sinopsis ?></textarea>
                     </div>
 
                     <div class="custom-file">
