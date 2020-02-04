@@ -65,8 +65,16 @@ function getUsuarioGoogleByUsername($username){
     $conexion->close();
     return $usuario;
 }
+
+//Controlar si se ha enviado el apellido, ya que hay usuarios que no lo tienen y puede provocar un error
+if (!isset($_POST['apellido1']))
+    $apellido="";
+else
+    $apellido=$_POST['apellido1'];
+
+
 //Crear usuario con los datos proporcionados por Google.
-$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $_POST['apellido1'], $_POST['email'], '', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
+$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $apellido, $_POST['email'], '', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
 
 //Determinar si el usuario existe y crearlo o actualizarlo en consecuencia
 if (!usuarioExiste($usuarioGoogle->username)){
