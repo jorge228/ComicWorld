@@ -64,7 +64,7 @@ class ControladorUsuario {
         $usuario=new Usuario($registro->username, $registro->password, $registro->nombre, $registro->apellido1, $registro->correo, $registro->fecha_nacimiento, $registro->pais, $registro->codigo_postal, $registro->telefono, $registro->rol, $registro->id, $registro->apellido2, $registro->usuario_google, $registro->img_perfil);
         
         $conexion->close();
-        var_dump($usuario);
+        
         return $usuario;
     }
 
