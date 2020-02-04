@@ -17,11 +17,19 @@
     <!--MENU DE NAVEGACION-->
     <?php include "includes/menuNav.php"; ?>
     <?php
-    $peliculas = ControladorPelicula::getPeliculasSaga('marvel');
+    $peliculas = ControladorPelicula::getPeliculasSaga('MARVEL');
     if (isset($_POST['enviar'])) {
-        ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'], $_POST['textarea_valoracion'], $_POST['puntuacion']);
-        $opcion = 'Comentario insertado correctamente';
-        imprimeToast($opcion);
+        $existe = ControladorValoracion::creaValoracion($_SESSION['id_usuario'], $_POST['enviar'], $_POST['textarea_valoracion'], $_POST['puntuacion']);
+        if ($existe) {
+            $modelo = 'error';
+            $opcion = 'Ya ha valorado esta película anteriormente.';
+            $valor = 'Aviso';
+        } else {
+            $modelo = 'success';
+            $opcion = 'Comentario insertado correctamente';
+            $valor = 'Info';
+        }
+        imprimeToast($modelo, $opcion, $valor);
     }
     ?>
 
@@ -105,10 +113,13 @@
                             echo "<div class='collapse' id='colapsa" . $pelicula->id . "'>";
                             foreach ($valoraciones as $valoracion) {
                                 $usuario = ControladorUsuario::getUsuarioByID($valoracion->id_usuario);
-                                echo "<div class='card card-body bg-info'>";
-                                echo "<p><span class='font-weight-bold'>" . $usuario->nombre . " " . $usuario->apellido1 . "</span>: " . $valoracion->texto . "</p>";
+                                echo "<div class='card card-body'>";
+                                echo "<p><span class='font-weight-bold'>" . $usuario->username . " dijo:</span>";;
+                                echo "<p>" . $valoracion->texto . "</p>";
                                 echo "<p>Fecha: " . $valoracion->fecha_valoracion . "</p><hr>";
-                                echo "<p class='text-right'>Puntuación: " . $valoracion->puntuacion . "/5</p>";
+                                echo "<p class='text-center estrella'>";
+                                for ($i = 0; $i < $valoracion->puntuacion; $i++) echo "★";
+                                echo "</p>";
                                 echo "</div><br>";
                             }
                             echo "<div class='text-center'>";
