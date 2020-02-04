@@ -39,9 +39,6 @@ function modalInicioSesion() {
                     echo ' <div class="modal-body">';
                         formularioInicioSesion(); 
                     echo ' </div>';
-                    echo ' <div class="modal-footer">';
-                        echo '<button type="submit" id="btnEntrar" name="btnEntrar" class="btn btn-primary">Entrar</button>';
-                    echo ' </div>';
                 echo '</form>';
             echo '  </div>';
         echo '</div>';
@@ -76,14 +73,14 @@ function formularioInicioSesion() {
                                     echo '<p> <input type="checkbox" name="recuerdame" ' . isCheck() . '/> Recuerdame </p>';
                                 echo '</div>';
                             }
-
-                            echo '<div class="form-group d-flex justify-content-center">';
-                                echo '<div id="btnGoogleSignin" class="btn btn-danger"><i class="fab fa-google p-2"></i>Login con Google</div>';
+                            echo '<button type="submit" id="btnEntrar" name="btnEntrar" class="btn btn-primary m-2">Entrar</button>';
+                            echo '<div class="form-group d-flex justify-content-center m-2">';
+                                echo '<div id="btnGoogleSignin" class="btn btn-danger btn-sm"><i class="fab fa-google p-2"></i>Login con Google</div>';
                             echo '</div>';
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
-                            echo '<a href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
+                            echo '<a class="m-2" href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
                         echo '</div>';
                         echo '<div class="col-1 text-center"></div>';
