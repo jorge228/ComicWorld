@@ -33,4 +33,7 @@
 
 <script src="js/google-signin.js"></script>
 
-  
+<!--Links editor Quill-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+<link rel="stylesheet" href="css/quill.snow.css" />
