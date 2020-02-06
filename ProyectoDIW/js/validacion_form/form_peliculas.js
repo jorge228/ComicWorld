@@ -8,10 +8,12 @@ $(function(){
         quill.on('text-change', function() {
             var texto = quill.getText();
             $(contenedor).text((maxCarac-texto.length) + ' caracteres restantes');
-            if ((maxCarac-texto.length)<=0)
+            if ((maxCarac-texto.length)<0){
                 $(contenedor).css("color", "red")
-            else
+            }
+            else{
                 $(contenedor).css("color", "green");
+            }
         });
     });
 
@@ -21,7 +23,7 @@ $(function(){
             formula: true,
             toolbar: '#toolbar-quill',
             contador:{
-                maxchar:800,
+                maxchar:1000,
                 contenedor:"#contadorCaracteres"
             }
         },
@@ -37,7 +39,7 @@ $(function(){
     console.log(quill);
 
 
-    //Form
+    //Formulario editar/anadir pelicula
     $("form.needs-validation").submit(function (e) {
         $("#sinopsis").val(quill.root.innerHTML);
 
@@ -49,7 +51,17 @@ $(function(){
             if (!$(this).hasClass("was-validated"))
                 $(this).toggleClass("was-validated");
         }
+        //Si el formulario es valido se comprueba la longitud de la sinopsis
         else{
+            if (quill.getText().length==0 || quill.getText().trim()==""){
+                e.preventDefault();
+                toastr.error('La sinopsis no puede estar vacía', 'Error', {closeButton:true, positionClass:"toast-top-full-width"});
+            }
+            else if (quill.getText().length>quill.options.modules.contador.maxchar+1){
+                e.preventDefault();
+                toastr.error('La sinopsis introducida supera el límite de caracteres permitidos', 'Error', {closeButton:true, positionClass:"toast-top-full-width"});
+            }
+
         }
     });
 

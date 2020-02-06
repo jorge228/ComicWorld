@@ -41,7 +41,6 @@
     ?>
 
     <!--Javascript Quill-->
-    <script src="js/editor-quill.js"></script>
     <script src="js/validacion_form/form_peliculas.js"></script>
 
 </head>
@@ -142,7 +141,9 @@
                                     <input type="hidden" name="img_carrusel_mantener" value="<?php echo $peliculaAModificar->img_carrusel ?>">
                                 </div>
                             <?php } ?>
-                            <input type="file" class="custom-file-input" name="img_carrusel" id="img_carrusel" accept="image/png, image/jpeg"/>
+                            <input type="file" class="custom-file-input" name="img_carrusel" id="img_carrusel" accept="image/png, image/jpeg" <?php if (!$modificar) echo " required" ?>/>
+                            <div class="valid-feedback"><p>Correcto</p></div>
+                            <div class="invalid-feedback"><p>Debe subir una imagen para el carrusel</p></div>
                         </div>
                         <div class="custom-file">
                             <label for="img_cartelera" class="custom-file-label"><h5 class="mb-0">Seleccione imagen para la Cartelera</h5></label><br>
@@ -152,7 +153,9 @@
                                     <input type="hidden" name="img_cartelera_mantener" value="<?php echo $peliculaAModificar->img_cartelera ?>">
                                 </div>
                             <?php } ?>
-                            <input type="file" class="custom-file-input" name="img_cartelera" id="img_cartelera" accept="image/png, image/jpeg"/>
+                            <input type="file" class="custom-file-input" name="img_cartelera" id="img_cartelera" accept="image/png, image/jpeg" <?php if (!$modificar) echo " required" ?>/>
+                            <div class="valid-feedback"><p>Correcto</p></div>
+                            <div class="invalid-feedback"><p>Debe subir una imagen para la cartelera</p></div>
                         </div>
                     </div>
 
@@ -161,7 +164,7 @@
                         <label><h5 class="mb-0">Sinopsis</h5></label>
                         <div class="text-center"><span id="char_restantes"></span></div>
                         <div id="wrapper-quill">
-                            <div id="toolbar-quill" class="text-left bg-light">
+                            <div id="toolbar-quill" class="text-left rounded bg-light">
 
                                 <span class="ql-formats">
                                     <select class="ql-font" data-toggle="tooltip" title="Fuente"></select>
@@ -172,8 +175,8 @@
                                     <button data-toggle="tooltip" title="Negrita (Ctrl+B)" class="ql-bold"></button>
                                     <button data-toggle="tooltip" title="Itálica (Ctrl+I)" class="ql-italic"></button>
                                     <button data-toggle="tooltip" title="Subrayada (Ctrl+U)" class="ql-underline"></button>
-                                    <button class="ql-color" data-toggle="tooltip" title="Color del texto"></button>
-                                    <button class="ql-background" data-toggle="tooltip" title="Color de fondo del texto"></button>
+                                    <select class="ql-color" data-toggle="tooltip" title="Color del texto"></select>
+                                    <select class="ql-background" data-toggle="tooltip" title="Color de fondo del texto"></select>
                                 </span>
 
                                 <span class="ql-formats">
@@ -188,9 +191,9 @@
                                 <span class="ql-formats">
                                     <button class="ql-clean" data-toggle="tooltip" title="Borrar formato"></button>
                                 </span>
+                                <div id="contadorCaracteres" class="font-weight-bold text-center p-3 w-50 m-auto">1000 caracteres restantes</div>
                             </div>
                             <div id="editor-quill" class="editorSinopsis"><?php if($modificar) echo $peliculaAModificar->sinopsis ?></div>
-                            <div id="contadorCaracteres" class="font-weight-bold text-center"></div>
 
                         </div>
                     </div>
