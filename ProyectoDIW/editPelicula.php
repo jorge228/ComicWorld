@@ -48,7 +48,7 @@
 <body>
     <?php include "includes/menuNav.php"; ?>
     <div class="container mt-5">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
 
             <!--Titulo-->
             <div class="col-12 text-center">
@@ -61,8 +61,8 @@
             </div>
 
             <!--Formulario-->
-            <div class="col-12 px-2 px-md-5">
-                <form action="#" class="needs-validation p-3" method="POST" enctype="multipart/form-data" novalidate>
+            <div class="col-12 col-lg-10 px-2 px-md-5 py-3">
+                <form action="#" class="needs-validation border border-primary p-3" method="POST" enctype="multipart/form-data" novalidate>
                     <?php 
                     if (isset($_POST['guardar'])) {
                         if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
@@ -92,6 +92,8 @@
                         imprimeToast($modelo, $opcion, $valor);
                     }
                     ?>
+                    
+                    <!--Saga-->
                     <div class="form-group">
                         <label for="saga"><h5 class="mb-0">Saga</h5></label>
                         <select class="form-control" name="saga" id="saga">
@@ -110,6 +112,8 @@
                             ?>
                         </select>
                     </div>
+
+                    <!--Titulo-->
                     <div class="form-group">
                         <label for="titulo"><h5 class="mb-0">Título</h5></label>
                         <input type="text" class="form-control" name="titulo" id="titulo" required <?php if ($modificar) echo "value='" . $peliculaAModificar->titulo . "'" ?>/>
@@ -117,6 +121,7 @@
                         <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
 
+                    <!--Fecha de estreno-->
                     <div class="form-group">
                         <label for="fecha"><h5 class="mb-0">Fecha de Estreno</h5></label>
                         <input type="date" class="form-control" name="fecha" id="fecha" required <?php if ($modificar) echo "value='" . $peliculaAModificar->fecha_estreno . "'" ?> />
@@ -124,6 +129,7 @@
                         <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
 
+                    <!--Director-->
                     <div class="form-group">
                         <label for="nombre"><h5 class="mb-0">Director</h5></label>
                         <input type="text" class="form-control" name="director" id="director" required <?php if ($modificar) echo "value='" . $peliculaAModificar->director . "'" ?> />
@@ -131,6 +137,7 @@
                         <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
                     
+                    <!--Imagenes-->
                     <div class="form-group">
                         <label><h5 class="mb-0">Imágenes</h5></label>
                         <div class="custom-file">
@@ -159,7 +166,7 @@
                         </div>
                     </div>
 
-                    <!--Editor Quill-->
+                    <!--Editor Quill para la sinopsis-->
                     <div class="form-group">
                         <label><h5 class="mb-0">Sinopsis</h5></label>
                         <div class="text-center"><span id="char_restantes"></span></div>
@@ -191,14 +198,15 @@
                                 <span class="ql-formats">
                                     <button class="ql-clean" data-toggle="tooltip" title="Borrar formato"></button>
                                 </span>
-                                <div id="contadorCaracteres" class="font-weight-bold text-center p-3 w-50 m-auto">1000 caracteres restantes</div>
+                                <div id="contadorCaracteres" class="font-weight-bold text-center p-2 w-50 m-auto">1000 caracteres restantes</div>
                             </div>
                             <div id="editor-quill" class="editorSinopsis"><?php if($modificar) echo $peliculaAModificar->sinopsis ?></div>
 
                         </div>
                     </div>
                     
-                    <div class="text-center">
+                    <!--Botones-->
+                    <div class="form-group text-center">
                         <input type="reset" class="btn btn-secondary" id="reset" value="Limpiar" />
                         <?php
                         if ($modificar) {
@@ -208,7 +216,10 @@
                             echo "<input type='submit' name='guardar' class='btn btn-primary' value='Guardar'>";
                         }
                         ?>
-                        <a href="backendContenido.php" class='btn btn-primary'>Volver</a>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <a href="backendContenido.php" class='btn btn-primary'>Volver al panel de gestión</a>
                     </div>
 
                     <input type="hidden" name="sinopsis" id="sinopsis">

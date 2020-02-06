@@ -114,7 +114,7 @@
                             foreach ($valoraciones as $valoracion) {
                                 $usuario = ControladorUsuario::getUsuarioByID($valoracion->id_usuario);
                                 echo "<div class='card card-body'>";
-                                echo "<p><span class='font-weight-bold'>" . $usuario->username . " dijo:</span>";;
+                                echo "<p><img src='$usuario->img_perfil' width='35px' class='rounded-circle'><span class='font-weight-bold ml-2'>" . $usuario->username . " dijo:</span>";
                                 echo "<p>" . $valoracion->texto . "</p>";
                                 echo "<p>Fecha: " . $valoracion->fecha_valoracion . "</p><hr>";
                                 echo "<p class='text-center estrella'>";
