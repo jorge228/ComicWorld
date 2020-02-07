@@ -1,6 +1,8 @@
 $(function(){
+
+    //Form
     $("form.needs-validation").submit(function (e) {
-        
+
         if(this.checkValidity()===false){
 
             e.preventDefault();
@@ -10,5 +12,6 @@ $(function(){
                 $(this).toggleClass("was-validated");
         }
     });
+
 
 })

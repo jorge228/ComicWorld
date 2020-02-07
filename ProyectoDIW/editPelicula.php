@@ -39,21 +39,31 @@
         ControladorPelicula::updatePelicula($peliculaModificada);
     }
     ?>
+
+    <!--Javascript Quill-->
+    <script src="js/validacion_form/form_peliculas.js"></script>
+
 </head>
 
 <body>
     <?php include "includes/menuNav.php"; ?>
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-1 col-sm-3 text-center"></div>
-            <div class="col-10 col-sm-6 text-center">
-                <form name="" action="" method="POST" enctype="multipart/form-data">
-                    </br>
-                    <?php if ($modificar) {
-                        echo "<h1>Formulario de Modificación</h1>";
-                    } else {
-                        echo "<h1>Formulario de Añadir</h1>";
-                    }
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+
+            <!--Titulo-->
+            <div class="col-12 text-center">
+                <?php
+                if ($modificar) 
+                    echo "<h1 class='text-warning mb-1'>Modificar película</h1>";
+                else
+                    echo "<h1 class='text-warning mb-1'>Añadir película</h1>";
+                ?>
+            </div>
+
+            <!--Formulario-->
+            <div class="col-12 col-lg-10 px-2 px-md-5 py-3">
+                <form action="#" class="needs-validation border border-primary p-3" method="POST" enctype="multipart/form-data" novalidate>
+                    <?php 
                     if (isset($_POST['guardar'])) {
                         if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
                             $rutaCarrusel = "assets/img/peliculas/" . $_FILES['img_carrusel']['name'];
@@ -82,80 +92,147 @@
                         imprimeToast($modelo, $opcion, $valor);
                     }
                     ?>
+                    
+                    <!--Saga-->
                     <div class="form-group">
-                        <label for="saga">Saga</label>
+                        <label for="saga"><h5 class="mb-0">Saga</h5></label>
                         <select class="form-control" name="saga" id="saga">
                             <?php
                             if ($modificar) {
                             ?>
-                                <option value="MARVEL" <?php if ($peliculaAModificar->saga == 'MARVEL') echo 'selected'; ?>>MARVEL</option>
+                                <option value="MARVEL" <?php if ($peliculaAModificar->saga == 'MARVEL') echo 'selected'; ?>>Marvel</option>
                                 <option value="DC" <?php if ($peliculaAModificar->saga == 'DC') echo 'selected'; ?>>DC</option>
                             <?php
                             } else {
                             ?>
-                                <option value="MARVEL">MARVEL</option>
+                                <option value="MARVEL">Marvel</option>
                                 <option value="DC">DC</option>
                             <?php
                             }
                             ?>
                         </select>
                     </div>
+
+                    <!--Titulo-->
                     <div class="form-group">
-                        <label for="titulo">Título</label>
-                        <input type="text" class="form-control" name="titulo" id="titulo" required <?php if ($modificar) echo "value='" . $peliculaAModificar->titulo . "'" ?> />
+                        <label for="titulo"><h5 class="mb-0">Título</h5></label>
+                        <input type="text" class="form-control" name="titulo" id="titulo" required <?php if ($modificar) echo "value='" . $peliculaAModificar->titulo . "'" ?>/>
+                        <div class="valid-feedback"><p>Correcto</p></div>
+                        <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
 
+                    <!--Fecha de estreno-->
                     <div class="form-group">
-                        <label for="fecha">Fecha de Estreno</label>
+                        <label for="fecha"><h5 class="mb-0">Fecha de Estreno</h5></label>
                         <input type="date" class="form-control" name="fecha" id="fecha" required <?php if ($modificar) echo "value='" . $peliculaAModificar->fecha_estreno . "'" ?> />
+                        <div class="valid-feedback"><p>Correcto</p></div>
+                        <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
 
+                    <!--Director-->
                     <div class="form-group">
-                        <label for="nombre">Director</label>
+                        <label for="nombre"><h5 class="mb-0">Director</h5></label>
                         <input type="text" class="form-control" name="director" id="director" required <?php if ($modificar) echo "value='" . $peliculaAModificar->director . "'" ?> />
+                        <div class="valid-feedback"><p>Correcto</p></div>
+                        <div class="invalid-feedback"><p>Este campo es requerido</p></div>
                     </div>
-
+                    
+                    <!--Imagenes-->
                     <div class="form-group">
-                        <label for="sinopsis">Sinopsis</label>
-                        <textarea type="text" class="form-control rounded-0" name="sinopsis" style="width: 100%" maxlength="1000" id="sinopsis" required><?php if ($modificar) echo $peliculaAModificar->sinopsis ?></textarea>
+                        <label><h5 class="mb-0">Imágenes</h5></label>
+                        <div class="custom-file">
+                            <label for="img_carrusel" class="custom-file-label" lang="es"><h5 class="mb-0">Seleccione imagen para el Carrusel</h5></label><br>
+                            <?php if ($modificar) { ?>
+                                <div class="col-sm-4 card-body">
+                                    <img src="<?php echo $peliculaAModificar->img_carrusel ?>" class="card-img-top img-thumbnail">
+                                    <input type="hidden" name="img_carrusel_mantener" value="<?php echo $peliculaAModificar->img_carrusel ?>">
+                                </div>
+                            <?php } ?>
+                            <input type="file" class="custom-file-input" name="img_carrusel" id="img_carrusel" accept="image/png, image/jpeg" <?php if (!$modificar) echo " required" ?>/>
+                            <div class="valid-feedback"><p>Correcto</p></div>
+                            <div class="invalid-feedback"><p>Debe subir una imagen para el carrusel</p></div>
+                        </div>
+                        <div class="custom-file">
+                            <label for="img_cartelera" class="custom-file-label"><h5 class="mb-0">Seleccione imagen para la Cartelera</h5></label><br>
+                            <?php if ($modificar) { ?>
+                                <div class="col-sm-4 card-body">
+                                    <img src="<?php echo $peliculaAModificar->img_cartelera ?>" class="card-img-top img-thumbnail">
+                                    <input type="hidden" name="img_cartelera_mantener" value="<?php echo $peliculaAModificar->img_cartelera ?>">
+                                </div>
+                            <?php } ?>
+                            <input type="file" class="custom-file-input" name="img_cartelera" id="img_cartelera" accept="image/png, image/jpeg" <?php if (!$modificar) echo " required" ?>/>
+                            <div class="valid-feedback"><p>Correcto</p></div>
+                            <div class="invalid-feedback"><p>Debe subir una imagen para la cartelera</p></div>
+                        </div>
                     </div>
 
-                    <div class="custom-file">
-                        <label for="img_carrusel" class="custom-file-label" lang="es">Seleccione imagen para el Carrusel</label><br>
-                        <?php if ($modificar) { ?>
-                            <div class="col-sm-4 card-body">
-                                <img src="<?php echo $peliculaAModificar->img_carrusel ?>" class="card-img-top img-thumbnail">
-                                <input type="hidden" name="img_carrusel_mantener" value="<?php echo $peliculaAModificar->img_carrusel ?>">
+                    <!--Editor Quill para la sinopsis-->
+                    <div class="form-group">
+                        <label><h5 class="mb-0">Sinopsis</h5></label>
+                        <div class="text-center"><span id="char_restantes"></span></div>
+                        <div id="wrapper-quill">
+                            <div id="toolbar-quill" class="text-left rounded bg-light">
+
+                                <span class="ql-formats">
+                                    <select class="ql-font" data-toggle="tooltip" title="Fuente"></select>
+                                    <select class="ql-size" data-toggle="tooltip" title="Tamaño"></select>
+                                </span>
+
+                                <span class="ql-formats">
+                                    <button data-toggle="tooltip" title="Negrita (Ctrl+B)" class="ql-bold"></button>
+                                    <button data-toggle="tooltip" title="Itálica (Ctrl+I)" class="ql-italic"></button>
+                                    <button data-toggle="tooltip" title="Subrayada (Ctrl+U)" class="ql-underline"></button>
+                                    <select class="ql-color" data-toggle="tooltip" title="Color del texto"></select>
+                                    <select class="ql-background" data-toggle="tooltip" title="Color de fondo del texto"></select>
+                                </span>
+
+                                <span class="ql-formats">
+                                    <button class="ql-link" data-toggle="tooltip" title="Enlace"></button>
+                                    <button class="ql-formula" data-toggle="tooltip" title="Fórmula"></button>
+                                </span>
+
+                                <span class="ql-formats">
+                                    <button data-toggle="tooltip" class="ql-script" value="super" data-toggle="tooltip" title="Superíndice"></button>
+                                    <button data-toggle="tooltip" class="ql-script" value="sub" data-toggle="tooltip" title="Subíndice"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-clean" data-toggle="tooltip" title="Borrar formato"></button>
+                                </span>
+                                <div id="contadorCaracteres" class="font-weight-bold text-center p-2 w-50 m-auto">1000 caracteres restantes</div>
                             </div>
-                        <?php } ?>
-                        <input type="file" class="custom-file-input" name="img_carrusel" id="img_carrusel" <?php if (!$modificar) echo " required" ?> />
+                            <div id="editor-quill" class="editorSinopsis"><?php if($modificar) echo $peliculaAModificar->sinopsis ?></div>
+
+                        </div>
                     </div>
-                    <div class="custom-file">
-                        <label for="img_cartelera" class="custom-file-label">Seleccione imagen para la Cartelera</label><br>
-                        <?php if ($modificar) { ?>
-                            <div class="col-sm-4 card-body">
-                                <img src="<?php echo $peliculaAModificar->img_cartelera ?>" class="card-img-top img-thumbnail">
-                                <input type="hidden" name="img_cartelera_mantener" value="<?php echo $peliculaAModificar->img_cartelera ?>">
-                            </div>
-                        <?php } ?>
-                        <input type="file" class="custom-file-input" name="img_cartelera" id="img_cartelera" <?php if (!$modificar) echo " required" ?> />
+                    
+                    <!--Botones-->
+                    <div class="form-group text-center">
+                        <input type="reset" class="btn btn-secondary" id="reset" value="Limpiar" />
+                        <?php
+                        if ($modificar) {
+                            echo "<input type='hidden' name='idPeliculaModificar' value='" . $peliculaAModificar->id . "'>";
+                            echo "<input type='submit' name='btnModificar' class='btn btn-primary' value='Modificar'>";
+                        } else {
+                            echo "<input type='submit' name='guardar' class='btn btn-primary' value='Guardar'>";
+                        }
+                        ?>
                     </div>
 
-                    <input type="reset" class="btn btn-secondary" id="reset" value="Limpiar" />
-                    <?php
-                    if ($modificar) {
-                        echo "<input type='hidden' name='idPeliculaModificar' value='" . $peliculaAModificar->id . "'>";
-                        echo "<button type='submit' name='btnModificar' class='btn btn-primary'>Modificar</button>";
-                    } else {
-                        echo "<button type='submit' name='guardar' class='btn btn-primary'>Guardar</button>";
-                    }
-                    ?>
-                    <a href="backendContenido.php" class='btn btn-primary'>Volver</a>
+                    <div class="form-group text-center">
+                        <a href="backendContenido.php" class='btn btn-primary'>Volver al panel de gestión</a>
+                    </div>
+
+                    <input type="hidden" name="sinopsis" id="sinopsis">
                 </form>
             </div>
         </div>
     </div>
     <?php include "includes/footer.php"; ?>
+
+
+    <!--Scripts para Quill-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+    <script src="js/quilljs/quill.min.js"></script>
 </body>
 
 </html>
