@@ -3,6 +3,9 @@
 if(isset($_SESSION['id_usuario'])) {
     header('location:index.php');
 }
+
+$palabraCaptcha = generarPalabraCaptcha(); 
+
 echo '<!DOCTYPE html>';
 echo '<html lang="es">';
 echo '<head>';
@@ -11,17 +14,17 @@ echo '<head>';
     include_once("models/entidades/Usuario.php");
     echo '<script src="js/validacion_form/form_signUp.js"></script>';
 echo '</head>';
-
-echo '<body>';
-
-    if (isset($_POST["btnRegistrar"]) && verificarPassword()) {
+?>
+    <body onload="captcha.init()">
+<?php
+    if (isset($_POST["btnRegistrar"]) && verificar()) {
         $usuario = new Usuario($_POST["username"], md5($_POST["password1"]), $_POST["nombre"], $_POST["apellido1"], $_POST["correo"], $_POST["fecha_nacimiento"], $_POST["pais"], $_POST["codigo_postal"], $_POST["telefono"], "usuario", "", $_POST["apellido2"]);
         ControladorUsuario::insertUsuario($usuario);
         header('location:index.php');
     } else {
         // Menu navegacion
         include_once("includes/menuNav.php");
-        formularioRegistro();
+        formularioRegistro($palabraCaptcha);
         // Footer
 	    include_once("includes/footer.php"); 
     }
@@ -29,7 +32,7 @@ echo '<body>';
 echo '</body>';
 echo '</html>';
 
-function formularioRegistro () {
+function formularioRegistro ($palabraCaptcha) {
 ?>
     <!--FORMULARIO-->
     <article class="container">
@@ -173,6 +176,9 @@ function formularioRegistro () {
                             </div>
                         </div>
                     </div>
+                    <?php
+                    generarCaptcha();
+                    ?>
                     <!--Botones-->
                     <div class="row">
                         <div class="col-12 my-3 text-center">
@@ -180,7 +186,7 @@ function formularioRegistro () {
                             <button type="submit" name="btnRegistrar" class="btn btn-primary">Registrar</button>
                         </div>
                     </div>
-
+                    <input type="hidden" name="hiddenWord" value="<?php echo $palabraCaptcha; ?>" />
                 </form>
             </div>
             <div class="col-1 col-sm-2 text-center"></div>
@@ -189,10 +195,33 @@ function formularioRegistro () {
 <?php                   
 }
 
-function verificarPassword () {
+function generarCaptcha() {          
+    echo '<div class="row align-self-center">';
+    echo '<div class="col-12 col-sm-3"></div>';
+        echo '<div class="col-12 col-sm-6 bg-secondary m-1 p-2 card card-inverse card-danger">';
+            echo '<h6 class="small text-center">Por favor, verifica que no eres un robot:</h6>';
+            echo '<canvas id="captcha" width="250" height="60">TU NAVEGADOR NO SOPORTA HTML5</canvas>';
+            echo '<input type="text" class="form-control p-2 mt-1" id="inputCaptcha" name="inputCaptcha" placeholder="Escriba aqui la palabra que lea" required/>';
+        echo '</div>';
+        echo '<div class="col-12 col-sm-3"></div>';
+    echo '</div>';
+    
+}
+
+function verificar() {
     $ok = true;
     $contErrores = 0;
     $errorMessage = "";
+    // Comprueba el captcha
+    //echo '<script> alert("' . $_POST["inputCaptcha"] . '");</script>';
+    //echo '<script> alert("' . $palabraCaptcha . '");</script>'; 
+    if ($_POST['hiddenWord'] !== $_POST["inputCaptcha"]) {
+        //echo '<script> alert("ENTRA");</script>';
+        $contErrores++;
+        $ok = false;
+        $errorMessage = "Error usuario no registrado. El captcha introducido no es correcto.  Por favor, revíselo y vuelva a intentarlo";
+        $_POST["inputCaptcha"] = "";
+    }
     // Comprueba si el usuario introducido ya está en BBDD
     if (ControladorUsuario::findByUsername($_POST["username"])) {
         $contErrores++;
@@ -283,4 +312,141 @@ function verificarPassword () {
     return $ok;
 }
 
+function generarPalabraCaptcha () {
+    $letrasDisponibles = ['a','m','x','n','y','j','3','8'];
+    $palabra = "";
+    for ($i=0; $i < 6; $i++) { 
+        $ind = array_rand($letrasDisponibles, 1);
+        $c = $letrasDisponibles[$ind];
+        $palabra = $palabra . $c;
+    }
+    return $palabra;
+}
 ?>
+
+<script>
+var captcha = (function () {
+    var captchaWord = '<?php echo $palabraCaptcha;?>';
+    var canvas;
+    var ctx;
+    var backgroundImage; 
+    var images = [];
+    var totalImages = 9;
+    var numberOfLoadedImages = 0;
+    var characterOfset01 = getRandomNumber(15);
+    var characterOfset02 = getRandomNumber(20);
+    var characterOfset03 = getRandomNumber(20);
+    var characterOfset04 = getRandomNumber(20);
+    var characterOfset05 = getRandomNumber(20);
+    var characterOfset06 = getRandomNumber(20);
+
+    function init() {
+        preloadImages();
+        // Obtención del elemento html canvas
+        canvas = document.getElementById('captcha');
+        ctx = canvas.getContext("2d");
+        getRandomNumber(10)
+    }
+
+    function preloadImages() {
+        // Carga de la imagen del fondo
+        backgroundImage = new Image();
+        backgroundImage.src = 'assets/img/captcha/background.jpg';
+        backgroundImage.addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen 3
+        images["3"] = new Image();
+        images["3"].src = 'assets/img/captcha/characterBank/3.jpg';
+        images["3"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen 8
+        images["8"] = new Image();
+        images["8"].src = 'assets/img/captcha/characterBank/8.jpg';
+        images["8"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen j
+        images["j"] = new Image();
+        images["j"].src = 'assets/img/captcha/characterBank/j.jpg';
+        images["j"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen a
+        images["a"] = new Image();
+        images["a"].src = 'assets/img/captcha/characterBank/a.jpg';
+        images["a"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen m
+        images["m"] = new Image();
+        images["m"].src = 'assets/img/captcha/characterBank/m.jpg';
+        images["m"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen n
+        images["n"] = new Image();
+        images["n"].src = 'assets/img/captcha/characterBank/n.jpg';
+        images["n"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen x
+        images["x"] = new Image();
+        images["x"].src = 'assets/img/captcha/characterBank/x.jpg';
+        images["x"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+        // Carga la imagen y
+        images["y"] = new Image();
+        images["y"].src = 'assets/img/captcha/characterBank/y.jpg';
+        images["y"].addEventListener('load', function() {
+            numberOfLoadedImages++;
+            paintScene();
+        }, false);
+    }
+
+    function paintScene () {
+        console.log(numberOfLoadedImages);
+        if (numberOfLoadedImages == totalImages) {
+            paintBackground(); 
+            paintWord();   
+        }
+        setTimeout(paintScene, 500);
+    }
+
+    function paintWord() {
+        paintCharacter(captchaWord.charAt(0), 20, characterOfset01);
+        paintCharacter(captchaWord.charAt(1), 50,characterOfset02);
+        paintCharacter(captchaWord.charAt(2), 80, characterOfset03);
+        paintCharacter(captchaWord.charAt(3), 110, characterOfset04);
+        paintCharacter(captchaWord.charAt(4), 140, characterOfset05);
+        paintCharacter(captchaWord.charAt(5), 170, characterOfset06);
+    }
+
+    function paintCharacter(s, x, y) {
+        ctx.drawImage(images[s], x, y);
+    }
+
+	function paintBackground () {
+        ctx.drawImage(backgroundImage, 0, 0);
+    }
+
+    function getRandomNumber(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    return {
+        init: init
+    }
+
+})();
+</script>
