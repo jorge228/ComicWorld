@@ -43,4 +43,7 @@
     </div>
 </footer>
 
+<?php include_once 'cookieNotificaciones.php'; ?>
 <?php include_once 'cookieAlert.php'; ?>
+
+
