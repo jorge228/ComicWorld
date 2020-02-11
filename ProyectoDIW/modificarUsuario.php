@@ -8,6 +8,9 @@ if (!isset($_SESSION['id_usuario']))
 if ($usuario->rol!="admin")
     header("Location: index.php");
 
+if (!isset($_POST['idUsuarioMod']))
+    header("Location: backendUsuario.php");
+
 //Actulizar en caso de que el usuario le de a guardar
 if (isset($_POST['guardarMod'])){
     $usuarioMod=new Usuario($_POST['usernameMod'], null, $_POST['nombreMod'], $_POST['apellido1Mod'], $_POST['correoMod'], $_POST['fecha_nacimientoMod'], $_POST['paisMod'], $_POST['codigo_postalMod'], $_POST['telefonoMod'], "usuario", $_POST['idUsuarioMod'] );
@@ -231,8 +234,8 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                 <div class="form-row">
                                     <!--Submit y reset-->
                                     <div class="col-12 my-3 text-center">
+                                        <input type="reset" class="btn btn-secondary btn-md" value="Limpiar">
                                         <input type="submit" class="btn btn-primary btn-md" value="Guardar cambios" name="guardarMod">
-                                        <input type="reset" class="btn btn-primary btn-md" value="Reiniciar">
                                     </div>
 
                                     <!--Volver al backend-->

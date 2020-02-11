@@ -1,3 +1,4 @@
+/*---------------------Start contenedores backend---------------------*/
 .contenedorBackend{
     display: flex;
     flex-direction: row;
@@ -10,9 +11,11 @@
         height:100vh;
     }
 }
+/*---------------------End contenedores backend---------------------*/
 
+/*---------------------Start tabla backend---------------------*/
 .tablaBackend{
-
+    max-height:65vh;
     td{
         p{
             margin:0px;
@@ -20,3 +23,11 @@
         }
     }
 }
+/*---------------------End tabla backend---------------------*/
+
+/*---------------------Start editor sinopsis---------------------*/
+.editorSinopsis{
+    min-height:200px;
+    font-size:16px !important;
+}
+/*---------------------End tabla backend---------------------*/
