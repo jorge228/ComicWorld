@@ -34,11 +34,6 @@ $(function(){
     // Activar tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
-
-    //Configuracion de editor Quill
-    console.log(quill);
-
-
     //Formulario editar/anadir pelicula
     $("form.needs-validation").submit(function (e) {
         $("#sinopsis").val(quill.root.innerHTML);

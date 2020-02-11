@@ -174,11 +174,6 @@
                             <div id="toolbar-quill" class="text-left rounded bg-light">
 
                                 <span class="ql-formats">
-                                    <select class="ql-font" data-toggle="tooltip" title="Fuente"></select>
-                                    <select class="ql-size" data-toggle="tooltip" title="Tamaño"></select>
-                                </span>
-
-                                <span class="ql-formats">
                                     <button data-toggle="tooltip" title="Negrita (Ctrl+B)" class="ql-bold"></button>
                                     <button data-toggle="tooltip" title="Itálica (Ctrl+I)" class="ql-italic"></button>
                                     <button data-toggle="tooltip" title="Subrayada (Ctrl+U)" class="ql-underline"></button>

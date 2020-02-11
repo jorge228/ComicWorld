@@ -588,7 +588,36 @@ visible el contenido importante   */
   background: #212327;
 }
 
+.cookienotif {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 998;
+  opacity: 0;
+  border-radius: 0;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  color: #ecf0f1;
+  background: #212327;
+}
+
 .cookiealert.show {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition-delay: 1000ms;
+       -o-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+.cookienotif.show {
   opacity: 1;
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
