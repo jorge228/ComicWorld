@@ -7,7 +7,7 @@
             include("includes/carousel.php");
             include("includes/videos.php");
         ?>
-
+        <link href="sitemap.xml"/>
         <script src='js/controlesVideo.js'></script>
     </head>
     <body>
