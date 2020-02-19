@@ -70,7 +70,7 @@
                 <!--Cuarta columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow p-3">
-                        <img src="assets/img/home/home_personajes.jpg" class="card-img-top p-3"/>
+                        <img src="assets/img/home/home_Personajes.jpg" class="card-img-top p-3"/>
                         <div class="card-body text-justify">
                             <h4 class="card-title text-center">Personajes</h4>
                             <p>¿No conoces la historia de tu personaje favorito? ¡Entra en nuestra sección de personajes e infórmate! </p>

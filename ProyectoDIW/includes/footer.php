@@ -27,10 +27,10 @@
             <!--Redes sociales-->
             <div class="col-12 col-md-3 text-center pt-3">
                 <ul class="p-0">
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-facebook fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-youtube fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://www.youtube.com/"><i class="fab fa-youtube fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
                 </ul>
 
                 <!--Imagen licencia-->

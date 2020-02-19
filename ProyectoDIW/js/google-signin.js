@@ -47,6 +47,7 @@ function attachSignin(element) {
                         $("#usuario").val(nombreUsuario);
                         $("#password").val("google");
                         $("#modalForm").submit();
+                        console.log(response);
                     },
         
                     error: function(response){
