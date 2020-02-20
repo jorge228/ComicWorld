@@ -18,8 +18,6 @@ function usuarioExiste($username){
     if($conexion->affected_rows>0)
         $resultado=true;
 
-    echo $conexion->error;
-
     $conexion->close();
 
     return $resultado;
@@ -33,9 +31,7 @@ function insertUsuario($usuario){
     
     $conexion->query("INSERT INTO usuario (username, password, nombre, apellido1, apellido2, correo, fecha_nacimiento, pais, codigo_postal, telefono, rol, usuario_google, img_perfil) "
             . "VALUES('$usuario->username', '$usuario->password', '$usuario->nombre', '$usuario->apellido1', '$usuario->apellido2', '$usuario->correo', '$usuario->fecha_nacimiento', '$usuario->pais', '$usuario->codigo_postal', '$usuario->telefono', '$usuario->rol', '$usuario->usuario_google', '$usuario->img_perfil')");
-    
-    echo $conexion->error;
- 
+     
     $conexion->close();
 }
 
@@ -48,8 +44,6 @@ function updateUsuario($usuario){
     if ($conexion->errno==0){        
             $resultado=$conexion->query("UPDATE usuario SET username='$usuario->username', password='$usuario->password', correo='$usuario->correo', nombre='$usuario->nombre', apellido1='$usuario->apellido1', apellido2='$usuario->apellido2', fecha_nacimiento='$usuario->fecha_nacimiento', telefono='$usuario->telefono', pais='$usuario->pais', codigo_postal='$usuario->codigo_postal' WHERE id=$usuario->id ");
     }
-
-    echo $conexion->error;
 
     $conexion->close();
     
