@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 include_once '../../models/controladores/Conexion.php';
 include_once '../../models/entidades/Usuario.php';
 
