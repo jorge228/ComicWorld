@@ -82,7 +82,7 @@ else
 
 
 //Crear usuario con los datos proporcionados por Google.
-$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $apellido, $_POST['email'], '0000-00-00', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
+$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $apellido, $_POST['email'], '1996-08-29', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
 
 //Determinar si el usuario existe y crearlo o actualizarlo en consecuencia
 if (!usuarioExiste($usuarioGoogle->username)){
