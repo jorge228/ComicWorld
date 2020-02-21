@@ -37,8 +37,8 @@ function listarValoracionesUsuario($idUsuario){
                 <?php
                     for ($i = 5; $i > 0; $i--) {
                     ?>
-                        <input type="radio" id='<?php echo "radio".($valoracion->id+$i) ?>' name='<?php echo "radio$valoracion->id" ?>'  <?php  if ($valoracion->puntuacion==$i) echo 'checked' ?> disabled>
-                        <label for='<?php echo "radio$valoracion->id" ?>'>★</label>
+                        <input type="radio" aria-label="<?php echo (6-$i) ?> puntos" id='<?php echo "radio".($valoracion->id+$i) ?>' name='<?php echo "radio$valoracion->id" ?>'  <?php  if ($valoracion->puntuacion==$i) echo 'checked' ?> disabled>
+                        <label for='<?php echo "radio".($valoracion->id+$i) ?>'>★</label>
                     <?php
                     }
                 ?>

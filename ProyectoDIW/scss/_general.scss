@@ -7,11 +7,15 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+a{
+    color:darkblue;
+}
+
 /*- - - - - - - - - Start Banners General - - - - - - - - - */
     .banner {
         /*  Altura del contenedor   */
         height:430px;
-
+        background-color:black;
         /*  Propiedades de la imagen de fondo   */
         background-attachment: fixed; 
         background-repeat: no-repeat; 
@@ -126,6 +130,7 @@ h1, h2, h3, h4, h5 {
 /*- - - - - -- - - Start Footer - - - - - - - - - - */
 .footer{
     font-size:15px;
+    background-color:black;
     background-image:url("../assets/img/footer.jpg");
     background-size: cover;
 

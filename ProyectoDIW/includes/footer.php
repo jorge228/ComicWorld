@@ -1,10 +1,10 @@
 <footer class="footer">
-    <div class="container-fluid mt-5 text-secondary pt-3 pt-md-4">
+    <div class="container-fluid mt-5 text-white pt-3 pt-md-4">
         <div class="row">
 
             <!--Icono CW-->
             <div class="col-12 col-md-3 text-center">
-                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px">
+                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px" alt="Logo ComicWorld">
             </div>
 
             <!--Navegacion-->
@@ -27,15 +27,15 @@
             <!--Redes sociales-->
             <div class="col-12 col-md-3 text-center pt-3">
                 <ul class="p-0">
-                    <li class="d-inline px-2"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://www.youtube.com/"><i class="fab fa-youtube fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://es-es.facebook.com/" aria-label="Link Facebook"><i class="fab fa-facebook fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://twitter.com/?lang=es" aria-label="Link Twitter"><i class="fab fa-twitter fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://www.youtube.com/" aria-label="Link Youtube"><i class="fab fa-youtube fa-3x"></i></a></li>
+                    <li class="d-inline px-2"><a href="https://www.instagram.com/" aria-label="Link Instagram"><i class="fab fa-instagram fa-3x"></i></a></li>
                 </ul>
 
                 <!--Imagen licencia-->
                 <div class="text-center">
-                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg">
+                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg" alt="Licencia Creative Commons">
                 </div>
             </div>
 
