@@ -76,7 +76,7 @@ function formularioInicioSesion() {
                             }
                             echo '<button type="submit" id="btnEntrar" name="btnEntrar" class="btn btn-primary m-2">Entrar</button>';
                             echo '<div class="form-group d-flex justify-content-center m-2">';
-                                echo '<a id="btnGoogleSignin" class="btn btn-danger btn-sm text-white"><i class="fab fa-google p-2"></i>Login con Google</a>';
+                                echo '<button id="btnGoogleSignin" class="btn btn-danger btn-sm text-white"><i class="fab fa-google p-2"></i>Login con Google</button>';
                             echo '</div>';
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
