@@ -70,12 +70,13 @@ function formularioInicioSesion() {
 
                             if (isset($_COOKIE['acceptCookies'])) {
                                 echo '<div class="form-group">';
-                                    echo '<p> <input type="checkbox" name="recuerdame" ' . isCheck() . '/> Recuerdame </p>';
+                                    echo '<input type="checkbox" name="recuerdame" id="recuerdame" class="mr-1" '. isCheck() . '/>';
+                                    echo '<label for="recuerdame">Recuérdame</label>';
                                 echo '</div>';
                             }
                             echo '<button type="submit" id="btnEntrar" name="btnEntrar" class="btn btn-primary m-2">Entrar</button>';
                             echo '<div class="form-group d-flex justify-content-center m-2">';
-                                echo '<div id="btnGoogleSignin" class="btn btn-danger btn-sm"><i class="fab fa-google p-2"></i>Login con Google</div>';
+                                echo '<a id="btnGoogleSignin" class="btn btn-danger btn-sm text-white"><i class="fab fa-google p-2"></i>Login con Google</a>';
                             echo '</div>';
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';

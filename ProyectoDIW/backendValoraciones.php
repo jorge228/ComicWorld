@@ -20,7 +20,7 @@ if (isset($_POST['btnEliminarValoracion']))
 $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <?php 
             include("includes/contenidoHead.php");

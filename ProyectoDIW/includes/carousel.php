@@ -26,11 +26,11 @@ function addCarousel ($imgName1, $imgName2, $imgName3, $imgName4) {
                 <!--Flechas para pasar adelante y atras-->
                 <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
+                    <span class="sr-only text-dark">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
+                    <span class="sr-only text-dark">Siguiente</span>
                 </a>
             </section>
         </div>
