@@ -7,9 +7,11 @@
 
         <!-- Navbar header Logo -->
         <div class="navbar-header">
-            <a href="index.php">
-                <img src="assets/img/logo.png" alt="Logo de ComicWorld" height="40px" width="40px">
-            </a>
+            <form action="index.php">
+                <button type="submit" class="btn p-0">
+                    <img src="assets/img/logo.png" alt="Logo de ComicWorld" height="40px" width="40px">
+                </button>
+            </form>
         </div>
 
         <!-- Elementos del menu -->
@@ -125,7 +127,7 @@
                 </ul>
             </div>
             <?php } else { ?>
-                <button class="btn float-right" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
+                <button class="btn float-right" id="dropdownMenu1" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
                     <i class="fas fa-user text-white"></i>
                 </button>
             <?php } ?>

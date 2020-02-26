@@ -27,10 +27,35 @@
             <!--Redes sociales-->
             <div class="col-12 col-md-3 text-center pt-3">
                 <ul class="p-0">
-                    <li class="d-inline px-2"><a href="https://es-es.facebook.com/" aria-label="Link Facebook"><i class="fab fa-facebook fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://twitter.com/?lang=es" aria-label="Link Twitter"><i class="fab fa-twitter fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://www.youtube.com/" aria-label="Link Youtube"><i class="fab fa-youtube fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="https://www.instagram.com/" aria-label="Link Instagram"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="d-inline">
+                        <form action="https://es-es.facebook.com/" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white"><i class="fab fa-facebook fa-3x"></i></button>
+                        </form>
+                    </li>
+                    
+                    <li class="d-inline">
+                        <form action="https://twitter.com/?lang=es" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="d-inline">
+                        <form action="https://www.youtube.com" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-youtube fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="d-inline">
+                        <form action="https://www.instagram.com" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
                 </ul>
 
                 <!--Imagen licencia-->

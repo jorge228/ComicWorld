@@ -50,23 +50,23 @@ btn.btn-success {
   background-color: $success !important;
 }
 
-button.btn.btn-success:hover { 
+
+.navbar button.btn.btn-success:hover { 
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
-  border: none !important;
+  border: 1px solid white !important;
   -webkit-box-shadow: none !important;
 }  
 
-button.btn.btn-success:focus { 
+.navbar button.btn.btn-success:focus { 
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgb(255, 255, 255) !important;
   -webkit-box-shadow: none !important;
 } 
 
-button.btn.btn-success:active {
+.navbar button.btn.btn-success:active {
   background-color: darken($warning, 10%) !important;
   box-shadow: none;
   outline: none;
@@ -74,7 +74,7 @@ button.btn.btn-success:active {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:visited {
+.navbar button.btn.btn-success:visited {
   background-color: $success !important;
   box-shadow: none;
   outline: none;
@@ -82,12 +82,16 @@ button.btn.btn-success:visited {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:active:focus {
+.navbar button.btn.btn-success:active:focus {
   background-color: $success !important;
   box-shadow: none;
   outline: none;
   border: none !important;
   -webkit-box-shadow: none !important;
+}
+
+.dropdown-item:hover{
+  background-color:darkgray;
 }
 /* End Override btn-success */
 
@@ -124,3 +128,21 @@ button.btn.btn-success:active:focus {
   font-size:1em !important;
 }
 /* End Override feedback */
+
+/*Accesibilidad*/
+:focus{
+  border:3px solid $warning !important;
+}
+
+.btn-primary:focus{
+  border:3px solid blue !important;
+}
+
+
+.carousel a:focus{
+  background-color:darkslategray !important;
+}
+
+.input[type=radio]:focus{
+  border:3px solid $warning !important;
+}

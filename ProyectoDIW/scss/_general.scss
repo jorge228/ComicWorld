@@ -7,9 +7,14 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-a{
-    color:darkblue;
+
+
+/*- - - - - - - - - Start Carousel - - - - - - - - - */
+.carousel-control-prev{
+    color:black !important;
 }
+/*- - - - - - - - - End Carousel - - - - - - - - - */
+
 
 /*- - - - - - - - - Start Banners General - - - - - - - - - */
     .banner {
@@ -192,6 +197,10 @@ a{
 
 //Hover para mostrar controles del video
 .video-container:hover .controlesVideo {
+	opacity: .7;
+}
+
+.video-container:focus-within .controlesVideo {
 	opacity: .7;
 }
 
