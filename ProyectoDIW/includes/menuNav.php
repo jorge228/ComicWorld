@@ -7,9 +7,11 @@
 
         <!-- Navbar header Logo -->
         <div class="navbar-header">
-            <a href="index.php">
-                <img src="assets/img/logo.png" alt="Logo de ComicWorld" height="40px" width="40px">
-            </a>
+            <form action="index.php">
+                <button type="submit" class="btn p-0">
+                    <img src="assets/img/logo.png" alt="Logo de ComicWorld" height="40px" width="40px">
+                </button>
+            </form>
         </div>
 
         <!-- Elementos del menu -->
