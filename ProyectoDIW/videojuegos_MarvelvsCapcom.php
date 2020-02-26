@@ -21,7 +21,7 @@
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_001.jpg" alt="Caratula de Marvel vs. Capcom: Infinite" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -91,7 +91,7 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_002.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_002.jpg" alt="Caratula de Marvel vs. Capcom 2: New Age of Heroes" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -162,7 +162,7 @@
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_003.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_marvelvscapcom_003.jpg" alt="Caratula de Ultimate Marvel vs Capcom 3" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">

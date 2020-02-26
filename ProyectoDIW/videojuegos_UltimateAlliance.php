@@ -21,7 +21,7 @@
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_001.jpg" alt="Caratula de Marvel Ultimate Alliance 3: The Black Order" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -87,7 +87,7 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_002.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_002.jpg" alt="Caratula de Marvel: Ultimate Alliance" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -154,7 +154,7 @@
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_003.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ultimate_003.jpg" alt="Caratula de Marvel: Ultimate Alliance 2" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">

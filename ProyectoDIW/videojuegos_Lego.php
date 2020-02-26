@@ -21,7 +21,7 @@
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_001.jpg" alt="Caratula de Lego Batman 2: DC Super Héroes" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -85,7 +85,7 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_002.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_002.jpg" alt="Caratula deLego Marvel Vengadores" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -164,7 +164,7 @@
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_003.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_lego_003.jpg" alt="Caratula de Lego Marvel Super Heroes 2" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">

@@ -81,7 +81,7 @@ function formularioInicioSesion() {
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
-                            echo '<a class="m-2" href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
+                            echo '<a class="m-2 text-dark" href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
                         echo '</div>';
                         echo '<div class="col-1 text-center"></div>';
