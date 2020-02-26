@@ -170,7 +170,7 @@ function formularioRegistro ($palabraCaptcha) {
                                     <span class="input-group-text"><i class="fas fa-home"></i></span>
                                 </div>
 
-                                <input type="text" class="form-control" name="codigo_postal" placeholder="Escriba aquí su código postal" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["codigo_postal"]; ?>" pattern="^[0-9A-Z-]+$" minlength="4" maxlength="50" required>
+                                <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Escriba aquí su código postal" value="<?php if (isset($_POST["btnRegistrar"])) echo $_POST["codigo_postal"]; ?>" pattern="^[0-9A-Z-]+$" minlength="4" maxlength="50" required>
                                 <div class="valid-feedback"><p>Correcto</p></div>
                                 <div class="invalid-feedback"><p>El código postal solo puede caracteres alfanuméricos (Debe tener entre 1 y 50 caracteres)</p></div>
                             </div>
@@ -199,7 +199,7 @@ function generarCaptcha() {
     echo '<div class="row align-self-center">';
     echo '<div class="col-12 col-sm-3"></div>';
         echo '<div class="col-12 col-sm-6 bg-secondary m-1 p-2 card card-inverse card-danger">';
-            echo '<h6 class="small text-center">Por favor, verifica que no eres un robot:</h6>';
+            echo '<label for="inputCaptcha" class="small text-center">Por favor, verifica que no eres un robot:</label>';
             echo '<canvas id="captcha" width="250" height="60">TU NAVEGADOR NO SOPORTA HTML5</canvas>';
             echo '<input type="text" class="form-control p-2 mt-1" id="inputCaptcha" name="inputCaptcha" placeholder="Escriba aqui la palabra que lea" required/>';
         echo '</div>';

@@ -21,7 +21,7 @@
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_001.jpg" alt="Caratula de Injustice: Gods Among Us" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -88,7 +88,7 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_002.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_injustice_002.jpg" alt="Caratula de Injustice 2" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">

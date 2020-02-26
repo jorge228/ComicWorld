@@ -21,7 +21,7 @@
             <!-- Fila 1 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_001.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_001.jpg" alt="Caratula de Batman: Arkham City" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -90,7 +90,7 @@
             <!-- Fila 2 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_002.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_002.jpg" alt="Caratula de Batman: Return to Arkham" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
@@ -153,7 +153,7 @@
             <!-- Fila 3 -->
             <div class="row mt-4">
                 <aside class="p-4 col-12 col-sm-3 card-body">               
-                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_003.jpg" alt="imagen" />
+                    <img class="m-2 card-img-top img-thumbnail" src="assets/img/vid/vid_ark_003.jpg" alt="Batman: Arkham Knight" />
                 </aside>
                 <div class="col-12 col-sm-9">
                     <article class="p-3">
