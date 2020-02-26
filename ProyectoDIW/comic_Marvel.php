@@ -104,7 +104,7 @@
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="font-weight-bold text-warning">Iron-Man</h3>
+                    <h2 class="font-weight-bold text-warning">Iron-Man</h2>
                 </div>
                 <br></br>
 
@@ -170,7 +170,7 @@
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="font-weight-bold text-warning">Spider-Man</h3>
+                    <h2 class="font-weight-bold text-warning">Spider-Man</h2>
                 </div>
 
                 <!--Primera columna-->

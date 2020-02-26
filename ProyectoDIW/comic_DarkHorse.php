@@ -102,7 +102,7 @@
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="font-weight-bold text-warning">Hellboy</h3>
+                    <h2 class="font-weight-bold text-warning">Hellboy</h2>
                 </div>
                 <br></br>
 
@@ -181,7 +181,7 @@
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="font-weight-bold text-warning">Predator</h3>
+                    <h2 class="font-weight-bold text-warning">Predator</h2>
                 </div>
 
                 <!--Primera columna-->
