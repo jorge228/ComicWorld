@@ -6,7 +6,7 @@
     width: 100%;
     margin: 0 !important;
     z-index: 999;
-    opacity: 0;
+    display:none;
     border-radius: 0;
     transform: translateY(100%);
     transition: all 500ms ease-out;
@@ -20,7 +20,7 @@
     width: 100%;
     margin: 0 !important;
     z-index: 998;
-    opacity: 0;
+    display:none;
     border-radius: 0;
     transform: translateY(100%);
     transition: all 500ms ease-out;
@@ -29,13 +29,13 @@
 }
 
 .cookiealert.show {
-    opacity: 1;
+    display:block;
     transform: translateY(0%);
     transition-delay: 1000ms;
 }
 
 .cookienotif.show {
-    opacity: 1;
+    display:block;
     transform: translateY(0%);
     transition-delay: 1000ms;
 }
