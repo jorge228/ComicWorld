@@ -51,12 +51,7 @@ btn.btn-success {
 }
 
 
-:focus{
-  border:3px solid $warning !important;
-  background-color:darken($success, 5%) !important;
-}
-
-button.btn.btn-success:hover { 
+.navbar button.btn.btn-success:hover { 
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
@@ -64,14 +59,14 @@ button.btn.btn-success:hover {
   -webkit-box-shadow: none !important;
 }  
 
-button.btn.btn-success:focus { 
+.navbar button.btn.btn-success:focus { 
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
   -webkit-box-shadow: none !important;
 } 
 
-button.btn.btn-success:active {
+.navbar button.btn.btn-success:active {
   background-color: darken($warning, 10%) !important;
   box-shadow: none;
   outline: none;
@@ -79,7 +74,7 @@ button.btn.btn-success:active {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:visited {
+.navbar button.btn.btn-success:visited {
   background-color: $success !important;
   box-shadow: none;
   outline: none;
@@ -87,7 +82,7 @@ button.btn.btn-success:visited {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:active:focus {
+.navbar button.btn.btn-success:active:focus {
   background-color: $success !important;
   box-shadow: none;
   outline: none;
@@ -129,3 +124,22 @@ button.btn.btn-success:active:focus {
   font-size:1em !important;
 }
 /* End Override feedback */
+
+/*Accesibilidad*/
+:focus{
+  border:3px solid $warning !important;
+}
+
+.btn-primary:focus{
+  border:3px solid blue !important;
+}
+
+
+.carousel a:focus{
+  background-color:darkslategray !important;
+}
+
+input[type=checkbox]:focus{
+  outline:3px solid $warning;
+}
+

@@ -127,7 +127,7 @@
                 </ul>
             </div>
             <?php } else { ?>
-                <button class="btn float-right" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
+                <button class="btn float-right" id="dropdownMenu1" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
                     <i class="fas fa-user text-white"></i>
                 </button>
             <?php } ?>
