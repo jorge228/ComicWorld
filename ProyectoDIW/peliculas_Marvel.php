@@ -10,6 +10,7 @@
     include "includes/contenidoHead.php";
     include "includes/valoracion.php"; ?>
 
+    <script src="js/focus-peliculas.js"></script>
 </head>
 <title>MCU</title>
 
@@ -56,12 +57,12 @@
                 foreach ($peliculas as $pelicula) {
                     if ($active) {
                         echo "<div class='carousel-item active'>";
-                        echo "<a title='$pelicula->titulo' href='#$pelicula->id'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->id' /></a>";
+                        echo "<a title='$pelicula->titulo' href='#$pelicula->id' class='link-ancla'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->id' /></a>";
                         echo "</div>";
                         $active = false;
                     } else {
                         echo "<div class='carousel-item'>";
-                        echo "<a title='$pelicula->titulo' href='#$pelicula->id'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->id' /></a>";
+                        echo "<a title='$pelicula->titulo' href='#$pelicula->id' class='link-ancla'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->id' /></a>";
                         echo "</div>";
                     }
                 }
