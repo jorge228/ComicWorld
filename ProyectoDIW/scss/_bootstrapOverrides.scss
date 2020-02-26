@@ -55,7 +55,7 @@ btn.btn-success {
   background-color:darken($success, 5%) !important;
   box-shadow: none;
   outline: none;
-  border: none !important;
+  border: 1px solid white !important;
   -webkit-box-shadow: none !important;
 }  
 
@@ -88,6 +88,10 @@ btn.btn-success {
   outline: none;
   border: none !important;
   -webkit-box-shadow: none !important;
+}
+
+.dropdown-item:hover{
+  background-color:darkgray;
 }
 /* End Override btn-success */
 
@@ -139,7 +143,6 @@ btn.btn-success {
   background-color:darkslategray !important;
 }
 
-input[type=checkbox]:focus{
-  outline:3px solid $warning;
+.input[type=radio]:focus{
+  border:3px solid $warning !important;
 }
-
