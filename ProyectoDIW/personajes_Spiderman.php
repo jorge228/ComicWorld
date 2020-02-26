@@ -1,6 +1,6 @@
 <?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php
     include("includes/contenidoHead.php");
@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-warning">Biografía</h1>
+                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
             </div>
 
             <!--Contenido biografia-->
@@ -42,15 +42,15 @@
                  así como en varias películas, programas de televisión y adaptaciones de videojuegos ambientadas en el Universo Marvel.</p>
                 
                 <article>
-                    <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SpidermanOrig1.jpeg">
+                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SpidermanOrig1.jpeg" alt="Imagen de Spiderman">
                     <p class="mt-2">En Forest Hills, Queens, Nueva York, ​el estudiante de la Escuela Midtown High, Peter Benjamin Parker es un científico huérfano que vive con su tío Ben y su tía May. Como se describe en Amazing Fantasy # 15 (agosto de 1962), es mordido por una araña radioactiva (erróneamente clasificada como un insecto en el panel) en una exhibición de ciencias y "adquiere la agilidad y la fuerza proporcional de un arácnido ". 
                     Junto con la súper fuerza, Parker gana la capacidad de adherirse a paredes y techos. A través de su habilidad nativa para la ciencia, desarrolla un dispositivo que le permite disparar cintas adhesivas de su propio diseño a través de pequeños barriles montados en la muñeca. Inicialmente buscando capitalizar sus nuevas habilidades, Parker se pone un disfraz y, como "Spider-Man", se convierte en una estrella de televisión novedosa. 
                     Sin embargo, "ignora alegremente la posibilidad de detener a un ladrón que huye, y su indiferencia irónicamente lo alcanza cuando el mismo delincuente más tarde roba y mata a su tío Ben". Spider-Man rastrea y domina al asesino y aprende, en la penúltima leyenda de la historia, "con gran poder también debe haber una gran responsabilidad".</p>
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_SpidermanOrig2.jpg">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_SpidermanOrig2.jpg" alt="Imagen de varios Spiderman">
                     <p class="mt-2">A pesar de sus superpoderes, Parker se esfuerza por ayudar a su tía a pagar el alquiler, se burla de sus compañeros, especialmente la estrella de fútbol Flash Thompson, y, como Spider-Man, engendra la ira editorial del editor de periódicos J. Jonah Jameson.
                     ​Mientras lucha con sus enemigos por primera vez, ​Parker encuentra difícil hacer malabares con su vida personal y las aventuras disfrazadas. 
                     Con el tiempo, Peter se gradúa de la escuela secundaria, ​y se matricula en la Universidad Empire State (una institución ficticia que evoca la vida real de la Universidad de Columbia y la Universidad de Nueva York), ​donde se encuentra con su compañero de cuarto y mejor amigo Harry Osborn, y su novia Gwen Stacy, y la tía May le presenta a Mary Jane Watson. 

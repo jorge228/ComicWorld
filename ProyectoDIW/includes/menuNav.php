@@ -7,9 +7,11 @@
 
         <!-- Navbar header Logo -->
         <div class="navbar-header">
-            <a href="index.php">
-                <img src="assets/img/logo.png" alt="logo" height="40px" width="40px">
-            </a>
+            <form action="index.php">
+                <button type="submit" class="btn p-0">
+                    <img src="assets/img/logo.png" alt="Logo de ComicWorld" height="40px" width="40px">
+                </button>
+            </form>
         </div>
 
         <!-- Elementos del menu -->
@@ -99,7 +101,7 @@
 
                     <li id="dropdownLoginLI" class="dropdown order-1">
                         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1">
-                            <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
+                            <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav" alt="Imagen de perfil"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li>
@@ -125,7 +127,7 @@
                 </ul>
             </div>
             <?php } else { ?>
-                <button class="btn float-right" data-toggle="modal" data-target="#exampleModal">
+                <button class="btn float-right" id="dropdownMenu1" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
                     <i class="fas fa-user text-white"></i>
                 </button>
             <?php } ?>

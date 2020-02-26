@@ -1,6 +1,6 @@
 <?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php
     include("includes/contenidoHead.php");
@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-warning">Biografía</h1>
+                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
             </div>
 
             <!--Contenido biografia-->
@@ -40,8 +40,8 @@
                  Apodado el "Corredor Escarlata", todas las encarnaciones del Flash poseen "súper velocidad", que incluye la capacidad de correr, moverse y pensar extremadamente rápido, también puede atravesar la materia sólida, usar reflejos sobrehumanos y aparentemente violar ciertas leyes de la física, como superar la velocidad de la luz.</p>
                 
                 <article>
-                    <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_FlashOrig1.jpg">
+                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_FlashOrig1.jpg" alt="Flash corriendo envuelto por rayos eléctricos amarillos">
                     <p class="mt-2">Hasta ahora, al menos cuatro personajes diferentes, cada uno de los cuales de alguna manera obtuvo el poder de "la Fuerza de la Velocidad", han asumido el papel del Flash en las historias de DC: el atleta universitario Jay Garrick siendo el primero en portar el título (1940-1951, 1961-2011, 2017-presente ), el científico forense Barry Allen (1956-1985, 2008-presente), el sobrino de Barry Wally West (1986-2011, 2016-presente) y el nieto de Barry Bart Allen (2006-2007). 
                     Cada encarnación de Flash ha sido un miembro clave de al menos uno de los principales equipos de DC: Sociedad de la Justicia de América, Liga de la Justicia de América, Los Jóvenes Titanes y Young Justice. Wally West y Bart Allen originalmente fueron conocidos como Kid Flash, posteriormente asumieron el manto de Flash (Bart también era conocido como Impulso).</p>
 
@@ -51,7 +51,7 @@
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_FlashOrig2.jpg">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_FlashOrig2.jpg" alt="Flash envuelto por rayos eléctricos azules corriendo en dirección a la cámara">
                     <p class="mt-2">Al igual que sus compañeros de la Liga de la Justicia Mujer Maravilla, Superman y Batman, Flash tiene un elenco distintivo de adversarios, incluidos los diversos Renegados (únicos entre los supervillanos de DC por su código de honor) comandados por Capitán Frío y los diversos "velocistas" psicópatas que se conocen con el nombre "Flash Reverso o "Zoom" o el Supervillano Gorilla Grodd como uno de los villanos mas importantes de Flash. Otros personajes secundarios en las historias de Flash incluyen a la esposa de Barry, 
                     Iris West, la esposa de Wally, Linda Park, la novia de Bart, Valerie Perez, el compañero velocista Max Mercury y los miembros del departamento de policía de Ciudad Central, David Singh y Patty Spivot.</p>
 

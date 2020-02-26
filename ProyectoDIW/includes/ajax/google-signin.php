@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 include_once '../../models/controladores/Conexion.php';
 include_once '../../models/entidades/Usuario.php';
 
@@ -30,7 +31,7 @@ function insertUsuario($usuario){
     
     $conexion->query("INSERT INTO usuario (username, password, nombre, apellido1, apellido2, correo, fecha_nacimiento, pais, codigo_postal, telefono, rol, usuario_google, img_perfil) "
             . "VALUES('$usuario->username', '$usuario->password', '$usuario->nombre', '$usuario->apellido1', '$usuario->apellido2', '$usuario->correo', '$usuario->fecha_nacimiento', '$usuario->pais', '$usuario->codigo_postal', '$usuario->telefono', '$usuario->rol', '$usuario->usuario_google', '$usuario->img_perfil')");
-
+     
     $conexion->close();
 }
 
@@ -75,7 +76,7 @@ else
 
 
 //Crear usuario con los datos proporcionados por Google.
-$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $apellido, $_POST['email'], '0000-00-00', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
+$usuarioGoogle=new Usuario($_POST['username'], md5('google'), $_POST['nombre'], $apellido, $_POST['email'], '1996-08-29', '', '', '', "usuario", 0, "", 1, $_POST['imagen']);
 
 //Determinar si el usuario existe y crearlo o actualizarlo en consecuencia
 if (!usuarioExiste($usuarioGoogle->username)){

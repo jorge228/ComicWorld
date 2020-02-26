@@ -25,11 +25,15 @@
     if (isset($_POST['btnModificar'])) {
         if (is_uploaded_file($_FILES['img_carrusel']['tmp_name'])) {
             $rutaCarrusel = "assets/img/peliculas/" . $_FILES['img_carrusel']['name'];
+            echo $_FILES['img_carrusel']['tmp_name'];
+            echo $_FILES['img_carrusel']['name'];
             move_uploaded_file($_FILES['img_carrusel']['tmp_name'], $rutaCarrusel);
         } else {
             $rutaCarrusel = $_POST['img_carrusel_mantener'];
         }
         if (is_uploaded_file($_FILES['img_cartelera']['tmp_name'])) {
+            echo $_FILES['img_carrusel']['tmp_name'];
+            echo $_FILES['img_carrusel']['name'];
             $rutaCartelera = "assets/img/peliculas/" . $_FILES['img_cartelera']['name'];
             move_uploaded_file($_FILES['img_cartelera']['tmp_name'], $rutaCartelera);
         } else {

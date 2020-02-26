@@ -1,6 +1,6 @@
 <?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php
     include("includes/contenidoHead.php");
@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-warning">Biografía</h1>
+                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
             </div>
 
             <!--Contenido biografia-->
@@ -41,8 +41,8 @@
                 Hizo su primera aparición en Tales of Suspense # 39 (marzo de 1963), y recibió su propio título en Iron Man #1 (mayo de 1968).</p>
                 
                 <article>
-                    <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_IronManOrig1.jpg">
+                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_IronManOrig1.jpg" alt="Iron Man apuntando con el repulsor de su mano izquierda">
                     <p class="mt-2">Anthony Edward Stark es el hijo del jefe de Industrias Stark, Howard Stark y su esposa Maria Stark. 
                     Un niño genio que ingresa al MIT a la edad de 15 años para estudiar ingeniería mecánica y luego recibe maestrías en ingeniería eléctrica y física. 
                     Después de que sus padres mueren en un accidente automovilístico, hereda la compañía de su padre.</p>
@@ -54,7 +54,7 @@
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_IronManOrig2.jpg">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_IronManOrig2.jpg" alt="Iron Man envuelto en humo en pose de combate">
                     <p class="mt-2">De vuelta a casa, Stark descubre que el fragmento de metralla alojado en su pecho no se puede quitar sin matarlo, y él se ve obligado a utilizar la placa del pecho debajo de la ropa para actuar como un regulador para su corazón. También tiene que recargar la placa todos los días o de lo contrario corre el riesgo de que la metralla lo mate. La portada para Iron Man dice que él es el guardaespaldas de Stark y la mascota de su empresa. 
                     Con ese fin, Iron Man lucha contra las amenazas a su empresa, (como la oponente comunista Natasha Romanoff, el Dínamo Carmesí y el Hombre de Titanio), así como villanos independientes como el Mandarín, quien finalmente se convertiría en su peor enemigo. Nadie sospecha de que Stark es Iron Man, ya que cultiva su imagen como un millonario y empresario. 
                     Dos miembros notables del reparto de la serie, en este punto, son su chófer personal Harold "Happy" Hogan, y su

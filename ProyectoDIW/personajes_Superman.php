@@ -1,6 +1,6 @@
 <?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php
     include("includes/contenidoHead.php");
@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h1 class="text-center font-weight-bold text-warning">Biografía</h1>
+                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
             </div>
 
             <!--Contenido biografia-->
@@ -42,8 +42,8 @@
                 con una capa y un escudo de “S” estilizado en su pecho, escudo que se ha convertido en un símbolo del personaje en todo tipo de medios de comunicación.</p>
                 
                 <article>
-                    <h3 class="font-weight-bold">Orígenes</h3>
-                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SupermanOrig1.jpg">
+                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SupermanOrig1.jpg" alt="Imagen de Superman luchando">
                     <p class="mt-2">En Action Comics # 1 (1938), Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los humanos. 
                     Poco después de nacer, su planeta se destruye en un cataclismo natural, pero el padre científico de Superman previó la calamidad y salva a su hijo bebé enviándolo a la Tierra en una pequeña nave espacial. 
                     Lamentablemente, la nave es demasiado pequeña para llevar a alguien más, por lo que los padres de Superman se quedan atrás y mueren. Las primeras tiras de periódicos nombran el planeta "Krypton", el bebé "Kal-L" y sus padres biológicos "Jor-L" y "Lora"; ​sus nombres fueron cambiados a "Jor-el" y "Lara" en una novela de 1942 de George Lowther. 
@@ -55,7 +55,7 @@
                 </article>
 
                 <article>
-                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_SupermanOrig2.jpeg">
+                    <img class="img-fluid pb-2 w-100" src="assets/img/pers/pers_SupermanOrig2.jpeg" alt="Superman posando de forma amenazadora">
                     <p class="mt-2">La primera historia en la que Superman muere fue publicada en Superman # 149 (1961), en la cual es asesinado por Lex Luthor por medio de kryptonita. 
                     Esta historia era "imaginaria" y, por lo tanto, fue ignorada en libros posteriores. En Superman # 188 (abril de 1966), Superman es asesinado por la radiación de kryptonita, pero uno de sus doppelgangers de Android revive el mismo problema. </p>
 

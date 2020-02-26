@@ -46,15 +46,7 @@ btn.btn-success {
   background-color: #323842 !important;
 }
 
-button.btn.btn-success:hover {
-  background-color: #272c33 !important;
-  box-shadow: none;
-  outline: none;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-}
-
-button.btn.btn-success:focus {
+.navbar button.btn.btn-success:hover {
   background-color: #272c33 !important;
   box-shadow: none;
   outline: none;
@@ -62,7 +54,14 @@ button.btn.btn-success:focus {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:active {
+.navbar button.btn.btn-success:focus {
+  background-color: #272c33 !important;
+  box-shadow: none;
+  outline: none;
+  -webkit-box-shadow: none !important;
+}
+
+.navbar button.btn.btn-success:active {
   background-color: #003d42 !important;
   box-shadow: none;
   outline: none;
@@ -70,7 +69,7 @@ button.btn.btn-success:active {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:visited {
+.navbar button.btn.btn-success:visited {
   background-color: #323842 !important;
   box-shadow: none;
   outline: none;
@@ -78,12 +77,16 @@ button.btn.btn-success:visited {
   -webkit-box-shadow: none !important;
 }
 
-button.btn.btn-success:active:focus {
+.navbar button.btn.btn-success:active:focus {
   background-color: #323842 !important;
   box-shadow: none;
   outline: none;
   border: none !important;
   -webkit-box-shadow: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: darkgray;
 }
 
 /* End Override btn-success */
@@ -121,6 +124,27 @@ button.btn.btn-success:active:focus {
 }
 
 /* End Override feedback */
+/*Accesibilidad*/
+:focus {
+  border: 2px solid #006C75 !important;
+}
+
+.btn-primary:focus, .btn-outline-primary:focus {
+  border: 2px solid blue !important;
+}
+
+button, img {
+  outline: none !important;
+}
+
+.carousel a:focus {
+  background-color: darkslategray !important;
+}
+
+input[type=checkbox]:focus {
+  outline: 2px solid #006C75 !important;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -130,10 +154,17 @@ h1, h2, h3, h4, h5 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/*- - - - - - - - - Start Carousel - - - - - - - - - */
+.carousel-control-prev {
+  color: black !important;
+}
+
+/*- - - - - - - - - End Carousel - - - - - - - - - */
 /*- - - - - - - - - Start Banners General - - - - - - - - - */
 .banner {
   /*  Altura del contenedor   */
   height: 430px;
+  background-color: black;
   /*  Propiedades de la imagen de fondo   */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -244,6 +275,7 @@ visible el contenido importante   */
 /*- - - - - -- - - Start Footer - - - - - - - - - - */
 .footer {
   font-size: 15px;
+  background-color: black;
   background-image: url("../assets/img/footer.jpg");
   background-size: cover;
 }
@@ -292,6 +324,10 @@ visible el contenido importante   */
 }
 
 .video-container:hover .controlesVideo {
+  opacity: 0.7;
+}
+
+.video-container:focus-within .controlesVideo {
   opacity: 0.7;
 }
 
@@ -444,6 +480,10 @@ visible el contenido importante   */
   }
 }
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.biografia-titulo {
+  font-size: 2.2em;
+}
+
 .valoracion {
   position: relative;
   overflow: hidden;
@@ -466,11 +506,11 @@ visible el contenido importante   */
 .valoracion label:hover ~ label,
 .valoracion input:checked ~ label {
   /* color estrella llena */
-  color: #f7f329 !important;
+  color: #959500 !important;
 }
 
 .estrella {
-  color: #f7f329 !important;
+  color: #959500 !important;
 }
 
 .zoom {
@@ -576,7 +616,7 @@ visible el contenido importante   */
   width: 100%;
   margin: 0 !important;
   z-index: 999;
-  opacity: 0;
+  display: none;
   border-radius: 0;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
@@ -595,7 +635,7 @@ visible el contenido importante   */
   width: 100%;
   margin: 0 !important;
   z-index: 998;
-  opacity: 0;
+  display: none;
   border-radius: 0;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
@@ -608,7 +648,7 @@ visible el contenido importante   */
 }
 
 .cookiealert.show {
-  opacity: 1;
+  display: block;
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
@@ -618,7 +658,7 @@ visible el contenido importante   */
 }
 
 .cookienotif.show {
-  opacity: 1;
+  display: block;
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
@@ -628,6 +668,7 @@ visible el contenido importante   */
 }
 
 .cookiealert a {
+  color: white;
   text-decoration: underline;
 }
 

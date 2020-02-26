@@ -7,7 +7,7 @@ if (!isset($_SESSION['id_usuario']))
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <?php
         include("includes/contenidoHead.php");

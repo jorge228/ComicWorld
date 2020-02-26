@@ -1,13 +1,13 @@
 <?php include_once 'includes/sesion.php';?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <?php 
             include("includes/contenidoHead.php");
             include("includes/carousel.php");
             include("includes/videos.php");
         ?>
-
+        <link href="sitemap.xml"/>
         <script src='js/controlesVideo.js'></script>
     </head>
     <body>
@@ -38,9 +38,9 @@
                 <!--Primera columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100  border-0 shadow">
-                        <img src="assets/img/home/home_Comics.jpg" class="card-img-top p-3"/>
-                        <div class="card-body text-justify">
-                            <h4 class="card-title text-center">Cómics</h4>
+                        <img src="assets/img/home/home_Comics.jpg" alt="Comics" class="card-img-top p-3"/>
+                        <div class="card-body">
+                            <h1 class="card-title text-center">Cómics</h1>
                             <p>¿Te gustan los cómics? ¡Has venido al sitio indicado! En ComicWorld podrás consultar información de los últimos cómics de tus personajes favoritos.</p>
                         </div>
                     </div>
@@ -49,9 +49,9 @@
                 <!--Segunda columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow">
-                        <img src="assets/img/home/home_peliculas.jpg" class="card-img-top p-3"/>
-                        <div class="card-body text-justify">
-                            <h4 class="card-title text-center">Películas</h4>
+                        <img src="assets/img/home/home_peliculas.jpg" alt="Peliculas" class="card-img-top p-3"/>
+                        <div class="card-body">
+                            <h1 class="card-title text-center">Películas</h1>
                             <p>Información sobre las últimas películas del Universo Cinematográfico de Marvel y el DC Extended Universe en nuestra sección de películas</p>
                         </div>
                     </div>
@@ -59,9 +59,9 @@
                 <!--Tercera columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow">
-                        <img src="assets/img/home/home_Videojuegos.jpg" class="card-img-top p-3"/>
-                        <div class="card-body text-justify">
-                            <h4 class="card-title text-center">Videojuegos</h4>
+                        <img src="assets/img/home/home_Videojuegos.jpg" alt="Videojuegos" class="card-img-top p-3"/>
+                        <div class="card-body">
+                            <h1 class="card-title text-center">Videojuegos</h1>
                             <p>Para los gamers: los últimos videojuegos de superhéroes en todas las consolas.</p>
                         </div>
                     </div>
@@ -70,9 +70,9 @@
                 <!--Cuarta columna-->
                 <div class="col-md-6 col-lg-3 mt-3 mt-lg-0 ">
                     <div class="card h-100 border-0 shadow p-3">
-                        <img src="assets/img/home/home_personajes.jpg" class="card-img-top p-3"/>
-                        <div class="card-body text-justify">
-                            <h4 class="card-title text-center">Personajes</h4>
+                        <img src="assets/img/home/home_Personajes.jpg" alt="Personajes" class="card-img-top p-3"/>
+                        <div class="card-body">
+                            <h1 class="card-title text-center">Personajes</h1>
                             <p>¿No conoces la historia de tu personaje favorito? ¡Entra en nuestra sección de personajes e infórmate! </p>
                         </div>
                     </div>

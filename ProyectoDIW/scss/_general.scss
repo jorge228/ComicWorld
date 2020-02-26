@@ -7,11 +7,20 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+
+/*- - - - - - - - - Start Carousel - - - - - - - - - */
+.carousel-control-prev{
+    color:black !important;
+}
+/*- - - - - - - - - End Carousel - - - - - - - - - */
+
+
 /*- - - - - - - - - Start Banners General - - - - - - - - - */
     .banner {
         /*  Altura del contenedor   */
         height:430px;
-
+        background-color:black;
         /*  Propiedades de la imagen de fondo   */
         background-attachment: fixed; 
         background-repeat: no-repeat; 
@@ -126,6 +135,7 @@ h1, h2, h3, h4, h5 {
 /*- - - - - -- - - Start Footer - - - - - - - - - - */
 .footer{
     font-size:15px;
+    background-color:black;
     background-image:url("../assets/img/footer.jpg");
     background-size: cover;
 
@@ -187,6 +197,10 @@ h1, h2, h3, h4, h5 {
 
 //Hover para mostrar controles del video
 .video-container:hover .controlesVideo {
+	opacity: .7;
+}
+
+.video-container:focus-within .controlesVideo {
 	opacity: .7;
 }
 

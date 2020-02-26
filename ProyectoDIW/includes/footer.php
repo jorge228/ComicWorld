@@ -1,10 +1,10 @@
 <footer class="footer">
-    <div class="container-fluid mt-5 text-secondary pt-3 pt-md-4">
+    <div class="container-fluid mt-5 text-white pt-3 pt-md-4">
         <div class="row">
 
             <!--Icono CW-->
             <div class="col-12 col-md-3 text-center">
-                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px">
+                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px" alt="Logo ComicWorld">
             </div>
 
             <!--Navegacion-->
@@ -27,15 +27,40 @@
             <!--Redes sociales-->
             <div class="col-12 col-md-3 text-center pt-3">
                 <ul class="p-0">
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-facebook fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-youtube fa-3x"></i></a></li>
-                    <li class="d-inline px-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="d-inline">
+                        <form action="https://es-es.facebook.com/" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white"><i class="fab fa-facebook fa-3x"></i></button>
+                        </form>
+                    </li>
+                    
+                    <li class="d-inline">
+                        <form action="https://twitter.com/?lang=es" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="d-inline">
+                        <form action="https://www.youtube.com" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-youtube fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="d-inline">
+                        <form action="https://www.instagram.com" class="d-inline">
+                            <button type="submit" aria-label="Link Facebook" class="btn btn-sm text-white">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </button>
+                        </form>
+                    </li>
                 </ul>
 
                 <!--Imagen licencia-->
                 <div class="text-center">
-                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg">
+                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg" alt="Licencia Creative Commons">
                 </div>
             </div>
 
