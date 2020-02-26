@@ -119,7 +119,7 @@
                                 echo "<p><img src='$usuario->img_perfil' width='35px' class='rounded-circle' alt='foto".$usuario->username."'><span class='font-weight-bold ml-2'>" . $usuario->username . " dijo:</span>";;
                                 echo "<p>" . $valoracion->texto . "</p>";
                                 echo "<p>Fecha: " . $valoracion->fecha_valoracion . "</p><hr>";
-                                echo "<p class='text-center estrella2'>";
+                                echo "<p class='text-center estrella'>";
                                 for ($i = 0; $i < $valoracion->puntuacion; $i++) echo "★";
                                 echo "</p>";
                                 echo "</div><br>";

@@ -10,6 +10,7 @@
     include "includes/contenidoHead.php";
     include "includes/valoracion.php"; ?>
 
+    <script src="js/focus-peliculas.js"></script>
 </head>
 <title>DC</title>
 
@@ -56,12 +57,12 @@
                 foreach ($peliculas as $pelicula) {
                     if ($active) {
                         echo "<div class='carousel-item active'>";
-                        echo "<a title='$pelicula->titulo' href='#$pelicula->id'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->titulo' /></a>";
+                        echo "<a title='$pelicula->titulo' href='#$pelicula->id' class='link-ancla'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->titulo' /></a>";
                         echo "</div>";
                         $active = false;
                     } else {
                         echo "<div class='carousel-item'>";
-                        echo "<a title='$pelicula->titulo' href='#$pelicula->id'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->titulo' /></a>";
+                        echo "<a title='$pelicula->titulo' href='#$pelicula->id' class='link-ancla'><img src='$pelicula->img_carrusel' class='d-block w-100' alt='$pelicula->titulo' /></a>";
                         echo "</div>";
                     }
                 }
@@ -117,7 +118,7 @@
                                 echo "<p><img src='$usuario->img_perfil' width='35px' class='rounded-circle' alt='foto".$usuario->username."><span class='font-weight-bold ml-2'>" . $usuario->username . " dijo:</span>";
                                 echo "<p>" . $valoracion->texto . "</p>";
                                 echo "<p>Fecha: " . $valoracion->fecha_valoracion . "</p><hr>";
-                                echo "<p class='text-center estrella2'>";
+                                echo "<p class='text-center estrella'>";
                                 for ($i = 0; $i < $valoracion->puntuacion; $i++) echo "★";
                                 echo "</p>";
                                 echo "</div><br>";

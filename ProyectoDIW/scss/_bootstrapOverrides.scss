@@ -131,18 +131,21 @@ btn.btn-success {
 
 /*Accesibilidad*/
 :focus{
-  border:3px solid $warning !important;
+  border:2px solid $warning !important;
 }
 
-.btn-primary:focus{
-  border:3px solid blue !important;
+.btn-primary:focus, .btn-outline-primary:focus{
+  border:2px solid blue !important;
 }
 
+button, img{
+  outline:none !important;
+}
 
 .carousel a:focus{
   background-color:darkslategray !important;
 }
 
-.input[type=radio]:focus{
-  border:3px solid $warning !important;
+input[type=checkbox]:focus{
+  outline:2px solid $warning !important;
 }

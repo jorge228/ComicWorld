@@ -8,14 +8,15 @@ function crear($idPelicula)
             <?php
             for ($i = 5; $i >= 1; $i--) {
                 if($i==1){
-                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='radio" . $idPelicula. "-" . $i . "' value='" . $i . "' checked>";
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion'" . $i . "' checked>";
                     echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
                 }else{
-                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='radio" . $idPelicula. "-" . $i . "' value='" . $i . "'>";
+                    echo "<input id='radio" . $idPelicula. "-" . $i . "' type='radio' name='puntuacion' value='" . $i . "'>";
                     echo "<label for='radio" . $idPelicula. "-" . $i . "'>★</label>";
                 }
-             }
-            ?></div><br>
+            }
+            ?>
+        </div><br>
         <button class="btn btn-primary" type="submit" action="" name="enviar" value="<?php echo $idPelicula ?>">Enviar</button><br><br><br>
     </form>
 <?php

@@ -126,19 +126,23 @@ btn.btn-success {
 /* End Override feedback */
 /*Accesibilidad*/
 :focus {
-  border: 3px solid #006C75 !important;
+  border: 2px solid #006C75 !important;
 }
 
-.btn-primary:focus {
-  border: 3px solid blue !important;
+.btn-primary:focus, .btn-outline-primary:focus {
+  border: 2px solid blue !important;
+}
+
+button, img {
+  outline: none !important;
 }
 
 .carousel a:focus {
   background-color: darkslategray !important;
 }
 
-.input[type=radio]:focus {
-  border: 3px solid #006C75 !important;
+input[type=checkbox]:focus {
+  outline: 2px solid #006C75 !important;
 }
 
 body {
@@ -502,11 +506,11 @@ visible el contenido importante   */
 .valoracion label:hover ~ label,
 .valoracion input:checked ~ label {
   /* color estrella llena */
-  color: #f7f329 !important;
+  color: #959500 !important;
 }
 
 .estrella {
-  color: #f7f329 !important;
+  color: #959500 !important;
 }
 
 .zoom {
