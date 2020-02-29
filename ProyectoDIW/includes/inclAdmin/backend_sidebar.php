@@ -11,14 +11,14 @@ function sidebar($usuario){
         <!--Foto y nombre de usuario-->
         <div class="row p-0">
             <div class="col-12 text-center p-4">
-                <img class="img-fluid rounded-circle" src="assets/img/logo.png">
+                <img class="img-fluid rounded-circle" src="assets/img/logo.png" alt="Logo de ComicWorld">
             </div>
 
             <div class="col-12">
-                <h4 class="text-center text-white font-weight-bold">Panel de gestión</h4>
+                <h1 class="text-center text-white font-weight-bold">Panel de gestión</h1>
             </div>
             <div class="col-12">
-                <p class="text-center text-white m-1"><?php echo ucfirst($usuario->rol) ?></p>
+                <p class="text-center text-white m-1 font-weight-bold"><?php echo ucfirst($usuario->rol) ?></p>
             </div>
 
         </div>

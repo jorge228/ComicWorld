@@ -43,7 +43,7 @@
                 
                 <article>
                     <h4 class="font-weight-bold">Orígenes</h4>
-                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SpidermanOrig1.jpeg" alt="Imagen de Spiderman">
+                    <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SpidermanOrig1.jpeg" alt="Spiderman agarrándose a una de sus redes">
                     <p class="mt-2">En Forest Hills, Queens, Nueva York, ​el estudiante de la Escuela Midtown High, Peter Benjamin Parker es un científico huérfano que vive con su tío Ben y su tía May. Como se describe en Amazing Fantasy # 15 (agosto de 1962), es mordido por una araña radioactiva (erróneamente clasificada como un insecto en el panel) en una exhibición de ciencias y "adquiere la agilidad y la fuerza proporcional de un arácnido ". 
                     Junto con la súper fuerza, Parker gana la capacidad de adherirse a paredes y techos. A través de su habilidad nativa para la ciencia, desarrolla un dispositivo que le permite disparar cintas adhesivas de su propio diseño a través de pequeños barriles montados en la muñeca. Inicialmente buscando capitalizar sus nuevas habilidades, Parker se pone un disfraz y, como "Spider-Man", se convierte en una estrella de televisión novedosa. 
                     Sin embargo, "ignora alegremente la posibilidad de detener a un ladrón que huye, y su indiferencia irónicamente lo alcanza cuando el mismo delincuente más tarde roba y mata a su tío Ben". Spider-Man rastrea y domina al asesino y aprende, en la penúltima leyenda de la historia, "con gran poder también debe haber una gran responsabilidad".</p>

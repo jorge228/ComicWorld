@@ -40,7 +40,7 @@ function listarUsuarios($usuarios, $idUsuarioLogeado){
                         <td>
                             <input type="hidden" name="idUsuarioOperacion" value="<?php echo $usuarioFila->id ?>">
 
-                            <select name="rolUsuario" class="p-2">
+                            <select name="rolUsuario" id="rolUsuario" class="p-2" aria-label="Roles disponibles">
                                 <option value="admin" <?php if($usuarioFila->rol=="admin") echo 'selected'; ?>>Administrador</option>
                                 <option value="editor" <?php if($usuarioFila->rol=="editor") echo 'selected'; ?>>Editor</option>
                                 <option value="usuario" <?php if($usuarioFila->rol=="usuario") echo 'selected'; ?>>Usuario</option>

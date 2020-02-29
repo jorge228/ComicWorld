@@ -24,14 +24,14 @@ if (!$error){
                     <div class="col-12 text-center p-3">
                         
                         <div>
-                            <img class="w-75 rounded-circle shadow" src="<?php echo $usuario->img_perfil ?>"></img>
+                            <img class="w-75 rounded-circle shadow" src="<?php echo $usuario->img_perfil ?>" alt="Tu imagen de perfil"></img>
                         </div>
                     </div>
 
                     <!--Nombre del usuarioPerfil-->
                     <div class="col-12 text-center p-2">
                         <div>
-                            <h3 class="font-weight-bold"><?php echo $usuario->username ?></h3>
+                            <h2 class="font-weight-bold "><?php echo $usuario->username ?></h2>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left ">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0 m-0">Nombre</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0 m-0">Nombre</h3>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">Apellidos</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">Apellidos</h3>
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">Fecha de nacimiento</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">Fecha de nacimiento</h3>
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">Correo</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">Correo</h3>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">País</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">País</h3>
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">Código postal</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">Código postal</h3>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@ if (!$error){
 
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <div class="info">
-                            <h5 class="font-weight-bold p-2 m-0">Teléfono</h5>
+                            <h3 class="font-weight-bold titulo-perfil p-2 m-0">Teléfono</h3>
                         </div>
                     </div>
 

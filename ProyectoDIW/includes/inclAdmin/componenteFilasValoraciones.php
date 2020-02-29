@@ -34,7 +34,7 @@ function listarValoraciones($valoraciones){
                     <th>Fecha</th>
                     <th>Texto</th>
                     <th>Puntuación</th>
-                    <th></th>
+                    <td></td>
                 </tr>
 
             <?php

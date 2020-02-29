@@ -47,10 +47,10 @@ $peliculas=ControladorPelicula::getAllPeliculas();
 
                         <!--Contenido-->
                         <div class="col-12 col-md-9">
-                            <div class="row">
+                            <div class="row mt-4">
 
                                 <div class="col-12 text-center mt-4">
-                                    <h1 class="text-warning">Gestión de películas</h1>
+                                    <h2 class="text-warning">Gestión de películas</h2>
                                 </div>
 
                                 <div class="col-12 text-center mt-4">
@@ -83,8 +83,8 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                                                 <th>Fecha de estreno</th>
                                                 <th>Imagen carrusel</th>
                                                 <th>Imagen cartelera</th>
-                                                <th></th>
-                                                <th></th>
+                                                <td class="td-head"></td>
+                                                <td class="td-head"></td>
 
                                             </tr>
                                         </thead>
@@ -105,13 +105,13 @@ $peliculas=ControladorPelicula::getAllPeliculas();
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title font-weight-bold" id="tituloModalImg"></h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <p class="modal-title font-weight-bold" id="tituloModalImg" aria-label="Título del modal de visualización de imágenes"></p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body text-center">
-                            <img src="" id="imgModalImg" class="w-100 w-sm-75">
+                            <img src="" id="imgModalImg" class="w-100 w-sm-75" alt="Imagen del modal de visualización de imágenes de películas" >
                         </div>
                     </div>
                 </div>

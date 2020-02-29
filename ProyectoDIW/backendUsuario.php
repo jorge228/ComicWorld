@@ -50,10 +50,10 @@ $usuarios=ControladorUsuario::getAllUsuarios();
 
                         <!--Contenido-->
                         <div class="col-12 col-md-9">
-                            <div class="row">
+                            <div class="row mt-4">
 
                                 <div class="col-12 text-center mt-4">
-                                    <h1 class="text-warning">Gestión de usuarios</h1>
+                                    <h2 class="text-warning">Gestión de usuarios</h2>
                                 </div>
 
                                 <?php
@@ -82,8 +82,8 @@ $usuarios=ControladorUsuario::getAllUsuarios();
                                                 <th>Rol actual</th>
                                                 <th>Datos</th>
                                                 <th>Modificar rol</th>
-                                                <th></th>
-                                                <th></th>
+                                                <td class="td-head"></td>
+                                                <td class="td-head"></td>
                                             </tr>
                                         </thead>
                                         
