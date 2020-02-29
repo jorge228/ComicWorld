@@ -1,4 +1,4 @@
-<?php
+2<?php
  include_once 'includes/sesion.php';
  include_once 'models/controladores/ControladorValoracion.php';
  include_once 'includes/inclAdmin/backend_sidebar.php';
@@ -46,10 +46,10 @@ $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
 
                         <!--Contenido-->
                         <div class="col-12 col-md-9">
-                            <div class="row">
+                            <div class="row mt-4">
 
                                 <div class="col-12 text-center mt-4">
-                                    <h1 class="text-warning">Gestión de valoraciones</h1>
+                                    <h2 class="text-warning">Gestión de valoraciones</h2>
                                 </div>
 
                                 <?php
@@ -89,7 +89,7 @@ $valoraciones=ControladorValoracion::getValoracionesYUsuarios();
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title font-weight-bold" id="tituloModalVal"></h5>
+                            <p class="modal-title font-weight-bold" id="tituloModalVal"></p>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>

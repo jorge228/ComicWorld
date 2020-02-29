@@ -65,7 +65,7 @@ if (isset($_POST['btnEnviarPass'])){
                             <form class="formModificarUsuario needs-validation border border-primary p-3" id="formCambiarPass" action="#" method="POST" novalidate>
                                 
                                 <!--Contraseña-->
-                                <label for="password"><h5 class="mb-0">Nueva contraseña</h5></label>
+                                <label for="password" class="label-forms">Nueva contraseña</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -77,7 +77,7 @@ if (isset($_POST['btnEnviarPass'])){
                                 </div>
 
                                 <!--Contraseña-->
-                                <label for="confirmarPassword"><h5 class="mb-0">Confirmar nueva contraseña</h5></label>
+                                <label for="confirmarPassword" class="label-forms">Confirmar nueva contraseña</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>

@@ -119,6 +119,7 @@ btn.btn-success {
 }
 /* End Override btn-primary */
 
+
 /* Override feedback */
 .valid-feedback{
   font-size:1em !important;
@@ -131,11 +132,11 @@ btn.btn-success {
 
 /*Accesibilidad*/
 :focus{
-  border:2px solid $warning !important;
+  border:3px solid $warning !important;
 }
 
-.btn-primary:focus, .btn-outline-primary:focus{
-  border:2px solid blue !important;
+.btn-primary:focus, .btn-outline-primary:focus, .btn-info:focus{
+  border:3px solid limegreen !important;
 }
 
 button, img{
@@ -148,4 +149,8 @@ button, img{
 
 input[type=checkbox]:focus{
   outline:2px solid $warning !important;
+}
+
+.btn-info{
+  background-color:rgb(1, 116, 192) !important;
 }

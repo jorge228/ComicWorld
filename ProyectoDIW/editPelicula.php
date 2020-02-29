@@ -178,24 +178,24 @@
                             <div id="toolbar-quill" class="text-left rounded bg-light">
 
                                 <span class="ql-formats">
-                                    <button data-toggle="tooltip" title="Negrita (Ctrl+B)" class="ql-bold"></button>
-                                    <button data-toggle="tooltip" title="Itálica (Ctrl+I)" class="ql-italic"></button>
-                                    <button data-toggle="tooltip" title="Subrayada (Ctrl+U)" class="ql-underline"></button>
-                                    <select class="ql-color" data-toggle="tooltip" title="Color del texto"></select>
-                                    <select class="ql-background" data-toggle="tooltip" title="Color de fondo del texto"></select>
+                                    <button data-toggle="tooltip" title="Negrita (Ctrl+B)" class="ql-bold" aria-label="Texto en negrita"></button>
+                                    <button data-toggle="tooltip" title="Itálica (Ctrl+I)" class="ql-italic" aria-label="Texto cursivo"></button>
+                                    <button data-toggle="tooltip" title="Subrayada (Ctrl+U)" class="ql-underline" aria-label="Texto subrayado"></button>
+                                    <select class="ql-color" data-toggle="tooltip" title="Color del texto" aria-label="Elegir color de texto"></select>
+                                    <select class="ql-background" data-toggle="tooltip" title="Color de fondo del texto" aria-label="Elegir color de fondo del texto"></select>
                                 </span>
 
                                 <span class="ql-formats">
-                                    <button class="ql-link" data-toggle="tooltip" title="Enlace"></button>
-                                    <button class="ql-formula" data-toggle="tooltip" title="Fórmula"></button>
+                                    <button class="ql-link" data-toggle="tooltip" title="Enlace" aria-label="Añadir enlace"></button>
+                                    <button class="ql-formula" data-toggle="tooltip" title="Fórmula" aria-label="Añadir fórmula"></button>
                                 </span>
 
                                 <span class="ql-formats">
-                                    <button data-toggle="tooltip" class="ql-script" value="super" data-toggle="tooltip" title="Superíndice"></button>
-                                    <button data-toggle="tooltip" class="ql-script" value="sub" data-toggle="tooltip" title="Subíndice"></button>
+                                    <button data-toggle="tooltip" class="ql-script" value="super" data-toggle="tooltip" title="Superíndice" aria-label="Superíndice"></button>
+                                    <button data-toggle="tooltip" class="ql-script" value="sub" data-toggle="tooltip" title="Subíndice" aria-label="Subíndice"></button>
                                 </span>
                                 <span class="ql-formats">
-                                    <button class="ql-clean" data-toggle="tooltip" title="Borrar formato"></button>
+                                    <button class="ql-clean" data-toggle="tooltip" title="Borrar formato" aria-label="Borrar formato"></button>
                                 </span>
                                 <div id="contadorCaracteres" class="font-weight-bold text-center p-2 w-50 m-auto">1000 caracteres restantes</div>
                             </div>

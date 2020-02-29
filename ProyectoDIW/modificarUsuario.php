@@ -112,120 +112,120 @@ $usuarioPerfil=ControladorUsuario::getUsuarioByID($_POST['idUsuarioMod']);
                                 <input type="hidden" name="idUsuarioMod" value="<?php echo $_POST['idUsuarioMod'] ?>">
 
                                 <!--Usuario-->
-                                <label for="usernameForm"><h5 class="mb-0">Usuario*</h5></label><br>
+                                <label for="usernameMod" class="label-forms">Usuario*</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="usernameMod" placeholder="Nombre de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuarioPerfil->username  ?>" pattern="^[A-Za-z0-9]+$" minlength="4" maxlength="50" required>
+                                    <input type="text" class="form-control" id="usernameMod" name="usernameMod" placeholder="Nombre de usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->username; else echo $usuarioPerfil->username  ?>" pattern="^[A-Za-z0-9]+$" minlength="4" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre de usuario solo puede contener letras sin tildes y números, y debe tener una longitud de entre 4 y 50 caracteres </p></div>
                                 </div>
 
                                 <!--Contrasena-->
-                                <label for="passForm"><h5 class="mb-0">Cambiar contraseña</h5></label><br>
+                                <label for="passwordMod" class="label-forms">Cambiar contraseña</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="passwordMod" id="inputPasswordMod" placeholder="Introduzca una contraseña aquí SOLO si desea cambiar la actual" minlength="4" maxlength="50" pattern="^[A-Za-z0-9]+$">
+                                    <input type="text" class="form-control" id="passwordMod" name="passwordMod" id="inputPasswordMod" placeholder="Introduzca una contraseña aquí SOLO si desea cambiar la actual" minlength="4" maxlength="50" pattern="^[A-Za-z0-9]+$">
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>La contraseña solo puede contener letras sin tildes y números, y debe tener una longitud de entre 4 y 50 caracteres</p></div>
                                 </div>
 
                                 <!--Correo-->
-                                <label for="correoForm"><h5 class="mb-0">Correo electrónico*</h5></label><br>
+                                <label for="correoMod" class="label-forms">Correo electrónico*</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-at"></i></span>
                                     </div>
 
-                                    <input type="email" class="form-control" name="correoMod" placeholder="Correo electrónico del usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->correo; else echo $usuarioPerfil->correo ?>" required>
+                                    <input type="email" class="form-control" id="correoMod" name="correoMod" placeholder="Correo electrónico del usuario" value="<?php if (isset($usuarioMod)) echo $usuarioMod->correo; else echo $usuarioPerfil->correo ?>" required>
                                     <div class="valid-feedback"><p>Correcto*</p></div>
                                     <div class="invalid-feedback"><p>Debe introducir una dirección de correo electrónico válida</p></div>
                                 </div>
 
                                 <!--Nombre-->
-                                <label for="nombreForm"><h5 class="mb-0">Nombre real*</h5></label><br>
+                                <label for="nombreMod" class="label-forms">Nombre real*</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="nombreMod" placeholder="Nombre real" value="<?php if (isset($usuarioMod)) echo $usuarioMod->nombre; else echo $usuarioPerfil->nombre ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" id="nombreMod" name="nombreMod" placeholder="Nombre real" value="<?php if (isset($usuarioMod)) echo $usuarioMod->nombre; else echo $usuarioPerfil->nombre ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El nombre solo puede contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
 
                                 <!--Apellido 1-->
-                                <label for="apellido1Form"><h5 class="mb-0">Primer apellido*</h5></label><br>
+                                <label for="apellido1Mod" class="label-forms">Primer apellido*</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido1Mod" placeholder="Primer apellido" value="<?php if (isset($usuarioMod)) echo $usuarioMod->apellido1; else echo $usuarioPerfil->apellido1 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
+                                    <input type="text" class="form-control" id="apellido1Mod" name="apellido1Mod" placeholder="Primer apellido" value="<?php if (isset($usuarioMod)) echo $usuarioMod->apellido1; else echo $usuarioPerfil->apellido1 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
 
                                 <!--Apellido 2-->
-                                <label for="apellido2Form"><h5 class="mb-0">Segundo apellido</h5></label><br>
+                                <label for="apellido2Mod" class="label-forms">Segundo apellido</label><br>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="apellido2Mod" placeholder="Segundo apellido" value="<?php if (isset($usuarioMod)) echo $usuarioMod->apellido2; else echo $usuarioPerfil->apellido2 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50">
+                                    <input type="text" class="form-control" id="apellido2Mod" name="apellido2Mod" placeholder="Segundo apellido" value="<?php if (isset($usuarioMod)) echo $usuarioMod->apellido2; else echo $usuarioPerfil->apellido2 ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" maxlength="50">
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Los apellidos solo pueden contener letras (máximo: 50 caracteres)</p></div>
                                 </div>
 
                                 <!--Fecha de nacimiento-->
-                                <label for="fechaNacForm"><h5 class="mb-0">Fecha de nacimiento*</h5></label>
+                                <label for="fecha_nacimientoMod" class="label-forms">Fecha de nacimiento*</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-calendar"></i></span>
                                     </div>
 
-                                    <input type="date" class="form-control" name="fecha_nacimientoMod" placeholder="Fecha de nacimiento" value="<?php if (isset($usuarioMod)) echo $usuarioMod->fecha_nacimiento; else echo $usuarioPerfil->fecha_nacimiento ?>" min="1900-01-01" max="2020-01-01" required>
+                                    <input type="date" class="form-control" id="fecha_nacimientoMod" name="fecha_nacimientoMod" placeholder="Fecha de nacimiento" value="<?php if (isset($usuarioMod)) echo $usuarioMod->fecha_nacimiento; else echo $usuarioPerfil->fecha_nacimiento ?>" min="1900-01-01" max="2020-01-01" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Fecha de nacimiento inválida</p></div>
                                 </div>
 
                                 <!--Telefono-->
-                                <label for="telefonoForm"><h5 class="mb-0">Teléfono*</h5></label>
+                                <label for="telefonoMod" class="label-forms">Teléfono*</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="telefonoMod" placeholder="Teléfono" value="<?php if (isset($usuarioMod)) echo $usuarioMod->telefono; else echo $usuarioPerfil->telefono ?>" pattern="^[0-9]{9}$" required>
+                                    <input type="text" class="form-control" id="telefonoMod" name="telefonoMod" placeholder="Teléfono" value="<?php if (isset($usuarioMod)) echo $usuarioMod->telefono; else echo $usuarioPerfil->telefono ?>" pattern="^[0-9]{9}$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Debe introducir un número de teléfono válido</p></div>
                                 </div>
 
                                 <!--Pais-->
-                                <label for="paisForm"><h5 class="mb-0">País*</h5></label>
+                                <label for="paisMod" class="label-forms">País*</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-globe-africa"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" name="paisMod" placeholder="Pais natal" value="<?php if (isset($usuarioMod)) echo $usuarioMod->pais; else echo $usuarioPerfil->pais ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" required>
+                                    <input type="text" class="form-control" id="paisMod" name="paisMod" placeholder="Pais natal" value="<?php if (isset($usuarioMod)) echo $usuarioMod->pais; else echo $usuarioPerfil->pais ?>" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>Debe introducir el nombre de un país</p></div>
                                 </div>
 
                                 <!--Codigo postal-->
-                                <label for="codpostForm"><h5 class="mb-0">Código postal*</h5></label>
+                                <label for="codigo_postalMod" class="label-forms">Código postal*</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-home"></i></span>
                                     </div>
 
-                                    <input type="text" class="form-control" name="codigo_postalMod" placeholder="Código postal" value="<?php if (isset($usuarioMod)) echo $usuarioMod->codigo_postal; else echo $usuarioPerfil->codigo_postal ?>" pattern="^[0-9A-Z-]+$" required>
+                                    <input type="text" class="form-control" id="codigo_postalMod" name="codigo_postalMod" placeholder="Código postal" value="<?php if (isset($usuarioMod)) echo $usuarioMod->codigo_postal; else echo $usuarioPerfil->codigo_postal ?>" pattern="^[0-9A-Z-]+$" required>
                                     <div class="valid-feedback"><p>Correcto</p></div>
                                     <div class="invalid-feedback"><p>El código postal solo puede caracteres alfanuméricos</p></div>
                                 </div>
