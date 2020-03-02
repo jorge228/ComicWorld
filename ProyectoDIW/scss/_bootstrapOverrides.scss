@@ -143,6 +143,10 @@ button, img{
   outline:none !important;
 }
 
+a{
+  color:blue;
+}
+
 .carousel a:focus{
   background-color:darkslategray !important;
 }
@@ -153,4 +157,8 @@ input[type=checkbox]:focus{
 
 .btn-info{
   background-color:rgb(1, 116, 192) !important;
+}
+
+.titulo-login{
+  font-size:1.4em;
 }

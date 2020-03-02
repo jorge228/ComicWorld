@@ -111,6 +111,9 @@ btn.btn-success {
 button, img {
   outline: none !important; }
 
+a {
+  color: blue; }
+
 .carousel a:focus {
   background-color: darkslategray !important; }
 
@@ -119,6 +122,9 @@ input[type=checkbox]:focus {
 
 .btn-info {
   background-color: #0174c0 !important; }
+
+.titulo-login {
+  font-size: 1.4em; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -233,7 +239,7 @@ h1, h2, h3, h4, h5 {
   background-color: black;
   background-image: url("../assets/img/footer.jpg");
   background-size: cover; }
-  .footer h4 {
+  .footer h1 {
     font-size: 1.2em;
     color: #FFF; }
   .footer ul {

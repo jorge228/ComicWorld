@@ -10,7 +10,7 @@
             <!--Navegacion-->
             <div class="col-6 col-md-3 px-0 pt-5 pt-md-0 align-content-middle">
                 <div class="w-50 m-auto">
-                    <h4> Navegación </h4>
+                    <h1> Navegación </h1>
                     <ul class="p-0">
                         <li><a href="index.php">Inicio</a></li>
                         <li><a href="terminos_legales.php">Términos Legales</a></li>
@@ -20,7 +20,7 @@
             
             <!--Sobre nosotros-->
             <div class="col-6 col-md-3 px-0 pt-5 pt-md-0 pr-4 text-center">
-                <h4> Sobre nosotros </h4>
+                <h1> Sobre nosotros </h1>
                 <p>ComicWorld es un proyecto creado por un grupo de estudiantes de Desarrollo de Aplicaciones Web con fines meramente académicos</p>
             </div>
             

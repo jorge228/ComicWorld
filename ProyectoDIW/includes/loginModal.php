@@ -30,7 +30,7 @@ function modalInicioSesion() {
         echo '<div class="modal-dialog" role="document">';
             echo '<div class="modal-content">';
                 echo '<div class="modal-header">';
-                    echo '<h5 class="modal-title" id="exampleModalLabel">Inicio Sesión</h5>';
+                    echo '<h1 class="modal-title titulo-login" id="exampleModalLabel">Inicio Sesión</h1>';
                     echo '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
                         echo '<span aria-hidden="true">&times;</span>';
                     echo ' </button>';
@@ -49,7 +49,7 @@ function formularioInicioSesion() {
     echo '<div class="container-fluid">';
 		echo '<div class="row">';
             echo '<div class="col-12 text-center">';
-                echo '</br><h1>Identifícate</h1>';
+                echo '</br><h2>Identifícate</h2>';
                     echo '<div class="row">';
                         echo '<div class="col-1 text-center"></div>';
                         echo '<div class="col-10 text-center">';
@@ -81,7 +81,7 @@ function formularioInicioSesion() {
 
                             if(isset($_POST['btnEntrar'])) echo '<p id="errorMode" class="text-danger">Error. Usuario o contraseña no reconocido</p>';
 
-                            echo '<a class="m-2 text-dark" href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
+                            echo '<a class="m-2" href="signUp.php">¿Eres nuevo? Regístrate aquí</a>';
 
                         echo '</div>';
                         echo '<div class="col-1 text-center"></div>';
