@@ -28,7 +28,7 @@ switch ($ruta) {
         $CURRENT_PAGE = "Cómics"; 
         $PAGE_TITLE = "Cómics Marvel";
         break;
-    case "comic_DC":
+    case "comic_DCComic":
         $CURRENT_PAGE = "Cómics"; 
         $PAGE_TITLE = "Cómics DC";
         break;
@@ -64,7 +64,7 @@ switch ($ruta) {
         $CURRENT_PAGE = "Videojuegos"; 
         $PAGE_TITLE = "Videojuegos-Saga Arkham";
         break;
-    case "videojuegos_MarvelVsCapcom":
+    case "videojuegos_MarvelvsCapcom":
         $CURRENT_PAGE = "Videojuegos"; 
         $PAGE_TITLE = "Videojuegos-Saga Marvel vs Capcom";
         break;
@@ -95,6 +95,38 @@ switch ($ruta) {
     case "juegoJorge":
         $CURRENT_PAGE = "Juegos"; 
         $PAGE_TITLE = "Caza al Duende";
+        break;
+    case "perfilUsuario":
+        $CURRENT_PAGE = "Perfil"; 
+        $PAGE_TITLE = "Mi perfil";
+        break;
+    case "cambiarPassword":
+        $CURRENT_PAGE = "Perfil"; 
+        $PAGE_TITLE = "Restaurar contraseña";
+        break;
+    case "modificarPerfil":
+        $CURRENT_PAGE = "Perfil"; 
+        $PAGE_TITLE = "Modificar datos del perfil";
+        break;
+    case "backendUsuario":
+        $CURRENT_PAGE = "Panel de gestión"; 
+        $PAGE_TITLE = "Gestión de usuarios";
+        break;
+    case "backendContenido":
+        $CURRENT_PAGE = "Panel de gestión"; 
+        $PAGE_TITLE = "Gestión de contenidos";
+        break;
+    case "backendValoraciones":
+        $CURRENT_PAGE = "Panel de gestión"; 
+        $PAGE_TITLE = "Gestión de valoraciones";
+        break;
+    case "modificarUsuario":
+        $CURRENT_PAGE = "Panel de gestión"; 
+        $PAGE_TITLE = "Modificar datos de usuario";
+        break;
+    case "editPelicula":
+        $CURRENT_PAGE = "Panel de gestión"; 
+        $PAGE_TITLE = "Añadir o modificar película";
         break;
     default:
         $CURRENT_PAGE = "Comic World";
