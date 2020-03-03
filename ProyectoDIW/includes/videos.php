@@ -5,7 +5,7 @@ function video($ruta, $formatoVideo, $aspecto){?>
     <div class="video-container">
         <!-- Video -->
         <div class="embed-responsive embed-responsive-<?php echo $aspecto ?>">
-            <video class="video">
+            <video class="video" title="video">
                 <source src="assets/videos/<?php echo $ruta; ?>" type="video/<?php echo $formatoVideo; ?>">
             </video>
         </div>
