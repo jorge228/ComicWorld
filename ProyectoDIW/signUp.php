@@ -42,9 +42,13 @@ function formularioRegistro ($palabraCaptcha) {
                 <form class="needs-validation" action="" method="POST" novalidate>
                     </br>
                     <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="text-warning font-weight-bold">Formulario de registro</h1>
+                        </div>
+
                         <div class="col-12 my-3 text-center">
                             <!--Usuario-->
-                            <label for="username"><h5 class="mb-0">Usuario*</h5></label><br>
+                            <label for="username" class="label-forms">Usuario*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -56,7 +60,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
                         
                             <!--Contraseña-->
-                            <label for="password1"><h5 class="mb-0">Contraseña*</h5></label><br>
+                            <label for="password1" class="label-forms">Contraseña*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -68,7 +72,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Contrasena de nuevo-->
-                            <label for="password2"><h5 class="mb-0">Repita la Contraseña*</h5></label><br>
+                            <label for="password2" class="label-forms">Repita la Contraseña*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -80,7 +84,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Correo-->
-                            <label for="correo"><h5 class="mb-0">Correo electrónico*</h5></label><br>
+                            <label for="correo" class="label-forms">Correo electrónico*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-at"></i></span>
@@ -92,7 +96,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Nombre-->
-                            <label for="nombre"><h5 class="mb-0">Nombre real*</h5></label><br>
+                            <label for="nombre" class="label-forms">Nombre real*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -104,7 +108,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Primer Apellido-->
-                            <label for="apellido1"><h5 class="mb-0">Primer apellido*</h5></label><br>
+                            <label for="apellido1" class="label-forms">Primer apellido*</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -116,7 +120,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Apellido 2-->
-                            <label for="apellido2"><h5 class="mb-0">Segundo apellido</h5></label><br>
+                            <label for="apellido2" class="label-forms">Segundo apellido</label><br>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -128,7 +132,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Fecha de nacimiento-->
-                            <label for="fecha_nacimiento"><h5 class="mb-0">Fecha de nacimiento*</h5></label>
+                            <label for="fecha_nacimiento" class="label-forms">Fecha de nacimiento*</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-calendar"></i></span>
@@ -140,7 +144,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Teléfono-->
-                            <label for="telefono"><h5 class="mb-0">Teléfono*</h5></label>
+                            <label for="telefono" class="label-forms">Teléfono*</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-phone"></i></span>
@@ -152,7 +156,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Pais-->
-                            <label for="pais"><h5 class="mb-0">País*</h5></label>
+                            <label for="pais" class="label-forms">País*</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-globe-africa"></i></span>
@@ -164,7 +168,7 @@ function formularioRegistro ($palabraCaptcha) {
                             </div>
 
                             <!--Codigo postal-->
-                            <label for="codigo_postal"><h5 class="mb-0">Código postal*</h5></label>
+                            <label for="codigo_postal" class="label-forms">Código postal*</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-home"></i></span>
