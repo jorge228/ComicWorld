@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
+                <h2 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h2>
             </div>
 
             <!--Contenido biografia-->
@@ -42,7 +42,7 @@
                 con una capa y un escudo de “S” estilizado en su pecho, escudo que se ha convertido en un símbolo del personaje en todo tipo de medios de comunicación.</p>
                 
                 <article>
-                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <h3 class="font-weight-bold">Orígenes</h3>
                     <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SupermanOrig1.jpg" alt="Imagen de Superman luchando">
                     <p class="mt-2">En Action Comics # 1 (1938), Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los humanos. 
                     Poco después de nacer, su planeta se destruye en un cataclismo natural, pero el padre científico de Superman previó la calamidad y salva a su hijo bebé enviándolo a la Tierra en una pequeña nave espacial. 
@@ -72,7 +72,7 @@
                 <table class="table table-bordered table-lg p-4">
                     <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class="text-light">Perfil</h3></th>
+                            <th colspan="2" class="perfil-titulo">Perfil</th>
                         </tr>
                     </thead>
                     <tr>

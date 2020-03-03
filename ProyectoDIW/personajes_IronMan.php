@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
+                <h2 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h2>
             </div>
 
             <!--Contenido biografia-->
@@ -41,7 +41,7 @@
                 Hizo su primera aparición en Tales of Suspense # 39 (marzo de 1963), y recibió su propio título en Iron Man #1 (mayo de 1968).</p>
                 
                 <article>
-                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <h3 class="font-weight-bold">Orígenes</h3>
                     <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_IronManOrig1.jpg" alt="Iron Man apuntando con el repulsor de su mano izquierda">
                     <p class="mt-2">Anthony Edward Stark es el hijo del jefe de Industrias Stark, Howard Stark y su esposa Maria Stark. 
                     Un niño genio que ingresa al MIT a la edad de 15 años para estudiar ingeniería mecánica y luego recibe maestrías en ingeniería eléctrica y física. 
@@ -72,7 +72,7 @@
                 <table class="table  table-bordered table-lg p-4">
                     <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class="text-light">Perfil</h3></th>
+                            <th colspan="2" class="perfil-titulo">Perfil</th>
                         </tr>
                     </thead>
                     <tr>

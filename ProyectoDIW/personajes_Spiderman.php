@@ -31,7 +31,7 @@
 
             <!--Titulo-->
             <div class="col-lg-2 pr-3">
-                <h3 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h3>
+                <h2 class="text-center font-weight-bold text-warning biografia-titulo">Biografía</h2>
             </div>
 
             <!--Contenido biografia-->
@@ -42,7 +42,7 @@
                  así como en varias películas, programas de televisión y adaptaciones de videojuegos ambientadas en el Universo Marvel.</p>
                 
                 <article>
-                    <h4 class="font-weight-bold">Orígenes</h4>
+                    <h3 class="font-weight-bold">Orígenes</h3>
                     <img class="img-fluid mt-2 w-100" src="assets/img/pers/pers_SpidermanOrig1.jpeg" alt="Spiderman agarrándose a una de sus redes">
                     <p class="mt-2">En Forest Hills, Queens, Nueva York, ​el estudiante de la Escuela Midtown High, Peter Benjamin Parker es un científico huérfano que vive con su tío Ben y su tía May. Como se describe en Amazing Fantasy # 15 (agosto de 1962), es mordido por una araña radioactiva (erróneamente clasificada como un insecto en el panel) en una exhibición de ciencias y "adquiere la agilidad y la fuerza proporcional de un arácnido ". 
                     Junto con la súper fuerza, Parker gana la capacidad de adherirse a paredes y techos. A través de su habilidad nativa para la ciencia, desarrolla un dispositivo que le permite disparar cintas adhesivas de su propio diseño a través de pequeños barriles montados en la muñeca. Inicialmente buscando capitalizar sus nuevas habilidades, Parker se pone un disfraz y, como "Spider-Man", se convierte en una estrella de televisión novedosa. 
@@ -64,7 +64,7 @@
                 <table class="table table-bordered table-lg p-4">
                     <thead class="bg-success">
                         <tr class="text-center">
-                            <th colspan="2"><h3 class=" text-light">Perfil</h3></th>
+                            <th colspan="2" class="perfil-titulo">Perfil</th>
                         </tr>
                     </thead>
                     <tr>
