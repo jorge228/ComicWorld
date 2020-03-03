@@ -16,6 +16,10 @@ switch ($ruta) {
         $CURRENT_PAGE = "Inicio"; 
         $PAGE_TITLE = "Home";
         break;
+    case "signUp":
+        $CURRENT_PAGE = "Registro"; 
+        $PAGE_TITLE = "Formulario de registro";
+        break;
     case "peliculas_Marvel":
         $CURRENT_PAGE = "Películas"; 
         $PAGE_TITLE = "Películas Marvel";
