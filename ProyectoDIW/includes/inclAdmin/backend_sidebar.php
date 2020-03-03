@@ -6,7 +6,7 @@ function sidebar($usuario){
 
     ?>
     <!--Sidebar-->
-    <div class="col-12 col-md-3 containerAlturaBackend bg-dark">
+    <aside class="col-12 col-md-3 containerAlturaBackend bg-dark">
 
         <!--Foto y nombre de usuario-->
         <div class="row p-0">
@@ -47,7 +47,7 @@ function sidebar($usuario){
             </div>
         </div>
 
-    </div>
+    </aside>
     <?php
 }
 ?>
