@@ -29,10 +29,10 @@
                 <!-- Comics -->
                 <div class="nav-item dropdown">
 
-                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuComics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         COMICS
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuComics">
                         <a class="dropdown-item" href="comic_Marvel.php">MARVEL</a>
                         <a class="dropdown-item" href="comic_DCComic.php">DC COMICS</a>
                         <a class="dropdown-item" href="comic_DarkHorse.php">DARK HORSE</a>
@@ -41,10 +41,10 @@
                 </div>
                 <!-- Peliculas -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuPeliculas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PELICULAS
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuPeliculas">
                         <a class="dropdown-item" href="peliculas_Marvel.php">MARVEL</a>
                         <a class="dropdown-item" href="peliculas_DC.php">DC COMICS</a>
                     </div>
@@ -52,10 +52,10 @@
 
                 <!-- Videojuegos -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuVideojuegos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VIDEOJUEGOS
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuVideojuegos">
                         <a class="dropdown-item" href="videojuegos_Arkham.php">SAGA ARKHAM</a>
                         <a class="dropdown-item" href="videojuegos_MarvelvsCapcom.php">SAGA MARVEL VS CAPCOM</a>
                         <a class="dropdown-item" href="videojuegos_UltimateAlliance.php">SAGA MARVEL ULTIMATE ALLIANCE</a>
@@ -66,10 +66,10 @@
 
                 <!-- Personajes -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuPersonajes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PERSONAJES
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuPersonajes">
                         <a class="dropdown-item" href="personajes_Spiderman.php">SPIDERMAN</a>
                         <a class="dropdown-item" href="personajes_Superman.php">SUPERMAN</a>
                         <a class="dropdown-item" href="personajes_IronMan.php">IRON MAN</a>
@@ -80,10 +80,10 @@
 
                 <!-- Juegos -->
                 <div class="nav-item dropdown">
-                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-success bg-success btn-sm dropdown-toggle m-1 border-0" type="button" id="dropdownMenuJuegos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         JUEGOS
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuJuegos">
                         <a class="dropdown-item" href="juegoSandra.php">PIEDRA, PAPEL O TIJERA</a>
                         <a class="dropdown-item" href="juegoJorge.php">CAZA AL DUENDE</a>
                         <a class="dropdown-item" href="juegoEmilio.php">THORCALIPSIS</a>
@@ -100,7 +100,7 @@
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 
                     <li id="dropdownLoginLI" class="dropdown order-1">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1" aria-label="Menú desplegable de usuario">
                             <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav" alt="Imagen de perfil"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
