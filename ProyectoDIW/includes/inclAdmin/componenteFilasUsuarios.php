@@ -46,11 +46,11 @@ function listarUsuarios($usuarios, $idUsuarioLogeado){
                                 <option value="usuario" <?php if($usuarioFila->rol=="usuario") echo 'selected'; ?>>Usuario</option>
                             </select>
 
-                            <input type="submit" name="cambiarRol" value="✔" class="btn btn-primary btn-sm">
+                            <input type="submit" name="cambiarRol" value="✔" class="btn btn-primary btn-sm" aria-label="Guardar cambio de rol">
                         </td>
 
                         <td>
-                            <input type="submit" name="eliminarUsuario" value="X" class="btn btn-danger btn-sm">
+                            <input type="submit" name="eliminarUsuario" value="X" class="btn btn-danger btn-sm" aria-label="Eliminar usuario">
                         </td>
                     </form>
                 </tr>        

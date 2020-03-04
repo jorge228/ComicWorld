@@ -48,7 +48,7 @@ function listarPeliculas($peliculas){
                 <td>
                     <form action="#" method="POST" class="claseFormPelicula">
                         <input type="hidden" value="<?php echo $peliculaFila->id ?>" name="idPeliculaOperacion">
-                        <input type="submit" name="eliminarPelicula" value="X" class="btn btn-danger btn-sm">
+                        <input type="submit" name="eliminarPelicula" value="X" class="btn btn-danger btn-sm" aria-label="Eliminar película">
                     </form>
                 </td>
             </tr>        

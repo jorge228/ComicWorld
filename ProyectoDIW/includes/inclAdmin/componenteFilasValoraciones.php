@@ -62,7 +62,7 @@ function listarValoraciones($valoraciones){
                     <td>
                         <form action="#" class="formGestionValoracion" method="POST">
                             <input type="hidden" value="<?php echo $valoracion->id ?>" name="idValoracion">
-                            <input type="submit" name="btnEliminarValoracion" value="X" class="btn btn-danger btn-sm">
+                            <input type="submit" name="btnEliminarValoracion" value="X" class="btn btn-danger btn-sm" aria-label="Eliminar valoración">
                         </form>
                     </td>
 
