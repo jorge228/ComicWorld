@@ -35,7 +35,7 @@ function modalInicioSesion() {
                         echo '<span aria-hidden="true">&times;</span>';
                     echo ' </button>';
                 echo '  </div>';
-                echo '<form id="modalForm" name="" action="" method="POST">';
+                echo '<form id="modalForm" action="#" method="POST">';
                     echo ' <div class="modal-body">';
                         formularioInicioSesion(); 
                     echo ' </div>';
@@ -49,7 +49,7 @@ function formularioInicioSesion() {
     echo '<div class="container-fluid">';
 		echo '<div class="row">';
             echo '<div class="col-12 text-center">';
-                echo '</br><h2>Identifícate</h2>';
+                echo '<h2>Identifícate</h2>';
                     echo '<div class="row">';
                         echo '<div class="col-1 text-center"></div>';
                         echo '<div class="col-10 text-center">';

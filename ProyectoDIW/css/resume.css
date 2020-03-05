@@ -249,6 +249,9 @@ h1, h2, h3, h4, h5 {
     .footer a:hover {
       color: #FFF; }
 
+.img-cc-footer {
+  width: 150px; }
+
 /*- - - - - - - - - End Footer - - - - - - - - - */
 /*- - - - - - - - - Start Anchor - - - - - - - - - - */
 .ancla:before {
@@ -378,6 +381,9 @@ h1, h2, h3, h4, h5 {
 /*- - - - - - - - - End imagen perfil usuario nav- - - - - - - - - */
 .logo-navbar {
   width: 40px; }
+
+ul {
+  list-style: none; }
 
 /* - - - - - - - - - - - - - - - CSS PARA LA TABLA DE PUNTUACIONES - - - - - - - - - - - -*/
 .chart {

@@ -77,51 +77,51 @@
                     </thead>
                     <tr>
                         <th>Nombre real</th>
-                        <td>Kal-El/Clark Joseph Kent</th>
+                        <td>Kal-El/Clark Joseph Kent</td>
                     </tr>
                     <tr>
                         <th>Raza</th>
-                        <td>Kryptoniano</th>
+                        <td>Kryptoniano</td>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>102 kg</th>
+                        <td>102 kg</td>
                     </tr>
                     <tr>
                         <th>Altura</th>
-                        <td>1,90 m</th>
+                        <td>1,90 m</td>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>Masculino</th>
+                        <td>Masculino</td>
                     </tr>
                     <tr>
                         <th>Color de ojos</th>
-                        <td>Azules</th>
+                        <td>Azules</td>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>Marrón</th>
+                        <td>Marrón</td>
                     </tr>
                     <tr>
                         <th>Lugar de nacimiento</th>
-                        <td>Krypton</th>
+                        <td>Krypton</td>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>DC Comics</th>
+                        <td>DC Comics</td>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>El Hombre de Acero, El hombre del mañana, La maravilla de Metrópolis, El último hijo de Krypton</th>
+                        <td>El Hombre de Acero, El hombre del mañana, La maravilla de Metrópolis, El último hijo de Krypton</td>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>Súper fuerza, súper velocidad, vuelo, invulnerabilidad casi total, visión de rayos X, aliento helado, súper oído, visión infrarroja </th>
+                        <td>Súper fuerza, súper velocidad, vuelo, invulnerabilidad casi total, visión de rayos X, aliento helado, súper oído, visión infrarroja </td>
                     </tr>
                     <tr>
                         <th>Creado por</th>
-                        <td>Jerry Siegel y Joe Shuster </th>
+                        <td>Jerry Siegel y Joe Shuster </td>
                     </tr>
 
                 </table>

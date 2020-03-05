@@ -67,51 +67,51 @@
                     </thead>
                     <tr>
                         <th>Nombre real</th>
-                        <td>Diana de Temiscira</th>
+                        <td>Diana de Temiscira</td>
                     </tr>
                     <tr>
                         <th>Raza</th>
-                        <td>Amazonas semidiosa del Olimpo</th>
+                        <td>Amazonas semidiosa del Olimpo</td>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>75 kg</th>
+                        <td>75 kg</td>
                     </tr>
                     <tr>
                         <th>Altura</th>
-                        <td>1,80 m</th>
+                        <td>1,80 m</td>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>Femenino</th>
+                        <td>Femenino</td>
                     </tr>
                     <tr>
                         <th>Color de ojos</th>
-                        <td>Azules</th>
+                        <td>Azules</td>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>Negro</th>
+                        <td>Negro</td>
                     </tr>
                     <tr>
                         <th>Lugar de nacimiento</th>
-                        <td>Temiscira</th>
+                        <td>Temiscira</td>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>DC</th>
+                        <td>DC</td>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>Diana Prince, Diosa de la Guerra, Marvila</th>
+                        <td>Diana Prince, Diosa de la Guerra, Marvila</td>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>Superfuerza, vuelo, factor curativo, resistencia sobrehumana, inmortalidad</th>
+                        <td>Superfuerza, vuelo, factor curativo, resistencia sobrehumana, inmortalidad</td>
                     </tr>
                     <tr>
                         <th>Creado por</th>
-                        <td>William Moulton Marston, H.G. Peter </th>
+                        <td>William Moulton Marston, H.G. Peter </td>
                     </tr>
 
                 </table>

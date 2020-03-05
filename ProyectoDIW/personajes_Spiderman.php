@@ -69,51 +69,51 @@
                     </thead>
                     <tr>
                         <th>Nombre real</th>
-                        <td>Peter Benjamin Parker</th>
+                        <td>Peter Benjamin Parker</td>
                     </tr>
                     <tr>
                         <th>Raza</th>
-                        <td>Humano</th>
+                        <td>Humano</td>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>75 kg</th>
+                        <td>75 kg</td>
                     </tr>
                     <tr>
                         <th>Altura</th>
-                        <td>1,78 m</th>
+                        <td>1,78 m</td>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>Masculino</th>
+                        <td>Masculino</td>
                     </tr>
                     <tr>
                         <th>Color de ojos</th>
-                        <td>Avellana</th>
+                        <td>Avellana</td>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>Marrón</th>
+                        <td>Marrón</td>
                     </tr>
                     <tr>
                         <th>Lugar de nacimiento</th>
-                        <td>Queens, Nueva York</th>
+                        <td>Queens, Nueva York</td>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>Marvel</th>
+                        <td>Marvel</td>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>El Hombre Araña, el Increíble Spiderman, tu amigo y vecino Spiderman, Tigre</th>
+                        <td>El Hombre Araña, el Increíble Spiderman, tu amigo y vecino Spiderman, Tigre</td>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>Fuerza y agilidad sobrehumanas, reflejos sobrehumanos (sentido arácnido), capacidad para trepar paredes como una araña </th>
+                        <td>Fuerza y agilidad sobrehumanas, reflejos sobrehumanos (sentido arácnido), capacidad para trepar paredes como una araña </td>
                     </tr>
                     <tr>
                         <th>Creado por</th>
-                        <td>Stan Lee y Steve Ditko </th>
+                        <td>Stan Lee y Steve Ditko </td>
                     </tr>
                 </table>
             </aside>

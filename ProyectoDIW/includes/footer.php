@@ -4,7 +4,7 @@
 
             <!--Icono CW-->
             <div class="col-12 col-md-3 text-center">
-                <img class="img-fluid mb-4" src="assets/img/logo.png" width="125px" alt="Logo ComicWorld">
+                <img class="img-fluid mb-4" src="assets/img/logo.png"  alt="Logo ComicWorld">
             </div>
 
             <!--Navegacion-->
@@ -60,7 +60,7 @@
 
                 <!--Imagen licencia-->
                 <div class="text-center">
-                    <img src="assets/img/lic_cc.png" width="120px" class="rounded-lg" alt="Licencia Creative Commons">
+                    <img src="assets/img/lic_cc.png" class="rounded-lg img-cc-footer" alt="Licencia Creative Commons">
                 </div>
             </div>
 

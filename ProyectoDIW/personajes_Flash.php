@@ -71,51 +71,51 @@
                     </thead>
                     <tr>
                         <th>Nombre real</th>
-                        <td>Jay Garrick/Barry Allen/ Wally West/ Bart Allen</th>
+                        <td>Jay Garrick/Barry Allen/ Wally West/ Bart Allen</td>
                     </tr>
                     <tr>
                         <th>Raza</th>
-                        <td>Humano</th>
+                        <td>Humano</td>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>81 kg</th>
+                        <td>81 kg</td>
                     </tr>
                     <tr>
                         <th>Altura</th>
-                        <td>1,87 m</th>
+                        <td>1,87 m</td>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>Masculino</th>
+                        <td>Masculino</td>
                     </tr>
                     <tr>
                         <th>Color de ojos</th>
-                        <td>Azules</th>
+                        <td>Azules</td>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>Rubio (Barry), negro (Jay y Bart), pelirrojo (Wally)</th>
+                        <td>Rubio (Barry), negro (Jay y Bart), pelirrojo (Wally)</td>
                     </tr>
                     <tr>
                         <th>Lugar de nacimiento</th>
-                        <td>Central City, EEUU</th>
+                        <td>Central City, EEUU</td>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>DC</th>
+                        <td>DC</td>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>El corredor escarlata, Kid Flash, impulso, el cometa carmesí, la mancha, el rayo veloz, centella, destello, el hombre que corre</th>
+                        <td>El corredor escarlata, Kid Flash, impulso, el cometa carmesí, la mancha, el rayo veloz, centella, destello, el hombre que corre</td>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>Capacidad de correr más rápido que la luz, reflejos sobrehumanos, capacidad de lanzar energía con las manos, viajar en el tiempo, factor curativo</th>
+                        <td>Capacidad de correr más rápido que la luz, reflejos sobrehumanos, capacidad de lanzar energía con las manos, viajar en el tiempo, factor curativo</td>
                     </tr>
                     <tr>
                         <th>Creado por</th>
-                        <td>Gardner Fox, Harry Lampert </th>
+                        <td>Gardner Fox, Harry Lampert </td>
                     </tr>
 
                 </table>

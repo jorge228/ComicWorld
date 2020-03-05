@@ -104,43 +104,41 @@
 
         <!-- Login button -->
         <?php if (isset($_SESSION['id_usuario'])){ ?>
-            <li>
-                <div class="nav-item dropdown">
-                    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+            <div class="nav-item dropdown">
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 
-                        <li id="dropdownLoginLI" class="dropdown order-1">
-                            <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1" aria-label="Menú desplegable de usuario">
-                                <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav" alt="Imagen de perfil"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right">
+                    <li id="dropdownLoginLI" class="dropdown order-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="text-white ml-1 mr-1 btn btn-outline-primary dropdown-toggle p-1" aria-label="Menú desplegable de usuario">
+                            <span class="p-1"><img src="<?php echo $usuario->img_perfil ?>" class="rounded-circle mr-2 imgPerfilNav" alt="Imagen de perfil"><p class="d-inline m-0 nombreUsuarioNav"><?php echo $usuario->username?></p></span>    
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a class="dropdown-item" href="perfilUsuario.php"><i class="fas fa-user"></i> Mi Perfil</a>
+                            </li>
+                            <?php if($usuario->rol == "admin") { ?>
                                 <li>
-                                    <a class="dropdown-item" href="perfilUsuario.php"><i class="fas fa-user"></i> Mi Perfil</a>
+                                    <a class="dropdown-item" href="backendUsuario.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
                                 </li>
-                                <?php if($usuario->rol == "admin") { ?>
-                                    <li>
-                                        <a class="dropdown-item" href="backendUsuario.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
-                                    </li>
-                                <?php } ?>
-                                <?php if($usuario->rol == "editor") { ?>
-                                    <li>
-                                        <a class="dropdown-item" href="backendContenido.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
-                                    </li>
-                                <?php } ?>
+                            <?php } ?>
+                            <?php if($usuario->rol == "editor") { ?>
                                 <li>
-                                    <a class="dropdown-item" href="logOut.php"><i class="fas fa-power-off text-danger"></i> Cerrar sesión</a>
+                                    <a class="dropdown-item" href="backendContenido.php"><i class="fas fa-poll-h"></i> Panel Gestión</a>
                                 </li>
-                            </ul>
+                            <?php } ?>
+                            <li>
+                                <a class="dropdown-item" href="logOut.php"><i class="fas fa-power-off text-danger"></i> Cerrar sesión</a>
+                            </li>
+                        </ul>
 
-                        </li>
+                    </li>
 
-                    </ul>
-                </div>
-            </li>
-            <?php } else { ?>
-                <button class="btn float-right" id="dropdownMenu1" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
-                    <i class="fas fa-user text-white"></i>
-                </button>
-            <?php } ?>
+                </ul>
+            </div>
+        <?php } else { ?>
+            <button class="btn float-right" id="dropdownMenu1" data-toggle="modal" data-target="#exampleModal" aria-label="Abrir ventana de login">
+                <i class="fas fa-user text-white"></i>
+            </button>
+        <?php } ?>
         <!-- Collapse button -->
         <button class="navbar-toggler ml-auto nav-flex-icons" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -77,51 +77,51 @@
                     </thead>
                     <tr>
                         <th>Nombre real</th>
-                        <td>Anthony Edward Stark</th>
+                        <td>Anthony Edward Stark</td>
                     </tr>
                     <tr>
                         <th>Raza</th>
-                        <td>Humano</th>
+                        <td>Humano</td>
                     </tr>
                     <tr>
                         <th>Peso</th>
-                        <td>76 kg/91 kg con armadura</th>
+                        <td>76 kg/91 kg con armadura</td>
                     </tr>
                     <tr>
                         <th>Altura</th>
-                        <td>1,74 m/1,80 m con armadura</th>
+                        <td>1,74 m/1,80 m con armadura</td>
                     </tr>
                     <tr>
                         <th>Género</th>
-                        <td>Masculino</th>
+                        <td>Masculino</td>
                     </tr>
                     <tr>
                         <th>Color de ojos</th>
-                        <td>Azules</th>
+                        <td>Azules</td>
                     </tr>
                     <tr>
                         <th>Pelo</th>
-                        <td>Castaño oscuro</th>
+                        <td>Castaño oscuro</td>
                     </tr>
                     <tr>
                         <th>Lugar de nacimiento</th>
-                        <td>Long Island, Nueva York</th>
+                        <td>Long Island, Nueva York</td>
                     </tr>
                     <tr>
                         <th>Universo</th>
-                        <td>Marvel</th>
+                        <td>Marvel</td>
                     </tr>
                     <tr>
                         <th>Apodos/aliases</th>
-                        <td>Tony Stark, El Hombre de Hierro</th>
+                        <td>Tony Stark, El Hombre de Hierro</td>
                     </tr>
                     <tr>
                         <th>Poderes</th>
-                        <td>Con armadura: Fuerza y resistencia sobrehumanas, vuelo supersónico, soporte vital regenerativo, multitud de armas y equipamiento de alta tecnología</th>
+                        <td>Con armadura: Fuerza y resistencia sobrehumanas, vuelo supersónico, soporte vital regenerativo, multitud de armas y equipamiento de alta tecnología</td>
                     </tr>
                     <tr>
                         <th>Creado por</th>
-                        <td>Stan Lee, Larry Lieber, Don Heck, Jack Kirby </th>
+                        <td>Stan Lee, Larry Lieber, Don Heck, Jack Kirby </td>
                     </tr>
 
                 </table>
